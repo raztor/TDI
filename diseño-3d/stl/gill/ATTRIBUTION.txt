@@ -1,0 +1,7 @@
+Gill Shield Weather Station case for RuuviTag
+Author: nerdaxic
+Source: https://www.printables.com/model/177377-gill-shield-weather-station-case-for-ruuvitag
+License: Creative Commons Attribution-NonCommercial 4.0 International
+https://creativecommons.org/licenses/by-nc/4.0/
+Original STL files downloaded via the public official All Model Files button. No geometry modifications made to these source files.
+The author requests contacting them for commercial use. Ruuvi logo is used by the original author with permission from Ruuvi Innovations Ltd; this is not an official Ruuvi product.
