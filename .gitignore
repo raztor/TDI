@@ -1,0 +1,31 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+secrets.h
+secrets.local.h
+credentials.json
+service-account*.json
+*.key
+*.pem
+
+# Compilación y dependencias instaladas
+.pio/
+build/
+dist/
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Archivos temporales del sistema y editores
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+~$*
+*.tmp
+*.bak
+
+# No excluir mediciones, fuentes CAD, planos ni evidencias de la entrega.
