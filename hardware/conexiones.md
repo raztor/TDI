@@ -4,11 +4,11 @@
 
 ## Conexión definida para el botón SOS
 
-Instalar una RAK13002 en la ranura IO de la RAK19007. Conectar un pulsador normalmente abierto entre IO6 y GND de la expansión. IO6 corresponde al pin nRF52840 P0.10 y al número Arduino GPIO 10; se configura como INPUT_PULLUP y la pulsación lleva la entrada a LOW. No se conecta el pulsador a una tensión externa.
+Conectar un pulsador normalmente abierto entre AIN1 de J11 pin 1 y GND de la RAK19007. Se puede utilizar GND en J10 pin 2 o J12 pin 2. AIN1 corresponde al pin nRF52840 P0.31 y al número Arduino GPIO 31; se configura como INPUT_PULLUP y la pulsación lleva la entrada a LOW. Los pads permiten soldar directamente dos cables o instalar cabeceras de 2,54 mm, sin expansión adicional.
 
-IO5 permanece reservado al botón de usuario Meshtastic. No se utiliza RESET como SOS ni se instalan LED o buzzer de aplicación. El pulsador y la expansión están pendientes de montaje; comprobar que no haya otro periférico conectado a IO6.
+El RAK1906 ocupa el bus I²C, no AIN1. La medida de batería en el RAK4631 utiliza AIN0/P0.05. Dropzone permanece deshabilitado para que no utilice AIN1. No conectar el pulsador a VBAT, IO1, IO2 ni RESET; tampoco se aplica tensión externa al GPIO. No se instalan LED o buzzer de aplicación. El montaje y la verificación física del botón están pendientes.
 
-Referencias de conexión: [GPIO RAK4631](https://meshtastic.org/docs/hardware/devices/rak-wireless/wisblock/core-module/), [pinout RAK13002](https://docs.rakwireless.com/product-categories/wisblock/rak13002/datasheet/). El resto del circuito de alimentación y sus protecciones sigue pendiente de levantamiento.
+Referencias: [J10/J11/J12 de RAK19007](https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/), [pines utilizados por RAK1906](https://docs.rakwireless.com/product-categories/wisblock/rak1906/datasheet/), [variante RAK4631 y pin de batería en Meshtastic](https://github.com/meshtastic/firmware/blob/v2.7.26.54e0d8d/variants/nrf52840/rak4631/variant.h). El resto del circuito de alimentación y sus protecciones sigue pendiente de levantamiento.
 
 ## Conexiones observadas en antecedentes
 

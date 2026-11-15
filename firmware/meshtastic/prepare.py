@@ -63,7 +63,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("upstream", type=Path)
     parser.add_argument("--station-node", type=node_id, default=0)
-    parser.add_argument("--sos-pin", type=int, choices=(4, 10, 21), default=10)
+    parser.add_argument("--sos-pin", type=int, choices=(4, 10, 21, 31), default=31)
     parser.add_argument("--channel", type=int, choices=range(8), default=0)
     parser.add_argument("--ack-timeout-ms", type=int, default=60000)
     parser.add_argument("--max-attempts", type=int, choices=range(1, 6), default=3)

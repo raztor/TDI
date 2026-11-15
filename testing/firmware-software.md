@@ -34,7 +34,7 @@ La compilación de comprobación utiliza NodeID de estación sin asignar, por lo
 
 ## Aceptación pendiente
 
-- Instalación del adaptador RAK13002 y pulsador IO6–GND.
+- Instalación del pulsador entre AIN1 de J11 pin 1 y GND de la RAK19007; GPIO 31 como entrada digital.
 - Identificación de la revisión exacta de la LILYGO y su NodeID.
 - Carga y verificación de los perfiles de MeshChile en ambas placas.
 - Detección del BME680 y comparación de lecturas y unidades.

@@ -5,7 +5,7 @@
 ## Preparación
 
 - RAK4631 y LILYGO de 915 MHz, antenas compatibles y firmware/configuración registrados.
-- Pulsador normalmente abierto instalado entre IO6 y GND mediante RAK13002.
+- Pulsador normalmente abierto instalado entre AIN1 de J11 pin 1 y GND de la RAK19007; GPIO 31 configurado como entrada digital.
 - NodeID de la estación incorporado en el firmware del RAK y NodeID del RAK autorizado en el receptor.
 - Ambos equipos configurados para MeshChile: ANZ, LongFast, slot 20 y canal primario coincidente.
 - Servicio USB de estación activo con una base identificada para la campaña.

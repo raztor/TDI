@@ -10,7 +10,7 @@ La red se configura con región ANZ, preset LongFast, slot 20 y canal primario L
 
 El [protocolo SOS](../firmware/meshtastic/README.md) correlaciona cada respuesta con el evento y la estación configurada. El ACK nativo de radio no confirma almacenamiento. Los duplicados se registran una vez y reciben otra confirmación. Sin respuesta, el RAK limita sus reintentos y mantiene el estado UNCONFIRMED.
 
-Conexión elegida para el pulsador: IO6/GPIO 10 y GND mediante RAK13002; instalación pendiente. No se utilizan LED ni buzzer de aplicación. El dashboard y la prueba física completa están pendientes; la validación de software se registra en [firmware y estación](../testing/firmware-software.md).
+Conexión elegida para el pulsador: AIN1/GPIO 31 en J11 pin 1 y GND de la RAK19007, sin expansión adicional; instalación pendiente. No se utilizan LED ni buzzer de aplicación. El dashboard y la prueba física completa están pendientes; la validación de software se registra en [firmware y estación](../testing/firmware-software.md).
 
 ## Implementación reportada y arquitectura prevista
 

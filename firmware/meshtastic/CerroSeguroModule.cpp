@@ -14,7 +14,7 @@
 #define CS_STATION_NODE 0
 #endif
 #ifndef CS_SOS_PIN
-#define CS_SOS_PIN 10
+#define CS_SOS_PIN 31
 #endif
 #ifndef CS_CHANNEL
 #define CS_CHANNEL 0
@@ -24,6 +24,10 @@
 #endif
 #ifndef CS_MAX_ATTEMPTS
 #define CS_MAX_ATTEMPTS 3
+#endif
+
+#if CS_SOS_PIN == 31 && !MESHTASTIC_EXCLUDE_DROPZONE
+#error "AIN1/GPIO31 requires the Dropzone module to remain disabled"
 #endif
 
 static_assert(CS_STATION_NODE != 0xffffffff, "Station must be a unicast destination");

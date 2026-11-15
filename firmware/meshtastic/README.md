@@ -7,14 +7,16 @@ Adaptación de Meshtastic para RAK4631 con nRF52840, base RAK19007 y sensor RAK1
 | Elemento | Conexión |
 |---|---|
 | RAK1906 | Ranura de sensor compatible de la RAK19007; bus I²C WisBlock |
-| RAK13002 | Ranura IO de la RAK19007, como adaptador a conectores accesibles |
-| Pulsador SOS | Normalmente abierto, entre IO6 y GND; `INPUT_PULLUP`, activo en LOW |
-| IO6 | nRF52840 P0.10, número Arduino GPIO 10 |
+| Pulsador SOS | Normalmente abierto, entre AIN1 de J11 pin 1 y GND; `INPUT_PULLUP`, activo en LOW |
+| AIN1 | nRF52840 P0.31, número Arduino GPIO 31; utilizado como entrada digital |
+| GND accesible | J10 pin 2 o J12 pin 2 de la propia RAK19007 |
 | LED y buzzer de aplicación | No utilizados |
 
-La RAK19007 necesita un adaptador para exponer el GPIO. Se selecciona la RAK13002; el pulsador y el adaptador están pendientes de instalación. No utilizar el botón RESET para SOS. La selección de IO6 deja libre IO5, empleado por el botón de usuario de Meshtastic. Verificar que ningún otro módulo instalado utilice IO6.
+La conexión utiliza los pads de 2,54 mm de la RAK19007, sin módulo de expansión. Se pueden soldar dos cables o instalar pines de cabecera. AIN1 se usa como entrada digital con pull-up interna; el botón solo lo conecta a GND. No conectar el pulsador a VBAT ni a una alimentación externa. El pulsador está pendiente de instalación.
 
-Referencias: [GPIO de RAK4631 en Meshtastic](https://meshtastic.org/docs/hardware/devices/rak-wireless/wisblock/core-module/), [RAK13002](https://docs.rakwireless.com/product-categories/wisblock/rak13002/datasheet/).
+El RAK1906 utiliza I²C y no ocupa AIN1. La medida interna de batería del RAK4631 utiliza AIN0/P0.05, separado de AIN1/P0.31. El módulo Dropzone, que también podría usar AIN1, permanece excluido de la compilación. No utilizar RESET, IO1 ni IO2 como sustitutos del pin seleccionado.
+
+Referencias: [cabeceras de la RAK19007](https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/), [conexiones del RAK1906](https://docs.rakwireless.com/product-categories/wisblock/rak1906/datasheet/), [mapeo y medida de batería en Meshtastic](https://github.com/meshtastic/firmware/blob/v2.7.26.54e0d8d/variants/nrf52840/rak4631/variant.h).
 
 ## Procedimiento del botón
 
@@ -62,7 +64,7 @@ git clone --branch v2.7.26.54e0d8d --depth 1 --recurse-submodules --shallow-subm
 
 Reemplazar `!12345678` por el NodeID real de la LILYGO, obtenido mediante `meshtastic --port PUERTO_LILYGO --info`. Si se omite `--station-node`, se puede comprobar la compilación, pero el SOS permanece deshabilitado. La dirección de la estación queda definida en la compilación; cambiarla requiere volver a preparar, compilar y cargar.
 
-Opciones del script: `--sos-pin 10`, `--channel 0`, `--ack-timeout-ms 60000`, `--max-attempts 3`. Cambiar el pin exige verificar su disponibilidad en el montaje.
+Opciones del script: `--sos-pin 31`, `--channel 0`, `--ack-timeout-ms 60000`, `--max-attempts 3`. Cambiar el pin exige verificar su disponibilidad en el montaje.
 
 Los archivos de salida se generan en `.pio/build/cerroseguro-rak4631/` del checkout de Meshtastic. Para carga se requiere bootloader Arduino del RAK4631; RAK4631-R/RUI3 necesita el procedimiento oficial de conversión de bootloader.
 

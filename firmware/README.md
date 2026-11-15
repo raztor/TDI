@@ -16,7 +16,7 @@ La LILYGO confirma el transporte de los mensajes a través de Meshtastic. El est
 
 ## Botón y alimentación
 
-Pulsador normalmente abierto entre IO6 y GND de una RAK13002 instalada en la ranura IO de la RAK19007. IO6 corresponde a GPIO 10 del RAK4631. La entrada utiliza pull-up interna; no se añaden LED ni buzzer. La instalación física del pulsador y del adaptador está pendiente.
+Pulsador normalmente abierto entre AIN1 de J11 pin 1 y GND de la propia RAK19007. AIN1 corresponde a P0.31/GPIO 31 del RAK4631 y se utiliza como entrada digital con pull-up interna. No requiere módulo de expansión ni LED o buzzer. La instalación física del pulsador está pendiente.
 
 El GPIO y los parámetros de envío se definen al preparar el firmware. La dirección de la estación debe ser el NodeID real de la LILYGO. Sin dirección, el módulo SOS permanece deshabilitado.
 
