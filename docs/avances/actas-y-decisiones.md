@@ -1,42 +1,40 @@
-# Actas y evolución de las decisiones
+# Actas y decisiones de diseño
 
-## Actas originales del Avance 1
+## Reuniones del Avance 1
 
-Fuente: Anexo A del [documento E1](E1_Grupo_CerroSeguro_Con_Actas.docx). Este índice resume las reuniones sin reemplazar los originales.
+Referencia: Anexo A del [documento E1](E1_Grupo_CerroSeguro_Con_Actas.docx). Modalidad: coordinación mediante mensajes y documento compartido.
 
-| Fecha | Participantes | Acuerdos | Tareas registradas |
+| Fecha | Participantes | Acuerdos | Tareas |
 |---|---|---|---|
-| 28 de agosto de 2026 | Benjamín Muñoz, Benjamín Quijada, Exequiel Najle y Javiera Cárdenas | Cerros de la Región Metropolitana; alertas y telemetría LoRa modular. Entrevistas y cobertura pendientes | Muñoz: fuentes y antecedentes. Quijada: arquitectura y diseño conceptual. Najle: redacción inicial. Cárdenas: instructivo y observaciones |
-| 4 de septiembre de 2026 | Los mismos cuatro integrantes | PCB base modular con radios, gestión energética, sensores y botón. Selección de componentes y validación como trabajo posterior | Muñoz: fuentes. Quijada: diseño y criterios técnicos. Najle: resultados, discusión y conclusión. Cárdenas: revisión de contenido y formato |
+| 28 de agosto de 2026 | Benjamín Muñoz, Benjamín Quijada, Exequiel Najle y Javiera Cárdenas | Delimitar el proyecto a cerros de la Región Metropolitana; alertas y telemetría LoRa modular. Entrevistas y cobertura pendientes | Muñoz: fuentes y antecedentes. Quijada: arquitectura y diseño conceptual. Najle: redacción inicial. Cárdenas: instructivo y observaciones |
+| 4 de septiembre de 2026 | Los mismos cuatro integrantes | Seleccionar un PCB base modular con radios, gestión energética, sensores y botón. Continuar con selección de componentes y validación | Muñoz: fuentes. Quijada: diseño y criterios técnicos. Najle: resultados, discusión y conclusión. Cárdenas: revisión de contenido y formato |
 
-Ambas actas indican coordinación mediante mensajes y documento compartido. No hay otras actas originales entre los archivos aportados.
+## Integración electrónica y alternativas descartadas
 
-## Nota retrospectiva del 15 de noviembre de 2026
+El diseño inicial contempló una placa común para integrar microcontroladores, transmisores LoRa, gestión de energía, conexiones modulares y BMS. Se buscaba un montaje plug and play que redujera cableado y facilitara la configuración de cada nodo.
 
-Esta nota recoge el relato del equipo durante la revisión de antecedentes. La fecha corresponde al registro de la explicación, no a las fechas de los análisis. No se conocen participantes, fechas exactas ni votaciones de esas decisiones adicionales.
+Se evaluaron variantes con uno o varios transmisores y controladores y una sola antena compartida mediante conmutación RF. La antena compartida se descartó por la posible pérdida de paquetes durante la conmutación. La alternativa quedó en análisis, sin esquemático ni PCB; no se realizaron ensayos con un conmutador construido.
 
-Durante el desarrollo analizamos una placa común para integrar microcontroladores, transmisores LoRa y gestión de energía, con conexiones modulares y BMS, buscando un montaje listo para conectar y utilizar. Evaluamos variantes con uno o varios transmisores y controladores, así como compartir una sola antena mediante conmutación RF (switching).
+Las opciones con varios transmisores/controladores y BMS exigían resolver compatibilidad, alimentación y coordinación antes de fabricar. La complejidad de integración y la dificultad de fabricar y verificar el PCB dentro del plazo llevaron a postergarlas. Se continuó con placas comerciales para realizar las pruebas físicas del Avance 2.
 
-La antena compartida quedó solo en análisis y se descartó por la posible pérdida de paquetes durante la conmutación. Esa preocupación fue un criterio de descarte; no se realizó un ensayo de pérdida de paquetes con un conmutador construido. No se produjo un esquemático ni PCB de esa alternativa.
+| Alternativa | Motivo de selección o descarte | Estado |
+|---|---|---|
+| Placas comerciales interconectadas | Disponibilidad para pruebas de banco y cambios rápidos | Utilizadas en el prototipo de A2 |
+| PCB completamente integrado | Mayor complejidad y tiempo de desarrollo y fabricación | Postergado; sin diseño fabricable |
+| PCB base modular | Permite unificar energía y control y cambiar radios o sensores | Dirección conceptual seleccionada en E1; implementación postergada |
+| Antena compartida mediante switching RF | Riesgo de pérdida de paquetes durante la conmutación | Descartada durante el análisis |
+| Varios transmisores y controladores con energía y BMS en una placa | Esfuerzo de integración y plazo de fabricación | Postergada; topología y componentes sin cerrar |
 
-Las opciones de integración completa y de varios transmisores/controladores con BMS añadían decisiones de compatibilidad, alimentación y coordinación que debían resolverse antes de fabricar. Su complejidad, el tiempo disponible y la dificultad de fabricar y verificar el PCB dentro del plazo llevaron a postergarlas para este prototipo. Se continuó con módulos y placas comerciales para avanzar en las pruebas físicas. Esto explica la transición desde la dirección conceptual elegida en E1 hasta el montaje mostrado en A2.
+Las fechas de análisis de estas alternativas están pendientes de registro en las actas de integración.
 
-| Alternativa | Fuente | Decisión o evolución | Límite |
-|---|---|---|---|
-| Placas comerciales interconectadas | E1, tabla 1; fotos y ensayo A2 | Utilizadas para el prototipo de pruebas | No equivale a una integración final estandarizada |
-| PCB completamente integrado | E1, tabla 1; relato del equipo | Postergado por complejidad, tiempo y fabricación | Sin diseño fabricable aportado |
-| PCB base modular | E1, tabla 1 y acta del 4 de septiembre | Dirección inicial; implementación postergada para este prototipo | Sin esquemático, Gerbers ni placa fabricada aportados |
-| Una antena compartida mediante switching RF | Aclaración del 15 de noviembre | Descartada por posible pérdida de paquetes | Solo análisis; sin resultado experimental |
-| Varios transmisores y controladores, energía y BMS en una placa plug and play | Relato del 15 de noviembre | Postergado por integración y plazo de fabricación | Cantidad, topología y componentes sin cerrar |
+## Antenas y pruebas
 
-## Antenas y pruebas realizadas
+Se construyó un dipolo artesanal de aluminio para 433 MHz y se utilizó una antena Laird en 915 MHz. Ambas se caracterizaron con NanoVNA, junto con las pruebas cualitativas de comunicación LoRa puro descritas en el [informe A2](<Informe Avance 2 - Cerro Seguro (2).pdf>).
 
-El [informe A2](<Informe Avance 2 - Cerro Seguro (2).pdf>) documenta un dipolo artesanal de aluminio para 433 MHz y una antena Laird usada en 915 MHz. Se revisó su adaptación con NanoVNA, además de las pruebas cualitativas de comunicación con LoRa puro. Se conservaron las capturas y marcadores en [caracterización de antenas](../../testing/antenas-avance2.md).
+Las lecturas fueron SWR 1,301 a 436,100 MHz para el dipolo y SWR 1,475 a 915,000 MHz para la antena comercial; esta última muestra R = 47,02 Ω. El informe registra calibración previa. El procedimiento, los adaptadores y los archivos de barrido están pendientes de documentación. Los resultados y sus límites se detallan en [caracterización de antenas](../../testing/antenas-avance2.md).
 
-El informe declara calibración previa, sin procedimiento ni archivos del instrumento. Las lecturas son SWR 1,301 a 436,100 MHz y SWR 1,475 a 915,000 MHz; la segunda muestra R = 47,02 Ω. Estos resultados no prueban ganancia, cobertura entre cerros ni desempeño del enlace. El valor a 436,100 MHz no se presenta como medición exacta a 433 MHz.
+## Iteraciones de alimentación y hardware
 
-## Iteraciones de integración
+Durante la integración se sustituyó el Morningstar SunSaver-20 por el controlador blanco/azul tras observar desconexiones prematuras con la batería LiPo 3S. La comprobación de los ajustes de carga y desconexión del controlador sustituto sigue pendiente.
 
-A2, fechado el 25 de octubre de 2026, registra el reemplazo del controlador Morningstar SunSaver-20 por el controlador blanco/azul tras desconexiones prematuras con la batería LiPo 3S. También registra una batería hinchada retirada de servicio y una placa LILYGO averiada. La causa de esos dos daños quedó sin determinar. El [registro de fallas](../../testing/registro-fallas.md) separa la sustitución realizada y la verificación pendiente.
-
-Para completar actas posteriores faltan fechas de sesiones, participantes, acuerdos y tareas reales. No se asignan reuniones ni responsables nuevos para llenar esos espacios.
+También se retiró una batería LiPo hinchada y se registró una placa LILYGO averiada. No se determinó la causa de esos daños ni una causa común entre ambos. Ver [registro de fallas](../../testing/registro-fallas.md).

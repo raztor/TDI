@@ -2,7 +2,7 @@
 
 Referencia: guía TEI201 «Avance #3: Prototipo IoT Completo», evaluación del 23 de noviembre de 2026. Las páginas siguientes corresponden a la numeración impresa de la guía.
 
-**Estado general:** antecedentes E1/A2 recuperados y estructura del Avance 3 preparada. El enlace cualitativo, mediciones de antenas y fallas históricas no acreditan la ejecución completa de los requisitos siguientes. Ver [revisión de antecedentes](avances/revision-avances-1-2.md). La guía original no está entre los archivos aportados; las referencias de página y exigencias de esta matriz proceden de la transcripción previa y deben cotejarse.
+**Estado general:** E1 define el problema y los requisitos preliminares; A2 documenta el enlace cualitativo, las mediciones de antenas y las fallas de integración. Los requisitos del Avance 3 se siguen en la matriz siguiente. Ver [estado de los avances 1 y 2](avances/revision-avances-1-2.md). La guía de evaluación está pendiente de versionar y de cotejo con esta matriz.
 
 | ID | Dimensión | Requisito | Evidencia o ubicación | Estado | Guía |
 |---|---|---|---|---|---|

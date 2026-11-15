@@ -1,6 +1,6 @@
 # Escudo Gill V1 de Cerro Seguro
 
-Paquete aportado por el equipo el 15 de noviembre de 2026, conservado sin modificaciones. El ZIP contiene fechas internas del 10 de noviembre; no se utilizan como prueba de fabricación ni se atribuye el diseño al cierre de octubre.
+Diseño paramétrico conceptual de un escudo ambiental con lamas, techo, base, bandeja de sensor y soporte de pared.
 
 ## Archivos disponibles
 
@@ -9,7 +9,7 @@ Paquete aportado por el equipo el 15 de noviembre de 2026, conservado sin modifi
 - [Instrucciones originales](LEEME.txt).
 - Cinco STL: [lama](louver_V1.stl), [techo](roof_V1.stl), [base](base_V1.stl), [bandeja](sensor_tray_V1.stl) y [soporte de pared](wall_bracket_V1.stl).
 
-La fuente permite seleccionar `assembly`, `louver`, `roof`, `base`, `sensor_tray` o `wall_bracket` mediante `part`. Su disponibilidad no acredita apertura o renderizado en OpenSCAD; no se ejecutó un ensayo de fabricación en esta revisión documental.
+La fuente permite seleccionar `assembly`, `louver`, `roof`, `base`, `sensor_tray` o `wall_bracket` mediante `part`. El ajuste mecánico y los ensayos de fabricación están pendientes.
 
 ## Parámetros declarados
 
@@ -21,4 +21,4 @@ El LEEME advierte que la bandeja no tiene anclajes específicos para la PCB ni c
 
 Este conjunto es un escudo ambiental conceptual, no el gemelo completo del nodo. No incluye una representación integrada de placas, batería y electrónica, planos acotados, renders finales ni un ensamble `.f3d`/`.f3z`. No se acredita ajuste, resistencia exterior ni funcionamiento del sensor dentro del escudo.
 
-Los [STL Ruuvi](../stl/gill/README.md) ya existentes son referencias de terceros distintas de esta V1. Sus condiciones y atribuciones se conservan en su carpeta. Los hashes de los aportes figuran en [inventario de aportes](../../docs/avances/inventario-aportes.csv).
+Los [STL Ruuvi](../stl/gill/README.md) ya existentes son referencias de terceros distintas de esta V1. Sus condiciones y atribuciones se conservan en su carpeta.

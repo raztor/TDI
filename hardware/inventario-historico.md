@@ -4,7 +4,7 @@ Fuente: [informe A2](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>),
 
 | Equipo | Estado reportado en A2 | Evidencia y dato pendiente |
 |---|---|---|
-| RAK19007 + RAK4631 | Utilizados como nodo principal | Relato del informe; las imágenes RAK son referenciales. Confirmar cantidad, revisión y banda instalada |
+| RAK19007 + RAK4631 | Utilizados como nodo principal | Identificado en A2; las imágenes RAK son referenciales. Confirmar cantidad, revisión y banda instalada |
 | RAK1906 / BME680 | Utilizado como sensor | A2 muestra valores ambientales en terminal, sin serie original. Cantidad y configuración pendientes |
 | LILYGO LoRa32 868/915 MHz TCXO | Radio de prueba para 915 MHz | Una visible en la foto interior horizontal; revisión exacta pendiente |
 | LILYGO LoRa32 433/470 MHz | Radio de prueba para 433 MHz | Una visible junto a la anterior; revisión exacta pendiente |
@@ -25,4 +25,4 @@ Fuente: [informe A2](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>),
 
 La [BOM](BOM.xlsx) contiene solo tres referencias RAK, sin cantidades ni costos. Falta trasladar el inventario confirmado, con revisión, cantidad realmente disponible, especificación, precio, moneda y fuente. Dos placas visibles en una foto no establecen el total de equipos del proyecto ni cuántos siguen operativos.
 
-El PoC propone panel de 24 V / 25 W, controlador MPPT y conversión a 5 V / 3,3 V. Son valores de una arquitectura de referencia: el informe no los confirma como especificaciones medidas del montaje. No se incorporan como compras o parámetros eléctricos verificados.
+El PoC propone panel de 24 V / 25 W, controlador MPPT y conversión a 5 V / 3,3 V. Son valores de una arquitectura de referencia: el informe no los confirma como especificaciones medidas del montaje. La especificación eléctrica definitiva requiere contrastarlos con el montaje.

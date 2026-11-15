@@ -1,6 +1,6 @@
 # Caracterización de antenas del Avance 2
 
-Fuente: [informe del 25 de octubre de 2026](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>), páginas físicas 9–11, y capturas originales aportadas. La fecha exacta del ensayo no se consigna; la fecha de los nombres de las imágenes no sustituye un registro de laboratorio.
+Referencia: [informe del 25 de octubre de 2026](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>), páginas 9–11 del archivo, y capturas NanoVNA. Fecha exacta del ensayo: pendiente de registro.
 
 ## Lecturas disponibles
 
@@ -15,7 +15,7 @@ Fuente: [informe del 25 de octubre de 2026](<../docs/avances/Informe Avance 2 - 
 | BW indicado por el instrumento | 1000 Hz | 1000 Hz |
 | Calibración | A2 declara calibración previa | A2 declara calibración previa |
 
-El BW mostrado corresponde al instrumento; no es el ancho de banda de modulación LoRa ni un ancho útil de antena medido. No se leen valores adicionales de la curva sin marcadores o exportaciones.
+El BW mostrado corresponde al instrumento; no es el ancho de banda de modulación LoRa ni un ancho útil de antena medido.
 
 ## Trabajo realizado y alcance
 
@@ -32,4 +32,4 @@ Las capturas permiten registrar la adaptación en las frecuencias de los marcado
 - Lecturas en la frecuencia exacta usada por cada radio y criterio de aceptación previo.
 - Configuración y registros del enlace para relacionar la selección de antena con su desempeño.
 
-No se reconstruyen estas condiciones a partir de las fotos. Las pruebas nuevas se registrarán como ejecuciones posteriores, sin cambiar la fecha o el alcance de las capturas existentes.
+Cada ensayo posterior debe registrar su fecha, configuración, condiciones y archivos de medición.

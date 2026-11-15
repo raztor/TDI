@@ -7,7 +7,7 @@
 - Herramientas necesarias: pendiente.
 - Acceso a puertos, botones y alimentación: pendiente.
 
-Las fotos acreditan acceso visual al interior de la caja histórica; no una prueba completa de desmontaje, reemplazo, cierre y recuperación funcional. No se marca T07 como ejecutada.
+Las fotografías muestran el interior abierto de la caja de pruebas. La prueba T07 de desmontaje, reemplazo, cierre y recuperación funcional está pendiente de ejecución.
 
 ## Procedimiento de apertura
 

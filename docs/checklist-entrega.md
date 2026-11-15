@@ -2,7 +2,7 @@
 
 **Evaluación:** 23 de noviembre de 2026. Completar y subir los entregables antes de la presentación.
 
-Antecedentes de E1/A2 ordenados en [revisión de avances](avances/revision-avances-1-2.md). Las fotos históricas, el Gill conceptual y los resultados de antenas no completan por sí solos esta lista final. Pauta original por incorporar y cotejar con la transcripción existente.
+El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los resultados y pendientes anteriores. Esta lista corresponde a la entrega final. La guía de evaluación está pendiente de versionar y de cotejo con los requisitos.
 
 ## Software · 30 %
 

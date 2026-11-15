@@ -2,7 +2,7 @@
 
 Cerro Seguro es un proyecto de seguridad y comunicaciones en montaña, con un prototipo de repetidor y telemetría ambiental. Este repositorio reúne el software, hardware, diseño 3D y validación para el Avance 3 de TEI201, Universidad Adolfo Ibáñez.
 
-**Estado al 15 de noviembre de 2026:** antecedentes de los avances 1 y 2 incorporados. El Avance 2 reporta un enlace LoRa funcional y contiene fotografías, capturas de terminal, mediciones de antenas y fallas de integración. Faltan archivos para reproducir el ensayo y validar el sistema completo. Antes de iniciar el Avance 3, consultar la [revisión de antecedentes y pendientes](docs/avances/revision-avances-1-2.md).
+**Estado al 15 de noviembre de 2026:** el Avance 2 documenta un enlace LoRa funcional, fotografías del montaje, capturas de terminal, mediciones de antenas y fallas de integración. La reproducción de los ensayos y la validación del sistema completo siguen pendientes. Ver [estado y pendientes de los avances 1 y 2](docs/avances/revision-avances-1-2.md).
 
 ## Descripción del proyecto
 
@@ -27,7 +27,7 @@ El problema, sus antecedentes y los criterios de validación se registran en [pr
 | Exequiel Najle | E1: metodología, alternativas y visualización; tareas actuales por asignar | Pendiente |
 | Javiera Cárdenas | E1: gestión, revisión y edición; tareas actuales por asignar | Pendiente |
 
-Estas contribuciones proceden de E1 y no asignan los roles del Avance 3. Se usa Exequiel Najle como en E1 y la portada de A2, por indicación del equipo. Las [actas y decisiones](docs/avances/actas-y-decisiones.md) registran el PCB modular, la antena compartida descartada y la evolución hacia placas comerciales.
+Las contribuciones corresponden al Avance 1. Los roles del Avance 3 están pendientes de asignación. Las [actas y decisiones](docs/avances/actas-y-decisiones.md) describen el PCB modular, el descarte de la antena compartida y la evolución hacia placas comerciales.
 
 Todos los integrantes deben participar en la presentación y poder explicar el funcionamiento del sistema.
 
@@ -96,7 +96,7 @@ Usar la rama o revisión correspondiente al prototipo que se va a probar.
 3. Seleccionar la placa y el puerto correctos; compilar y cargar con el comando o procedimiento documentado allí.
 4. Confirmar lecturas reales, unidad, fecha/hora y frecuencia de captura.
 
-**Pendiente:** incorporar el código y los comandos exactos de compilación y carga usados en A2. Se conocen las familias de placas; IDE, versiones, parámetros y revisión exacta no están documentados. Esta revisión conserva como fuente el informe, sin reconstruir el firmware como si fuera el original.
+**Pendiente:** incorporar el código y los comandos exactos de compilación y carga usados en A2. Se conocen las familias de placas; IDE, versiones, parámetros y revisión exacta no están documentados.
 
 ### 4. Conectar almacenamiento y dashboard
 
@@ -115,7 +115,7 @@ Ejecutar [el protocolo de pruebas](testing/protocolo-pruebas.md). Comprobar una 
 3. Interpretar los indicadores con sus unidades, ventanas temporales y umbrales documentados.
 4. Registrar las pruebas y revisar las limitaciones antes de tomar decisiones.
 
-Los resultados, fallas y conclusiones se documentan en [testing/](testing/README.md). Hay antecedentes de A2: enlace cualitativo, [mediciones de antenas](testing/antenas-avance2.md) y [fallas de integración](testing/registro-fallas.md). No se aportaron registros originales de mensajes ni series ambientales; T01–T08 del Avance 3 no están ejecutadas en este registro.
+Los resultados, fallas y conclusiones se documentan en [testing/](testing/README.md). Hay antecedentes de A2: enlace cualitativo, [mediciones de antenas](testing/antenas-avance2.md) y [fallas de integración](testing/registro-fallas.md). Los logs de mensajes y las series ambientales están pendientes de versionar. Los protocolos T01–T08 del Avance 3 están pendientes de ejecución.
 
 ## Diseño 3D
 

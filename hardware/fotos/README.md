@@ -1,13 +1,13 @@
 # Fotografías del prototipo
 
-Se incorporaron dos fotografías únicas del montaje de pruebas. La fecha “27 de octubre de 2026” procede del nombre de los archivos recibidos; no se verificó la fecha de captura ni la revisión de hardware. El [informe A2](<../../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>) también contiene fotografías de banco, instalación exterior, batería, BMS y controladores; allí se conservan como figuras.
+Dos vistas interiores documentan el montaje de pruebas LILYGO. El [informe A2](<../../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>) contiene además fotografías de banco, instalación exterior, batería, BMS y controladores. La fecha de captura y la revisión de hardware están pendientes de registro.
 
 | Evidencia disponible | Qué permite observar | Archivo |
 |---|---|---|
 | Interior horizontal | Dos LILYGO de bandas distintas, soporte, coaxiales y módulo DC-DC | [Fotografía](montaje-lilygo-interior-horizontal.jpeg) |
 | Interior vertical | Disposición interna, cableado y antena comercial exterior | [Fotografía](montaje-lilygo-interior-vertical.jpeg) |
 
-La segunda imagen se recibió dos veces con distinto nombre; los bytes son idénticos. No se cuenta como una tercera vista. Las láminas RAK y el PoC son referencias, no fotos del prototipo.
+Las láminas RAK y el PoC corresponden a referencias de componentes y arquitectura.
 
 ## Vistas que faltan para la entrega final
 

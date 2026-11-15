@@ -17,6 +17,6 @@
 
 ## Conclusión
 
-El enlace cualitativo de A2 y las mediciones de antena son antecedentes técnicos. No cierran los criterios iniciales ni demuestran utilidad con usuarios. Los registros de entrevistas, observaciones, terreno y energía se incorporarán posteriormente según indicó el equipo. Distinguir funcionamiento técnico de utilidad: recibir una lectura no basta para demostrar que resuelve el problema.
+El enlace cualitativo de A2 y las mediciones de antena respaldan el desarrollo técnico. La validación de las metas iniciales requiere campañas de mensajes y energía, junto con entrevistas y observaciones de uso. Sus registros están pendientes de documentación.
 
-Para un sistema orientado a seguridad y comunicaciones en montaña, no afirmar cobertura garantizada, capacidad de rescate, autonomía ni fiabilidad fuera de las condiciones medidas. Señalar el alcance de las pruebas y los datos que todavía faltan.
+Los resultados se limitan a las condiciones de los ensayos documentados. La cobertura en montaña, la autonomía y la fiabilidad operativa requieren validación específica. El prototipo no constituye un servicio de rescate.

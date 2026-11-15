@@ -2,7 +2,7 @@
 
 ## Antecedente disponible
 
-El [Gill V1](gill-v1/README.md) aporta fuente OpenSCAD y cinco STL. Sus dimensiones son provisionales; el soporte del sensor no tiene anclajes específicos ni fijación a la base según el LEEME. No se acreditan impresión, ajuste o revisión de interferencias. El equipo aportará posteriormente posibles datos de fabricación. No equivale al gemelo completo ni a un ensamble Fusion 360 verificado.
+El [Gill V1](gill-v1/README.md) contiene una fuente OpenSCAD y cinco STL. Sus dimensiones son provisionales; el soporte del sensor requiere anclajes específicos y fijación a la base. Quedan pendientes la impresión de prueba, el ajuste, la revisión de interferencias y el ensamble completo en Fusion 360.
 
 ## Volúmenes de componentes
 

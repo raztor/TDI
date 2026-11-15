@@ -1,6 +1,6 @@
 # Datos de prueba
 
-Guardar aquí series originales y exportaciones del repositorio persistente. **No hay series ambientales ni logs originales incorporados.** Las capturas y lecturas históricas de antena están en [antenas del Avance 2](../antenas-avance2.md); las capturas de terminal se conservan dentro del informe A2. No se transcriben como si fueran una campaña original de adquisición.
+Esta carpeta reúne las series de medición y exportaciones del almacenamiento persistente. **Las series ambientales y los logs de mensajes están pendientes de versionar.** Las lecturas de antena están en [antenas del Avance 2](../antenas-avance2.md) y las capturas de terminal, en el informe A2.
 
 [mediciones.csv](mediciones.csv) contiene solo encabezados para un registro de formato largo: una variable por fila. Adaptar o documentar el esquema real antes de la campaña y conservar los datos originales sin sobrescribirlos.
 

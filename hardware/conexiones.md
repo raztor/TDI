@@ -4,7 +4,7 @@
 
 ## Conexiones observadas en antecedentes
 
-En las [fotografías LILYGO](fotos/README.md) se observan cables USB desde el módulo regulador hacia las placas y conexiones coaxiales hacia las antenas. A2 reporta panel solar, controlador, batería LiPo 3S, BMS y regulación. No se deducen de esas imágenes los terminales, polaridad, tensiones medidas ni el circuito completo.
+En las [fotografías LILYGO](fotos/README.md) se observan cables USB desde el módulo regulador hacia las placas y conexiones coaxiales hacia las antenas. A2 reporta panel solar, controlador, batería LiPo 3S, BMS y regulación. Quedan por registrar terminales, polaridad, tensiones medidas y circuito completo.
 
 La entrada usada por RAK y su ruta de regulación no están documentadas. A2 indica que la batería 3S no debe conectarse directamente a las entradas de batería o solar de la base RAK19007. El [PoC](../docs/avances/referencias/poc-nodo-fijo.jpeg) es conceptual y no sustituye el levantamiento eléctrico del montaje.
 

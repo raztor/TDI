@@ -2,7 +2,7 @@
 
 ## Implementación reportada y arquitectura prevista
 
-Fuente histórica: [Avance 1](avances/E1_Grupo_CerroSeguro_Con_Actas.docx) y [Avance 2](<avances/Informe Avance 2 - Cerro Seguro (2).pdf>). E1 seleccionó conceptualmente un PCB base modular; A2 documenta pruebas con placas comerciales. La [nota de decisiones](avances/actas-y-decisiones.md) explica la postergación del PCB y el descarte de una antena compartida por posible pérdida de paquetes.
+Fuente histórica: [Avance 1](avances/E1_Grupo_CerroSeguro_Con_Actas.docx) y [Avance 2](<avances/Informe Avance 2 - Cerro Seguro (2).pdf>). E1 seleccionó conceptualmente un PCB base modular; A2 documenta pruebas con placas comerciales. El [registro de decisiones](avances/actas-y-decisiones.md) explica la postergación del PCB y el descarte de una antena compartida por posible pérdida de paquetes.
 
 A2 reporta LoRa puro funcional y contiene capturas de telemetría y SOS/ACK. No reporta una red Meshtastic integrada ni persistencia y dashboard funcionando. El [PoC](avances/referencias/poc-nodo-fijo.jpeg) expresa una arquitectura objetivo y no constituye un circuito validado.
 
@@ -17,14 +17,14 @@ A2 reporta LoRa puro funcional y contiene capturas de telemetría y SOS/ACK. No 
 | Heltec Wireless Tracker y V3 | Equipos disponibles para desarrollar la red | Integración y roles efectivos no acreditados |
 | Solar, controlador, LiPo 3S, BMS y DC-DC | Alimentación reportada en A2 | Modelos, ajustes, ruta eléctrica y autonomía verificada |
 
-RAK aparece como equipo utilizado en el relato de A2; el montaje de caja fotografiado contiene LILYGO. No se representa todo el inventario como si formara un único circuito simultáneo. Detalle en [inventario histórico](../hardware/inventario-historico.md).
+RAK aparece como equipo utilizado en el relato de A2; el montaje de caja fotografiado contiene LILYGO. El esquema de interconexión de cada montaje está pendiente de documentación. Detalle en [inventario histórico](../hardware/inventario-historico.md).
 
 Las capacidades de la hoja de datos no implican que todas estén implementadas. El BME680 no mide CO₂ directamente; cualquier índice derivado requiere especificar algoritmo y condiciones.
 
 ## Recorrido de una medición
 
 1. Sensor: A2 muestra temperatura, humedad y presión en terminal; procedencia original, frecuencia y validación pendientes.
-2. Firmware: A2 muestra identificador y secuencia; código, versión, reloj y gestión de errores reproducible no aportados.
+2. Firmware: A2 muestra identificador y secuencia; código, versión, reloj y gestión de errores pendientes de documentación.
 3. Transporte: LoRa puro ensayado cualitativamente; configuración exacta y recuperación de cortes pendientes. Meshtastic previsto para la etapa siguiente.
 4. Persistencia: servicio o archivos, esquema e histórico, pendientes.
 5. Procesamiento: indicadores, ventanas y umbrales, pendientes.
@@ -40,11 +40,11 @@ El [diagrama conceptual de E1](avances/referencias/arquitectura-e1.png) muestra 
 | Intervalo de muestreo | Pendiente | Pendiente |
 | Intervalo de transmisión | Pendiente | Pendiente |
 | Banda, variante de módulo y antena | LILYGO separadas 433/470 y 868/915 MHz; dipolo usado para 433 y Laird para 915 según A2. RAK por confirmar | Frecuencia efectiva de ensayo, revisión y compatibilidad por verificar |
-| Protocolo y formato del mensaje | LoRa puro; capturas AMB, SOS y ACK, con identificador y secuencia | Esquema formal, código y parámetros no aportados; Meshtastic pendiente |
+| Protocolo y formato del mensaje | LoRa puro; capturas AMB, SOS y ACK, con identificador y secuencia | Esquema formal, código y parámetros pendientes de versionar; Meshtastic pendiente |
 | Origen del reloj y zona horaria | Pendiente | Pendiente |
 | Detección de muestra duplicada | Pendiente | Pendiente |
 | Política ante pérdida de conexión | Pendiente | Pendiente |
-| Fuente de energía y autonomía | Panel/controlador/LiPo 3S/BMS/DC-DC reportados; sin autonomía medida aportada | Controlador inicial sustituido; ajustes y verificación final pendientes |
+| Fuente de energía y autonomía | Panel/controlador/LiPo 3S/BMS/DC-DC reportados; medición de autonomía pendiente | Controlador inicial sustituido; ajustes y verificación final pendientes |
 
 ## Repositorio de datos
 
