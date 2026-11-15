@@ -24,6 +24,14 @@ Documentación de los componentes electrónicos confirmados de Cerro Seguro. Las
 - Referencia para temperatura, humedad relativa, presión y sensado de gas; interfaz I²C y alimentación de 3,3 V.
 - La salida de gas no es una medición directa de CO₂. Un índice de calidad del aire exige declarar el algoritmo y biblioteca que efectivamente se utilicen.
 
+## Antecedentes internos disponibles
+
+- [Avance 1 con actas](docs/avances/E1_Grupo_CerroSeguro_Con_Actas.docx): problema, alternativas de integración, metas preliminares y actas del 28 de agosto y 4 de septiembre de 2026.
+- [Informe Avance 2](<docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>), 25 de octubre de 2026: equipos, montaje, ensayo LoRa puro, capturas de terminal y NanoVNA, iteraciones de energía y fallas.
+- [miniTarea](docs/avances/miniTarea.docx): tema y pregunta de investigación; fuente sobre parámetros regionales de LoRaWAN y cuestiones por investigar. Su referencia a LoRaWAN no significa que los ensayos LoRa puro utilicen ese protocolo.
+- [Gill V1](diseño-3d/gill-v1/README.md): paquete original con fuente OpenSCAD y cinco exportaciones STL conceptuales.
+- [Actas y decisiones de diseño](docs/avances/actas-y-decisiones.md): acuerdos, alternativas de integración y motivos de descarte.
+
 ## Librerías y dependencias
 
 Pendiente de incorporar el firmware y dashboard para registrar nombre, versión exacta, uso, URL oficial y licencia de cada dependencia. No hay un inventario de software verificado todavía.
@@ -32,4 +40,6 @@ Pendiente de incorporar el firmware y dashboard para registrar nombre, versión 
 
 Pendiente de revisar la implementación. Registrar archivo y función, fuente, adaptación realizada y prueba de validación para cada fragmento utilizado.
 
-## Uso de Inteligencia Artificial
+## Uso de inteligencia artificial
+
+Se utilizó inteligencia artificial como apoyo para ordenar documentos e ideas, analizar ideas y alternativas de diseño, organizar el repositorio, convertir documentos Markdown a PDF con formato estilizado y auditar el contenido del repositorio para identificar información faltante.

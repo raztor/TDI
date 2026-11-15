@@ -1,0 +1,14 @@
+CERRO SEGURO — Escudo Gill V1 / prototipo conceptual
+
+1. Abrir CerroSeguro_Gill_V1.scad con OpenSCAD.
+2. Cambiar la variable 'part' para seleccionar cada pieza.
+3. Pulsar F6 (Render) y exportar STL.
+4. Los archivos STL de ejemplo adjuntos se generaron con los parámetros provisionales.
+5. Antes de imprimir: medir el RAK1906 real, revisar posición del conector y cable, definir separación de la caja existente, fijaciones y ruta del cable I2C.
+6. El soporte del sensor es una bandeja preliminar: NO tiene aún anclajes específicos a la PCB. Requiere adaptación y validación mecánica.
+7. Se requieren tres varillas roscadas M4, tuercas/arandelas y tornillería de pared adecuados al soporte real. No se incluye tornillería en STL.
+8. El modelo no certifica estanqueidad, resistencia al viento, radiación ni exactitud meteorológica.
+9. La geometría de las lamas y el ensamblaje deben verificarse físicamente: comprobar ventilación, drenaje, sombras y evitar el contacto de cables con bordes.
+10. Imprimir piezas de prueba antes de fabricar el conjunto completo. ASA blanco recomendado; calibrar retracción y contracción según impresora.
+
+NOTA: La bandeja no se conecta mecánicamente a la base en esta V1. El modelo es un punto de partida editable, no un kit listo para instalación exterior.

@@ -1,9 +1,10 @@
 # Diseño 3D y gemelo del prototipo
 
-**Estado:** modelos, planos y renders pendientes de incorporar.
+**Estado:** [Gill V1 conceptual](gill-v1/README.md) incorporado con fuente OpenSCAD y cinco STL. También existen [STL Ruuvi de referencia](stl/gill/README.md) y un [STEP candidato LILYGO](step/README.md). El gemelo completo, planos y renders finales siguen pendientes.
 
 | Entregable | Ubicación | Requisito |
 |---|---|---|
+| Escudo conceptual Gill V1 | [gill-v1/](gill-v1/README.md) | Fuente y exportaciones disponibles; dimensiones provisionales y anclajes pendientes |
 | Ensamble editable | [fusion/](fusion/README.md) | Archivo `.f3d` o `.f3z` que abre correctamente |
 | Planos técnicos | [planos/](planos/README.md) | PDF con vistas, cotas funcionales, tolerancias y escala |
 | Renders | [renders/](renders/README.md) | Vista exterior y vista interior o explosionada |

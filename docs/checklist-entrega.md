@@ -2,6 +2,8 @@
 
 **Evaluación:** 23 de noviembre de 2026. Completar y subir los entregables antes de la presentación.
 
+El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los resultados y pendientes anteriores. Esta lista corresponde a la entrega final. La guía de evaluación está pendiente de versionar y de cotejo con los requisitos.
+
 ## Software · 30 %
 
 - [ ] Dispositivo capturando datos reales de forma continua y confiable.

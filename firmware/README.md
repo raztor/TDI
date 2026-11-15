@@ -1,13 +1,19 @@
 # Firmware
 
-Código del dispositivo que realiza las mediciones reales. La implementación está pendiente; esta carpeta no contiene firmware ejecutable.
+El [Avance 2](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>), página física 7, reporta ensayos con firmware de LoRa puro y contiene capturas de TX/RX ambiental y SOS/ACK. El código de los ensayos está pendiente de versionar. La referencia técnica disponible es el informe.
+
+## Antecedentes del firmware de prueba
+
+Las capturas muestran temperatura en °C, humedad en % y presión en hPa, identificador de nodo, secuencia y estado CRC. La secuencia SOS muestra descarte de un pulso breve, pulsación sostenida de 2 segundos, envío y confirmación ACK. Esto documenta el flujo presentado en A2, sin probar su implementación reproducible ni una tasa de entrega, latencia, persistencia o fiabilidad de emergencia.
+
+El informe identifica RAK19007/RAK4631/RAK1906 y dos LILYGO LoRa32 de bandas distintas. Las fotos de la caja corresponden al montaje LILYGO. El montaje RAK requiere su propia documentación de conexiones. Meshtastic es la integración objetivo posterior, no el protocolo usado en estos ensayos.
 
 ## Entorno reproducible
 
 | Parámetro | Valor |
 |---|---|
-| Placa y revisión | Pendiente |
-| Microcontrolador | Pendiente |
+| Placa y revisión | RAK19007 + RAK4631 y LILYGO LoRa32 reportados en A2; revisión y programa por equipo pendientes |
+| Microcontrolador | nRF52840 en RAK4631 según A2; variante concreta de LILYGO por confirmar |
 | IDE o herramienta de compilación y versión | Pendiente |
 | Paquete de soporte de placa y versión | Pendiente |
 | Archivo de entrada del programa | Pendiente |
@@ -33,7 +39,9 @@ Documentar las variables necesarias, su significado, unidad y valor por defecto:
 4. Compilar con el procedimiento exacto de la plataforma elegida.
 5. Cargar en la placa y comprobar la primera medición válida.
 
-**Comando de compilación:** pendiente. **Comando o procedimiento de carga:** pendiente. **Resultado de compilación:** no ejecutado.
+**Comando de compilación:** no consignado en A2. **Procedimiento de carga:** no consignado. **Validación reproducible de compilación:** pendiente del código y del entorno de desarrollo.
+
+También faltan frecuencia central exacta por ensayo, SF, BW, CR, potencia, parámetros de trama, biblioteca y versión. El informe explica que deben coincidir entre emisor y receptor, pero no fija sus valores.
 
 ## Comportamiento a documentar
 

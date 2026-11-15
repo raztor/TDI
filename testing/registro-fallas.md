@@ -1,9 +1,13 @@
 # Registro de fallas y correcciones
 
-**Estado:** no hay fallas documentadas todavía. No equivale a afirmar que el sistema esté libre de fallas.
+**Estado:** tres incidencias históricas documentadas en el [Avance 2](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>), página física 12. El informe está fechado el 25 de octubre de 2026; no consigna la fecha exacta de cada incidente. La repetición cuantitativa de las pruebas está pendiente de registro.
 
 | ID | Fecha/prueba | Síntoma y evidencia | Impacto | Causa investigada | Corrección y revisión | Resultado de repetir la prueba | Estado |
 |---|---|---|---|---|---|---|---|
-| Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Sin registrar |
+| A2-F01 | Durante integración de A2; fecha exacta no consignada | SunSaver-20 desconectaba la carga prematuramente con la LiPo 3S; relato y figura 10a | Interrupción de alimentación | A2 atribuye la incompatibilidad al perfil/umbrales del controlador para otra batería; faltan mediciones | Sustitución por controlador blanco/azul descrito para LiPo 3S; figura 10b | Ajustes de carga/desconexión y validación eléctrica final pendientes | Sustituido; verificación abierta |
+| A2-F02 | Durante integración de A2; fecha exacta no consignada | Batería LiPo hinchada según relato | Batería fuera de servicio | No determinada | Retirada de servicio y descartada según A2 | Análisis causal y medición posterior pendientes | Retirada; causa sin determinar |
+| A2-F03 | Durante integración de A2; fecha exacta no consignada | Transmisor LILYGO averiado; figura 10c con “Critical fault” | Pérdida de una unidad de radio | No determinada | No se documenta una reparación o sustitución concreta de esa unidad | Prueba posterior pendiente | Avería; resolución sin acreditar |
 
-La entrega debe analizar al menos una falla real y cómo fue resuelta. Si una corrección aún no se ha comprobado, mantenerla abierta y registrar el próximo ensayo. No inventar fallas para completar el documento.
+No se estableció una causa común para la batería y la placa. El análisis de antena compartida descartado por posible pérdida de paquetes pertenece a [decisiones de diseño](../docs/avances/actas-y-decisiones.md), no a fallas experimentales observadas.
+
+Cada corrección se cierra con una repetición de la prueba y su resultado registrado. Las incidencias sin verificación permanecen abiertas.

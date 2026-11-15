@@ -1,5 +1,9 @@
 # Revisión del diseño
 
+## Antecedente disponible
+
+El [Gill V1](gill-v1/README.md) contiene una fuente OpenSCAD y cinco STL. Sus dimensiones son provisionales; el soporte del sensor requiere anclajes específicos y fijación a la base. Quedan pendientes la impresión de prueba, el ajuste, la revisión de interferencias y el ensamble completo en Fusion 360.
+
 ## Volúmenes de componentes
 
 | Componente de la BOM | Dimensiones reales (mm) | Fuente o medición | Componente del ensamble | Posición/orientación | Verificado |
