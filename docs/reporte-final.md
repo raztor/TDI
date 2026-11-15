@@ -2,7 +2,7 @@
 
 **Curso:** TEI201, Taller de Diseño en Ingeniería. **Entrega:** Avance 3, 23 de noviembre de 2026.
 
-**Estado:** estructura de reporte; resultados e implementación por incorporar.
+**Estado:** estructura del Avance 3. Antecedentes de E1 y A2 incorporados en [revisión de avances](avances/revision-avances-1-2.md); resultados finales e implementación completa por incorporar.
 
 ## 1. Resumen
 
@@ -10,11 +10,11 @@ Pendiente: síntesis del problema, solución implementada, principales resultado
 
 ## 2. Equipo
 
-Pendiente: integrantes, responsabilidades y contribuciones verificadas.
+Equipo: Benjamín Muñoz, Benjamín Quijada, Exequiel Najle y Javiera Cárdenas. Contribuciones históricas en E1 y [README](../README.md); responsabilidades y aportes específicos del Avance 3 por completar.
 
 ## 3. Problema y objetivos
 
-Presentar el problema del Avance 1, usuario, evidencia y criterios de éxito. Ver [problema y alcance](problema-y-alcance.md).
+El Avance 1 define alertas y monitoreo local en cerros de la Región Metropolitana y una plataforma modular mantenible. Problema, usuarios y metas preliminares están recuperados en [problema y alcance](problema-y-alcance.md); su validación sigue pendiente.
 
 ## 4. Arquitectura y ciclo de datos
 
@@ -34,7 +34,7 @@ Describir gemelo completo, dimensiones, parametrización, tolerancias y acceso a
 
 ## 8. Protocolo y resultados
 
-Documentar condiciones, criterios y procedimientos ejecutados. Presentar resultados cuantitativos, tamaño de muestra, evidencia, fallas y correcciones. Ver [testing](../testing/README.md). Resultados: pendientes.
+Documentar condiciones, criterios y procedimientos ejecutados. A2 aporta enlace cualitativo, lecturas NanoVNA y fallas históricas; ver [testing](../testing/README.md). Resultados completos de T01–T08 y validación del Avance 3: pendientes.
 
 ## 9. Validación del problema
 

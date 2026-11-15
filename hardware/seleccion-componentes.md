@@ -2,6 +2,12 @@
 
 La selección debe relacionar cada componente con una necesidad del problema. Los valores deben provenir de la hoja de datos de la revisión efectivamente utilizada.
 
+## Decisiones de los avances anteriores
+
+E1 comparó placas comerciales interconectadas, PCB integrado y PCB base modular; seleccionó este último como dirección conceptual. Para el prototipo de A2 se utilizaron placas comerciales. El equipo confirmó que la fabricación del PCB con varios transmisores/controladores, gestión energética y BMS se postergó por complejidad y tiempo. La antena única compartida mediante switching RF quedó en análisis y se descartó por posible pérdida de paquetes, sin fabricar circuito ni medir esa pérdida. [Actas y evolución](../docs/avances/actas-y-decisiones.md).
+
+El [inventario histórico](inventario-historico.md) recupera los equipos utilizados, disponibles y retirados de A2. Las especificaciones de la tabla siguiente son referencias documentales existentes, no mediciones del prototipo.
+
 | Componente y modelo | Necesidad que cubre | Rango | Precisión o resolución | Alimentación y consumo | Interfaz y compatibilidad | Justificación | Fuente |
 |---|---|---|---|---|---|---|---|
 | RAK19007 | Base de integración y alimentación | Base 30 × 60 mm | No aplica como sensor | USB 5 V / batería Li-ion 3,7 V nominal; consumo del conjunto por medir | 1 ranura Core, 1 IO y 4 de sensor | Integración modular; confirmar montaje y presupuesto de energía | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/) |
@@ -24,6 +30,8 @@ Mantener cantidades y costos en [BOM.xlsx](BOM.xlsx), y fuentes de referencia en
 
 ## Otros elementos del nodo de prueba
 
-Se ha descrito un nodo de prueba con transmisores para 433 y 915 MHz, dos antenas, controlador solar y batería LiPo con BMS. Faltan modelos, conexiones y cantidades consolidadas. Confirmar cómo se relacionan los transmisores con el RAK4631 antes de agregarlos a la BOM para evitar duplicar componentes.
+A2 identifica dos LILYGO LoRa32 para 433 y 915 MHz, dipolo artesanal, antena Laird, controlador solar, LiPo 3S, BMS y DC-DC. El conjunto RAK se reporta como utilizado por separado del montaje LILYGO fotografiado. Faltan revisiones, conexiones y cantidades consolidadas; no agrupar todo como un único circuito ni duplicar radios en la BOM.
+
+El controlador inicial SunSaver-20 se sustituyó tras desconexiones prematuras. El informe no cierra la validación de ajustes del controlador final. Las dos antenas tienen [lecturas NanoVNA documentadas](../testing/antenas-avance2.md); no prueban alcance ni ganancia.
 
 No asumir que una misma variante RAK4631 sirve para ambas bandas. Verificar compatibilidad de antena, configuración regional y límites de entrada de cada placa antes de conectar alimentación solar.

@@ -2,10 +2,12 @@
 
 ## Descripción del ensamble
 
-- Elementos de fijación desmontables: pendiente.
-- Etiquetas de cables y conectores: pendiente.
+- Elementos de fijación: A2 y las [fotos](fotos/README.md) muestran caja abierta y soporte interior atornillado; herramientas y procedimiento exacto pendientes.
+- Etiquetas de cables y conectores: las imágenes tienen rótulos explicativos; no acreditan etiquetado físico de todos los cables.
 - Herramientas necesarias: pendiente.
 - Acceso a puertos, botones y alimentación: pendiente.
+
+Las fotos acreditan acceso visual al interior de la caja histórica; no una prueba completa de desmontaje, reemplazo, cierre y recuperación funcional. No se marca T07 como ejecutada.
 
 ## Procedimiento de apertura
 
