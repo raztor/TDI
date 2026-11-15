@@ -1,5 +1,17 @@
 # Arquitectura del sistema
 
+## Arquitectura del Avance 3
+
+El RAK4631 de 915 MHz utiliza Meshtastic con telemetría del RAK1906 y un módulo de botón SOS. La LILYGO de 915 MHz mantiene firmware oficial y se conecta por USB a un computador. El [servicio de estación](../station/README.md) guarda telemetría y alertas en SQLite y devuelve la confirmación del SOS después del commit.
+
+Recorrido: RAK → red Meshtastic → LILYGO → USB → estación → SQLite. La confirmación vuelve desde la estación al RAK por la LILYGO. Los nodos propios usan CLIENT_MUTE; el reenvío intermedio puede realizarlo la infraestructura existente de la malla.
+
+La red se configura con región ANZ, preset LongFast, slot 20 y canal primario LongFast, según [MeshChile](https://meshchile.cl/node-configuration). El camino de adquisición y confirmación funciona por RF y USB; MQTT no forma parte de la persistencia de la estación.
+
+El [protocolo SOS](../firmware/meshtastic/README.md) correlaciona cada respuesta con el evento y la estación configurada. El ACK nativo de radio no confirma almacenamiento. Los duplicados se registran una vez y reciben otra confirmación. Sin respuesta, el RAK limita sus reintentos y mantiene el estado UNCONFIRMED.
+
+Conexión elegida para el pulsador: IO6/GPIO 10 y GND mediante RAK13002; instalación pendiente. No se utilizan LED ni buzzer de aplicación. El dashboard y la prueba física completa están pendientes; la validación de software se registra en [firmware y estación](../testing/firmware-software.md).
+
 ## Implementación reportada y arquitectura prevista
 
 Fuente histórica: [Avance 1](avances/E1_Grupo_CerroSeguro_Con_Actas.docx) y [Avance 2](<avances/Informe Avance 2 - Cerro Seguro (2).pdf>). E1 seleccionó conceptualmente un PCB base modular; A2 documenta pruebas con placas comerciales. El [registro de decisiones](avances/actas-y-decisiones.md) explica la postergación del PCB y el descarte de una antena compartida por posible pérdida de paquetes.

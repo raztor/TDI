@@ -34,11 +34,17 @@ Documentación de los componentes electrónicos confirmados de Cerro Seguro. Las
 
 ## Librerías y dependencias
 
-Pendiente de incorporar el firmware y dashboard para registrar nombre, versión exacta, uso, URL oficial y licencia de cada dependencia. No hay un inventario de software verificado todavía.
+- [Meshtastic firmware v2.7.26.54e0d8d](https://github.com/meshtastic/firmware/tree/v2.7.26.54e0d8d), commit `54e0d8d0ab2ff56b3a9ce967e53f79e49af560fb`. Base del RAK4631, transporte y telemetría ambiental. Licencia GPL-3.0; texto en [COPYING](firmware/meshtastic/COPYING).
+- [Meshtastic Adafruit nRF52 Arduino](https://github.com/meshtastic/Adafruit_nRF52_Arduino/tree/9ddcbc9568b12f102f9e88bd4d1b88ea789213a4), framework fijado al commit indicado. Conserva sus licencias de componentes upstream.
+- [PlatformIO Core](https://github.com/platformio/platformio-core), versión 6.1.18, licencia Apache-2.0. Compilación con plataforma Nordic 10.11.0 y toolchain 1.90301.200702.
+- [Meshtastic Python](https://github.com/meshtastic/python), versión 2.7.11, licencia GPL-3.0. API serie para la estación y configuración de nodos.
+- SQLite y módulos de biblioteca estándar de Python: persistencia, fechas UTC, cola y reconexión. La versión de SQLite depende de la distribución de Python instalada.
+
+Dependencias transitivas de sensores y radio: manifiestos de la revisión fijada de Meshtastic. La selección final de bibliotecas del dashboard sigue pendiente.
 
 ## Código externo adaptado
 
-Pendiente de revisar la implementación. Registrar archivo y función, fuente, adaptación realizada y prueba de validación para cada fragmento utilizado.
+La estructura de `CerroSeguroModule` sigue la [API de módulos](https://meshtastic.org/docs/development/device/module-api/) y los ejemplos `ReplyModule` y `SinglePortModule` de la revisión fijada. La adquisición del sensor utiliza el módulo de telemetría upstream. La estación utiliza la API `SerialInterface` y `sendText`; no implementa un transporte LoRa alternativo. La integración y las pruebas se describen en [firmware](firmware/meshtastic/README.md) y [estación](station/README.md).
 
 ## Uso de inteligencia artificial
 

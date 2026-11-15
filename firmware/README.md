@@ -1,55 +1,37 @@
 # Firmware
 
-El [Avance 2](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>), página física 7, reporta ensayos con firmware de LoRa puro y contiene capturas de TX/RX ambiental y SOS/ACK. El código de los ensayos está pendiente de versionar. La referencia técnica disponible es el informe.
+El RAK4631 utiliza Meshtastic con un módulo SOS propio y la telemetría ambiental del RAK1906/BME680. La LILYGO de 915 MHz utiliza firmware oficial y actúa como interfaz USB de la estación del computador. Ambos nodos envían y reciben mensajes con rol CLIENT_MUTE.
 
-## Antecedentes del firmware de prueba
+## Implementación
 
-Las capturas muestran temperatura en °C, humedad en % y presión en hPa, identificador de nodo, secuencia y estado CRC. La secuencia SOS muestra descarte de un pulso breve, pulsación sostenida de 2 segundos, envío y confirmación ACK. Esto documenta el flujo presentado en A2, sin probar su implementación reproducible ni una tasa de entrega, latencia, persistencia o fiabilidad de emergencia.
+| Componente | Código o configuración | Función |
+|---|---|---|
+| Módulo SOS RAK | [meshtastic/](meshtastic/README.md) | Antirrebote, pulsación sostenida de dos segundos, evento único, reintentos y confirmación |
+| Sensor RAK1906 | Telemetría ambiental de Meshtastic | Adquisición de temperatura y variables ambientales |
+| Perfil RAK | [rak-meshchile.yaml](config/rak-meshchile.yaml) | ANZ, LongFast, slot 20, CLIENT_MUTE y telemetría |
+| Perfil LILYGO | [lilygo-meshchile.yaml](config/lilygo-meshchile.yaml) | Meshtastic oficial, CLIENT_MUTE y enlace USB |
+| Estación | [station/](../station/README.md) | Recepción por USB, SQLite y ACK posterior al commit |
 
-El informe identifica RAK19007/RAK4631/RAK1906 y dos LILYGO LoRa32 de bandas distintas. Las fotos de la caja corresponden al montaje LILYGO. El montaje RAK requiere su propia documentación de conexiones. Meshtastic es la integración objetivo posterior, no el protocolo usado en estos ensayos.
+La LILYGO confirma el transporte de los mensajes a través de Meshtastic. El estado del SOS cambia a REGISTERED únicamente con la respuesta propia de la estación después de guardar la alerta; el ACK nativo de radio no cierra el evento.
 
-## Entorno reproducible
+## Botón y alimentación
 
-| Parámetro | Valor |
-|---|---|
-| Placa y revisión | RAK19007 + RAK4631 y LILYGO LoRa32 reportados en A2; revisión y programa por equipo pendientes |
-| Microcontrolador | nRF52840 en RAK4631 según A2; variante concreta de LILYGO por confirmar |
-| IDE o herramienta de compilación y versión | Pendiente |
-| Paquete de soporte de placa y versión | Pendiente |
-| Archivo de entrada del programa | Pendiente |
-| Bibliotecas y versiones | Pendiente; registrar en [FUENTES.md](../FUENTES.md) |
-| Puerto y velocidad del monitor serial | Pendiente |
+Pulsador normalmente abierto entre IO6 y GND de una RAK13002 instalada en la ranura IO de la RAK19007. IO6 corresponde a GPIO 10 del RAK4631. La entrada utiliza pull-up interna; no se añaden LED ni buzzer. La instalación física del pulsador y del adaptador está pendiente.
 
-## Organización
-
-- `src/`: módulos del firmware; separar adquisición, conexión, persistencia y lógica de indicadores según la implementación.
-- [libraries/](libraries/README.md): dependencias locales solo cuando corresponda; preferir un manifiesto de versiones reproducible.
-
-Si se usa Arduino IDE, conservar la relación de nombre entre carpeta de sketch y archivo `.ino`. Si se usa PlatformIO, incluir su `platformio.ini` real. No mantener dos configuraciones que no se prueben.
-
-## Configuración
-
-Documentar las variables necesarias, su significado, unidad y valor por defecto: pines, sensores, intervalo de captura, zona horaria, endpoint de datos y estrategia de reconexión. Los secretos deben configurarse localmente en archivos excluidos de Git; publicar únicamente un archivo de ejemplo sin credenciales.
+El GPIO y los parámetros de envío se definen al preparar el firmware. La dirección de la estación debe ser el NodeID real de la LILYGO. Sin dirección, el módulo SOS permanece deshabilitado.
 
 ## Compilación y carga
 
-1. Instalar las versiones de herramientas indicadas arriba.
-2. Instalar las dependencias declaradas.
-3. Preparar la configuración local y verificar conexiones y alimentación con el [esquemático](../hardware/esquematicos/README.md).
-4. Compilar con el procedimiento exacto de la plataforma elegida.
-5. Cargar en la placa y comprobar la primera medición válida.
+La [guía del módulo](meshtastic/README.md) fija la versión de Meshtastic, framework, compilador y comandos de preparación. El sensor, el botón y el recorrido completo deben verificarse con hardware antes de presentar resultados funcionales.
 
-**Comando de compilación:** no consignado en A2. **Procedimiento de carga:** no consignado. **Validación reproducible de compilación:** pendiente del código y del entorno de desarrollo.
+La compilación produce archivos UF2 y HEX para RAK4631 con bootloader Arduino. La revisión exacta de la LILYGO debe confirmarse antes de instalar su firmware oficial. No cargar un binario destinado a otra placa o bootloader.
 
-También faltan frecuencia central exacta por ensayo, SF, BW, CR, potencia, parámetros de trama, biblioteca y versión. El informe explica que deben coincidir entre emisor y receptor, pero no fija sus valores.
+## Antecedente del Avance 2
 
-## Comportamiento a documentar
+El [informe A2](<../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>) documenta ensayos con LoRa puro y capturas de telemetría y SOS/ACK. El código original de esos ensayos está pendiente de versionar. La implementación actual utiliza el transporte Meshtastic y un protocolo de confirmación de registro descrito en la guía del módulo.
 
-- Frecuencia de muestreo y relación con el fenómeno medido.
-- Validación de rango, valores ausentes y errores del sensor.
-- Unidades, marcas de tiempo e identificador del dispositivo.
-- Recuperación de fallas de red y de alimentación, sin duplicar o perder datos silenciosamente.
-- Formato de mensajes y destino del histórico.
-- Indicadores derivados, umbrales y límites de interpretación.
+## Verificación
 
-Comentar decisiones técnicas y manejo de errores. Enlazar las [pruebas](../testing/protocolo-pruebas.md) que verifican cada módulo.
+- [Prueba de integración con dispositivos](../testing/sos-meshtastic.md).
+- [Registro de validación de software](../testing/firmware-software.md).
+- Pruebas de estado del botón en `tests/sos_state_test.cpp` y receptor en `../station/tests/`.

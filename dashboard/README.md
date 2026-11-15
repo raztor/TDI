@@ -1,6 +1,6 @@
 # Dashboard y repositorio de datos
 
-**Estado:** plataforma, implementación y acceso pendientes.
+**Estado:** servicio de ingestión USB y persistencia SQLite implementado en [station/](../station/README.md). Interfaz web, API de consulta y validación con datos físicos pendientes.
 
 Los antecedentes de E1 contemplan receptor y registro; A2 muestra terminales TX/RX ambiental y SOS/ACK. No se aporta un dashboard ni un histórico persistente verificable. Las capturas de terminal son evidencia del flujo presentado en el informe, no un servicio de visualización funcionando.
 
