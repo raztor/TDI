@@ -4,6 +4,8 @@ Cerro Seguro es un proyecto de seguridad y comunicaciones en montaña, con un pr
 
 **Estado al 15 de noviembre de 2026:** el Avance 2 documenta un enlace LoRa funcional, fotografías del montaje, capturas de terminal, mediciones de antenas y fallas de integración. La reproducción de los ensayos y la validación del sistema completo siguen pendientes. Ver [estado y pendientes de los avances 1 y 2](docs/avances/revision-avances-1-2.md).
 
+La implementación inicial para el Avance 3 añade [firmware SOS sobre Meshtastic](firmware/meshtastic/README.md) y una [estación USB con SQLite](station/README.md). El botón externo, la validación con dispositivos y el dashboard web siguen pendientes. El RAK y la LILYGO participan como clientes de la red MeshChile de 915 MHz.
+
 ## Descripción del proyecto
 
 | Campo | Definición |
@@ -96,7 +98,7 @@ Usar la rama o revisión correspondiente al prototipo que se va a probar.
 3. Seleccionar la placa y el puerto correctos; compilar y cargar con el comando o procedimiento documentado allí.
 4. Confirmar lecturas reales, unidad, fecha/hora y frecuencia de captura.
 
-**Pendiente:** incorporar el código y los comandos exactos de compilación y carga usados en A2. Se conocen las familias de placas; IDE, versiones, parámetros y revisión exacta no están documentados.
+Para la implementación actual, seguir los [comandos de compilación y configuración](firmware/meshtastic/README.md). El código original del ensayo LoRa puro de A2 sigue pendiente de versionar.
 
 ### 4. Conectar almacenamiento y dashboard
 

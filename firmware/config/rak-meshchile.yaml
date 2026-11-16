@@ -1,0 +1,26 @@
+config:
+  device:
+    role: CLIENT_MUTE
+    led_heartbeat_disabled: true
+  lora:
+    region: ANZ
+    use_preset: true
+    modem_preset: LONG_FAST
+    channel_num: 20
+    tx_enabled: true
+    hop_limit: 3
+  power:
+    is_power_saving: false
+module_config:
+  telemetry:
+    environment_measurement_enabled: true
+    environment_update_interval: 900
+    environment_display_fahrenheit: false
+  detection_sensor:
+    enabled: false
+  external_notification:
+    enabled: false
+  canned_message:
+    enabled: false
+  mqtt:
+    enabled: false

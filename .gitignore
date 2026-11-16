@@ -19,6 +19,9 @@ venv/
 __pycache__/
 *.py[cod]
 
+# Base de ejecución local; las exportaciones de evidencia van en testing/datos/.
+station-data/
+
 # Archivos temporales del sistema y editores
 .DS_Store
 Thumbs.db
