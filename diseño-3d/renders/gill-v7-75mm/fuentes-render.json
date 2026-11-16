@@ -1,0 +1,40 @@
+{
+  "unidades": "mm",
+  "teselacion_mm": 0.12,
+  "fuentes_sha256": {
+    "diseño-3d/fusion/gill-v7-75mm/V4_Base_200_Sin_Varillas.step": "54f39f06fbcedcfa7a646563bb5a5aa95ff50deb599f3f5c1dee6b500c12e570",
+    "diseño-3d/fusion/gill-v7-75mm/V7_Guia_T_235_5_Tope_y_Inserto_Axial.step": "17d6e88dd894bf7bd7fad31add58789acf3b82ee56f0e809c763b428b6defd03",
+    "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_236_45gr_Paso23_5.step": "979755531b25afa512cc91a5700422fe5dd508260fe733dcc772a300805695d0",
+    "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_Superior_236_45gr.step": "da235af06472113e4fa6bad3a1150bbe2ce2360b8ad4c8fcf10e4bc6e97bea58",
+    "diseño-3d/fusion/gill-v7-75mm/V7_Tapa_256_Pendiente8gr.step": "7fbcd6e578553ce93e14f8e1e0077a20b8edcbd56b660a2f50f96639690d25c3",
+    "diseño-3d/fusion/gill-v7-75mm/V7_Disco_Antena_60_Paso16_2.step": "ead2db2d680a9713c625e6e9685f9f37acfaee4c34973f27c7d227a8a814f839",
+    "diseño-3d/fusion/gill-v7-75mm/V3_Placa_Vertical_154.step": "6dbc963314ca907cc5643cefff215e6c1963b64ab5c345a34562b4fb099463e3",
+    "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_Controlador.step": "e335ad9549c77cceeff09a91c859e5fbf9fbd6d198aed7dd7936c2a2bca92036",
+    "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_DCDC.step": "6d2a7bda7c5b44f542a8564569ed6fe732a97480c814bb31329ada6052b3ff6c",
+    "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_RAK.step": "d7b9ca47d427735c5ec321cf535a07b549e1b70c846f39e4582422b34ff7592b",
+    "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_BMS.step": "6658793dcc94acd72bb251f633f1ef64c468865c6193298fc7d7e784fbafa7c8",
+    "diseño-3d/fusion/componentes-nodo/modelos/04_Bateria_Medida_120x50x40.step": "be8f9f608fe28e8da1292fb1dd63b343c65504e1a9351b8270350b81733d380f",
+    "diseño-3d/fusion/componentes-nodo/modelos/09_Laird_TRAB9023P_Montaje_Panel.step": "674e3720bfc453fb805d86e0269c24031758412ef6485d7d11d540f7c116dfd1",
+    "RAK19007.stp": "65ce23af1713951c5a5bc02ba8628722846f1639e8d9179785591ac328211bdf",
+    "RAK4631.stp": "7053a3d74ec8e3c0aa156051c04e3016a40a0a6c61691f1c79677ef0a73d8208",
+    "RAK1906.stp": "7f248821222464650d02b60e92b7fc83f604aaa950fa1308736123b3ec7cddd7"
+  },
+  "alcance": "Piezas STEP V7 exactas teseladas; electrónica comercial de referencia. Exterior completo no fabricado. Interior impreso: 160 g PLA.",
+  "objetos": 1474,
+  "herramientas": {
+    "CadQuery": "2.8.0",
+    "Blender": "5.1.2"
+  },
+  "renderizado": {
+    "motor": "Cycles",
+    "muestras": 64,
+    "resolucion_px": [
+      2000,
+      2200
+    ]
+  },
+  "scripts_sha256": {
+    "tools/renders/preparar.py": "523c24e32f85bcfad41364bd14f6df08ea8d192c516a2122b84d2bfaa1422647",
+    "tools/renders/renderizar.py": "9a552ad7ce46e4912288d3be04619be20f690666a81800fd848d67f62e15135d"
+  }
+}

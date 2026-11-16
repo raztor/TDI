@@ -138,3 +138,7 @@ Para cada prueba registrar valores esperados y observados, archivos de evidencia
 **Criterio:** información verificable que responde al problema, resultados interpretables y limitaciones explícitas. La demo debe funcionar en vivo.
 
 **Evidencia:** datos originales, gráficos, conclusiones y [registro de ensayos](../docs/presentacion/ensayos.md).
+
+## Registros disponibles y alcance del protocolo
+
+La [serie de distancia/SNR](pruebas-distancia.md) conserva veinte observaciones ya realizadas, tabla original, CSV y gráfica. Se registra como evidencia recibida, sin afirmar que este protocolo hubiera sido aplicado antes del ensayo. El cierre funcional conserva por separado el resultado 20/20 bajo 60 s. Estas evidencias no cierran automáticamente todos los casos T01–T08: tiempos, reemplazo, exactitud y condiciones ambientales requieren registros propios.

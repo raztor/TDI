@@ -27,6 +27,10 @@ Las líneas visibles y ocultas se obtienen de los [STEP V7](../fusion/gill-v7-75
 
 Objetivos nominales: ±0,3mm en longitudes hasta150mm; ±0,5mm sobre150mm; ±0,2mm en taladros y ±1° en ángulos. El equipo confirmó encaje satisfactorio y tolerancias funcionalmente suficientes con la impresora recientemente calibrada. No se informaron desviaciones dimensionales medidas, por lo que esos valores siguen siendo objetivos de diseño.
 
-Material fabricado: **PLA**, aproximadamente **460 g**: 160 g del interior y unos 300 g entre aletas y tapa. Costo de material único en BOM-031. Las fotografías finales, las condiciones de impresión para el acta y los ensayos de agua y comportamiento térmico quedan por incorporar.
+Material fabricado: **PLA**, aproximadamente **160 g** del interior; tapa y aletas exteriores no fabricadas. Costo de material único en BOM-031. Fotografías del interior indexadas en hardware/fotos. La fecha de impresión y los ensayos ambientales no fueron informados.
 
 Generación: [herramienta y versiones](../../tools/planos/README.md). Imprimir al 100 %; no medir una copia ajustada al papel.
+
+## Estado de fabricación y renders
+
+Interior fabricado: **160 g de PLA**, con ajuste funcional aceptado. Tapa, aletas y disco exteriores: **diseño no fabricado por indisponibilidad de ASA**; no se imputa consumo de PLA para la envolvente. Los archivos digitales completos se conservan. [Estado de fabricación](../revision-diseno.md) y [renders exterior e interior](../renders/README.md).

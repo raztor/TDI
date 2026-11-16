@@ -13,3 +13,7 @@ El montaje actual utiliza RAK19007 + RAK4631 + RAK1906, pulsador SOS y estación
 | Apertura y reemplazo de componentes | [reparacion.md](reparacion.md) | Procedimiento por verificar |
 
 Antes de energizar: confirmar tensión y polaridad de la fuente, límites de corriente, niveles de las señales, conexiones seguras y ausencia de cortocircuitos. No deducir pinout o alimentación a partir de una imagen del montaje.
+
+## Estado de fabricación y renders
+
+Interior fabricado: **160 g de PLA**, con ajuste funcional aceptado. Tapa, aletas y disco exteriores: **diseño no fabricado por indisponibilidad de ASA**; no se imputa consumo de PLA para la envolvente. Los archivos digitales completos se conservan. [Estado de fabricación](../diseño-3d/revision-diseno.md) y [renders exterior e interior](../diseño-3d/renders/README.md).

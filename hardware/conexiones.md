@@ -12,7 +12,7 @@ Referencias: [J10/J11/J12 de RAK19007](https://docs.rakwireless.com/product-cate
 
 ## Conexiones observadas en antecedentes
 
-En las [fotografías LILYGO](fotos/README.md) se observan cables USB desde el módulo regulador hacia las placas y conexiones coaxiales hacia las antenas. A2 reporta panel solar, controlador, batería LiPo 3S, BMS y regulación. El esquema actual incorpora la correspondencia de terminales confirmada por el equipo; faltan las fotografías finales y las lecturas numéricas si fueron registradas.
+En las [fotografías LILYGO](fotos/README.md) se observan cables USB desde el módulo regulador hacia las placas y conexiones coaxiales hacia las antenas. A2 reporta panel solar, controlador, batería LiPo 3S, BMS y regulación. El esquema actual incorpora la correspondencia de terminales confirmada por el equipo; las fotografías del interior están indexadas y no se informaron lecturas numéricas de energía.
 
 El [PoC](../docs/avances/referencias/poc-nodo-fijo.jpeg) es conceptual. El panel final es **12 V / 25 W**, revisado en etiqueta por el equipo; prevalece sobre los 24 V del PoC. El controlador GC **12 V / 10 A / Li-ion 3S**, la batería medida **120 × 50 × 40 mm** y el convertidor USB **5 V** son los componentes finales confirmados. El RAK se alimenta por USB-C desde el convertidor, con BAT y SOLAR de su base libres.
 

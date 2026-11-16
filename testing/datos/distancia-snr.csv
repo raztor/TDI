@@ -1,0 +1,21 @@
+prueba,distancia_km,snr_db,calidad_orientativa
+1,0.2,13.2,Muy buena
+2,0.3,-2.9,Moderada
+3,0.5,13.2,Muy buena
+4,0.6,11.5,Muy buena
+5,0.8,5.3,Buena
+6,1.4,-9.0,Baja
+7,2.5,-9.0,Baja
+8,2.9,2.0,Buena
+9,3.2,4.8,Buena
+10,4.1,1.2,Buena
+11,4.5,-5.0,Moderada
+12,8.0,-1.6,Moderada
+13,8.4,3.7,Buena
+14,8.4,0.3,Buena
+15,8.4,-0.5,Moderada
+16,8.4,-3.4,Moderada
+17,8.6,-6.8,Baja
+18,8.9,-3.9,Moderada
+19,9.2,-4.9,Moderada
+20,17.4,-0.5,Moderada

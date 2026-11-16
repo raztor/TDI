@@ -6,7 +6,7 @@
 
 Cerro Seguro integra un nodo fijo de telemetría ambiental y SOS con una estación de monitoreo conectada a computador. RAK4631 procesa el sensor RAK1906/BME680 y el pulsador; Meshtastic transporta mensajes hacia Heltec V3.2; la estación guarda datos y eventos en SQLite y el dashboard permite consultar histórico, tendencias y alertas.
 
-El equipo confirmó una campaña de **20/20 mensajes recibidos en menos de 60 s**, sin pérdidas observadas. También confirmó alimentación correcta, autonomía suficiente, recuperación diurna del consumo nocturno y montaje satisfactorio. La fabricación propia se realizó en PLA, con **460 g aproximados utilizados**. Quedan fotografías finales, datos de contexto para las actas, demostración de reparación, comparación del sensor con referencia y validación de uso.
+El equipo confirmó una campaña de **20/20 mensajes recibidos en menos de 60 s**, sin pérdidas observadas. También confirmó alimentación correcta, autonomía suficiente, recuperación diurna del consumo nocturno y montaje satisfactorio. La fabricación propia se realizó en PLA, con **160 g aproximados utilizados en el interior**. La tapa y las aletas exteriores no se fabricaron por indisponibilidad de ASA. Se incorporan renders del diseño y del interior, fotografías del interior y veinte lecturas de distancia/SNR hasta 17,4 km; sus límites se detallan en las pruebas.
 
 ## 2. Equipo
 
@@ -32,24 +32,25 @@ La [estación](../station/README.md) separa recepción, protocolo, almacenamient
 
 RAK19007 + RAK4631 de 915 MHz + RAK1906, pulsador S/G con V libre, panel de 12 V/25 W, controlador GC para Li-ion 3S, BMS externo, batería 3S, DC-DC USB de 5 V y estación Heltec V3.2 por USB. El equipo cotejó terminales con el [esquema](../hardware/esquematicos/README.md) y confirmó la salida y el funcionamiento energético.
 
-La [BOM](../hardware/BOM.xlsx) consolida 31 partidas con referencias de precio. Totales separados: **USD 204,78** y **CLP 106.297**, sin conversión, flete ni tributos de importación. La impresión aporta únicamente **CLP 5.980** de PLA utilizado. [Criterios y fuentes de costo](../hardware/cotizaciones.md).
+La [BOM](../hardware/BOM.xlsx) consolida 31 partidas con referencias de precio. Totales separados: **USD 204,78** y **CLP 102.397**, sin conversión, flete ni tributos de importación. La impresión aporta únicamente **CLP 2.080** de PLA utilizado. [Criterios y fuentes de costo](../hardware/cotizaciones.md).
 
-La energía generada durante el día repone el consumo de la noche y deja excedente. No se interpreta como una carga superior al 100 % de la batería. Las fotos finales desde tres ángulos e interior y la demostración de reemplazo se incorporarán al cierre.
+La energía generada durante el día repone el consumo de la noche y deja excedente. No se interpreta como una carga superior al 100 % de la batería. Las tres fotografías del interior están indexadas en [hardware/fotos](../hardware/fotos/README.md); no representan una carcasa exterior cerrada.
 
 ## 7. Diseño 3D y fabricación
 
 [Gill V7](../diseño-3d/fusion/gill-v7-75mm/README.md): base Ø200, aletas Ø236, tapa Ø256 y margen nominal sobre el interior de 75 mm. Incluye ensamble completo e interior, once tipos de pieza, STEP/STL y [doce hojas de planos A3](../diseño-3d/planos/README.md).
 
-El equipo imprimió en PLA y confirmó encaje satisfactorio con la impresora recién calibrada. El consumo aproximado fue 160 g del interior y unos 300 g entre aletas y tapa. Se aceptan las tolerancias funcionales del montaje; no se atribuyen errores dimensionales numéricos sin medirlos. Los volúmenes comerciales aproximados permanecen identificados como referencias.
+El equipo imprimió en PLA y confirmó encaje satisfactorio con la impresora recién calibrada. El consumo aproximado fue 160 g del interior; tapa y aletas exteriores no fabricadas. Se acepta el ajuste funcional del interior. No se fabricó la envolvente exterior por falta de ASA y se descartó imprimirla en PLA para exposición solar. No se atribuyen desviaciones dimensionales numéricas sin medirlas. Los volúmenes comerciales aproximados permanecen identificados como referencias.
 
 ## 8. Pruebas y resultados
 
 | Ensayo | Resultado | Alcance |
 |---|---|---|
 | Comunicación reportada | 20 enviados/20 recibidos, 100 % recepción, 0 % pérdidas; todos bajo 60 s | Fecha, lugar, distancias y tiempos individuales por incorporar al acta |
+| Distancia/SNR | 20 lecturas de 0,2–17,4 km; SNR de −9,0 a 13,2 dB | No incluye tiempos ni pérdidas por punto; no identifica saltos de red |
 | Banco documentado | Telemetría, persistencia, dashboard y SOS/ACK; diferencias WAITING–REGISTERED 2,955 s y 2,583 s | Son registros separados de la campaña de veinte mensajes |
 | Energía | Consumo y autonomía suficientes; generación diurna repone descarga nocturna | Sin valores mA/Wh, duración exacta ni reserva porcentual informados |
-| Fabricación | Encaje satisfactorio, montaje correcto y 460 g aproximados de PLA | Fotografías y fecha de fabricación por incorporar |
+| Fabricación | Interior: encaje satisfactorio y 160 g aproximados de PLA | Exterior no fabricado; fotografías del interior indexadas |
 
 [Cierre funcional](../testing/cierre-funcional-avance3.md), [resultados](../testing/resultados.md) y [protocolo](../testing/protocolo-pruebas.md). La falla de mensajes directos por contactos públicos se corrigió y verificó; el [registro](../testing/registro-fallas.md) conserva esa evidencia y separa los incidentes históricos de A2.
 
@@ -59,11 +60,11 @@ La recepción y el tiempo reportados cumplen las metas iniciales en el escenario
 
 ## 10. Limitaciones y mejoras
 
-Completar las condiciones y fechas de las pruebas para delimitar sus conclusiones. Incorporar fotografías, comparación del sensor con un instrumento de referencia y demostración de reparación. Conservar latencias individuales y lecturas energéticas si existen para calcular métricas adicionales. La calibración de la impresora y el buen encaje no prueban por sí solos resistencia a agua, radiación solar ni comportamiento térmico del sensor.
+Completar las condiciones y fechas de las pruebas para delimitar sus conclusiones. La envolvente exterior no fabricada limita la protección frente a intemperie. No se declaran ensayos de agua, radiación o resistencia. No consta comparación del sensor con un instrumento de referencia ni demostración documentada de reparación. Conservar latencias individuales y lecturas energéticas si existen para calcular métricas adicionales. La calibración de la impresora y el buen encaje no prueban por sí solos resistencia a agua, radiación solar ni comportamiento térmico del sensor.
 
 ## 11. Conclusiones
 
-El prototipo completa captura, radio, persistencia y visualización, con SOS y confirmación de registro. El equipo aceptó la comunicación 20/20 bajo 60 s, la suficiencia energética y el montaje. La documentación técnica incorpora circuito, costos y planos; la entrega debe cerrarse con evidencias visuales, actas contextualizadas, presentación y revisión del repositorio.
+El prototipo completa captura, radio, persistencia y visualización, con SOS y confirmación de registro. El equipo aceptó la comunicación 20/20 bajo 60 s, la suficiencia energética y el montaje. La documentación técnica incorpora circuito, costos y planos; la revisión documental incorpora fotos interiores, renders y datos de distancia/SNR, y conserva explícitos los límites de las evidencias y de la fabricación exterior.
 
 ## 12. Referencias y anexos
 
@@ -72,4 +73,10 @@ El prototipo completa captura, radio, persistencia y visualización, con SOS y c
 - [Checklist de entrega](checklist-entrega.md).
 - [Actas y decisiones](avances/actas-y-decisiones.md).
 
-El reporte se conserva editable. La exportación final para presentación incorporará las fotografías y actas pendientes.
+El reporte se conserva editable, con enlaces a las fotografías interiores, renders, datos originales y actas. Los metadatos no informados permanecen identificados como tales.
+
+## Anexo visual del diseño y del interior
+
+- [Render exterior del diseño completo](../diseño-3d/renders/gill-v7-75mm/gill_v7_exterior_diseno.png): tapa y aletas digitales, no fabricadas.
+- [Render del interior sin tapa ni aletas](../diseño-3d/renders/gill-v7-75mm/gill_v7_interior_render.png): geometría STEP de los soportes; electrónica comercial de referencia. No sustituye la fotografía del montaje.
+- [Pruebas de distancia, tabla y gráfica](../testing/pruebas-distancia.md): 20 lecturas, incluida la recepción registrada a 17,4 km.

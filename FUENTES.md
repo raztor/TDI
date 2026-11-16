@@ -191,7 +191,7 @@ Se utilizó asistencia de OpenAI para programación, análisis técnico y docume
 ### 9. BOM, referencias de costo y planilla
 
 - **Herramienta:** OpenAI, asistencia de análisis y elaboración de planillas; modelo **GPT 6.1 sol**.
-- **Prompt utilizado:** «Consolida una BOM del montaje real con identificadores únicos, componente, cantidad, especificación, precio, moneda, fuente y alcance de la referencia. Busca cotizaciones comparables cuando el modelo original no esté disponible sin sustituir sus dimensiones reales. Conserva separados USD y CLP y no agregues conversiones, flete ni tributos no cotizados. Para fabricación propia cuenta únicamente el PLA utilizado: 160 g del interior y unos 300 g entre aletas y tapa, aproximadamente 460 g en total. Carga ese material una sola vez y evita repetirlo por cada tipo de pieza. Actualiza el XLSX con fórmulas de cantidad por precio y subtotales por moneda; comprueba cálculo, restauración de entradas y legibilidad.»
+- **Prompt utilizado:** «Consolida una BOM del montaje real con identificadores únicos, componente, cantidad, especificación, precio, moneda, fuente y alcance de la referencia. Busca cotizaciones comparables cuando el modelo original no esté disponible sin sustituir sus dimensiones reales. Conserva separados USD y CLP y no agregues conversiones, flete ni tributos no cotizados. Para fabricación propia cuenta únicamente el PLA utilizado: 160 g del interior; tapa y aletas exteriores no fabricadas. Carga ese material una sola vez y evita repetirlo por cada tipo de pieza. Actualiza el XLSX con fórmulas de cantidad por precio y subtotales por moneda; comprueba cálculo, restauración de entradas y legibilidad.»
 - **Adaptación:** 31 partidas, desglose de lotes de consumibles, referencias equivalentes identificadas y partida única de PLA. Los precios de reposición se diferencian de gastos pagados y del precio histórico del controlador.
 - **Comprensión técnica:** separar monedas evita sumar magnitudes incompatibles. El material global cubre las piezas impresas; su costo no se vuelve a sumar en las filas de cada pieza. Una referencia comercial de batería no cambia el volumen medido del montaje.
 - **Archivos:** [BOM.xlsx](hardware/BOM.xlsx), [datos de BOM](hardware/bom-materiales.json), [cotizaciones](hardware/cotizaciones.md).
@@ -237,3 +237,13 @@ Las especificaciones de fabricante son referencias técnicas, no resultados medi
 - [miniTarea](docs/avances/miniTarea.docx): tema y pregunta de investigación; fuente sobre parámetros regionales de LoRaWAN y cuestiones por investigar. Su referencia a LoRaWAN no significa que los ensayos LoRa puro utilicen ese protocolo.
 - [Gill V1](diseño-3d/gill-v1/README.md): paquete original con fuente OpenSCAD y cinco exportaciones STL conceptuales.
 - [Actas y decisiones de diseño](docs/avances/actas-y-decisiones.md): acuerdos, alternativas de integración y motivos de descarte.
+
+## Renderizado CAD y gráfica de resultados
+
+| Herramienta o librería | Versión utilizada | Uso en el proyecto | Fuente |
+|---|---|---|---|
+| Blender | 5.1.2 | Render de geometría CAD con materiales, cámara e iluminación; scripts en tools/renders/ | https://www.blender.org/ |
+| CadQuery | 2.8.0 | Teselación STEP del Gill V7; geometría conservada, sin rediseño | https://github.com/CadQuery/cadquery |
+| Matplotlib | 3.11.2 | Gráfica estática SNR/distancia a partir de las veinte filas originales | https://matplotlib.org/ |
+
+Los STEP RAK19007/4631/1906 usados para las mallas proceden de las descargas oficiales declaradas en el inventario CAD. Las fuentes y hashes por archivo están en [fuentes-render.json](diseño-3d/renders/gill-v7-75mm/fuentes-render.json). Las piezas comerciales aproximadas se identifican en [las instrucciones de render](tools/renders/README.md); no se atribuye correspondencia física exacta al BMS o al convertidor.

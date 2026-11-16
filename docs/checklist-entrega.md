@@ -22,7 +22,7 @@ El banco y los resultados reportados cubren telemetría, SOS/ACK, 20/20 mensajes
 - [x] Esquema de módulos editable y PDF; terminales y salida aceptados por el equipo.
 - [x] BOM con 31 partidas, cantidades, especificaciones, importes y moneda; material impreso contado una vez.
 - [ ] Montaje ordenado, conexiones seguras y etiquetadas.
-- [ ] Fotografías reales desde al menos tres ángulos.
+- [x] Fotografías reales del interior desde tres ángulos, indexadas en hardware/fotos; exterior no fabricado.
 - [ ] Encapsulado abre sin destruirse y componentes críticos reemplazables.
 - [ ] Demostración de apertura y acceso ensayada.
 
@@ -31,12 +31,12 @@ El banco y los resultados reportados cubren telemetría, SOS/ACK, 20/20 mensajes
 - [x] Ensamble completo de Fusion 360 exportado a .f3d: [Gill V7](../diseño-3d/fusion/gill-v7-75mm/README.md).
 - [ ] Todos los componentes representados con dimensiones y posiciones reales.
 - [ ] Parametrización, tolerancias e interferencias revisadas.
-- [x] Montaje y encaje satisfactorios reportados; fotografías finales pendientes.
-- [ ] Renders exterior e interior o explosionado, con materiales e iluminación.
+- [x] Encaje del interior impreso aceptado; fotografías interiores indexadas; exterior no fabricado.
+- [x] Renders exterior e interior con materiales e iluminación; diseño exterior no fabricado identificado.
 - [x] [Planos PDF](../diseño-3d/planos/README.md) con vistas ortogonales, cotas funcionales, objetivos de tolerancia y escala; encaje satisfactorio reportado.
 - [x] Archivos completo e interior reabiertos en Fusion 360; nueve aletas conservadas en ambas variantes.
 
-La entrega CAD incluye vistas exterior e interior, revisión digital de interferencias y planos PDF de doce hojas. Se aceptó funcionalmente el encaje del montaje impreso en PLA. Quedan el cotejo documental de modelos comerciales aproximados, la parametrización nativa y la revisión final de renders.
+La entrega CAD incluye vistas exterior e interior, revisión digital de interferencias y planos PDF de doce hojas. Se aceptó funcionalmente el encaje del montaje impreso en PLA. Quedan el cotejo documental de modelos comerciales aproximados y la parametrización nativa. Los renders finales están disponibles e identifican la envolvente no fabricada.
 
 ## Testing · 10 %
 
@@ -76,6 +76,6 @@ La entrega CAD incluye vistas exterior e interior, revisión digital de interfer
 - Responsable de revisión: pendiente.
 - Fecha y hora: pendiente.
 - Commit o revisión entregada: pendiente.
-- Pendientes que impiden cerrar: fotografías finales, metadatos de pruebas y actas, demostración de reparación, presentación y revisión final del repositorio.
+- Estado documental: renders, fotos interiores, BOM y serie distancia/SNR incorporados. Mantener trazables la revisión entregada, los metadatos no informados y el alcance físico sin envolvente exterior.
 
 Un video pregrabado no reemplaza la demo en vivo. La existencia de FUENTES.md por sí sola no acredita una declaración completa.

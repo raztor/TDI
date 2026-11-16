@@ -29,7 +29,7 @@ La comprobación del enlace en A2 es cualitativa. La cuantificación del desempe
 |---|---|---|---|---|---|---|---|
 | Comunicación | Fecha por completar; registro16-11-2026 | Montaje final RAK/Heltec | 20 enviados/20 recibidos |>=9/10 y<60s |100 % recepción, 0 pérdidas, todos <60 s |Cumple en condiciones reportadas |[Cierre funcional](cierre-funcional-avance3.md) |
 | Energía | Fecha y duración por completar | Solar 12 V/25 W y batería 3S | Ciclo día/noche |Sostener operación y recuperar consumo nocturno |Autonomía suficiente; generación diurna repone consumo con excedente |Aceptado funcionalmente |[Cierre funcional](cierre-funcional-avance3.md) |
-| Encaje | Fecha de impresión por completar |Gill V7 en PLA |460 g aproximados, interior 160 g + aletas y tapa unos 300 g |Encaje correcto del montaje |Tolerancias suficientes e impresora calibrada |Aceptado funcionalmente |[Cierre funcional](cierre-funcional-avance3.md) |
+| Encaje | Fecha de impresión por completar |Gill V7 en PLA |160 g aproximados del interior; envolvente exterior no fabricada |Encaje correcto del montaje |Tolerancias suficientes e impresora calibrada |Aceptado funcionalmente |[Cierre funcional](cierre-funcional-avance3.md) |
 
 ## Métricas
 
@@ -52,3 +52,7 @@ Si el denominador es cero o no hay referencia válida, informar «no calculable�
 - Fallas y correcciones verificadas: [registro de fallas](registro-fallas.md).
 - Mejora: conservar tiempos por mensaje y energía por ciclo para cuantificar latencia y margen energético sin depender solo de la comprobación funcional.
 - Conexión con el problema original: [validación](validacion.md).
+
+## Recepción a distancia
+
+La [serie de veinte pruebas](pruebas-distancia.md) registra 0,2–17,4 km y SNR −9,0–13,2 dB. En la distancia máxima se registró −0,5 dB. [Datos CSV](datos/distancia-snr.csv), [tabla original](evidencias/pruebas-distancia-snr.png) y [gráfica](evidencias/distancia-snr-grafica.png). No se infieren pérdidas por punto, tiempos individuales ni enlace directo; el resultado de entrega 20/20 se mantiene como evidencia separada.

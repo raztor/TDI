@@ -5,7 +5,7 @@
 <text x="405" y="20" font-family="Arial, sans-serif" font-size="4" font-weight="700" text-anchor="end" fill="#183449">CS-M-00</text>
 <polyline points="8.0000,35.0000 412.0000,35.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
 <polyline points="8.0000,268.0000 412.0000,268.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
-<text x="14" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="start" fill="#183449">Rev. B | 16-11-2026 | Unidades: mm | Formato A3</text>
+<text x="14" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="start" fill="#183449">Rev. C | 16-11-2026 | Unidades: mm | Formato A3</text>
 <text x="14" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Imprimir al 100 %. No medir sobre una copia ajustada al papel.</text>
 <text x="405" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="end" fill="#183449">Escala 1:2 | Hoja 1/12</text>
 <text x="405" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="end" fill="#667782">Gill V7 / documentación de prototipo</text>
@@ -5901,12 +5901,12 @@
 <text x="302" y="111.40000000000003" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#667782">Cable coaxial: volumen representativo;</text>
 <text x="302" y="116.10000000000004" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#667782">margen CAD sobre interior: 18,5.</text>
 <text x="302" y="120.80000000000004" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#667782">Bateria medida: 120 x 50 x 40.</text>
-<text x="302" y="125.50000000000004" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#667782">Encaje funcional aceptado por el equipo.</text>
+<text x="302" y="125.50000000000004" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#667782">Interior: encaje funcional aceptado.</text>
 <text x="302" y="130.20000000000005" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#667782">La vista no certifica estanqueidad,</text>
 <text x="302" y="134.90000000000003" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#667782">resistencia ni temperatura de uso.</text>
-<text x="15" y="227" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" text-anchor="start" fill="#183449">INVENTARIO IMPRESO</text>
+<text x="15" y="227" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" text-anchor="start" fill="#183449">INVENTARIO DIGITAL / ESTADO DE FABRICACION</text>
 <text x="15" y="234" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#183449">1 base | 3 guias | 8 aletas estandar | 1 terminal | 1 tapa | 1 disco | 1 placa | 4 bandejas = 20 piezas</text>
-<text x="15" y="241" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#183449">Fabricacion propia en PLA: aprox. 460 g. Interior 160 g + aletas y tapa unos 300 g. Impresora calibrada; ajuste satisfactorio reportado.</text>
+<text x="15" y="241" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" text-anchor="start" fill="#183449">Interior fabricado: aprox. 160 g PLA; ajuste aceptado. Tapa, aletas y disco: diseno exterior no fabricado; ASA no disponible.</text>
 <text x="15" y="248" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" text-anchor="start" fill="#183449">Objetivos provisionales de control: lineales +/-0,3 hasta150; +/-0,5 sobre150; taladros +/-0,2; angulos +/-1 grado.</text>
 <text x="15" y="255" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" text-anchor="start" fill="#183449">No son tolerancias medidas. Probar insertos y paso de antena; no compensar el STEP sin registrar una nueva revision.</text>
 </svg>

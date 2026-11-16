@@ -9,15 +9,14 @@ Dos vistas interiores documentan el montaje de pruebas LILYGO. El [informe A2](<
 
 Las láminas RAK y el PoC corresponden a referencias de componentes y arquitectura.
 
-## Vistas que faltan para la entrega final
+## Interior del prototipo de entrega
 
-Incorporar al menos tres fotografías reales desde ángulos distintos de la revisión que se entregue. Mostrar el interior y las conexiones cuando las vistas externas no permitan revisarlas. Las fotos históricas no verifican por sí solas el estado final.
+El montaje impreso corresponde al interior del Gill V7: unos 160 g de PLA. La tapa superior y las aletas exteriores no se fabricaron por falta de ASA. Estas fotografías muestran el estado abierto; no se presentan como encapsulado exterior terminado.
 
-| Toma | Qué debe mostrar | Archivo |
-|---|---|---|
-| Frontal | Prototipo ensamblado y controles | Pendiente |
-| Lateral o posterior | Puertos, alimentación y fijaciones | Pendiente |
-| Tercer ángulo | Integración y orden del montaje | Pendiente |
-| Interior abierto | Componentes, cableado etiquetado y acceso para reparación | Pendiente |
+| Vista | Archivo |
+|---|---|
+| Interior, ángulo 1 | [Fotografía](<WhatsApp Image 2026-11-16 at 3.29.40 AM (2).jpeg>) |
+| Interior, ángulo 2 | [Fotografía](<WhatsApp Image 2026-11-16 at 3.29.40 AM (3).jpeg>) |
+| Interior, ángulo 3 | [Fotografía](<WhatsApp Image 2026-11-16 at 3.29.41 AM (1).jpeg>) |
 
-Usar nombres descriptivos y registrar fecha y revisión del montaje. Los renders pertenecen a [diseño-3d/renders/](../../diseño-3d/renders/README.md); no sustituyen fotografías del prototipo.
+El nombre de archivo conserva la referencia recibida; no se utiliza para inferir la hora de fabricación o la fecha de pruebas. Los [renders](../../diseño-3d/renders/README.md) distinguen el diseño exterior no fabricado del interior sin envolvente y no sustituyen estas fotografías.
