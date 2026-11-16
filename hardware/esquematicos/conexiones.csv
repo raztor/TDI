@@ -1,0 +1,18 @@
+ID,Origen,Puerto_origen,Destino,Puerto_destino,Interfaz,Tension,Estado
+W01,PV1,Positivo,U4,PV+,Potencia,12 V nominal,Confirmar Voc y polaridad
+W02,PV1,Negativo,U4,PV-,Potencia,Retorno PV,Cotejar cable
+W03,U6,P+ funcional,U4,BAT+,Potencia,3S,Pad real oculto por cotejar
+W04,U6,P- funcional,U4,BAT-,Potencia,Retorno protegido,No puentear B- y P-
+W05,BT1,Potencia y 4 tomas de celda,U6,Terminales por identificar,Celdas,3S,Modelo y pads ocultos por cotejar
+W06,U4,LOAD+,U5,IN+,Potencia,Bus de carga GC,Verificar salida y configuración
+W07,U4,LOAD-,U5,IN-,Potencia,Retorno LOAD,Cotejar montaje final
+W08,U5,USB-A VBUS,U1,USB-C VBUS,Potencia,5 V regulado,Medir salida final; banco USB verificado
+W09,U5,USB-A GND,U1,USB-C GND,Potencia,Retorno USB,Cable USB
+W10,SW1,S,U1,J11 pin1 AIN1,Digital,3.3 V pull-up interno,Verificado
+W11,SW1,G,U1,J12 pin2 o J10 pin2,Digital,GND,Verificado
+NC01,SW1,V,Sin conexion,Sin conexion,Ninguna,Ninguna,Verificado
+W12,U3,Conector WisBlock,U1,Ranura sensor,I2C y alimentacion,3.3 V interno,Verificado
+W13,U2,Conector Core,U1,Ranura Core,Bus interno,Interno base,Verificado
+RF01,U2,Puerto LoRa,ANT1,Laird por latiguillo,RF,915 MHz,Modelo exacto y cable por cotejar
+W14,PC1,USB host,U7,USB-C,Datos y alimentacion,5 V,Verificado
+RF02,U7,Puerto LoRa,ANT2,Antena kit Heltec,RF,915 MHz,Antena conectada confirmada

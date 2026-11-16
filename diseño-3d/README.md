@@ -1,6 +1,6 @@
 # Diseño 3D y gemelo del prototipo
 
-**Estado:** [Gill V7](fusion/gill-v7-75mm/README.md) con ensamble Fusion, nueve aletas inclinadas, tapa con pendiente y asiento plano de antena. Incluye componentes oficiales y representaciones dimensionales identificadas; faltan la validación física y los planos de fabricación. El [Gill V1 conceptual](gill-v1/README.md), los [STL Ruuvi](stl/gill/README.md) y el [STEP candidato LILYGO](step/README.md) se conservan como antecedentes.
+**Estado:** [Gill V7](fusion/gill-v7-75mm/README.md) con ensamble Fusion, nueve aletas inclinadas, tapa con pendiente y asiento plano de antena. Incluye componentes oficiales y representaciones dimensionales identificadas; [doce hojas de planos](planos/README.md) documentan conjunto y once tipos de pieza. Falta la validación física. El [Gill V1 conceptual](gill-v1/README.md), los [STL Ruuvi](stl/gill/README.md) y el [STEP candidato LILYGO](step/README.md) se conservan como antecedentes.
 
 | Entregable | Ubicación | Requisito |
 |---|---|---|

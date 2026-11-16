@@ -1,6 +1,6 @@
 # Verificación del Avance 3
 
-**Fecha:** 15 de noviembre de 2026. Referencia: [pauta TEI201, Avance #3](pautas/avance-03-estudiantes.pdf). Las páginas citadas corresponden a su numeración impresa.
+**Fecha de revisión:** 16 de noviembre de 2026. Referencia: [pauta TEI201, Avance #3](pautas/avance-03-estudiantes.pdf). Las páginas citadas corresponden a su numeración impresa.
 
 ## Resultado de la revisión
 
@@ -25,7 +25,7 @@ La pantalla se actualiza cada cinco segundos y la adquisición solicitada es de 
 | Entregable | Evidencia existente | Pendiente |
 |---|---|---|
 | Selección de componentes | Fichas y justificación base; compatibilidad RAK/Heltec 915 MHz comprobada en banco | Precisión por variable, consumo medido y argumento energético del montaje final |
-| Esquemático y BOM | [Conexión del botón](../hardware/conexiones.md) y [BOM](../hardware/BOM.xlsx) | Esquemático editable y PDF completos; cantidades, moneda y costos consolidados |
+| Esquemático y BOM | [Esquema de dos hojas, SVG y CSV](../hardware/esquematicos/README.md); [BOM de 30 partidas](../hardware/BOM.xlsx), cantidades, moneda y [cotizaciones](../hardware/cotizaciones.md) | Pinout oculto del BMS y mediciones del conjunto solar por cotejar; 20 partidas sin precio, costo completo abierto |
 | Montaje y fotografías | Fotografías históricas y montaje funcional de banco | Fotos finales desde al menos tres ángulos, etiquetado y fijaciones del montaje evaluado |
 | Reparación | Diseño modular y antecedentes de apertura | Apertura, reemplazo, cierre y recuperación funcional demostrados sin destruir el ensamble |
 
@@ -33,7 +33,9 @@ La pantalla se actualiza cada cinco segundos y la adquisición solicitada es de 
 
 El repositorio incorpora Gill V7, F3D de ensamble e interior, inventario de componentes y vistas. La pauta permite volúmenes referenciales, siempre que sus dimensiones y posiciones representen el hardware real. La existencia del CAD no acredita ajuste físico.
 
-Pendientes: contraste del montaje final RAK/Heltec y botón con el gemelo, parametrización y tolerancias, verificación física de accesos/interferencias y planos técnicos PDF con vistas, cotas y escala. No se encontraron planos técnicos finales en la carpeta destinada a ellos.
+Los [planos Gill V7](../diseño-3d/planos/README.md) incorporan doce hojas A3: conjunto y once tipos de pieza, con vistas ortogonales, isométricas de apoyo, cotas funcionales, escala y objetivos provisionales de tolerancia. La correspondencia registra SHA-256, cantidades y envolventes de los STEP. No se cambió la geometría CAD al generar los planos.
+
+Pendientes: contraste del montaje final RAK/Heltec y botón con el gemelo, parametrización nativa, comprobación de tolerancias impresas y verificación física de accesos/interferencias. Los objetivos de tolerancia documentados no equivalen a medidas obtenidas en la impresión.
 
 ## Testing · 10 %, pp. 7–8
 
@@ -46,7 +48,7 @@ Faltan campañas por punto para la meta 9/10, distribución de latencias y pérd
 
 ## GitHub y presentación · 5 % cada uno, pp. 8–13
 
-La estructura de carpetas, fuentes de firmware, estación, dashboard y guías de uso están disponibles. Se incorporan la pauta y evidencias del ensayo. Antes de entregar se deben verificar la publicación de la revisión final, clonación limpia, acceso del evaluador y apertura de todos los entregables. El archivo de fuentes se conserva sin cambios en esta revisión.
+La estructura de carpetas, fuentes de firmware, estación, dashboard y guías de uso están disponibles. Se incorporan la pauta y evidencias del ensayo. Antes de entregar se deben verificar la publicación de la revisión final, clonación limpia, acceso del evaluador y apertura de todos los entregables.
 
 La presentación requiere participación de todos, 8–10 minutos y 3 minutos de preguntas. La demo debe mostrar captura y dashboard en vivo, interpretar un resultado, abrir el encapsulado y mostrar el gemelo. Permanecen pendientes las diapositivas finales, la apertura física y los tres ensayos completos del día anterior. Las capturas no sustituyen esa demo.
 

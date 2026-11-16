@@ -33,10 +33,10 @@ Estas comprobaciones corresponden al banco RAK/Heltec. La captura prolongada, ca
 - [ ] Parametrización, tolerancias e interferencias revisadas.
 - [ ] Acceso a puertos, botones y conectores; tapa funcional.
 - [ ] Renders exterior e interior o explosionado, con materiales e iluminación.
-- [ ] Planos PDF con vistas ortogonales, cotas funcionales, tolerancias y escala.
+- [x] [Planos PDF](../diseño-3d/planos/README.md) con vistas ortogonales, cotas funcionales, objetivos de tolerancia y escala; ajuste impreso pendiente.
 - [x] Archivos completo e interior reabiertos en Fusion 360; nueve aletas conservadas en ambas variantes.
 
-La entrega CAD incluye las vistas exterior e interior y una revisión digital de interferencias. Las dimensiones comerciales aproximadas, la parametrización nativa, los planos PDF y la validación física siguen pendientes.
+La entrega CAD incluye vistas exterior e interior, revisión digital de interferencias y planos PDF de doce hojas. Las dimensiones comerciales aproximadas, la parametrización nativa y la validación física siguen pendientes.
 
 ## Testing · 10 %
 

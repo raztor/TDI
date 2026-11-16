@@ -1,0 +1,2 @@
+cadquery==2.8.0
+reportlab==5.1.0

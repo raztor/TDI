@@ -1,0 +1,205 @@
+{
+  "revision": "A",
+  "unidades": "mm",
+  "metodo": "Proyeccion HLR de STEP; vistas de tercer diedro; deflexion grafica 0,035 mm",
+  "piezas": [
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V4_Base_200_Sin_Varillas.step",
+      "sha256": "54f39f06fbcedcfa7a646563bb5a5aa95ff50deb599f3f5c1dee6b500c12e570",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -100.0,
+          -100.0,
+          0.0
+        ],
+        "max": [
+          100.0,
+          100.0,
+          12.0
+        ]
+      },
+      "volumen_mm3": 110349.12021857034
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V7_Guia_T_235_5_Tope_y_Inserto_Axial.step",
+      "sha256": "17d6e88dd894bf7bd7fad31add58789acf3b82ee56f0e809c763b428b6defd03",
+      "cantidad": 3,
+      "envolvente_mm": {
+        "min": [
+          -8.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          8.0,
+          235.5,
+          10.2
+        ]
+      },
+      "volumen_mm3": 15254.408636469563
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_236_45gr_Paso23_5.step",
+      "sha256": "979755531b25afa512cc91a5700422fe5dd508260fe733dcc772a300805695d0",
+      "cantidad": 8,
+      "envolvente_mm": {
+        "min": [
+          -118.0000001,
+          -118.0000001,
+          0.0
+        ],
+        "max": [
+          118.0000001,
+          118.0000001,
+          41.5000001
+        ]
+      },
+      "volumen_mm3": 53669.37014301261
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_Superior_236_45gr.step",
+      "sha256": "da235af06472113e4fa6bad3a1150bbe2ce2360b8ad4c8fcf10e4bc6e97bea58",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -118.0000001,
+          -118.0000001,
+          0.0
+        ],
+        "max": [
+          118.0000001,
+          118.0000001,
+          35.5000001
+        ]
+      },
+      "volumen_mm3": 50984.698958237015
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V7_Tapa_256_Pendiente8gr.step",
+      "sha256": "7fbcd6e578553ce93e14f8e1e0077a20b8edcbd56b660a2f50f96639690d25c3",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -128.0000001,
+          -128.0000001,
+          0.0
+        ],
+        "max": [
+          128.0000001,
+          128.0000001,
+          16.964796018367345
+        ]
+      },
+      "volumen_mm3": 439094.8267733873
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V7_Disco_Antena_60_Paso16_2.step",
+      "sha256": "ead2db2d680a9713c625e6e9685f9f37acfaee4c34973f27c7d227a8a814f839",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -30.0,
+          -30.0,
+          0.0
+        ],
+        "max": [
+          30.0,
+          30.0,
+          3.0
+        ]
+      },
+      "volumen_mm3": 7782.227657766492
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V3_Placa_Vertical_154.step",
+      "sha256": "6dbc963314ca907cc5643cefff215e6c1963b64ab5c345a34562b4fb099463e3",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -39.0,
+          -4.0,
+          0.0
+        ],
+        "max": [
+          39.0,
+          154.0,
+          6.0
+        ]
+      },
+      "volumen_mm3": 37558.40277029006
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_Controlador.step",
+      "sha256": "e335ad9549c77cceeff09a91c859e5fbf9fbd6d198aed7dd7936c2a2bca92036",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -34.0,
+          -7.0,
+          0.0
+        ],
+        "max": [
+          34.0,
+          62.0,
+          6.0
+        ]
+      },
+      "volumen_mm3": 10415.176998353076
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_DCDC.step",
+      "sha256": "6d2a7bda7c5b44f542a8564569ed6fe732a97480c814bb31329ada6052b3ff6c",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -35.0,
+          -7.0,
+          0.0
+        ],
+        "max": [
+          35.0,
+          40.0,
+          6.0
+        ]
+      },
+      "volumen_mm3": 6853.690685670374
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_RAK.step",
+      "sha256": "d7b9ca47d427735c5ec321cf535a07b549e1b70c846f39e4582422b34ff7592b",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -35.0,
+          -7.0,
+          0.0
+        ],
+        "max": [
+          35.0,
+          43.0,
+          8.0
+        ]
+      },
+      "volumen_mm3": 8395.176998353076
+    },
+    {
+      "archivo": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_BMS.step",
+      "sha256": "6658793dcc94acd72bb251f633f1ef64c468865c6193298fc7d7e784fbafa7c8",
+      "cantidad": 1,
+      "envolvente_mm": {
+        "min": [
+          -34.0,
+          -37.0,
+          0.0
+        ],
+        "max": [
+          34.0,
+          -3.0,
+          3.0
+        ]
+      },
+      "volumen_mm3": 4765.665411426913
+    }
+  ]
+}

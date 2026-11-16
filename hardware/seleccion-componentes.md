@@ -16,10 +16,10 @@ El [inventario histórico](inventario-historico.md) recupera los equipos utiliza
 
 ## Alimentación
 
-- Fuente y tensión nominal: pendiente.
+- Fuente definida: panel **12 V / 25 W**, confirmado en etiqueta por el equipo. La marca y dimensiones físicas del panel están por cotejar con la envolvente CAD de referencia.
 - Consumo en reposo y captura: pendiente de especificación y medición.
 - Consumo máximo y margen de la fuente: pendiente.
-- Batería, protección y autonomía, si corresponde: pendiente.
+- Batería LiPo **3S**, envolvente medida **120 × 50 × 40 mm**; BMS encintado entre batería y controlador GC **12 V / 10 A / Li-ion 3S**; DC-DC USB **5 V** hacia RAK19007. Pinout del BMS, parámetros de carga y autonomía por verificar.
 - Condiciones de operación y límites ambientales: pendiente.
 
 ## Criterios de compatibilidad
@@ -27,6 +27,8 @@ El [inventario histórico](inventario-historico.md) recupera los equipos utiliza
 Verificar tensiones de alimentación y señal, niveles lógicos, interfaz, direcciones de bus, disponibilidad de pines, capacidad de corriente y espacio físico. Separar valores nominales del fabricante de resultados medidos en el prototipo.
 
 Mantener cantidades y costos en [BOM.xlsx](BOM.xlsx), y fuentes de referencia en [FUENTES.md](../FUENTES.md).
+
+El [esquema de módulos](esquematicos/README.md) y el [mapa de conexiones](conexiones.md) documentan esta ruta. Las [cotizaciones](cotizaciones.md) distinguen modelos exactos y referencias comerciales; no atribuyen al hardware real características de un sustituto sin verificarlo.
 
 ## Otros elementos del nodo de prueba
 
