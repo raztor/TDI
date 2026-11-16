@@ -2,6 +2,8 @@
 
 La revisión entregada es el [Gill V7 con margen de 75 mm](fusion/gill-v7-75mm/README.md). El Gill V1 se conserva como antecedente conceptual. El [inventario CAD](fusion/componentes-nodo/README.md) distingue modelos oficiales, medidas aportadas y referencias aproximadas.
 
+**Aceptación funcional registrada el 16-11-2026:** el equipo confirmó montaje correcto, encaje satisfactorio y tolerancias suficientes después de calibrar la impresora. Fabricación propia en PLA: 460 g aproximados, repartidos entre interior 160 g y aletas y tapa unos 300 g. No se cambian las dimensiones de los STEP ni se asignan desviaciones metrológicas no medidas. Fotografías y fecha concreta de fabricación pendientes para el acta. Ver [cierre funcional](../testing/cierre-funcional-avance3.md).
+
 | Componente | Dimensiones o referencia | Evidencia |
 |---|---|---|
 | Batería | 120 × 50 × 40 mm, de pie | Medición del equipo; sustituye la envolvente comercial anterior |

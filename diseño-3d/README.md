@@ -1,10 +1,10 @@
 # Diseño 3D y gemelo del prototipo
 
-**Estado:** [Gill V7](fusion/gill-v7-75mm/README.md) con ensamble Fusion, nueve aletas inclinadas, tapa con pendiente y asiento plano de antena. Incluye componentes oficiales y representaciones dimensionales identificadas; faltan la validación física y los planos de fabricación. El [Gill V1 conceptual](gill-v1/README.md), los [STL Ruuvi](stl/gill/README.md) y el [STEP candidato LILYGO](step/README.md) se conservan como antecedentes.
+**Estado:** [Gill V7](fusion/gill-v7-75mm/README.md), con nueve aletas y [doce hojas de planos](planos/README.md). El equipo confirmó impresión propia en PLA y encaje satisfactorio con la impresora recientemente calibrada: 160 g del interior + unos 300 g entre aletas y tapa, 460 g aproximados en total. El [cierre funcional](../testing/cierre-funcional-avance3.md) distingue esa comprobación de las cotas nominales y de los ensayos ambientales no documentados. Fotografías finales pendientes. Gill V1 y diseños anteriores se conservan como antecedentes.
 
 | Entregable | Ubicación | Requisito |
 |---|---|---|
-| Gill V7 actual | [fusion/gill-v7-75mm/](fusion/gill-v7-75mm/README.md) | Ensamble, STL, fuente y verificación digital; ensayo físico pendiente |
+| Gill V7 actual | [fusion/gill-v7-75mm/](fusion/gill-v7-75mm/README.md) | Ensamble, STL, fuente y planos; encaje funcional confirmado por el equipo |
 | Escudo conceptual Gill V1 | [gill-v1/](gill-v1/README.md) | Fuente y exportaciones disponibles; dimensiones provisionales y anclajes pendientes |
 | Ensamble editable | [fusion/](fusion/README.md) | Archivo `.f3d` o `.f3z` que abre correctamente |
 | Planos técnicos | [planos/](planos/README.md) | PDF con vistas, cotas funcionales, tolerancias y escala |

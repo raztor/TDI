@@ -1,0 +1,23 @@
+2026-11-15 22:45:27,533 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 22:47:27,718 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 22:49:27,807 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 22:51:27,863 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 22:52:07,594 INFO SOS registrado nodo=!1630f9c9 evento=e11eadd41d07cb0000000001
+2026-11-15 22:52:07,707 INFO ACK encolado nodo=!1630f9c9 evento=e11eadd41d07cb0000000001
+2026-11-15 22:52:41,054 INFO SOS registrado nodo=!1630f9c9 evento=e11eadd41d07cb0000000002
+2026-11-15 22:52:41,168 INFO ACK encolado nodo=!1630f9c9 evento=e11eadd41d07cb0000000002
+2026-11-15 22:53:28,025 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 22:55:28,079 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 22:57:28,158 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 22:59:28,259 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:01:28,755 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:03:28,859 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:03:38,104 INFO Estación detenida
+2026-11-15 23:03:50,251 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:05:50,666 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:07:18,469 INFO SOS registrado nodo=!1630f9c9 evento=e11eadd41d07cb0000000003
+2026-11-15 23:07:18,585 INFO ACK encolado nodo=!1630f9c9 evento=e11eadd41d07cb0000000003
+2026-11-15 23:07:50,949 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:09:51,312 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:11:51,480 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s
+2026-11-15 23:13:51,553 INFO Telemetría solicitada nodo=!1630f9c9 intervalo=120s

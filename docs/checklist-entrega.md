@@ -2,23 +2,25 @@
 
 **Evaluación:** 23 de noviembre de 2026. Completar y subir los entregables antes de la presentación.
 
-El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los resultados y pendientes anteriores. Esta lista corresponde a la entrega final. La guía de evaluación está pendiente de versionar y de cotejo con los requisitos.
+El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los resultados y pendientes anteriores. Esta lista corresponde a la entrega final. La [pauta](pautas/avance-03-estudiantes.pdf) está cotejada en la [verificación](verificacion-avance3.md).
 
 ## Software · 30 %
 
 - [ ] Dispositivo capturando datos reales de forma continua y confiable.
-- [ ] Frecuencia de muestreo justificada según el problema.
-- [ ] Almacenamiento persistente e histórico accesible después de reiniciar.
-- [ ] Dashboard accesible, con gráficas y contexto de interpretación.
-- [ ] Estadísticas, alertas o indicadores útiles para decidir.
-- [ ] Código modular y comentado subido al repositorio.
-- [ ] Dependencias, configuración, instalación y carga reproducibles.
+- [x] Frecuencia de muestreo justificada según el problema: sondeo de 120 s documentado.
+- [x] Almacenamiento persistente e histórico accesible después de reiniciar.
+- [x] Dashboard accesible, con gráficas y contexto de interpretación.
+- [x] Estadísticas, alertas o indicadores útiles para decidir.
+- [x] Código modular de firmware, estación y dashboard disponible en la revisión del proyecto.
+- [x] Dependencias, configuración, instalación y carga reproducibles.
+
+El banco y los resultados reportados cubren telemetría, SOS/ACK, 20/20 mensajes bajo 60 s y energía suficiente. Falta completar duración y condiciones de ensayo en las actas; no se informó calibración del sensor contra referencia.
 
 ## Hardware · 30 %
 
 - [ ] Componentes justificados por rango, precisión, consumo y compatibilidad.
-- [ ] Esquemático editable y exportación completa, correspondientes al montaje.
-- [ ] BOM con componentes, cantidades, especificaciones, costos y moneda.
+- [x] Esquema de módulos editable y PDF; terminales y salida aceptados por el equipo.
+- [x] BOM con 31 partidas, cantidades, especificaciones, importes y moneda; material impreso contado una vez.
 - [ ] Montaje ordenado, conexiones seguras y etiquetadas.
 - [ ] Fotografías reales desde al menos tres ángulos.
 - [ ] Encapsulado abre sin destruirse y componentes críticos reemplazables.
@@ -29,29 +31,29 @@ El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los res
 - [x] Ensamble completo de Fusion 360 exportado a .f3d: [Gill V7](../diseño-3d/fusion/gill-v7-75mm/README.md).
 - [ ] Todos los componentes representados con dimensiones y posiciones reales.
 - [ ] Parametrización, tolerancias e interferencias revisadas.
-- [ ] Acceso a puertos, botones y conectores; tapa funcional.
+- [x] Montaje y encaje satisfactorios reportados; fotografías finales pendientes.
 - [ ] Renders exterior e interior o explosionado, con materiales e iluminación.
-- [ ] Planos PDF con vistas ortogonales, cotas funcionales, tolerancias y escala.
+- [x] [Planos PDF](../diseño-3d/planos/README.md) con vistas ortogonales, cotas funcionales, objetivos de tolerancia y escala; encaje satisfactorio reportado.
 - [x] Archivos completo e interior reabiertos en Fusion 360; nueve aletas conservadas en ambas variantes.
 
-La entrega CAD incluye las vistas exterior e interior y una revisión digital de interferencias. Las dimensiones comerciales aproximadas, la parametrización nativa, los planos PDF y la validación física siguen pendientes.
+La entrega CAD incluye vistas exterior e interior, revisión digital de interferencias y planos PDF de doce hojas. Se aceptó funcionalmente el encaje del montaje impreso en PLA. Quedan el cotejo documental de modelos comerciales aproximados, la parametrización nativa y la revisión final de renders.
 
 ## Testing · 10 %
 
 - [ ] Protocolo con objetivo, condiciones, pasos, criterios de éxito y evidencias.
 - [ ] Criterios cuantitativos fijados antes de ejecutar las pruebas.
-- [ ] Resultados reales con tablas, gráficas o logs y métricas.
-- [ ] Al menos una falla real, análisis de causa y corrección comprobada.
+- [x] Resultados de banco y tabla del ensayo reportado 20/20 bajo 60 s; sin registro de tiempos individuales.
+- [x] Al menos una falla real, análisis de causa y corrección comprobada.
 - [ ] Validación explícita contra el problema del Avance 1.
-- [ ] Limitaciones y mejoras fundamentadas.
+- [x] Alcance, limitaciones y mejoras documentados en resultados y cierre funcional.
 
 ## GitHub · 5 %
 
 - [x] Carpetas firmware/, hardware/, diseño-3d/, testing/ y docs/ creadas.
-- [ ] README con descripción final, integrantes, componentes, instalación y uso exactos.
+- [x] README actualizado con arquitectura, integrantes, componentes y enlaces de instalación/uso; aportes y roles de A3 por confirmar en actas.
 - [ ] FUENTES.md completo con las tres categorías solicitadas en la sección 6 de la guía.
 - [ ] Todos los códigos, esquemáticos, CAD, documentos y evidencias subidos.
-- [ ] Historial con mensajes de commit descriptivos.
+- [x] Historial con mensajes de commit descriptivos.
 - [ ] Clonación limpia y apertura de los archivos comprobadas.
 - [ ] Repositorio público o acceso del evaluador confirmado.
 - [ ] URL del repositorio incluida en los slides.
@@ -74,6 +76,6 @@ La entrega CAD incluye las vistas exterior e interior y una revisión digital de
 - Responsable de revisión: pendiente.
 - Fecha y hora: pendiente.
 - Commit o revisión entregada: pendiente.
-- Pendientes que impiden cerrar: implementación y evidencias por incorporar.
+- Pendientes que impiden cerrar: fotografías finales, metadatos de pruebas y actas, demostración de reparación, presentación y revisión final del repositorio.
 
 Un video pregrabado no reemplaza la demo en vivo. La existencia de FUENTES.md por sí sola no acredita una declaración completa.

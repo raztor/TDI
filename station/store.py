@@ -37,10 +37,26 @@ class Store:
                 metrics TEXT NOT NULL, rssi REAL, snr REAL,
                 PRIMARY KEY (node, packet_id)
             );
+            CREATE TABLE IF NOT EXISTS station_status (
+                id INTEGER PRIMARY KEY CHECK(id=1),
+                state TEXT NOT NULL, updated_at TEXT NOT NULL,
+                station_node INTEGER, port TEXT NOT NULL,
+                poll_seconds INTEGER NOT NULL, last_error TEXT
+            );
         """)
 
     def close(self):
         self.db.close()
+
+    def station_status(self, state, station_node, port, poll_seconds, error=None):
+        with self.db:
+            self.db.execute("""
+                INSERT INTO station_status VALUES (1,?,?,?,?,?,?)
+                ON CONFLICT(id) DO UPDATE SET state=excluded.state,
+                updated_at=excluded.updated_at,station_node=excluded.station_node,
+                port=excluded.port,poll_seconds=excluded.poll_seconds,
+                last_error=excluded.last_error
+            """, (state, utc_now(), station_node, port, poll_seconds, error))
 
     def record_sos(self, node, event_id, channel):
         now = utc_now()

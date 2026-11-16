@@ -1,6 +1,6 @@
 # Prueba de integración SOS y telemetría
 
-**Estado:** pendiente de ejecución con hardware. Las pruebas locales de software y la compilación se registran por separado.
+**Estado:** pulsador físico, sensor y SOS/ACK ejecutados en banco; [evidencias](banco-rak-heltec.md). El [cierre funcional](cierre-funcional-avance3.md) incorpora20/20 mensajes bajo 60 s reportados por el equipo. La tabla siguiente conserva el protocolo; no implica ejecución de cada caso límite no informado.
 
 ## Preparación
 

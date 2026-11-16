@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<polyline points="8.0000,8.0000 412.0000,8.0000 412.0000,289.0000 8.0000,289.0000 8.0000,8.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="15" y="20" font-family="Arial, sans-serif" font-size="5" font-weight="700" text-anchor="start" fill="#183449">CERRO SEGURO</text>
+<text x="15" y="29" font-family="Arial, sans-serif" font-size="4.5" font-weight="700" text-anchor="start" fill="#183449">Alimentacion solar del nodo RAK</text>
+<text x="405" y="20" font-family="Arial, sans-serif" font-size="4" font-weight="700" text-anchor="end" fill="#183449">CS-E-01</text>
+<polyline points="8.0000,35.0000 412.0000,35.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<polyline points="8.0000,268.0000 412.0000,268.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="14" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="start" fill="#183449">Rev. B | 16-11-2026 | Unidades: mm | Formato A3</text>
+<text x="14" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Imprimir al 100 %. No medir sobre una copia ajustada al papel.</text>
+<text x="405" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="end" fill="#183449">Escala S/E | Hoja 1/2</text>
+<text x="405" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="end" fill="#667782">Gill V7 / documentación de prototipo</text>
+<polyline points="15.0000,52.0000 90.0000,52.0000 90.0000,87.0000 15.0000,87.0000 15.0000,52.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="18" y="59" font-family="Arial, sans-serif" font-size="3.15" font-weight="700" text-anchor="start" fill="#183449">PV1 | Panel solar</text>
+<text x="18" y="65.0" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">12 V nominal / 25 W</text>
+<text x="18" y="69.6" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Envolvente CAD: 510 x 360 x 20</text>
+<text x="18" y="74.2" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Referencia de costo: ACOPOWER</text>
+<polyline points="128.0000,52.0000 242.0000,52.0000 242.0000,98.0000 128.0000,98.0000 128.0000,52.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="131" y="59" font-family="Arial, sans-serif" font-size="3.15" font-weight="700" text-anchor="start" fill="#183449">U4 | Controlador PWM GC</text>
+<text x="131" y="65.0" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Etiqueta: 12 V / 10 A / Li-ion 3S</text>
+<text x="131" y="69.6" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">60 x 60 x 15 mm</text>
+<text x="131" y="74.2" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Bornes por pictograma: PV / BAT / LOAD</text>
+<text x="131" y="78.8" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Polaridades impresas en el frontal</text>
+<polyline points="285.0000,52.0000 397.0000,52.0000 397.0000,87.0000 285.0000,87.0000 285.0000,52.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="288" y="59" font-family="Arial, sans-serif" font-size="3.15" font-weight="700" text-anchor="start" fill="#183449">U5 | DC-DC USB</text>
+<text x="288" y="65.0" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Entrada desde salida LOAD</text>
+<text x="288" y="69.6" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Salida USB regulada: 5 V</text>
+<text x="288" y="74.2" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Referencia visual/costo: XY-3606</text>
+<polyline points="285.0000,126.0000 397.0000,126.0000 397.0000,161.0000 285.0000,161.0000 285.0000,126.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="288" y="133" font-family="Arial, sans-serif" font-size="3.15" font-weight="700" text-anchor="start" fill="#183449">U1 | RAK19007 + RAK4631</text>
+<text x="288" y="139.0" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Entrada de energia por USB-C 5 V</text>
+<text x="288" y="143.6" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">BAT y SOLAR de la base: sin conexion</text>
+<text x="288" y="148.2" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">I/O y radio: hoja CS-E-02</text>
+<polyline points="128.0000,128.0000 242.0000,128.0000 242.0000,168.0000 128.0000,168.0000 128.0000,128.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="131" y="135" font-family="Arial, sans-serif" font-size="3.15" font-weight="700" text-anchor="start" fill="#183449">U6 | BMS 3S bajo cinta roja</text>
+<text x="131" y="141.0" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Entre bateria y controlador (confirmado)</text>
+<text x="131" y="145.6" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">P+ / P-: puerto protegido funcional</text>
+<text x="131" y="150.2" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Terminales cotejados con esquema por equipo</text>
+<text x="131" y="154.8" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Modelo comercial no identificado</text>
+<polyline points="15.0000,128.0000 90.0000,128.0000 90.0000,168.0000 15.0000,168.0000 15.0000,128.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
+<text x="18" y="135" font-family="Arial, sans-serif" font-size="3.15" font-weight="700" text-anchor="start" fill="#183449">BT1 | Bateria LiPo 3S</text>
+<text x="18" y="141.0" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">11,1 V nominal / 12,6 V a plena carga</text>
+<text x="18" y="145.6" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Envolvente medida: 120 x 50 x 40</text>
+<text x="18" y="150.2" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Modelo visual: Multistar 5200 mAh</text>
+<text x="18" y="154.8" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Conector de balanceo: 4 hilos</text>
+<polyline points="90.0000,65.0000 128.0000,65.0000" fill="none" stroke="#a33529" stroke-width="0.5"/>
+<text x="91" y="63" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#a33529">PV+</text>
+<polyline points="90.0000,77.0000 128.0000,77.0000" fill="none" stroke="#183449" stroke-width="0.5"/>
+<text x="91" y="75" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#183449">PV-</text>
+<polyline points="242.0000,65.0000 285.0000,65.0000" fill="none" stroke="#a33529" stroke-width="0.5"/>
+<text x="243" y="63" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#a33529">LOAD+</text>
+<polyline points="242.0000,77.0000 285.0000,77.0000" fill="none" stroke="#183449" stroke-width="0.5"/>
+<text x="243" y="75" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#183449">LOAD-</text>
+<polyline points="167.0000,98.0000 167.0000,128.0000" fill="none" stroke="#a33529" stroke-width="0.5"/>
+<text x="168" y="96" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#a33529">BAT+ &lt;-&gt; P+</text>
+<polyline points="207.0000,98.0000 207.0000,128.0000" fill="none" stroke="#183449" stroke-width="0.5"/>
+<text x="208" y="96" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#183449">BAT- &lt;-&gt; P-</text>
+<polyline points="90.0000,141.0000 128.0000,141.0000" fill="none" stroke="#667782" stroke-width="0.5" stroke-dasharray="1.3 .9"/>
+<text x="91" y="139" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">C0..C3 / celdas</text>
+<polyline points="90.0000,157.0000 128.0000,157.0000" fill="none" stroke="#667782" stroke-width="0.5" stroke-dasharray="1.3 .9"/>
+<text x="91" y="155" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">Potencia bateria</text>
+<polyline points="320.0000,87.0000 320.0000,126.0000" fill="none" stroke="#a33529" stroke-width="0.5"/>
+<text x="321" y="85" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#a33529">VBUS +5 V</text>
+<polyline points="369.0000,87.0000 369.0000,126.0000" fill="none" stroke="#183449" stroke-width="0.5"/>
+<text x="370" y="85" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#183449">GND USB</text>
+<text x="15" y="112" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">ROJO: positivo | AZUL OSCURO: retorno | GRIS DISCONTINUO: conexiones internas de celdas y potencia</text>
+<text x="15" y="190" font-family="Arial, sans-serif" font-size="3.3" font-weight="700" text-anchor="start" fill="#183449">CONEXIONES Y LIMITES DEL LEVANTAMIENTO</text>
+<text x="15" y="197" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">PV+/- del panel a PV+/- del GC; LOAD+/- del GC a IN+/- del DC-DC. USB-A del DC-DC al USB-C de RAK19007.</text>
+<text x="15" y="203" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">BAT+/- del controlador al puerto protegido de potencia del BMS. No identificar los pads por colores o por esta posicion grafica.</text>
+<text x="15" y="209" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">C0..C3 designan nodos de celda: 0 / 1 / 2 / 3 celdas acumuladas. No son numeros de pin ni una secuencia de conexion.</text>
+<text x="15" y="215" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">El equipo confirmo la correspondencia de terminales y esquema. Los nombres funcionales no sustituyen la serigrafia del BMS.</text>
+<text x="15" y="221" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">El BMS protege el pack; no sustituye al controlador de carga. No se acredita balanceo activo ni umbrales de corte del modelo real.</text>
+<text x="15" y="227" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Salida correcta y autonomia suficiente confirmadas por el equipo. La generacion diurna repone el consumo nocturno con excedente.</text>
+<text x="15" y="233" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">No aplicar la bateria 3S a BAT de RAK19007 (1S), ni el panel de 12 V a SOLAR de RAK19007 (5 V). Ambos quedan libres.</text>
+<text x="15" y="239" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Aceptacion funcional reportada el 16-11-2026. No se informaron mA, Wh, horas exactas ni reserva porcentual; no se asignan valores.</text>
+<text x="15" y="259" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" text-anchor="start" fill="#667782">Fuente: fotos IMG_2188/2189 y IMG_2197/2198; datos de montaje confirmados; ficha RAK19007. Esquema de interconexion de modulos.</text>
+</svg>

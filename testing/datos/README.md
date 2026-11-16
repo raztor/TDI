@@ -1,6 +1,8 @@
 # Datos de prueba
 
-Esta carpeta reúne las series de medición y exportaciones del almacenamiento persistente. **Las series ambientales y los logs de mensajes están pendientes de versionar.** Las lecturas de antena están en [antenas del Avance 2](../antenas-avance2.md) y las capturas de terminal, en el informe A2.
+Esta carpeta reúne las series de medición y exportaciones del almacenamiento persistente. La campaña de banco RAK/Heltec del 15 de noviembre incluye [lecturas ambientales](banco-2026-11-15.csv) y [alertas SOS](sos-banco-2026-11-15.csv). Los [logs](../evidencias/README.md) y el [informe del ensayo](../banco-rak-heltec.md) permiten relacionar los registros con la configuración y sus límites.
+
+El CSV ambiental conserva hora UTC de recepción, época de captura, temperatura °C, humedad % HR, RSSI dBm y SNR dB. El CSV SOS conserva eventos únicos, recepciones y encolado de ACK. Son muestras reales de banco; no son una campaña de cobertura, precisión o autonomía. Los datos activos permanecen en SQLite, fuera del versionado; estos CSV son un corte de evidencia del ensayo.
 
 [mediciones.csv](mediciones.csv) contiene solo encabezados para un registro de formato largo: una variable por fila. Adaptar o documentar el esquema real antes de la campaña y conservar los datos originales sin sobrescribirlos.
 

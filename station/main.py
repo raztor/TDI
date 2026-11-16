@@ -10,6 +10,7 @@ from meshtastic.serial_interface import SerialInterface
 from pubsub import pub
 from receiver import Receiver
 from store import Store
+from polling import EnvironmentPoller
 
 LOG = logging.getLogger("cerroseguro")
 
@@ -31,6 +32,8 @@ def run(args):
     disconnected = threading.Event()
     interface = None
     active_radio = [None]
+    heartbeat_due = 0
+    own_node = None
 
     def on_receive(packet, interface):
         try:
@@ -48,15 +51,23 @@ def run(args):
         while True:
             if interface is None:
                 disconnected.clear()
+                store.station_status("connecting", own_node, args.port, args.telemetry_poll_seconds)
                 try:
                     interface = SerialInterface(devPath=args.port, noNodes=True, timeout=20)
                     active_radio[0] = interface
                     own_node = interface.myInfo.my_node_num
                     if own_node in args.rak_node:
-                        raise ValueError("La LILYGO y el RAK deben tener NodeID diferentes")
+                        raise ValueError("La estación y el RAK deben tener NodeID diferentes")
                     receiver = Receiver(store, args.rak_node, own_node, args.channel)
+                    poller = EnvironmentPoller(args.rak_node, args.channel, args.telemetry_poll_seconds)
+                    try:
+                        interface.localNode.setTime()
+                    except Exception:
+                        LOG.warning("No se pudo sincronizar el reloj de la estación", exc_info=True)
                     LOG.info("Estación !%08x conectada; base=%s", own_node, args.database)
-                except Exception:
+                except Exception as error:
+                    store.station_status("disconnected", own_node, args.port,
+                                         args.telemetry_poll_seconds, str(error))
                     LOG.exception("No se pudo conectar la estación por USB; reintento en 5 s")
                     if interface is not None:
                         interface.close()
@@ -65,6 +76,7 @@ def run(args):
                     time.sleep(5)
                     continue
             if disconnected.is_set():
+                store.station_status("disconnected", own_node, args.port, args.telemetry_poll_seconds)
                 active_radio[0] = None
                 interface.close()
                 interface = None
@@ -83,6 +95,10 @@ def run(args):
                 receiver.flush_acks(interface)
             except Exception:
                 LOG.exception("No se pudo actualizar la cola persistente de ACK")
+            poller.poll(interface)
+            if time.monotonic() >= heartbeat_due:
+                store.station_status("connected", own_node, args.port, args.telemetry_poll_seconds)
+                heartbeat_due = time.monotonic() + 5
     except KeyboardInterrupt:
         LOG.info("Estación detenida")
     finally:
@@ -90,14 +106,20 @@ def run(args):
         pub.unsubscribe(on_lost, "meshtastic.connection.lost")
         if interface is not None:
             interface.close()
+        store.station_status("stopped", own_node, args.port, args.telemetry_poll_seconds)
         store.close()
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--port", required=True, help="Puerto USB de la LILYGO, por ejemplo COM4")
+    parser.add_argument("--port", required=True, help="Puerto USB del Heltec o LILYGO, por ejemplo COM4")
     parser.add_argument("--rak-node", required=True, type=node_id, action="append")
     parser.add_argument("--channel", type=int, choices=range(8), default=0)
     parser.add_argument("--database", type=Path, default=Path("station-data/cerroseguro.sqlite3"))
+    parser.add_argument("--telemetry-poll-seconds", type=int, default=0,
+                        help="Intervalo de solicitudes ambientales; 0 desactiva el sondeo")
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    run(parser.parse_args())
+    args = parser.parse_args()
+    if args.telemetry_poll_seconds < 0:
+        parser.error("--telemetry-poll-seconds debe ser mayor o igual a 0")
+    run(args)
