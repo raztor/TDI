@@ -18,7 +18,7 @@ Cerro Seguro tiene definidos el problema, los usuarios, los objetivos y una arqu
 | Antenas | A2, páginas 9–11 del archivo | SWR 1,301 a 436,100 MHz y 1,475 a 915,000 MHz; R = 47,02 Ω en la segunda |
 | Integración y fallas | A2, página 12 del archivo | Sustitución del SunSaver-20, batería hinchada retirada y LILYGO averiada; montaje actual aceptado funcionalmente, causas históricas sin determinar |
 | Encapsulado | A2, página 8 del archivo; Gill V1 | Caja de prueba y escudo ambiental conceptual en OpenSCAD con cinco STL |
-| Costos | BOM.xlsx | A3: 31 partidas con importe y fuentes; PLA 460 g contabilizado una vez |
+| Costos | BOM.xlsx | A3: 31 partidas con importe y fuentes; PLA 160 g del interior; envolvente no fabricada contabilizado una vez |
 
 ## Evolución del diseño
 
@@ -38,7 +38,7 @@ La antena compartida mediante conmutación RF se descartó durante el análisis 
 | C06 | Verificación de fallas y correcciones | Registrar fechas, mediciones antes y después de la sustitución del controlador y estado de los equipos dañados |
 | C07 | Usuarios, terreno y energía | Documentar entrevistas, observaciones, pruebas de cobertura y mediciones de consumo y autonomía |
 | C08 | Actas posteriores | Completar fechas, participantes, acuerdos y tareas de las decisiones de integración |
-| C09 | Fabricación y ajuste del Gill | Impresión PLA 460 g y encaje aceptados; fotos, fecha de fabricación y responsables para el acta |
+| C09 | Fabricación y ajuste del Gill | Impresión PLA 160 g del interior; envolvente no fabricada y encaje aceptados; fotos, fecha de fabricación y responsables para el acta |
 
 ## Límites de los resultados
 
@@ -52,7 +52,7 @@ El PoC y el diagrama de E1 representan la arquitectura prevista. La red Meshtast
 
 ## Continuidad hacia el Avance 3
 
-A3 implementa mensajería y ACK sobre Meshtastic, persistencia, dashboard y gemelo Gill V7. La fabricación, el encaje, la comunicación20/20 bajo 60 s y la suficiencia energética fueron reportados por el equipo. No se implementa repetidor propio. Quedan fotografías finales, metadatos de ensayo y actas, demostración de reparación, presentación y cierre del repositorio. La [verificación de la pauta](../verificacion-avance3.md) detalla esos estados.
+A3 implementa mensajería y ACK sobre Meshtastic, persistencia, dashboard y gemelo Gill V7. La fabricación, el encaje, la comunicación20/20 bajo 60 s y la suficiencia energética fueron reportados por el equipo. No se implementa repetidor propio. Las fotografías del interior están indexadas; tapa y aletas no se fabricaron. Los metadatos de ensayo y actas no informados siguen identificados, junto con los estados de demostración y revisión de entrega. La [verificación de la pauta](../verificacion-avance3.md) detalla esos estados.
 
 ## Referencias
 

@@ -28,19 +28,23 @@ No se atribuye al ensayo cobertura general en montaña, ni una medición de prec
 
 ## Fabricación y ajuste
 
-La impresión se realizó por el equipo en **PLA**, con aproximadamente **460 g utilizados**: **160 g del interior y unos 300 g entre aletas y tapa**. La impresora había sido calibrada recientemente. El equipo confirmó encaje satisfactorio y tolerancias suficientes para el montaje.
+La impresión se realizó por el equipo en **PLA**, con aproximadamente **160 g utilizados en el interior**. La impresora había sido calibrada recientemente. El equipo confirmó encaje satisfactorio y tolerancias suficientes para el interior impreso. La tapa y las aletas no se fabricaron por indisponibilidad de ASA; se descartó imprimirlas en PLA para exposición solar. La estimación anterior de unos 300 g exteriores no corresponde a consumo realizado.
 
-Se cierra la comprobación funcional de encaje. No se convierten esa observación ni la calibración de la impresora en desviaciones dimensionales medidas. Los objetivos nominales de los [planos](../diseño-3d/planos/README.md) se conservan como referencia de diseño.
+Se cierra la comprobación funcional de encaje del interior; no se declara comprobado el ajuste físico de la envolvente exterior. No se convierten esa observación ni la calibración de la impresora en desviaciones dimensionales medidas. Los objetivos nominales de los [planos](../diseño-3d/planos/README.md) se conservan como referencia de diseño.
 
-El costo de fabricación propia incluye únicamente el filamento utilizado. A la referencia de **CLP 13.000/kg**, los **0,460 kg** equivalen a **CLP 5.980**. Se registra una sola vez en BOM-031; los once tipos de pieza no vuelven a cobrar material. No se agrega servicio de impresión, mano de obra ni energía.
+El costo de fabricación propia incluye únicamente el filamento utilizado. A la referencia de **CLP 13.000/kg**, los **0,160 kg** equivalen a **CLP 2.080**. Se registra una sola vez en BOM-031; las piezas interiores no vuelven a cobrar material y la envolvente no fabricada no tiene consumo imputado. No se agrega servicio de impresión, mano de obra ni energía.
 
 ## Evidencias y datos que faltan para las actas
 
-- Fotografías finales: al menos tres ángulos y una vista del interior y conexiones.
+- Fotografías del interior: tres vistas incorporadas en [hardware/fotos](../hardware/fotos/README.md). La envolvente exterior no fue fabricada.
 - Fecha, lugar, participantes y responsables de las pruebas de comunicación, energía y montaje.
-- Distancia, obstáculos, ubicación y condiciones de los veinte envíos; indicar si fueron mensajes de prueba, SOS o ambos, y qué punto del recorrido se cronometró.
+- La serie de veinte distancias y SNR está incorporada en [pruebas de distancia](pruebas-distancia.md); no consta su correspondencia individual con los veinte envíos cronometrados. Obstáculos, ubicación y condiciones no figuran en la tabla; indicar si fueron mensajes de prueba, SOS o ambos, y qué punto del recorrido se cronometró.
 - Duración del ensayo energético y condiciones de sol/carga. Incorporar lecturas si existen; no reconstruir cifras que no fueron registradas.
 - Fecha de impresión y montaje, piezas intervenidas, decisiones de integración y responsables.
 - Confirmación del ensayo de apertura, reemplazo o reinstalación y recuperación funcional, distinto del encaje satisfactorio.
 
 Estos datos completan la trazabilidad de las pruebas ya reportadas. Los resultados funcionales no se vuelven a presentar como pruebas aún no realizadas.
+
+## Serie de distancia y SNR
+
+Se incorporan [20 lecturas](pruebas-distancia.md) entre 0,2 y 17,4 km, con SNR de −9,0 a 13,2 dB. El punto de 17,4 km registra −0,5 dB. Se conserva la imagen original, la transcripción CSV y la gráfica. Esta serie se documenta por separado del resultado 20/20 bajo 60 s: no contiene tiempos, conteo de pérdidas por punto ni saltos de red.

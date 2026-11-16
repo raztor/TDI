@@ -43,3 +43,9 @@ La tabla 2 de E1 establece las metas preliminares del proyecto. Sus condiciones 
 El plan de E1 propone entrevistar a 8–12 excursionistas y 3–5 rescatistas o guardaparques, y observar dos jornadas en un acceso autorizado. Las entrevistas y jornadas de observación están pendientes de documentación.
 
 El prototipo no debe presentarse como garantía de cobertura, rescate o seguridad personal sin evidencia que sustente esas afirmaciones.
+
+## Evidencia de comunicación a distancia incorporada
+
+El Avance 3 incorpora [veinte lecturas distancia/SNR](../testing/pruebas-distancia.md), entre 0,2 y 17,4 km. El punto más distante registra −0,5 dB. La tabla no identifica trazado, condiciones o saltos de red; no se asigna a las rutas de E1 ni se interpreta como cobertura continua garantizada. Su alcance se diferencia del ensayo reportado de veinte entregas bajo 60 s.
+
+El prototipo fabricado conserva el interior en PLA, aproximadamente 160 g. Tapa y aletas exteriores no se fabricaron por indisponibilidad de ASA. El CAD completo y sus renders representan el diseño exterior, sin acreditar protección ambiental de la implementación construida.

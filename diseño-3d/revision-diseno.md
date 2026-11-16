@@ -2,7 +2,7 @@
 
 La revisión entregada es el [Gill V7 con margen de 75 mm](fusion/gill-v7-75mm/README.md). El Gill V1 se conserva como antecedente conceptual. El [inventario CAD](fusion/componentes-nodo/README.md) distingue modelos oficiales, medidas aportadas y referencias aproximadas.
 
-**Aceptación funcional registrada el 16-11-2026:** el equipo confirmó montaje correcto, encaje satisfactorio y tolerancias suficientes después de calibrar la impresora. Fabricación propia en PLA: 460 g aproximados, repartidos entre interior 160 g y aletas y tapa unos 300 g. No se cambian las dimensiones de los STEP ni se asignan desviaciones metrológicas no medidas. Fotografías y fecha concreta de fabricación pendientes para el acta. Ver [cierre funcional](../testing/cierre-funcional-avance3.md).
+**Aceptación funcional registrada el 16-11-2026:** el equipo confirmó montaje correcto, encaje satisfactorio y tolerancias suficientes después de calibrar la impresora. Fabricación propia en PLA: 160 g aproximados del interior; tapa y aletas exteriores no fabricadas. No se cambian las dimensiones de los STEP ni se asignan desviaciones metrológicas no medidas. Las fotografías del interior están indexadas en [hardware/fotos](../hardware/fotos/README.md); la fecha concreta de fabricación no fue informada. Ver [cierre funcional](../testing/cierre-funcional-avance3.md).
 
 | Componente | Dimensiones o referencia | Evidencia |
 |---|---|---|
@@ -30,4 +30,10 @@ Las comprobaciones de [verificacion.json](fusion/gill-v7-75mm/verificacion.json)
 
 El F3D completo y la variante interior se reabren para verificar su contenido y visibilidad. El segundo conserva las nueve aletas ocultas y reactivables. La batería, el controlador y los conectores rectos mantienen su distribución y dimensiones.
 
-**Resultado:** revisión geométrica digital; impresión, ajuste, resistencia, sellado y comportamiento térmico pendientes. La tapa requiere sellar la junta del disco de antena y los pasos de tornillos. La precisión meteorológica y el rendimiento RF no se deducen del CAD. Los F3D usan geometría directa e híbrida; se conserva OpenSCAD editable y queda pendiente la parametrización nativa completa y los planos PDF.
+**Resultado:** revisión geométrica digital y ajuste funcional del interior impreso. Envolvente exterior sin fabricar; resistencia, sellado y comportamiento térmico sin ensayos documentados. La tapa requiere sellar la junta del disco de antena y los pasos de tornillos. La precisión meteorológica y el rendimiento RF no se deducen del CAD. Los F3D usan geometría directa e híbrida; se conserva OpenSCAD editable y queda pendiente la parametrización nativa completa; los planos PDF están disponibles.
+
+## Estado de fabricación y renders
+
+El **interior se fabricó con aproximadamente 160 g de PLA** y su encaje fue aceptado por el equipo con la impresora calibrada. **La tapa superior y las nueve aletas no se fabricaron**: no fue posible imprimirlas en ASA y se descartó consumir PLA para esa envolvente destinada a exposición solar. El disco de antena pertenece al diseño de tapa; no se contabiliza como material fabricado. Los aproximadamente 300 g antes estimados para la envolvente no son consumo realizado.
+
+El conjunto completo sigue disponible como diseño digital en F3D, STEP, STL y planos. Los renders distinguen el exterior previsto, no fabricado, del interior sin tapa ni aletas. El montaje construido no se declara cerrado, estanco ni protegido para exposición permanente a la intemperie. No se atribuyen ensayos de radiación solar o resistencia ambiental a la decisión de material.

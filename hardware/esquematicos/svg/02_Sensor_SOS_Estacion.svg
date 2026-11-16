@@ -5,7 +5,7 @@
 <text x="405" y="20" font-family="Arial, sans-serif" font-size="4" font-weight="700" text-anchor="end" fill="#183449">CS-E-02</text>
 <polyline points="8.0000,35.0000 412.0000,35.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
 <polyline points="8.0000,268.0000 412.0000,268.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
-<text x="14" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="start" fill="#183449">Rev. B | 16-11-2026 | Unidades: mm | Formato A3</text>
+<text x="14" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="start" fill="#183449">Rev. C | 16-11-2026 | Unidades: mm | Formato A3</text>
 <text x="14" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Imprimir al 100 %. No medir sobre una copia ajustada al papel.</text>
 <text x="405" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="end" fill="#183449">Escala S/E | Hoja 2/2</text>
 <text x="405" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="end" fill="#667782">Gill V7 / documentación de prototipo</text>

@@ -1,6 +1,6 @@
 {
   "fecha": "2026-11-16",
-  "alcance": "Presupuesto de referencia de un nodo RAK en Gill V7 y estación Heltec USB. Precios publicados por moneda sin conversión, flete ni tributos de importación. Incluye lotes de reposición declarados e impresión propia:aproximadamente 460 g de PLA reportados. Modelos comparables de precio no sustituyen el hardware real.",
+  "alcance": "Presupuesto de referencia de un nodo RAK en Gill V7 y estación Heltec USB. Precios por moneda sin conversión, flete ni tributos. Inventario CAD completo conservado; fabricación propia limitada al interior, 160 g PLA. Envolvente exterior no fabricada por indisponibilidad de ASA; no se carga material para tapa ni aletas. Referencias de precio no sustituyen el hardware real.",
   "materiales": [
     {
       "id": "BOM-001",
@@ -332,9 +332,10 @@
       "cotizacion": "Material incluido en BOM-031",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Interior fabricado en PLA. Ajuste funcional aceptado por el equipo. Material conjunto de 160 g incluido una sola vez en BOM-031; sin masas individuales asignadas.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "Interior fabricado en PLA"
     },
     {
       "id": "BOM-021",
@@ -347,9 +348,10 @@
       "cotizacion": "Material incluido en BOM-031",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Interior fabricado en PLA. Ajuste funcional aceptado por el equipo. Material conjunto de 160 g incluido una sola vez en BOM-031; sin masas individuales asignadas.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "Interior fabricado en PLA"
     },
     {
       "id": "BOM-022",
@@ -359,12 +361,13 @@
       "modelo": "V7_Aleta_236_45gr_Paso23_5",
       "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Material incluido en BOM-031",
+      "cotizacion": "Diseño exterior no fabricado; sin consumo imputado",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Pieza del diseño exterior, no fabricada. ASA no disponible; se descartó imprimir esta envolvente en PLA para uso al sol. Cantidad de inventario CAD; no representa material consumido ni tiene cargo de filamento.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "No fabricado; diseño exterior conservado"
     },
     {
       "id": "BOM-023",
@@ -374,12 +377,13 @@
       "modelo": "V7_Aleta_Superior_236_45gr",
       "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Material incluido en BOM-031",
+      "cotizacion": "Diseño exterior no fabricado; sin consumo imputado",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Pieza del diseño exterior, no fabricada. ASA no disponible; se descartó imprimir esta envolvente en PLA para uso al sol. Cantidad de inventario CAD; no representa material consumido ni tiene cargo de filamento.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "No fabricado; diseño exterior conservado"
     },
     {
       "id": "BOM-024",
@@ -389,12 +393,13 @@
       "modelo": "V7_Tapa_256_Pendiente8gr",
       "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Material incluido en BOM-031",
+      "cotizacion": "Diseño exterior no fabricado; sin consumo imputado",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Pieza del diseño exterior, no fabricada. ASA no disponible; se descartó imprimir esta envolvente en PLA para uso al sol. Cantidad de inventario CAD; no representa material consumido ni tiene cargo de filamento.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "No fabricado; diseño exterior conservado"
     },
     {
       "id": "BOM-025",
@@ -404,12 +409,13 @@
       "modelo": "V7_Disco_Antena_60_Paso16_2",
       "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Material incluido en BOM-031",
+      "cotizacion": "Diseño exterior no fabricado; sin consumo imputado",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Pieza del diseño exterior, no fabricada. ASA no disponible; se descartó imprimir esta envolvente en PLA para uso al sol. Cantidad de inventario CAD; no representa material consumido ni tiene cargo de filamento.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "No fabricado; diseño exterior conservado"
     },
     {
       "id": "BOM-026",
@@ -422,9 +428,10 @@
       "cotizacion": "Material incluido en BOM-031",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Interior fabricado en PLA. Ajuste funcional aceptado por el equipo. Material conjunto de 160 g incluido una sola vez en BOM-031; sin masas individuales asignadas.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "Interior fabricado en PLA"
     },
     {
       "id": "BOM-027",
@@ -437,9 +444,10 @@
       "cotizacion": "Material incluido en BOM-031",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Interior fabricado en PLA. Ajuste funcional aceptado por el equipo. Material conjunto de 160 g incluido una sola vez en BOM-031; sin masas individuales asignadas.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "Interior fabricado en PLA"
     },
     {
       "id": "BOM-028",
@@ -452,9 +460,10 @@
       "cotizacion": "Material incluido en BOM-031",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Interior fabricado en PLA. Ajuste funcional aceptado por el equipo. Material conjunto de 160 g incluido una sola vez en BOM-031; sin masas individuales asignadas.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "Interior fabricado en PLA"
     },
     {
       "id": "BOM-029",
@@ -467,9 +476,10 @@
       "cotizacion": "Material incluido en BOM-031",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Interior fabricado en PLA. Ajuste funcional aceptado por el equipo. Material conjunto de 160 g incluido una sola vez en BOM-031; sin masas individuales asignadas.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "Interior fabricado en PLA"
     },
     {
       "id": "BOM-030",
@@ -482,23 +492,24 @@
       "cotizacion": "Material incluido en BOM-031",
       "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "nota": "Interior fabricado en PLA. Ajuste funcional aceptado por el equipo. Material conjunto de 160 g incluido una sola vez en BOM-031; sin masas individuales asignadas.",
       "ficha": "../diseño-3d/planos/README.md",
-      "fecha_precio": "2026-11-16"
+      "fecha_precio": "2026-11-16",
+      "estado_fabricacion": "Interior fabricado en PLA"
     },
     {
       "id": "BOM-031",
       "componente": "PLA utilizado en fabricación propia",
-      "cantidad": 0.46,
+      "cantidad": 0.16,
       "unidad": "kg",
-      "modelo": "PLA 1,75 mm. Interior 160 g + aletas y tapa unos 300 g = aproximadamente 460 g",
+      "modelo": "PLA 1,75 mm; 160 g aproximadamente utilizados en el interior",
       "precio": 13000,
       "moneda": "CLP",
       "cotizacion": "Referencia de filamento por kg",
       "fuente": "https://afel.cl/products/filamento-pla-natural-afel-1-75mm-1kg",
       "fecha_precio": "2026-11-16",
       "grupo": "Material de impresión",
-      "nota": "Masa aproximada reportada por el equipo: 160 g del interior y unos 300 g entre aletas y tapa. 0,460 kg × 13.000 CLP/kg = 5.980 CLP de referencia. Solo filamento utilizado; sin servicio de impresión, mano de obra ni energía. Las 20 piezas del inventario CAD no duplican este costo.",
+      "nota": "0,160 kg × 13.000 CLP/kg = 2.080 CLP. Solo material utilizado en el interior; sin servicio, mano de obra ni energía. Aletas y tapa exteriores no fabricadas y sin consumo imputado.",
       "ficha": "https://afel.cl/products/filamento-pla-natural-afel-1-75mm-1kg"
     }
   ]

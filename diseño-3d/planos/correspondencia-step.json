@@ -1,5 +1,6 @@
 {
-  "revision": "B documental; geometria V7 conservada",
+  "revision": "C documental; geometria V7 conservada",
+  "fabricacion": "Interior: 160 g PLA. Tapa, aletas y disco exteriores no fabricados; ASA no disponible",
   "unidades": "mm",
   "metodo": "Proyeccion HLR de STEP; vistas de tercer diedro; deflexion grafica 0,035 mm",
   "piezas": [

@@ -20,3 +20,9 @@ Cada archivo debe poder vincularse con una prueba y una revisión del sistema.
 Lecturas y límites en [antenas del Avance 2](../antenas-avance2.md). Los protocolos T01–T08 requieren sus propios registros de ejecución.
 
 Las capturas deben mostrar unidades, intervalo temporal y valores legibles. Conservar logs y datos originales cuando una imagen no permita comprobar el resultado. No subir claves, tokens ni otros secretos visibles en capturas.
+
+## Pruebas a distancia
+
+- [Tabla original de veinte pruebas](pruebas-distancia-snr.png): imagen aportada por el equipo; fecha de ensayo no informada.
+- [Gráfica SNR/distancia PNG](distancia-snr-grafica.png) y [SVG editable](distancia-snr-grafica.svg): generadas a partir del [CSV](../datos/distancia-snr.csv), sin suavizar ni eliminar filas.
+- [Informe e interpretación](../pruebas-distancia.md): alcance de 0,2–17,4 km observado; sin inferir cobertura garantizada, pérdidas por punto o latencias individuales.

@@ -42,3 +42,9 @@ También se retiró una batería LiPo hinchada y se registró una placa LILYGO a
 ## Integración del Avance 3
 
 El [cierre de actas de integración](cierre-actas-integracion.md) reúne los acuerdos y resultados confirmados y los datos de fecha, participantes y responsables que faltan para formalizar cada instancia. La aceptación funcional de alimentación, comunicación y encaje se documenta en el [cierre funcional](../../testing/cierre-funcional-avance3.md).
+
+## Decisión de fabricación exterior y pruebas a distancia
+
+Registro documental del 16-11-2026; no sustituye una fecha de reunión. Al no ser posible imprimir el exterior en ASA, se decidió no imprimir tapa superior ni aletas en PLA para evitar consumir material destinado a exposición solar. Se conserva el diseño digital completo. Fabricación realizada: interior, aproximadamente 160 g de PLA y encaje funcional aceptado. La estimación anterior de unos 300 g de envolvente no es consumo realizado.
+
+Se incorporó una tabla de veinte lecturas distancia/SNR, de 0,2 a 17,4 km. Se transcribe íntegra y se conserva su imagen original en [testing](../../testing/pruebas-distancia.md); las fechas, participantes o condiciones que no constan no se completan por inferencia.

@@ -36,7 +36,7 @@ class Sheet:
         self.text(405, 20, code, 4, NAVY, True, 'end')
         self.line(8, 35, 412, 35)
         self.line(8, 268, 412, 268)
-        self.text(14, 276, 'Rev. B | 16-11-2026 | Unidades: mm | Formato A3', 3)
+        self.text(14, 276, 'Rev. C | 16-11-2026 | Unidades: mm | Formato A3', 3)
         self.text(14, 284, 'Imprimir al 100 %. No medir sobre una copia ajustada al papel.', 2.7, GRAY)
         self.text(405, 276, f'Escala {scale} | Hoja {number}/{count}', 3, NAVY, False, 'end')
         self.text(405, 284, 'Gill V7 / documentación de prototipo', 2.7, GRAY, False, 'end')
@@ -356,12 +356,12 @@ def make_mechanical():
       'Tornilleria: 6 M3x6 + 3 M3x10.', 'Insertos: 9 M3 L4, exterior4,2.',
       'Antena: tuerca propia y junta.', 'Paso central16,2; referencia 5/8".',
       'Cable coaxial: volumen representativo;', 'margen CAD sobre interior: 18,5.',
-      'Bateria medida: 120 x 50 x 40.', 'Encaje funcional aceptado por el equipo.',
+      'Bateria medida: 120 x 50 x 40.', 'Interior: encaje funcional aceptado.',
       'La vista no certifica estanqueidad,', 'resistencia ni temperatura de uso.',
     ])
-    s.text(15,227,'INVENTARIO IMPRESO',3.2,NAVY,True)
+    s.text(15,227,'INVENTARIO DIGITAL / ESTADO DE FABRICACION',3.2,NAVY,True)
     s.text(15,234,'1 base | 3 guias | 8 aletas estandar | 1 terminal | 1 tapa | 1 disco | 1 placa | 4 bandejas = 20 piezas',2.8)
-    s.text(15,241,'Fabricacion propia en PLA: aprox. 460 g. Interior 160 g + aletas y tapa unos 300 g. Impresora calibrada; ajuste satisfactorio reportado.',2.8)
+    s.text(15,241,'Interior fabricado: aprox. 160 g PLA; ajuste aceptado. Tapa, aletas y disco: diseno exterior no fabricado; ASA no disponible.',2.8)
     s.text(15,248,'Objetivos provisionales de control: lineales +/-0,3 hasta150; +/-0,5 sobre150; taladros +/-0,2; angulos +/-1 grado.',2.65)
     s.text(15,255,'No son tolerancias medidas. Probar insertos y paso de antena; no compensar el STEP sin registrar una nueva revision.',2.65)
     s.finish()
@@ -380,7 +380,7 @@ def make_mechanical():
           'Cotas de envolvente derivadas de STEP.',
           'Otras cotas nominales: fuente V7.',
           'Objetivos: ver hoja CS-M-00.',
-          'Encaje funcional aceptado por equipo.',
+          ('Pieza de diseno exterior; no fabricada.' if idx in (4,5,6,7) else 'Interior: encaje funcional aceptado.'),
           'Las curvas se aproximan a 0,035 mm',
           'para la representacion en papel.',
           'STEP conserva la geometria exacta.',
@@ -388,7 +388,7 @@ def make_mechanical():
         s.text(15,260,'Fuente: fusion/gill-v7-75mm/'+name+'.step',2.35,GRAY)
         s.finish()
     pdf.save()
-    (OUT/'correspondencia-step.json').write_text(json.dumps({'revision':'B documental; geometria V7 conservada','unidades':'mm','metodo':'Proyeccion HLR de STEP; vistas de tercer diedro; deflexion grafica 0,035 mm','piezas':manifest},indent=2,ensure_ascii=False)+'\n')
+    (OUT/'correspondencia-step.json').write_text(json.dumps({'revision':'C documental; geometria V7 conservada','fabricacion':'Interior: 160 g PLA. Tapa, aletas y disco exteriores no fabricados; ASA no disponible','unidades':'mm','metodo':'Proyeccion HLR de STEP; vistas de tercer diedro; deflexion grafica 0,035 mm','piezas':manifest},indent=2,ensure_ascii=False)+'\n')
 
 
 def make_electrical():

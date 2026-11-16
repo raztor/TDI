@@ -4,9 +4,9 @@
 
 ## Resultado actual
 
-El sistema implementa captura ambiental y SOS en RAK4631, transporte Meshtastic, estación Heltec V3.2 por USB, SQLite y dashboard. El equipo confirmó **20/20 mensajes recibidos en menos de 60 s**, sin pérdidas, alimentación correcta, autonomía suficiente y montaje satisfactorio. La fabricación propia utiliza **460 g aproximados de PLA: 160 g del interior y unos 300 g entre aletas y tapa**.
+El sistema implementa captura ambiental y SOS en RAK4631, transporte Meshtastic, estación Heltec V3.2 por USB, SQLite y dashboard. El equipo confirmó **20/20 mensajes recibidos en menos de 60 s**, sin pérdidas, alimentación correcta, autonomía suficiente y montaje satisfactorio. La fabricación propia utiliza **160 g aproximados de PLA del interior; tapa y aletas exteriores no fabricadas**.
 
-El [cierre funcional](../testing/cierre-funcional-avance3.md) registra el origen y alcance de esos resultados. Las fechas, lugar, participantes y condiciones de los ensayos se completan en las actas; las fotografías finales siguen pendientes.
+El [cierre funcional](../testing/cierre-funcional-avance3.md) registra el origen y alcance de esos resultados. Las fechas, lugar, participantes y condiciones de los ensayos se completan en las actas; las tres fotografías del interior están indexadas en [hardware/fotos](../hardware/fotos/README.md).
 
 ## Software · 30 %, pp. 2–4
 
@@ -23,10 +23,10 @@ ACK encolado, REGISTERED en el RAK y revisión del operador son estados distinto
 
 | Entregable | Estado actual | Pendiente |
 |---|---|---|
-| Esquema | Dos hojas A3 y SVG; terminales y salida cotejados por el equipo | Incorporar fotografías finales y datos de ensayo a las actas |
+| Esquema | Dos hojas A3 y SVG; terminales y salida cotejados por el equipo | Fotografías interiores indexadas; metadatos de ensayo delimitados en actas |
 | Energía | Generación diurna repone consumo nocturno con excedente; consumo y autonomía aceptados | Registrar duración, condiciones y lecturas existentes; no se cuantificó reserva del 30 % |
 | BOM | 31 partidas con importes y fuentes; material impreso contado una sola vez | Precios son referencias de reposición, no gastos pagados ni costo importado completo |
-| Montaje | Encaje y montaje correctos según el equipo | Fotos de al menos tres ángulos e interior; demostración de reparación |
+| Montaje | Encaje y montaje correctos según el equipo | Tres ángulos del interior indexados; sin registro de demostración de reparación |
 
 Panel real: 12 V / 25 W. BMS entre batería y controlador GC para Li-ion 3S, DC-DC USB de 5 V hacia RAK19007. Se conserva la distinción entre modelos físicos y referencias comerciales de precio o CAD.
 
@@ -34,13 +34,13 @@ Panel real: 12 V / 25 W. BMS entre batería y controlador GC para Li-ion 3S, DC-
 
 Gill V7 dispone de ensamble F3D, STEP, STL y [doce hojas de planos](../diseño-3d/planos/README.md). El equipo confirmó tolerancias suficientes y encaje satisfactorio después de calibrar la impresora. Se actualiza el material fabricado a PLA; el CAD mantiene su geometría.
 
-Quedan la revisión final de renders, la documentación de la parametrización nativa y el cotejo documental de volúmenes comerciales aproximados. No se declaran ensayos de agua, resistencia o comportamiento térmico que no fueron informados.
+Los [renders exterior e interior](../diseño-3d/renders/README.md) incluyen materiales e iluminación. El exterior es un diseño no fabricado; el interior usa 160 g de PLA. Quedan la documentación de la parametrización nativa y el cotejo documental de volúmenes comerciales aproximados. No se declaran ensayos de agua, resistencia o comportamiento térmico que no fueron informados.
 
 ## Testing · 10 %, pp. 7–8
 
 - Comunicación: 20 enviados y 20 recibidos, 100 % de recepción y 0 % de pérdidas observadas; todos bajo 60 s. Cumple los objetivos de recepción y tiempo en las condiciones ensayadas.
 - Energía: suficiencia funcional y recuperación diurna confirmadas. No se informaron mA, Wh, horas exactas ni reserva porcentual.
-- Ajuste: montaje y encaje aceptados; impresión propia en PLA y 460 g aproximados reportados.
+- Ajuste: montaje y encaje aceptados; impresión propia en PLA y 160 g aproximados del interior reportados.
 - Banco documentado: sensor, persistencia y SOS/ACK; dos diferencias WAITING–REGISTERED de 2,955 s y 2,583 s. No se asignan a la campaña de veinte mensajes.
 - Falla real: rechazo por contacto público y cadencia diagnosticados, corregidos y comprobados; [registro](../testing/registro-fallas.md).
 
@@ -54,4 +54,10 @@ La presentación del 23 de noviembre requiere diapositivas, participación de to
 
 ## Cierre
 
-La implementación y la aceptación funcional de montaje, comunicación y energía están registradas. El cierre de entrega requiere fotografías, actas y condiciones de ensayo, presentación y revisión final del repositorio. El [checklist](checklist-entrega.md) distingue esos pendientes de las funciones ya comprobadas.
+La implementación y la aceptación funcional de montaje, comunicación y energía están registradas. Las fotografías interiores, los renders y la serie de distancia/SNR están incorporados. El cierre documental mantiene los metadatos no informados, la limitación de fabricación exterior y la revisión final del repositorio. El [checklist](checklist-entrega.md) distingue esos pendientes de las funciones ya comprobadas.
+
+## Actualización de evidencia y fabricación
+
+La serie adicional incorpora [veinte lecturas de distancia/SNR](../testing/pruebas-distancia.md), con recepción registrada entre 0,2 y 17,4 km. No aporta tiempos o pérdidas por punto; no se asigna automáticamente el ensayo 20/20 a esas filas.
+
+La envolvente exterior no se fabricó al no estar disponible ASA; se decidió no usar PLA para tapa y aletas expuestas al sol. El presupuesto imputa solo 160 g de PLA del interior (CLP 2.080); total CLP 102.397 más USD 204,78, separados. Los renders exterior e interior y los planos documentan esa diferencia. El criterio de encapsulado exterior funcional no se declara cumplido por un render.

@@ -7,7 +7,7 @@ Revisión del **16-11-2026**. [BOM.xlsx](BOM.xlsx) contiene **31 partidas con im
 | Moneda | Total |
 |---|---:|
 | USD | 204,78 |
-| CLP | 106.297 |
+| CLP | 102.397 |
 
 Las monedas se mantienen separadas; no se aplica un tipo de cambio supuesto. Son referencias de reposición publicadas, no precios pagados. No incluyen flete ni tributos de importación. Los precios locales se conservan como publicados. Las referencias equivalentes no sustituyen los componentes que ya están instalados.
 
@@ -23,13 +23,13 @@ Las monedas se mantienen separadas; no se aplica un tipo de cambio supuesto. Son
 | Insertos M3 L4 | 9 | CLP 50 por unidad | [Cimech, pack 20 a CLP 1.000](https://www.cimech3d.cl/producto/insertos-metalicos-m3-pack-20-4mm/); prorrateo 1.000/20; catálogo agotado |
 | Cableado y terminaciones | 1 lote | CLP 7.269 | 1 m paralelo 18AWG a [CLP 4.200](https://www.litiopack.cl/categoria-producto/componentes-pack-li-ion/cable-siliconado/), tubo 4 mm/10 m a [CLP 2.569](https://altronics.cl/electronics-products/prototipos?limit=100) y dos borneras a [CLP 250](https://afel.cl/collections/conectores) |
 | Sellado y fijación | 1 lote | CLP 7.194 | [Silicona neutra 280 ml a CLP 6.990](https://www.easy.cl/silicona-neutra-sella-todo-280-ml-transparente-1310639/p) y [bolsa de 100 amarras a CLP 204](https://requeteofertas.cl/product/bolsa-100-amarras-plasticas-color-negro-tamano-25x100/) |
-| PLA utilizado | 0,460 kg | CLP 13.000/kg | [PLA AFEL 1 kg](https://afel.cl/products/filamento-pla-natural-afel-1-75mm-1kg); costo utilizado CLP 5.980 |
+| PLA utilizado | 0,160 kg | CLP 13.000/kg | [PLA AFEL 1 kg](https://afel.cl/products/filamento-pla-natural-afel-1-75mm-1kg); costo utilizado CLP 2.080 |
 
 Los lotes de cableado y sellado presupuestan los envases o presentaciones indicados. Son una referencia comercial de reposición, no un metraje ni un consumo medido. Cabezas de tornillo, diámetros de inserto, calibres y longitudes de las ofertas no cambian automáticamente el montaje que el equipo ya comprobó.
 
 ## Impresión propia
 
-El equipo informó **460 g aproximados de PLA utilizados: 160 g del interior y unos 300 g entre aletas y tapa**. El costo es **0,460 × 13.000 = CLP 5.980**. Se registra una sola vez en **BOM-031**. Los once tipos de pieza del inventario CAD conservan sus cantidades, con costo incremental de impresión cero porque su material está incluido en esa partida. No son piezas sin costo ni materiales omitidos.
+El equipo informó **160 g aproximados de PLA utilizados en el interior; tapa y aletas no fabricadas**. El costo es **0,160 × 13.000 = CLP 2.080**. Se registra una sola vez en **BOM-031**. Las cantidades del inventario CAD se conservan como referencia del diseño completo. Base, guías, placa y bandejas corresponden al interior fabricado y comparten BOM-031. Aletas, tapa y disco de antena son diseño exterior no fabricado y no tienen filamento imputado. La BOM distingue estos estados en cada partida. El presupuesto conserva referencias de herrajes del diseño; no equivale a una rendición de compras ni a una lista de todo lo instalado.
 
 Solo se contabiliza el filamento utilizado; no se suma servicio de impresión, mano de obra ni energía. La marca/color de la oferta es una referencia económica y no identifica el carrete usado.
 

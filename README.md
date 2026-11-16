@@ -2,9 +2,9 @@
 
 Cerro Seguro es un proyecto de seguridad y comunicaciones en montaña, con un prototipo de nodo fijo SOS y telemetría ambiental sobre Meshtastic. Este repositorio reúne el software, hardware, diseño 3D y validación para el Avance 3 de TEI201, Universidad Adolfo Ibáñez.
 
-**Estado al 16 de noviembre de 2026:** nodo RAK con sensor y SOS, estación Heltec USB, persistencia y dashboard operativos. El equipo confirmó 20/20 mensajes recibidos en menos de 60 s, salida de alimentación correcta, autonomía suficiente y encaje satisfactorio del montaje. Fabricación propia en PLA: 460 g aproximados. [Cierre funcional y alcance de las pruebas](testing/cierre-funcional-avance3.md).
+**Estado al 16 de noviembre de 2026:** nodo RAK con sensor y SOS, estación Heltec USB, persistencia y dashboard operativos. El equipo confirmó 20/20 mensajes recibidos en menos de 60 s, salida de alimentación correcta, autonomía suficiente y encaje satisfactorio del montaje. Fabricación propia: 160 g aproximados de PLA en el interior; tapa y aletas exteriores no fabricadas. [Cierre funcional y alcance de las pruebas](testing/cierre-funcional-avance3.md).
 
-El Avance 3 dispone de [firmware SOS sobre Meshtastic](firmware/meshtastic/README.md), [estación USB con SQLite](station/README.md), [dashboard local](dashboard/README.md), [esquema eléctrico](hardware/esquematicos/README.md), [BOM con referencias de costo](hardware/cotizaciones.md) y [planos Gill V7](diseño-3d/planos/README.md). El sondeo ambiental es de 120 s y el pulsador físico retorna REGISTERED. Faltan fotografías finales, datos de fecha/lugar/responsables para las actas y la presentación. La cobertura general en montaña, precisión ambiental y validación con usuarios conservan sus límites en la [verificación](docs/verificacion-avance3.md).
+El Avance 3 dispone de [firmware SOS sobre Meshtastic](firmware/meshtastic/README.md), [estación USB con SQLite](station/README.md), [dashboard local](dashboard/README.md), [esquema eléctrico](hardware/esquematicos/README.md), [BOM con referencias de costo](hardware/cotizaciones.md) y [planos Gill V7](diseño-3d/planos/README.md). El sondeo ambiental es de 120 s y el pulsador físico retorna REGISTERED. Las fotografías del interior están indexadas. Los metadatos de las actas se conservan como no informados cuando no constan en las evidencias; el exterior no se fabricó. La cobertura general en montaña, precisión ambiental y validación con usuarios conservan sus límites en la [verificación](docs/verificacion-avance3.md).
 
 ## Descripción del proyecto
 
@@ -146,3 +146,9 @@ La guía exige funcionamiento real durante la demo. Un video, datos de ejemplo o
 ## Fuentes
 
 Las dependencias, el código externo y las declaraciones correspondientes se mantienen en [FUENTES.md](FUENTES.md).
+
+## Fabricación y pruebas a distancia
+
+Se imprimió el **interior con unos 160 g de PLA**. La tapa superior y las aletas exteriores **no se fabricaron** por indisponibilidad de ASA; se descartó usar PLA para esa envolvente expuesta al sol. El CAD completo se conserva como diseño digital. [Renders exterior e interior](diseño-3d/renders/README.md), [fotografías del interior](hardware/fotos/README.md) y [estado de fabricación](diseño-3d/revision-diseno.md).
+
+La [serie de veinte pruebas a distancia](testing/pruebas-distancia.md) contiene lecturas entre **0,2 y 17,4 km**, con SNR **−9,0 a 13,2 dB**. Se mantiene separada de la campaña de entrega 20/20 bajo 60 s; no se deducen pérdidas o latencia por distancia.

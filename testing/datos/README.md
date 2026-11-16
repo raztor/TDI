@@ -24,3 +24,7 @@ El CSV ambiental conserva hora UTC de recepción, época de captura, temperatura
 Nombrar las campañas con fecha e identificador de prueba. Adjuntar sensor, configuración, intervalo, condiciones, revisión de firmware y responsable. Documentar huecos, reinicios y cualquier limpieza o transformación.
 
 Separar mediciones originales, datos procesados y valores controlados para pruebas de cálculo. No compartir credenciales, ubicaciones privadas ni información personal innecesaria.
+
+## Distancia y SNR
+
+[distancia-snr.csv](distancia-snr.csv) transcribe las 20 filas de la [tabla aportada](../evidencias/pruebas-distancia-snr.png). Columnas: `prueba` (ordinal original), `distancia_km`, `snr_db`, `calidad_orientativa` (etiqueta original). Unidades explícitas y punto decimal; sin exclusiones ni valores añadidos. La fecha de incorporación es 16-11-2026; no identifica la fecha de ensayo. No contiene timestamp, RSSI, conteo de envíos o ACK ni latencia. [Interpretación](../pruebas-distancia.md).

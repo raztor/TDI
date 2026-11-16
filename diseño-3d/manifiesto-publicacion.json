@@ -1,5 +1,5 @@
 {
-  "revision": "Gill V7, margen 75 mm",
+  "revision": "Gill V7, margen 75 mm; documentación Rev. C; interior PLA fabricado, envolvente exterior no fabricada",
   "archivos": [
     {
       "file": "diseño-3d/fusion/componentes-nodo/03_Controlador_PWM_GC.png",
@@ -18,8 +18,8 @@
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/README.md",
-      "bytes": 5548,
-      "sha256": "cbdb871fb8e65839d69f17380f536f869837df7df74a870695546cd637758ac1"
+      "bytes": 5564,
+      "sha256": "02c5ec2665547faa706f3848437a561d63dce7d0370642a0afcc76acb9d377f9"
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/archivos-locales.json",
@@ -188,8 +188,8 @@
     },
     {
       "file": "diseño-3d/fusion/gill-v7-75mm/README.md",
-      "bytes": 7192,
-      "sha256": "e7c2055489ad2e1212eb77cc94aeaea4eeca89d987a2e8f166e53dec47714335"
+      "bytes": 8449,
+      "sha256": "675cdbd0ba65e4fc040ff69b3ee9d2e427a7aa188d8bb517028b149a6c7f3784"
     },
     {
       "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_BMS.f3d",
@@ -358,8 +358,8 @@
     },
     {
       "file": "diseño-3d/stl/gill-v7-75mm/README.md",
-      "bytes": 447,
-      "sha256": "36b0be082867bb5604ca8838dceeb6a8d5fa58fb3f62cd93ce5a01f8c3d0b10c"
+      "bytes": 1350,
+      "sha256": "5270d96286a8f437cb58701510af128a5a8326e7b95ae9425a490286c09955e5"
     },
     {
       "file": "diseño-3d/stl/gill-v7-75mm/V3_Bandeja_BMS.stl",
@@ -455,8 +455,33 @@
       "file": "diseño-3d/renders/gill-v7-75mm/torre_v7.png",
       "bytes": 402646,
       "sha256": "673d3a675586d716f819fc1be43bc79adc3fb208b87059e969cbf5a311806ad5"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/gill_v7_exterior_diseno.png",
+      "bytes": 4206357,
+      "sha256": "fc70a22f7c78c95060a96999781ac5e50129095ebfa274707c1f8cc43a3103ba"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/gill_v7_interior_render.png",
+      "bytes": 4459254,
+      "sha256": "812fa66741dd05a70489a5a7943a3ad74ebf6ee031d5b0511dc7666628d9f617"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/mallas.json.gz",
+      "bytes": 10199717,
+      "sha256": "be423e7ecd399596231f81762989c8f6a1eb3faa5948e3bbe134e407a6671258"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/fuentes-render.json",
+      "bytes": 2714,
+      "sha256": "879d89ca6ee66737ff9c856cc59b5027a632c73c22a1830244c7e391a180de4c"
     }
   ],
   "cantidad": 97,
-  "bytes_total": 253028690
+  "bytes_total": 253028690,
+  "fabricacion": {
+    "interior": "160 g aproximados de PLA; ajuste funcional aceptado",
+    "exterior": "Tapa, nueve aletas y disco no fabricados; ASA no disponible",
+    "renders": "Exterior digital e interior sin envolvente, derivados de STEP"
+  }
 }

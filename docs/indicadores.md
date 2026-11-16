@@ -21,3 +21,7 @@ La cadencia de 120 s es una elección de banco; el equipo confirmó suficiencia 
 ## Variables no interpretadas como indicadores
 
 La resistencia de gas no se presenta como calidad del aire, concentración de contaminantes ni riesgo para la salud. Tampoco se usa la presión para calcular altitud o pronosticar condiciones. La interfaz principal limita las unidades ambientales a temperatura y humedad, cuya representación se comprobó con los paquetes recibidos. Validación y precisión física son aspectos distintos.
+
+## Lecturas de recepción a distancia
+
+La [serie de distancia/SNR](../testing/pruebas-distancia.md) aporta veinte observaciones entre 0,2 y 17,4 km; en el punto más distante se registró −0,5 dB. Las etiquetas de calidad se conservan como orientación de la tabla original. Esta serie no alimenta una tasa de entrega por distancia ni un indicador de latencia: no contiene el número de intentos, tiempos o saltos de red. La campaña reportada de 20/20 bajo 60 s se mantiene separada.

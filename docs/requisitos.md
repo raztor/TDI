@@ -13,14 +13,14 @@ Referencia: guía TEI201 «Avance #3: Prototipo IoT Completo», evaluación del 
 | S05 | Software | Código modular, comentado y reproducible | [Firmware](../firmware/README.md), [estación](../station/README.md), [dashboard](../dashboard/README.md) | Código modular y pruebas disponibles | p. 4 |
 | H01 | Hardware, 30 % | Selección por rango, precisión, consumo y compatibilidad | [Selección](../hardware/seleccion-componentes.md) | Selección modular documentada; energía aceptada funcionalmente; precisión real contra referencia y cifras de consumo no informadas | pp. 4–6 |
 | H02 | Hardware | Esquemático completo | [Esquemáticos](../hardware/esquematicos/README.md) | Dos hojas A3 y SVG; terminales y salida cotejados por el equipo | pp. 5–6 |
-| H03 | Hardware | BOM con cantidad, especificación y costos | [BOM.xlsx](../hardware/BOM.xlsx) | 31 partidas con importe y fuentes; 460 g de PLA contabilizados una vez | pp. 5–6 |
-| H04 | Hardware | Montaje seguro y fotos desde tres ángulos | [Fotografías](../hardware/fotos/README.md) | Montaje aceptado; fotos finales desde tres ángulos e interior pendientes | pp. 5–6 |
+| H03 | Hardware | BOM con cantidad, especificación y costos | [BOM.xlsx](../hardware/BOM.xlsx) | 31 partidas con importe y fuentes; 160 g de PLA del interior contabilizados una vez | pp. 5–6 |
+| H04 | Hardware | Montaje seguro y fotos desde tres ángulos | [Fotografías](../hardware/fotos/README.md) | Interior aceptado y tres fotografías indexadas; exterior no fabricado | pp. 5–6 |
 | H05 | Hardware | Acceso y reparación sin destruir el ensamble | [Reparación](../hardware/reparacion.md), prueba T07 | Por verificar | pp. 5–6 |
 | D01 | Diseño 3D, 20 % | Gemelo completo con volúmenes reales | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Parcial: Gill V7 e inventario representativo disponibles; modelos aproximados identificados | pp. 6–7 |
 | D02 | Diseño 3D | Archivo paramétrico .f3d/.f3z que abre correctamente | [Fusion](../diseño-3d/fusion/README.md) | F3D completo e interior reabiertos; parametrización nativa pendiente | p. 6 |
-| D03 | Diseño 3D | Encapsulado funcional, accesos y tolerancias | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Encaje satisfactorio reportado, impresora calibrada; fotos pendientes | pp. 6–7 |
+| D03 | Diseño 3D | Encapsulado funcional, accesos y tolerancias | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Interior impreso y encaje aceptado; tapa y aletas no fabricadas por falta de ASA; fotos interiores indexadas | pp. 6–7 |
 | D04 | Diseño 3D | Planos PDF con vistas, cotas, tolerancias y escala | [Planos](../diseño-3d/planos/README.md) | Doce hojas A3 y SVG, cotas y escalas; revisión documental B | p. 7 |
-| D05 | Diseño 3D | Renders exterior e interior/explosionado | [Renders](../diseño-3d/renders/README.md) | Vistas exterior e interior disponibles; presentación final por revisar | p. 7 |
+| D05 | Diseño 3D | Renders exterior e interior/explosionado | [Renders](../diseño-3d/renders/README.md) | Dos renders con materiales e iluminación; exterior digital no fabricado e interior sin envolvente | p. 7 |
 | T01 | Testing, 10 % | Objetivo, condiciones, pasos, éxito y evidencia | [Protocolo](../testing/protocolo-pruebas.md) | Base preparada; parámetros por definir | pp. 7–8 |
 | T02 | Testing | Resultados cuantitativos y análisis crítico | [Resultados](../testing/resultados.md) | Banco y ensayo reportado 20/20 bajo 60 s; condiciones y fechas para las actas | p. 8 |
 | T03 | Testing | Una falla real y su solución | [Fallas](../testing/registro-fallas.md) | PKI y cadencia diagnosticados, corregidos y verificados en banco | p. 8 |

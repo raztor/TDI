@@ -223,3 +223,13 @@ Python 3.11.9. Versiones instaladas observadas el 16-11-2026. Este entorno tambi
 ## Gestión de los entornos
 
 pip, setuptools y wheel son herramientas de instalación y empaquetado del entorno, no bibliotecas importadas por la aplicación. Sus fuentes son [pip](https://github.com/pypa/pip), [setuptools](https://github.com/pypa/setuptools) y [wheel](https://github.com/pypa/wheel). Python aporta su biblioteca estándar; no se distribuye una copia independiente de cada módulo. Las licencias originales de cada dependencia siguen siendo aplicables.
+
+## Renderizado CAD y gráfica de resultados
+
+| Herramienta o librería | Versión utilizada | Uso en el proyecto | Fuente |
+|---|---|---|---|
+| Blender | 5.1.2 | Render de geometría CAD con materiales, cámara e iluminación; scripts en tools/renders/ | https://www.blender.org/ |
+| CadQuery | 2.8.0 | Teselación STEP del Gill V7; geometría conservada, sin rediseño | https://github.com/CadQuery/cadquery |
+| Matplotlib | 3.11.2 | Gráfica estática SNR/distancia a partir de las veinte filas originales | https://matplotlib.org/ |
+
+Los STEP RAK19007/4631/1906 usados para las mallas proceden de las descargas oficiales declaradas en el inventario CAD. Las fuentes y hashes por archivo están en [fuentes-render.json](../../diseño-3d/renders/gill-v7-75mm/fuentes-render.json). Las piezas comerciales aproximadas se identifican en [las instrucciones de render](../../tools/renders/README.md); no se atribuye correspondencia física exacta al BMS o al convertidor.

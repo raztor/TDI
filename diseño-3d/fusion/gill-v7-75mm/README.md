@@ -40,7 +40,7 @@ Los **tres M3×6 cercanos a la antena sujetan el disco** a la tapa mediante inse
 
 La junta disco–tapa y los pasos de tornillos requieren sellador compatible con el material: la holgura de 0,25 mm por lado y las cabezas de los tornillos no forman por sí solas una unión estanca. Mantener la junta propia de la antena y descargar la tensión del latiguillo.
 
-## Inventario para imprimir
+## Inventario digital de piezas
 
 [STL individuales y paquete ZIP](../../stl/gill-v7-75mm/) y [fuente OpenSCAD](../../gill-v7/CerroSeguro_Gill_V7.scad).
 
@@ -72,4 +72,10 @@ La variante P requiere plano de masa conductor; la NP está prevista para funcio
 
 `verificacion.json` registra cotas e interferencias; `stl-verificados.json`, mallas cerradas; `archivos-locales.json`, tamaños y SHA-256. Se reabren el F3D completo y la variante interior para comprobar que conservan las nueve aletas y su estado de visibilidad. La interferencia de los insertos térmicos con sus pilotos es intencional.
 
-El equipo confirmó impresión propia en PLA (interior 160 g + aletas y tapa unos 300 g, aproximadamente 460 g), calibración reciente de la impresora y encaje satisfactorio. El montaje queda aceptado funcionalmente. Fotografías finales, fecha y responsables para las actas; los ensayos de resistencia, agua y comportamiento térmico no fueron informados. [Registro](../../../testing/cierre-funcional-avance3.md). El sensor está próximo a electrónica: no se deduce precisión meteorológica a partir de la carcasa. Criterios generales: [YOUNG, escudo multiplato](https://www.youngusa.com/product/multi-plate-radiation-shield/) y [BARANI, separación y flujo entre aletas](https://www.baranidesign.com/faq-articles/2022/6/6/how-to-design-a-solar-radiation-shield-for-weather-station-temperature-sensors-3cjb7). Estas fuentes no validan las dimensiones particulares del prototipo.
+El equipo confirmó impresión propia en PLA (160 g del interior; envolvente exterior no fabricada), calibración reciente de la impresora y encaje satisfactorio. El interior queda aceptado funcionalmente. La envolvente no tiene comprobación de ajuste físico. Fecha y responsables se conservan separados de la fecha de registro; los ensayos de resistencia, agua y comportamiento térmico no fueron informados. [Registro](../../../testing/cierre-funcional-avance3.md). El sensor está próximo a electrónica: no se deduce precisión meteorológica a partir de la carcasa. Criterios generales: [YOUNG, escudo multiplato](https://www.youngusa.com/product/multi-plate-radiation-shield/) y [BARANI, separación y flujo entre aletas](https://www.baranidesign.com/faq-articles/2022/6/6/how-to-design-a-solar-radiation-shield-for-weather-station-temperature-sensors-3cjb7). Estas fuentes no validan las dimensiones particulares del prototipo.
+
+## Estado de fabricación y renders
+
+El **interior se fabricó con aproximadamente 160 g de PLA** y su encaje fue aceptado por el equipo con la impresora calibrada. **La tapa superior y las nueve aletas no se fabricaron**: no fue posible imprimirlas en ASA y se descartó consumir PLA para esa envolvente destinada a exposición solar. El disco de antena pertenece al diseño de tapa; no se contabiliza como material fabricado. Los aproximadamente 300 g antes estimados para la envolvente no son consumo realizado.
+
+El conjunto completo sigue disponible como diseño digital en F3D, STEP, STL y planos. Los renders distinguen el exterior previsto, no fabricado, del interior sin tapa ni aletas. El montaje construido no se declara cerrado, estanco ni protegido para exposición permanente a la intemperie. No se atribuyen ensayos de radiación solar o resistencia ambiental a la decisión de material.

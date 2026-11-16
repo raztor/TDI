@@ -23,7 +23,7 @@ El inventario conserva modelos individuales de placas, energía, antenas y refer
 | Dipolo artesanal | Brazo horizontal 300 mm y semibrazo vertical 150 mm | Cotas aportadas en IMG_2193/2194; diámetro y soporte aproximados |
 | Panel solar | ACOPOWER HY025-12P, 25 W, **510 × 360 × 20 mm** | Referencia geométrica; no identifica el panel real ni confirma el concepto 24 V del diagrama |
 | Botón SOS, LED, buzzer | Formas nominales de presentación | Propuesta conceptual, sin compra o montaje confirmados |
-| Gill final | [V7 con componentes y margen de 75 mm](../gill-v7-75mm/README.md) | Montaje actual completo y variante de inspección; prueba física pendiente |
+| Gill final | [V7 con componentes y margen de 75 mm](../gill-v7-75mm/README.md) | Diseño digital completo y variante de inspección; interior impreso, exterior no fabricado |
 
 El conjunto RAK y el montaje LILYGO se documentaron por separado en el Avance 2. Su presencia conjunta en este inventario no confirma que se haya construido un único equipo con todas esas radios. El SunSaver-20 fue retirado y no se representa como controlador actual.
 
