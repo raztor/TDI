@@ -18,13 +18,13 @@
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/README.md",
-      "bytes": 6827,
-      "sha256": "856bf31df151e8d88e30dded3b571440a4c8bb578a53f21e43afeca3719900e6"
+      "bytes": 5548,
+      "sha256": "cbdb871fb8e65839d69f17380f536f869837df7df74a870695546cd637758ac1"
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/archivos-locales.json",
-      "bytes": 5058,
-      "sha256": "f56e17b2361507cf33dfbdb90bbb966703f8570112d4d5c8a6e7ed18cd47faa7"
+      "bytes": 4295,
+      "sha256": "09f8e26ccb8d105e6bbe636b0b8e1caf702e0e99579680f6b01e9ecdb932620d"
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/descargas-oficiales.json",
@@ -33,13 +33,13 @@
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/fuentes-modelos.json",
-      "bytes": 5133,
-      "sha256": "7b16c6b66ad04a8150c25003743951f78b38b33472d29ca4956fd4c31d55ae9c"
+      "bytes": 4808,
+      "sha256": "f4f051eb21e9314a0c83bd5e213f504263595ed351f463ea4f5a8fa44334cb25"
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/inventario-archivos.csv",
-      "bytes": 2935,
-      "sha256": "fd9c695077ca1a777bc0fabd001252abdf2b460e0a917fcd91cd030f031a8c22"
+      "bytes": 2500,
+      "sha256": "6f2a2a1e96ed61ac8638a93a2e3593e1dae33b0bf7deae24b49135e137431de1"
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/modelos/01_Heltec_V3_7.f3d",
@@ -132,29 +132,9 @@
       "sha256": "08ef1b997773bd278cb8b4139b49c92824d36382ed20f572369b413e655cb631"
     },
     {
-      "file": "diseño-3d/fusion/componentes-nodo/modelos/13_Gill_V1.1_completo.f3d",
-      "bytes": 7799690,
-      "sha256": "7a78084c7f06ba956bb81cbc0573d0a89fd9fff4343a743e5632f4cd5c18bc85"
-    },
-    {
-      "file": "diseño-3d/fusion/componentes-nodo/modelos/14_Todos_los_STL_originales.f3d",
-      "bytes": 4701889,
-      "sha256": "d280ed62257493b1933fb42d82c2c5049687297fded959a3097574629ecb2057"
-    },
-    {
-      "file": "diseño-3d/fusion/componentes-nodo/modelos/15_Gill_V1_2_con_RAK1906.f3d",
-      "bytes": 8622500,
-      "sha256": "ee7126e237d5902ef5c3d9722a9d7d733e20cbd2bffd541570cf94da5e745f77"
-    },
-    {
       "file": "diseño-3d/fusion/componentes-nodo/modelos/16_Bandeja_y_sensor_RAK1906.f3d",
       "bytes": 1392886,
       "sha256": "69a4e00f6a03699cd4caf0f877a2d10bdfd7b692d25da7c8be0c8d0cc7b3ef16"
-    },
-    {
-      "file": "diseño-3d/fusion/componentes-nodo/modelos/17_CerroSeguro_Inventario_Completo.f3d",
-      "bytes": 51832143,
-      "sha256": "2ea5837bd05936d06185a20e607a6c701e48b2d387961e04986d1b6684344910"
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/modelos/Placa_RAK19007.f3d",
@@ -183,18 +163,8 @@
     },
     {
       "file": "diseño-3d/fusion/componentes-nodo/verificacion-inicial.json",
-      "bytes": 11577,
-      "sha256": "2d5eb4248b4d827f37752613cf2568b81408ed8bc9cce014eb2d8d6445596efe"
-    },
-    {
-      "file": "diseño-3d/fusion/componentes-nodo/verificacion.json",
-      "bytes": 1074,
-      "sha256": "51cce5f7555cee0950b3acc7973d268e08951db7ff46a85399d95d2ab0855587"
-    },
-    {
-      "file": "diseño-3d/fusion/componentes-nodo/vista_general_final.png",
-      "bytes": 338249,
-      "sha256": "b4b0c2f1b8321fdb23617b5b263e9cf4a0c09d920cbc4129bb7ba0be7d4024f5"
+      "bytes": 10199,
+      "sha256": "258adfb7964aa1816c59805fc25fc9b7f6230d3eb006a0cd75b1e12fc3dd8daa"
     },
     {
       "file": "diseño-3d/fusion/gill-v7-75mm/33_Torre_V7_Margen75.f3d",

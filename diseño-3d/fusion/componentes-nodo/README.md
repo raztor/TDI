@@ -2,7 +2,7 @@
 
 Proyecto Autodesk: **Cerro Seguro - TDI** → **Componentes del nodo**.
 
-El documento `17_CerroSeguro_Inventario_Completo` presenta el inventario en una disposición abierta de inspección, con los subconjuntos separados para ver cada pieza. No es un circuito eléctrico ni una distribución final de montaje en la caja. El conjunto RAK19007–RAK4631–RAK1906 muestra las placas conectadas por los conectores WisBlock; se mantienen además los modelos individuales.
+El inventario conserva modelos individuales de placas, energía, antenas y referencias dimensionales. El conjunto RAK19007–RAK4631–RAK1906 representa las placas conectadas por los conectores WisBlock. La distribución final del prototipo corresponde al [Gill V7](../gill-v7-75mm/README.md).
 
 ## Procedencia y medidas
 
@@ -24,11 +24,10 @@ El documento `17_CerroSeguro_Inventario_Completo` presenta el inventario en una 
 | Panel solar | ACOPOWER HY025-12P, 25 W, **510 × 360 × 20 mm** | Referencia geométrica; no identifica el panel real ni confirma el concepto 24 V del diagrama |
 | Botón SOS, LED, buzzer | Formas nominales de presentación | Propuesta conceptual, sin compra o montaje confirmados |
 | Gill final | [V7 con componentes y margen de 75 mm](../gill-v7-75mm/README.md) | Montaje actual completo y variante de inspección; prueba física pendiente |
-| Gill de referencia histórica | Ensamble V1.2 con RAK1906 | Se conserva en el inventario general como alternativa anterior; no define la carcasa final |
 
 El conjunto RAK y el montaje LILYGO se documentaron por separado en el Avance 2. Su presencia conjunta en este inventario no confirma que se haya construido un único equipo con todas esas radios. El SunSaver-20 fue retirado y no se representa como controlador actual.
 
-El inventario `17_CerroSeguro_Inventario_Completo` y la [torre del Gill V7](../gill-v7-75mm/README.md) utilizan la batería medida. El archivo anterior de Multistar se conserva como referencia histórica y no define el asiento actual.
+La [torre del Gill V7](../gill-v7-75mm/README.md) utiliza la batería medida. El archivo anterior de Multistar se conserva como referencia histórica y no define el asiento actual.
 
 ## Fuentes
 
@@ -42,24 +41,14 @@ El inventario `17_CerroSeguro_Inventario_Completo` y la [torre del Gill V7](../g
 
 El detalle de las fuentes y de cada referencia figura en `fuentes-modelos.json`. Las dimensiones sin confirmar necesitan medición antes de fabricar soportes definitivos.
 
-## Gill V1.2 y vistas de detalle
+## Bandeja de sensor de referencia
 
-`15_Gill_V1_2_con_RAK1906` conserva las lamas, el techo, la base, el puente y el soporte del V1.1. Sustituye la bandeja provisional del PCB de 25 mm por una bandeja para el RAK1906 nominal de 10 mm:
-
-- Separación interior entre guías: 10,6 mm, holgura nominal de 0,3 mm por lado.
-- Cuatro apoyos de esquina dejan libre el conector inferior.
-- Dos retenedores desmontables sobre los bordes del PCB, sujetos por cuatro tornillos y tuercas M2 representativos.
-- Se mantienen las orejas M3 al puente y la salida para el cable.
-- El conector y la cinta de extensión WisBlock se representan como referencia. No se diseñó un cableado eléctrico ni una placa de extensión.
-
-`16_Bandeja_y_sensor_RAK1906` permite ver el sensor y su fijación sin las lamas. Se exportaron la bandeja y un retenedor a STL. Las fijaciones nuevas necesitan una impresión de prueba y comprobación con el sensor físico.
-
-El sensor conectado directamente al RAK y el sensor dentro del Gill representan **dos ubicaciones alternativas**. Su aparición en las dos vistas no implica dos sensores en la BOM.
+`16_Bandeja_y_sensor_RAK1906` conserva una vista aislada del sensor y su fijación. La bandeja y un retenedor disponen de STL individuales. Son referencias de diseño; el montaje final del sensor y la electrónica se documenta en el Gill V7 y en el esquema eléctrico.
 
 ## Archivos locales
 
-Los F3D y STL derivados se encuentran en `modelos/`. `archivos-locales.json` registra tamaños, SHA-256 y la comprobación de integridad de los archivos nativos. `14_Todos_los_STL_originales` reúne las 13 mallas originales visibles en una cuadrícula. Los archivos individuales y los subconjuntos se mantienen disponibles para abrir en Fusion. El inventario general presenta componentes y referencias por separado; el [Gill V7](../gill-v7-75mm/README.md) es el montaje actual.
+Los F3D y STL derivados se encuentran en `modelos/`. `archivos-locales.json` registra tamaños, SHA-256 y la comprobación de integridad de los archivos nativos. Los archivos individuales y los subconjuntos se mantienen disponibles para abrir en Fusion. Los componentes y referencias se presentan por separado; el [Gill V7](../gill-v7-75mm/README.md) es el montaje actual.
 
-## Abrir el inventario
+## Abrir los modelos
 
-Descargar [17_CerroSeguro_Inventario_Completo.f3d](modelos/17_CerroSeguro_Inventario_Completo.f3d) y abrirlo desde Fusion. Los F3D individuales están en [modelos/](modelos/). [Vista general actual](vista_general_final.png). Los archivos de Multistar y Gill V1.1/V1.2 se conservan como antecedentes identificados; la batería medida y el Gill V7 definen el montaje actual. Los componentes propuestos o de revisión desconocida no se consideran compras ni equipos ensayados.
+Los F3D individuales están en [modelos/](modelos/). Para inspeccionar el montaje completo, abrir el [Gill V7 con componentes](../gill-v7-75mm/34_Gill_V7_Completo_Margen75.f3d) o su [variante interior](../gill-v7-75mm/36_Gill_V7_Interior_Aletas_Ocultas.f3d). La batería medida y el Gill V7 definen el montaje actual. Los componentes propuestos o de revisión desconocida no se consideran compras ni equipos ensayados.
