@@ -1,0 +1,268 @@
+{
+  "phase": "complete",
+  "messages": [
+    "Creando V7_Guia_T_235_5_Tope_y_Inserto_Axial",
+    "Creando V7_Aleta_236_45gr_Paso23_5",
+    "Creando V7_Aleta_Superior_236_45gr",
+    "Creando V7_Tapa_256_Pendiente8gr",
+    "Creando V7_Disco_Antena_60_Paso16_2",
+    "Exportando V7_Guia_T_235_5_Tope_y_Inserto_Axial",
+    "Exportando V7_Aleta_236_45gr_Paso23_5",
+    "Exportando V7_Aleta_Superior_236_45gr",
+    "Exportando V7_Tapa_256_Pendiente8gr",
+    "Exportando V7_Disco_Antena_60_Paso16_2",
+    "Montando guias con topes y conservando la torre interior",
+    "Esperando guardar 33_Torre_V7_Margen75",
+    "Esperando guardar 33_Torre_V7_Margen75",
+    "Esperando guardar 33_Torre_V7_Margen75",
+    "Apilando ocho aletas iguales y una terminal, con 23.5 mm de paso",
+    "Comprobando aletas, tapa, tornillos y espacio de la antena",
+    "Guardando la vista interior con las nueve aletas ocultas",
+    "Inventario completo exportado y vista interior reabierta correctamente",
+    "Gill V7 guardado, verificado y abierto con nueve aletas y margen de 75 mm"
+  ],
+  "parts": [
+    {
+      "name": "V7_Guia_T_235_5_Tope_y_Inserto_Axial",
+      "bounds": {
+        "min": [
+          -8.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          8.0,
+          235.50000000000006,
+          10.2
+        ]
+      },
+      "solid": true,
+      "volume_mm3": 15254.408636469567
+    },
+    {
+      "name": "V7_Aleta_236_45gr_Paso23_5",
+      "bounds": {
+        "min": [
+          -118.0,
+          -118.0,
+          0.0
+        ],
+        "max": [
+          118.0,
+          118.0,
+          41.5
+        ]
+      },
+      "solid": true,
+      "volume_mm3": 53668.09407015688
+    },
+    {
+      "name": "V7_Aleta_Superior_236_45gr",
+      "bounds": {
+        "min": [
+          -118.0,
+          -118.0,
+          0.0
+        ],
+        "max": [
+          118.0,
+          118.0,
+          35.5
+        ]
+      },
+      "solid": true,
+      "volume_mm3": 50983.394070156864
+    },
+    {
+      "name": "V7_Tapa_256_Pendiente8gr",
+      "bounds": {
+        "min": [
+          -128.0,
+          -128.0,
+          0.0
+        ],
+        "max": [
+          128.0,
+          128.0,
+          16.964795918367347
+        ]
+      },
+      "solid": true,
+      "volume_mm3": 439131.36195782386
+    },
+    {
+      "name": "V7_Disco_Antena_60_Paso16_2",
+      "bounds": {
+        "min": [
+          -30.0,
+          -30.0,
+          0.0
+        ],
+        "max": [
+          30.0,
+          30.0,
+          3.0
+        ]
+      },
+      "solid": true,
+      "volume_mm3": 7782.227657766829
+    }
+  ],
+  "message": "Gill V7 guardado, verificado y abierto con nueve aletas y margen de 75 mm",
+  "frame_to_interior": {
+    "exact_candidate_pairs": 3,
+    "collisions": []
+  },
+  "frame_to_frame": {
+    "exact_candidate_pairs": 3,
+    "collisions": []
+  },
+  "enclosure_to_frame": {
+    "exact_candidate_pairs": 30,
+    "collisions": []
+  },
+  "enclosure_to_enclosure": {
+    "exact_candidate_pairs": 9,
+    "collisions": []
+  },
+  "screws_to_printed": {
+    "exact_candidate_pairs": 15,
+    "collisions": []
+  },
+  "antenna_to_printed": {
+    "exact_candidate_pairs": 39,
+    "collisions": []
+  },
+  "plug_to_interior": {
+    "exact_candidate_pairs": 0,
+    "collisions": []
+  },
+  "clearance": {
+    "interior_zmax_mm": 160.5,
+    "roof_underside_mm": 235.5,
+    "roof_to_interior_mm": 75.0,
+    "antenna_flat_seat_mm": 252.5,
+    "antenna_flat_seat_diameter_mm": 60,
+    "antenna_hole_mm": 16.2,
+    "louver_aperture_mm": 180,
+    "coax_representative_lowest_mm": 179.0,
+    "coax_to_highest_interior_mm": 18.5
+  },
+  "louver_geometry": {
+    "count": 9,
+    "standard": 8,
+    "terminal": 1,
+    "diameter_mm": 236,
+    "pitch_mm": 23.5,
+    "slope_degrees": 45,
+    "sheet_vertical_thickness_mm": 2.4,
+    "radial_width_mm": 28,
+    "projected_vertical_overlap_mm": 6.9,
+    "gap_vertical_away_from_collars_mm": 21.1,
+    "gap_normal_mm": 14.919953083036154
+  },
+  "roof_geometry": {
+    "diameter_mm": 256,
+    "flat_disc_diameter_mm": 60,
+    "rise_mm": 13.8,
+    "run_mm": 98,
+    "slope_degrees": 8.015478198246708,
+    "clamping_thickness_mm": 3,
+    "rim_thickness_mm": 3.2,
+    "nut_access_diameter_mm": 44,
+    "disc_side_clearance_mm": 0.25,
+    "guide_bolt_seat_diameter_mm": 10
+  },
+  "hardware": {
+    "M3x6": 6,
+    "M3x10": 3,
+    "heat_inserts_M3_L4_D4_2": 9,
+    "long_rods": 0,
+    "antenna_own_nut": 1
+  },
+  "gill_bounds": {
+    "min": [
+      -128.01999999999998,
+      -128.01999999999998,
+      -0.02
+    ],
+    "max": [
+      128.01999999999998,
+      128.01999999999998,
+      323.41999999999996
+    ]
+  },
+  "reopen_validation": {
+    "aletas": 9,
+    "all_components": 647
+  },
+  "interior_export_validation": {
+    "aletas_total": 9,
+    "aletas_ocultas": 9,
+    "all_components": 647
+  },
+  "inventory_occurrences": [
+    "Heltec_V3_7",
+    "RAK19007 + RAK4631 + RAK1906 - conectados",
+    "Controlador PWM GC - 60 x 60 x 15 mm - fotos",
+    "BMS 3S - REF SGT 59 x 20 x 3.4",
+    "DC-DC USB 5V 5A - candidato XY-3606 - REF 63 x 27 x 10",
+    "Caja prototipo - 180 x 140 x 50 mm - foto",
+    "Heltec Wireless Tracker V1.1 - REF dimensional",
+    "Panel solar - REF ACOPOWER 25W 510 x 360 x 20",
+    "SOS LED y buzzer - propuesta conceptual",
+    "LILYGO LoRa32 433 - candidato T3 V1.6",
+    "LILYGO LoRa32 915 - candidato T3 V1.6",
+    "Gill V1.2 con RAK1906 - ubicacion alternativa del sensor",
+    "Bateria medida por el equipo - 120 x 50 x 40 mm",
+    "Antenas y soportes - Laird roscada y dipolo medido"
+  ],
+  "inventory_saved": true,
+  "cloud_files": [
+    {
+      "name": "V7_Guia_T_235_5_Tope_y_Inserto_Axial",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "V7_Aleta_236_45gr_Paso23_5",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "V7_Aleta_Superior_236_45gr",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "V7_Tapa_256_Pendiente8gr",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "V7_Disco_Antena_60_Paso16_2",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "33_Torre_V7_Margen75",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "34_Gill_V7_Completo_Margen75",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "35_Detalle_V7_Tapa_y_Antena",
+      "version": 1,
+      "complete": true
+    },
+    {
+      "name": "36_Gill_V7_Interior_Aletas_Ocultas",
+      "version": 1,
+      "complete": true
+    }
+  ]
+}

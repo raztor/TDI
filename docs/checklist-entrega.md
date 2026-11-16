@@ -26,13 +26,15 @@ El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los res
 
 ## Diseño 3D · 20 %
 
-- [ ] Ensamble completo de Fusion 360 exportado a .f3d o .f3z.
+- [x] Ensamble completo de Fusion 360 exportado a .f3d: [Gill V7](../diseño-3d/fusion/gill-v7-75mm/README.md).
 - [ ] Todos los componentes representados con dimensiones y posiciones reales.
 - [ ] Parametrización, tolerancias e interferencias revisadas.
 - [ ] Acceso a puertos, botones y conectores; tapa funcional.
 - [ ] Renders exterior e interior o explosionado, con materiales e iluminación.
 - [ ] Planos PDF con vistas ortogonales, cotas funcionales, tolerancias y escala.
-- [ ] Archivo exportado reabierto; gemelo listo para mostrar en Fusion 360.
+- [x] Archivos completo e interior reabiertos en Fusion 360; nueve aletas conservadas en ambas variantes.
+
+La entrega CAD incluye las vistas exterior e interior y una revisión digital de interferencias. Las dimensiones comerciales aproximadas, la parametrización nativa, los planos PDF y la validación física siguen pendientes.
 
 ## Testing · 10 %
 

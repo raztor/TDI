@@ -119,7 +119,9 @@ Los resultados, fallas y conclusiones se documentan en [testing/](testing/README
 
 ## Diseño 3D
 
-Está disponible el [escudo Gill V1 conceptual](diseño-3d/gill-v1/README.md), con fuente OpenSCAD y cinco STL, además de referencias mecánicas previas. El [gemelo 3D](diseño-3d/README.md) completo sigue pendiente: carcasa y componentes internos representativos del montaje, ensamble `.f3d` o `.f3z`, planos PDF y renders.
+Está disponible el [Gill final V7 con componentes](diseño-3d/fusion/gill-v7-75mm/README.md), con margen de 75 mm, nueve aletas, tapa inclinada y disco plano de antena. Se incluyen el [montaje completo](diseño-3d/fusion/gill-v7-75mm/34_Gill_V7_Completo_Margen75.f3d) y una [variante con aletas ocultas](diseño-3d/fusion/gill-v7-75mm/36_Gill_V7_Interior_Aletas_Ocultas.f3d) para inspeccionar el interior, además de [todo el inventario CAD](diseño-3d/fusion/componentes-nodo/README.md), piezas F3D/STEP/STL, fuente OpenSCAD y vistas exterior e interior.
+
+La verificación digital y la reapertura de archivos no sustituyen la prueba física. Faltan los planos PDF, el ajuste real, ensayos de resistencia, agua y comportamiento térmico. Los modelos comerciales aproximados están identificados.
 
 ## Entrega del Avance 3
 
