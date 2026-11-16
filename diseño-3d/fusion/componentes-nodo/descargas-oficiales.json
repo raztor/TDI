@@ -1,0 +1,26 @@
+[
+  {
+    "file": "RAK19007.stp",
+    "url": "https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19007.stp",
+    "bytes": 54972574,
+    "sha256": "65ce23af1713951c5a5bc02ba8628722846f1639e8d9179785591ac328211bdf"
+  },
+  {
+    "file": "RAK4631.stp",
+    "url": "https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK4631.stp",
+    "bytes": 3023486,
+    "sha256": "7053a3d74ec8e3c0aa156051c04e3016a40a0a6c61691f1c79677ef0a73d8208"
+  },
+  {
+    "file": "RAK1906.stp",
+    "url": "https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1906.stp",
+    "bytes": 1660231,
+    "sha256": "7f248821222464650d02b60e92b7fc83f604aaa950fa1308736123b3ec7cddd7"
+  },
+  {
+    "file": "Heltec_V3_7.step",
+    "url": "https://resource.heltec.cn/download/WiFi_LoRa_32_V3/3D/HTIT-WB32LAF_V3.7%283%29.step",
+    "bytes": 7506962,
+    "sha256": "2b6bd6514a8669f684bb913e518d0d419f53c9c20d1773c6c927c12755ebede0"
+  }
+]

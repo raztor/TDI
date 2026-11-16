@@ -1,0 +1,138 @@
+[
+  {
+    "componente": "RAK19007",
+    "tipo": "STEP oficial",
+    "archivo": "RAK19007.stp",
+    "fuente": "https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK19007.stp"
+  },
+  {
+    "componente": "RAK4631",
+    "tipo": "STEP oficial",
+    "archivo": "RAK4631.stp",
+    "fuente": "https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK4631.stp"
+  },
+  {
+    "componente": "RAK1906 BME680",
+    "tipo": "STEP oficial",
+    "archivo": "RAK1906.stp",
+    "fuente": "https://downloads.rakwireless.com/3D_File/WisBlock/3D_RAK1906.stp"
+  },
+  {
+    "componente": "Heltec WiFi LoRa32 V3.7",
+    "tipo": "STEP oficial; revisión de la unidad del equipo por confirmar",
+    "archivo": "Heltec_V3_7.step",
+    "fuente": "https://resource.heltec.cn/download/WiFi_LoRa_32_V3/3D/"
+  },
+  {
+    "componente": "LILYGO T3 V1.6",
+    "tipo": "STEP oficial candidato; revisión de las dos unidades por confirmar",
+    "archivo": "diseño-3d/step/05_LilyGO_T3_v1.6_CANDIDATO.stp",
+    "fuente": "https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series"
+  },
+  {
+    "componente": "Heltec Wireless Tracker",
+    "tipo": "Representación dimensional; revisión por confirmar",
+    "dimensiones_mm": [
+      65.48,
+      28.06,
+      13.52
+    ],
+    "fuente": "https://resource.heltec.cn/download/Wireless_Tracker/Wireless_Tracker%20_1.1.pdf"
+  },
+  {
+    "componente": "Controlador solar blanco y azul",
+    "tipo": "Forma de las fotos IMG_2188 y IMG_2189, medidas confirmadas por el equipo: cuadrado de 6 cm y espesor 1.5 cm. Etiqueta GC: 12V, 10A, Li-ion(3S).",
+    "dimensiones_mm": [
+      60,
+      60,
+      15
+    ],
+    "fuente": "Fotos del equipo y confirmacion en la conversacion"
+  },
+  {
+    "componente": "Turnigy Multistar High Capacity 5200mAh 3S 10C",
+    "tipo": "Identificada visualmente en IMG_2187. Envolvente de la ficha comercial; no se encontro STEP.",
+    "dimensiones_mm": [
+      142,
+      49,
+      22
+    ],
+    "fuente": "https://hobbyking.com/multistar-high-capacity-3s-5200mah-multi-rotor-lipo-pack.html",
+    "estado": "Referencia comercial anterior; dimensiones sustituidas por medicion del equipo. No usar para el soporte actual."
+  },
+  {
+    "componente": "BMS 3S",
+    "tipo": "Representación dimensional de referencia SGT 20A; modelo real por confirmar",
+    "dimensiones_mm": [
+      59,
+      20,
+      3.4
+    ],
+    "fuente": "https://www.mantech.co.za/datasheets/products/BMS-20A-3S-S_SGT.pdf"
+  },
+  {
+    "componente": "DC-DC 5V",
+    "tipo": "Candidato visual XY-3606 / USB 5V 5A. No se confirmo modelo exacto. Enlaces AliExpress localizados, acceso directo bloqueado. PCB 63x27 de ficha alternativa; detalles y alturas aproximados del modelo de presentacion.",
+    "dimensiones_mm": [
+      63,
+      27
+    ],
+    "fuente": "https://www.gotronik.pl/przetwornica-napiecia-ladowarka-usb-5v-p-6422.html",
+    "enlaces_candidatos": [
+      "https://www.aliexpress.com/item/1005010702042822.html",
+      "https://www.aliexpress.com/item/1005012794389665.html"
+    ]
+  },
+  {
+    "componente": "Caja",
+    "tipo": "Medidas aportadas en IMG_2192; paredes, columnas y taladros representativos, sin relevamiento interior.",
+    "dimensiones_mm": [
+      180,
+      140,
+      50
+    ],
+    "fuente": "IMG_2192.JPG del equipo"
+  },
+  {
+    "componente": "Antena 915 MHz",
+    "tipo": "Referencia dimensional TE/Laird TRAB9023; modelo real por confirmar",
+    "diametro_mm": 36.6,
+    "altura_mm": 69.9,
+    "fuente": "https://www.te.com/content/dam/te-com/documents/consumer-devices/global/te-connectivity-antenna-catalog.pdf"
+  },
+  {
+    "componente": "Panel solar",
+    "tipo": "Referencia de tamaño ACOPOWER HY025-12P 25W/12V. No identifica el panel del proyecto ni confirma el concepto 24V del diagrama.",
+    "dimensiones_mm": [
+      510,
+      360,
+      20
+    ],
+    "fuente": "https://www.acopower.com/products/hy-12p-25w"
+  },
+  {
+    "componente": "SOS, LED, buzzer, cables y conectores",
+    "tipo": "Geometría conceptual propia, dimensiones nominales de presentación; componentes propuestos, sin compra ni montaje confirmados"
+  },
+  {
+    "componente": "Dipolo 433 MHz",
+    "tipo": "Brazo horizontal 300 mm y un semibrazo vertical 150 mm aportados en IMG_2193/2194. Diametros y soporte aproximados; el resto de la simetria es representativo.",
+    "fuente": "IMG_2193.JPG e IMG_2194.JPG del equipo"
+  },
+  {
+    "componente": "Gill V1.2 con RAK1906",
+    "tipo": "Diseno propio derivado del Gill V1.1. Sensor oficial de 10 mm; guias libres de 10.6 mm y retenedores M2. Ajuste fisico pendiente. Dos ubicaciones alternativas del mismo sensor en el inventario.",
+    "fuente": "Archivos propios Gill V1 y STEP RAK1906 oficial"
+  },
+  {
+    "componente": "Bateria medida por el equipo",
+    "tipo": "Envolvente de montaje confirmada por el equipo: 12 x 5 x 4 cm. Sustituye las cotas comerciales anteriores de 142 x 49 x 22 mm. No se infiere capacidad ni un modelo distinto a partir de esta medida.",
+    "dimensiones_mm": [
+      120,
+      50,
+      40
+    ],
+    "fuente": "Medicion comunicada por el equipo el 2026-11-15",
+    "archivo": "modelos/04_Bateria_Medida_120x50x40.f3d"
+  }
+]

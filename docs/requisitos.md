@@ -16,11 +16,11 @@ Referencia: guía TEI201 «Avance #3: Prototipo IoT Completo», evaluación del 
 | H03 | Hardware | BOM con cantidad, especificación y costos | [BOM.xlsx](../hardware/BOM.xlsx) | Componentes conocidos; cantidades y precios pendientes | pp. 5–6 |
 | H04 | Hardware | Montaje seguro y fotos desde tres ángulos | [Fotografías](../hardware/fotos/README.md) | Dos vistas interiores históricas; vistas y verificación final pendientes | pp. 5–6 |
 | H05 | Hardware | Acceso y reparación sin destruir el ensamble | [Reparación](../hardware/reparacion.md), prueba T07 | Por verificar | pp. 5–6 |
-| D01 | Diseño 3D, 20 % | Gemelo completo con volúmenes reales | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Gill V1 conceptual disponible; gemelo completo pendiente | pp. 6–7 |
-| D02 | Diseño 3D | Archivo paramétrico .f3d/.f3z que abre correctamente | [Fusion](../diseño-3d/fusion/README.md) | Archivo pendiente | p. 6 |
+| D01 | Diseño 3D, 20 % | Gemelo completo con volúmenes reales | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Parcial: Gill V7 e inventario representativo disponibles; modelos aproximados identificados | pp. 6–7 |
+| D02 | Diseño 3D | Archivo paramétrico .f3d/.f3z que abre correctamente | [Fusion](../diseño-3d/fusion/README.md) | F3D completo e interior reabiertos; parametrización nativa pendiente | p. 6 |
 | D03 | Diseño 3D | Encapsulado funcional, accesos y tolerancias | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Por verificar | pp. 6–7 |
 | D04 | Diseño 3D | Planos PDF con vistas, cotas, tolerancias y escala | [Planos](../diseño-3d/planos/README.md) | Archivos pendientes | p. 7 |
-| D05 | Diseño 3D | Renders exterior e interior/explosionado | [Renders](../diseño-3d/renders/README.md) | Archivos pendientes | p. 7 |
+| D05 | Diseño 3D | Renders exterior e interior/explosionado | [Renders](../diseño-3d/renders/README.md) | Vistas exterior e interior disponibles; presentación final por revisar | p. 7 |
 | T01 | Testing, 10 % | Objetivo, condiciones, pasos, éxito y evidencia | [Protocolo](../testing/protocolo-pruebas.md) | Base preparada; parámetros por definir | pp. 7–8 |
 | T02 | Testing | Resultados cuantitativos y análisis crítico | [Resultados](../testing/resultados.md) | Lecturas NanoVNA históricas; T01–T08 sin ejecuciones completas | p. 8 |
 | T03 | Testing | Una falla real y su solución | [Fallas](../testing/registro-fallas.md) | Tres incidencias históricas; verificación de corrección pendiente | p. 8 |

@@ -1,34 +1,31 @@
-# Revisión del diseño
+# Revisión del diseño Gill V7
 
-## Antecedente disponible
+La revisión entregada es el [Gill V7 con margen de 75 mm](fusion/gill-v7-75mm/README.md). El Gill V1 se conserva como antecedente conceptual. El [inventario CAD](fusion/componentes-nodo/README.md) distingue modelos oficiales, medidas aportadas y referencias aproximadas.
 
-El [Gill V1](gill-v1/README.md) contiene una fuente OpenSCAD y cinco STL. Sus dimensiones son provisionales; el soporte del sensor requiere anclajes específicos y fijación a la base. Quedan pendientes la impresión de prueba, el ajuste, la revisión de interferencias y el ensamble completo en Fusion 360.
+| Componente | Dimensiones o referencia | Evidencia |
+|---|---|---|
+| Batería | 120 × 50 × 40 mm, de pie | Medición del equipo; sustituye la envolvente comercial anterior |
+| Controlador solar | 60 × 60 × 15 mm | Medición y fotografías del equipo |
+| RAK19007 / RAK4631 / RAK1906 | CAD oficial, placas conectadas | Fuentes del inventario |
+| DC-DC | PCB candidata 63 × 27 mm | Aproximación de XY-3606; modelo exacto por confirmar |
+| BMS | Referencia 59 × 20 × 3,4 mm | Modelo físico por confirmar |
+| Antena | Referencia mecánica TRAB9023P, montaje N inferior | Espiga, tuerca y conector aproximados; probar con hardware real |
 
-## Volúmenes de componentes
+| Parámetro | Valor |
+|---|---:|
+| Punto superior del interior, incluidas bridas | Z160,5 mm |
+| Cara inferior de tapa | Z235,5 mm |
+| Margen sobre el interior | 75 mm |
+| Diámetro de tapa / aletas / abertura interior | 256 / 236 / 180 mm |
+| Aletas | 8 estándar + 1 terminal |
+| Pendiente de aletas / tapa | 45° / 8° |
+| Paso vertical | 23,5 mm |
+| Agujero y espesor de apriete de antena | Ø16,2 × 3 mm |
+| Holgura radial del disco desmontable | 0,25 mm |
+| Guía acostada | 235,5 mm de largo |
 
-| Componente de la BOM | Dimensiones reales (mm) | Fuente o medición | Componente del ensamble | Posición/orientación | Verificado |
-|---|---|---|---|---|---|
-| Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | No |
+Las comprobaciones de [verificacion.json](fusion/gill-v7-75mm/verificacion.json) revisan las interferencias del marco, aletas, tapa, tornillos y antena, así como el espacio del conector sobre la torre. La interferencia entre los insertos térmicos y sus pilotos es intencional. [stl-verificados.json](fusion/gill-v7-75mm/stl-verificados.json) comprueba mallas cerradas y [archivos-locales.json](fusion/gill-v7-75mm/archivos-locales.json) conserva SHA-256 de los archivos.
 
-## Parámetros y tolerancias
+El F3D completo y la variante interior se reabren para verificar su contenido y visibilidad. El segundo conserva las nueve aletas ocultas y reactivables. La batería, el controlador y los conectores rectos mantienen su distribución y dimensiones.
 
-| Parámetro | Valor y unidad | Justificación | Comprobación |
-|---|---|---|---|
-| Espesor de pared | Pendiente | Pendiente | Pendiente |
-| Holgura tapa-cuerpo | Pendiente | Pendiente | Pendiente |
-| Fijaciones y alojamientos | Pendiente | Pendiente | Pendiente |
-| Acceso a conectores y botones | Pendiente | Pendiente | Pendiente |
-
-## Control del ensamble
-
-- [ ] Todos los componentes reales están representados.
-- [ ] Dimensiones y posiciones coinciden con hardware y BOM.
-- [ ] Modelo paramétrico sin errores geométricos.
-- [ ] Interferencias revisadas en la revisión entregada.
-- [ ] Apertura y cierre funcionales, sin cables prensados.
-- [ ] Puertos, sensores, botones y conectores accesibles.
-- [ ] Componentes críticos reemplazables sin destruir piezas.
-- [ ] Tolerancias documentadas y contrastadas con fabricación.
-- [ ] Archivo exportado reabierto correctamente en Fusion 360.
-
-**Revisión:** pendiente. **Fecha:** pendiente. **Responsable:** pendiente. **Resultado:** no verificado.
+**Resultado:** revisión geométrica digital; impresión, ajuste, resistencia, sellado y comportamiento térmico pendientes. La tapa requiere sellar la junta del disco de antena y los pasos de tornillos. La precisión meteorológica y el rendimiento RF no se deducen del CAD. Los F3D usan geometría directa e híbrida; se conserva OpenSCAD editable y queda pendiente la parametrización nativa completa y los planos PDF.

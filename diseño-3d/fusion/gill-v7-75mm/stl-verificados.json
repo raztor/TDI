@@ -1,0 +1,156 @@
+[
+  {
+    "file": "V3_Bandeja_BMS.stl",
+    "triangles": 832,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      68.0,
+      34.0,
+      3.0
+    ]
+  },
+  {
+    "file": "V3_Bandeja_Controlador.stl",
+    "triangles": 288,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      68.0,
+      69.0,
+      6.0
+    ]
+  },
+  {
+    "file": "V3_Bandeja_DCDC.stl",
+    "triangles": 776,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      70.0,
+      47.0,
+      6.0
+    ]
+  },
+  {
+    "file": "V3_Bandeja_RAK.stl",
+    "triangles": 272,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      70.0,
+      50.0,
+      8.0
+    ]
+  },
+  {
+    "file": "V3_Placa_Vertical_154.stl",
+    "triangles": 1544,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      78.0,
+      158.0,
+      6.0
+    ]
+  },
+  {
+    "file": "V4_Base_200_Sin_Varillas.stl",
+    "triangles": 1856,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      199.9552459716797,
+      199.9776153564453,
+      12.0
+    ]
+  },
+  {
+    "file": "V4_Probeta_Guia_Corta.stl",
+    "triangles": 526,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      12.0,
+      20.0,
+      6.0
+    ]
+  },
+  {
+    "file": "V4_Probeta_Insertos_y_Ventana_T.stl",
+    "triangles": 480,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      60.0,
+      30.0,
+      6.0
+    ]
+  },
+  {
+    "file": "V5_Probeta_Paso_Antena_16_0_16_2_16_4.stl",
+    "triangles": 692,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      78.0,
+      28.0,
+      3.0
+    ]
+  },
+  {
+    "file": "V7_Aleta_236_45gr_Paso23_5.stl",
+    "triangles": 1534,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      235.9471893310547,
+      235.9735870361328,
+      41.5
+    ]
+  },
+  {
+    "file": "V7_Aleta_Superior_236_45gr.stl",
+    "triangles": 1546,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      235.9471893310547,
+      235.9735870361328,
+      35.5
+    ]
+  },
+  {
+    "file": "V7_Disco_Antena_60_Paso16_2.stl",
+    "triangles": 1084,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      59.986572265625,
+      59.9932861328125,
+      3.0
+    ]
+  },
+  {
+    "file": "V7_Guia_T_235_5_Tope_y_Inserto_Axial.stl",
+    "triangles": 580,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      16.0,
+      235.5,
+      10.199999809265137
+    ]
+  },
+  {
+    "file": "V7_Tapa_256_Pendiente8gr.stl",
+    "triangles": 2804,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      255.94271087646484,
+      255.9713592529297,
+      16.96479606628418
+    ]
+  }
+]

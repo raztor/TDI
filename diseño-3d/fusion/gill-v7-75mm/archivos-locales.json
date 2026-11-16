@@ -1,0 +1,110 @@
+[
+  {
+    "file": "33_Torre_V7_Margen75.f3d",
+    "bytes": 36117823,
+    "sha256": "160d8b52903464a9b569cbc89950f0708c2711627b321d71d3fb7fcf0ca520c5",
+    "archive_ok": true
+  },
+  {
+    "file": "34_Gill_V7_Completo_Margen75.f3d",
+    "bytes": 36391032,
+    "sha256": "c037726501f1fb2da08ddddb08933315e00e243fbc1654b7f87695bcdfbe1401",
+    "archive_ok": true
+  },
+  {
+    "file": "35_Detalle_V7_Tapa_y_Antena.f3d",
+    "bytes": 316099,
+    "sha256": "59142973c18c6661ea7c6d3c0487305c3b13d78af14514b9243fe38850a923dd",
+    "archive_ok": true
+  },
+  {
+    "file": "36_Gill_V7_Interior_Aletas_Ocultas.f3d",
+    "bytes": 36072932,
+    "sha256": "0175f34950cde9bac2ecd191860cba89cf9f199ba9bb599f814efdd13580f6dd",
+    "archive_ok": true
+  },
+  {
+    "file": "V3_Bandeja_BMS.f3d",
+    "bytes": 53260,
+    "sha256": "5ddd6db78000962e96b4685ffb86e7045f158405c5ccede5392ef3c339d129d1",
+    "archive_ok": true
+  },
+  {
+    "file": "V3_Bandeja_Controlador.f3d",
+    "bytes": 52105,
+    "sha256": "b87e3c61ee413e1304ef53010b29edf1f2395c88032c0ecd6a2bda8aa85a6346",
+    "archive_ok": true
+  },
+  {
+    "file": "V3_Bandeja_DCDC.f3d",
+    "bytes": 57385,
+    "sha256": "2ac300ffc84413ffcf04445d77f27e2fbc34b553b7613c1ef68a3197a1669025",
+    "archive_ok": true
+  },
+  {
+    "file": "V3_Bandeja_RAK.f3d",
+    "bytes": 50416,
+    "sha256": "be52ed6202b16f3fa1adee1147e5897a5eea53837a8362d41cd7005778ba455c",
+    "archive_ok": true
+  },
+  {
+    "file": "V3_Placa_Vertical_154.f3d",
+    "bytes": 136540,
+    "sha256": "7791bda166a903ba5e0042ed7945cac44d83718735d2cdda32ef6ae5902e0d10",
+    "archive_ok": true
+  },
+  {
+    "file": "V4_Base_200_Sin_Varillas.f3d",
+    "bytes": 147525,
+    "sha256": "ee6ea9cf0264b0aa4e1e7f214095b3ee3a7f6af8c7c129dcf667aa6b65f9e83d",
+    "archive_ok": true
+  },
+  {
+    "file": "V4_Probeta_Guia_Corta.f3d",
+    "bytes": 47347,
+    "sha256": "c46ee9215bc59e70f2219c7be661293653b41e9860fa49e3bdab1b1e37f920ec",
+    "archive_ok": true
+  },
+  {
+    "file": "V4_Probeta_Insertos_y_Ventana_T.f3d",
+    "bytes": 45484,
+    "sha256": "454d34ab50a4e9b44185b00e79a6c64536c8a4dc4d639c1e337531489814e2ad",
+    "archive_ok": true
+  },
+  {
+    "file": "V5_Probeta_Paso_Antena_16_0_16_2_16_4.f3d",
+    "bytes": 44877,
+    "sha256": "afc42499879190f4c7e6d6e879dacf075beb5be97441cd37fb5733606ebf34f1",
+    "archive_ok": true
+  },
+  {
+    "file": "V7_Aleta_236_45gr_Paso23_5.f3d",
+    "bytes": 82814,
+    "sha256": "3bc3690e5a2f13f76186d31d6b04ac43a8c5363995aa80f4b9da27345d236ef1",
+    "archive_ok": true
+  },
+  {
+    "file": "V7_Aleta_Superior_236_45gr.f3d",
+    "bytes": 83022,
+    "sha256": "627206b1a8d9bd22d5feff95f1acc921e93d1818104c54fd2a2fe68097ad9f68",
+    "archive_ok": true
+  },
+  {
+    "file": "V7_Disco_Antena_60_Paso16_2.f3d",
+    "bytes": 45068,
+    "sha256": "ce6f9c7b6054830902af628b9b3250cb1525a7455b701bcdcb9be9ebe76bbc21",
+    "archive_ok": true
+  },
+  {
+    "file": "V7_Guia_T_235_5_Tope_y_Inserto_Axial.f3d",
+    "bytes": 102442,
+    "sha256": "83f2f702b6888331df99be95bb899c50a8a98a46bcf305fe95fc54223040ef31",
+    "archive_ok": true
+  },
+  {
+    "file": "V7_Tapa_256_Pendiente8gr.f3d",
+    "bytes": 84269,
+    "sha256": "2979f26bfa71f65e59df63c855528ee537d58150ca50c5cd51cfbdfbc16f9155",
+    "archive_ok": true
+  }
+]

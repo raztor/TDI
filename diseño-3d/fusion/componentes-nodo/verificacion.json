@@ -1,0 +1,23 @@
+{
+  "revision": "Publicacion de inventario y Gill V7",
+  "ensamble_general": "modelos/17_CerroSeguro_Inventario_Completo.f3d",
+  "exportado_y_guardado": true,
+  "componentes_generales": [
+    "Heltec_V3_7",
+    "RAK19007 + RAK4631 + RAK1906 - conectados",
+    "Controlador PWM GC - 60 x 60 x 15 mm - fotos",
+    "BMS 3S - REF SGT 59 x 20 x 3.4",
+    "DC-DC USB 5V 5A - candidato XY-3606 - REF 63 x 27 x 10",
+    "Caja prototipo - 180 x 140 x 50 mm - foto",
+    "Heltec Wireless Tracker V1.1 - REF dimensional",
+    "Panel solar - REF ACOPOWER 25W 510 x 360 x 20",
+    "SOS LED y buzzer - propuesta conceptual",
+    "LILYGO LoRa32 433 - candidato T3 V1.6",
+    "LILYGO LoRa32 915 - candidato T3 V1.6",
+    "Gill V1.2 con RAK1906 - ubicacion alternativa del sensor",
+    "Bateria medida por el equipo - 120 x 50 x 40 mm",
+    "Antenas y soportes - Laird roscada y dipolo medido"
+  ],
+  "archivo_nativo_autocontenido": true,
+  "limite": "CAD oficiales, medidas confirmadas y referencias aproximadas diferenciados en README y fuentes-modelos.json; no acredita montaje fisico"
+}

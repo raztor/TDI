@@ -1,9 +1,12 @@
-# Ensamble Fusion 360
+# CAD del inventario y Gill final
 
-Guardar aquí el archivo completo `.f3d` o `.f3z`. Está pendiente.
+La versión actual es el [Gill V7 con margen de 75 mm](gill-v7-75mm/README.md): nueve aletas de 45°, tapa inclinada de 8° y asiento plano de antena. Mantiene la batería medida y las conexiones representativas.
 
-El [Gill V1](../gill-v1/README.md) disponible está en OpenSCAD con exportaciones STL; no sustituye este ensamble completo ni acredita su conversión o apertura en Fusion 360.
+- [Inventario completo](componentes-nodo/README.md): vista general y modelos individuales de placas, energía, antenas, caja y referencias.
+- [Gill completo con componentes](gill-v7-75mm/34_Gill_V7_Completo_Margen75.f3d).
+- [Gill con aletas ocultas para inspeccionar el interior](gill-v7-75mm/36_Gill_V7_Interior_Aletas_Ocultas.f3d): conserva las mismas piezas y permite volver a mostrarlas.
+- [Piezas imprimibles, medidas y montaje](gill-v7-75mm/README.md).
 
-Incluir encapsulado, tapa, fijaciones y componentes internos con sus dimensiones representativas. Conservar parámetros y referencias necesarias para abrir el ensamble sin depender de archivos locales ausentes.
+Los ensambles completos se exportan como F3D autocontenidos y se reabren para verificar su contenido. Las piezas imprimibles se incluyen también en STEP y STL; la [fuente OpenSCAD](../gill-v7/CerroSeguro_Gill_V7.scad) permite editar su geometría. Los F3D contienen geometría directa e híbrida: la parametrización nativa mediante cotas y operaciones sigue pendiente.
 
-Antes de entregar, reabrir la exportación y comprobar componentes e interferencias. Durante la demo, mostrar los componentes internos del gemelo 3D.
+Las medidas confirmadas, los CAD oficiales y las envolventes aproximadas están identificados en el inventario. Faltan la impresión de prueba, el ajuste real, ensayos de agua y los planos PDF de fabricación. Las versiones de desarrollo anteriores permanecen conservadas en el espacio local; el repositorio publica el inventario completo y el Gill actual.

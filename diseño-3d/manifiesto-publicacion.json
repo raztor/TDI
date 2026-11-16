@@ -1,0 +1,492 @@
+{
+  "revision": "Gill V7, margen 75 mm",
+  "archivos": [
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/03_Controlador_PWM_GC.png",
+      "bytes": 229099,
+      "sha256": "b1dca0d23c2d92f867a50df5dcdaa2e843951926cd0033baaaa602a0e657408f"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/04_Turnigy_Multistar_5200mAh_3S_10C.png",
+      "bytes": 166635,
+      "sha256": "d3e1a6814c7307c7080249a1a1367702bdc5d2224857e9534921e1a81d2c222e"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/RAK_ensamblado.png",
+      "bytes": 452393,
+      "sha256": "882cef0e296c649a2d9c088e3bacf242cfac6d1296d7cc169cd083c753acb153"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/README.md",
+      "bytes": 6827,
+      "sha256": "856bf31df151e8d88e30dded3b571440a4c8bb578a53f21e43afeca3719900e6"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/archivos-locales.json",
+      "bytes": 5058,
+      "sha256": "f56e17b2361507cf33dfbdb90bbb966703f8570112d4d5c8a6e7ed18cd47faa7"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/descargas-oficiales.json",
+      "bytes": 905,
+      "sha256": "2fb2678f3ff05d4c6041b860f49c5eed1bf92337171d8d066d4e50d1897334f2"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/fuentes-modelos.json",
+      "bytes": 5133,
+      "sha256": "7b16c6b66ad04a8150c25003743951f78b38b33472d29ca4956fd4c31d55ae9c"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/inventario-archivos.csv",
+      "bytes": 2935,
+      "sha256": "fd9c695077ca1a777bc0fabd001252abdf2b460e0a917fcd91cd030f031a8c22"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/01_Heltec_V3_7.f3d",
+      "bytes": 3881937,
+      "sha256": "8b394208932f66f493ab86811eba54e1847648c4c6861ba06952b96736d9658b"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/02_RAK19007_RAK4631_RAK1906.f3d",
+      "bytes": 22245750,
+      "sha256": "30256f7102a685aa5508385f9a6b169bb146eac73e3ce218ce6de7489f383e74"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/03_Controlador_PWM_GC.f3d",
+      "bytes": 341296,
+      "sha256": "27ae648a799e23211b16aa88d6a1f1a35410ea815dc3b2cd6b9493e96055d2ce"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/04_Bateria_Medida_120x50x40.f3d",
+      "bytes": 36536,
+      "sha256": "950448293083e3186cad4ef55c4a82e5cad90c8e765bf5cbc9b2361018d0a867"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/04_Bateria_Medida_120x50x40.step",
+      "bytes": 9164,
+      "sha256": "be8f9f608fe28e8da1292fb1dd63b343c65504e1a9351b8270350b81733d380f"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/04_Bateria_Medida_120x50x40.stl",
+      "bytes": 684,
+      "sha256": "153eee86b46d26941bd2f4f4c952232884d473401ac18a5ded5bc3f569131acc"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/04_Turnigy_Multistar_5200mAh_3S_10C.f3d",
+      "bytes": 369337,
+      "sha256": "148f7ed51935ac13ae74e908a5b54b3ce8d6c923e6ece098f7e6a740306f8ff5"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/05_BMS_3S.f3d",
+      "bytes": 327599,
+      "sha256": "2c299a716561d3ef34f44dcb49e01c6791ddf200290b134c3d02dacee4be07fb"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/06_DC-DC_USB_5V_5A.f3d",
+      "bytes": 249726,
+      "sha256": "a4437ad326ca19eab49a30a7ecb8a87e5b52f55e1eadcedb6a864ffde7a55b69"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/07_Caja_prototipo.f3d",
+      "bytes": 201336,
+      "sha256": "7c7601494b9032d0eeca8c44e46bd9908a2b939c4eda973657ca8644aa5a3d7c"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/08_Heltec_Wireless_Tracker_V1.1.f3d",
+      "bytes": 167173,
+      "sha256": "1a029ad6080d941cd02c9ef77f0b2280cd593fc2585fbd4aa98f2af931f19789"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/09_Antenas_y_soportes.f3d",
+      "bytes": 377326,
+      "sha256": "201aafe0201d2528457820efd4c6d88cfe7a26ff11a1da6fb5308486e2866c2e"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/09_Antenas_y_soportes.step",
+      "bytes": 114875,
+      "sha256": "9166ccfd3e6a2c6b2c03600852f1c4c8b5623c49457a7038e050465aa2a79131"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/09_Laird_TRAB9023P_Montaje_Panel.f3d",
+      "bytes": 113620,
+      "sha256": "5d8301ba5c1bcb0ae37629d009fccfc1e57ac75d9ca1775f2c247d6c87e7ee9f"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/09_Laird_TRAB9023P_Montaje_Panel.step",
+      "bytes": 96160,
+      "sha256": "674e3720bfc453fb805d86e0269c24031758412ef6485d7d11d540f7c116dfd1"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/10_Panel_solar.f3d",
+      "bytes": 288106,
+      "sha256": "384a6cd611651dfeccf2f6742fea4f163e5e487975a2e59b6e4168cc862fe5e8"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/11_SOS_LED_y_buzzer.f3d",
+      "bytes": 316736,
+      "sha256": "9e68cd955a63f66dd6a195a618c801d15f36c1b76443cf8788a8333fd921badd"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/12_LILYGO_LoRa32_433.f3d",
+      "bytes": 2300787,
+      "sha256": "08ef1b997773bd278cb8b4139b49c92824d36382ed20f572369b413e655cb631"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/13_Gill_V1.1_completo.f3d",
+      "bytes": 7799690,
+      "sha256": "7a78084c7f06ba956bb81cbc0573d0a89fd9fff4343a743e5632f4cd5c18bc85"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/14_Todos_los_STL_originales.f3d",
+      "bytes": 4701889,
+      "sha256": "d280ed62257493b1933fb42d82c2c5049687297fded959a3097574629ecb2057"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/15_Gill_V1_2_con_RAK1906.f3d",
+      "bytes": 8622500,
+      "sha256": "ee7126e237d5902ef5c3d9722a9d7d733e20cbd2bffd541570cf94da5e745f77"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/16_Bandeja_y_sensor_RAK1906.f3d",
+      "bytes": 1392886,
+      "sha256": "69a4e00f6a03699cd4caf0f877a2d10bdfd7b692d25da7c8be0c8d0cc7b3ef16"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/17_CerroSeguro_Inventario_Completo.f3d",
+      "bytes": 51832143,
+      "sha256": "2ea5837bd05936d06185a20e607a6c701e48b2d387961e04986d1b6684344910"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/Placa_RAK19007.f3d",
+      "bytes": 29325830,
+      "sha256": "3054398393647e2b8096a30c5b1d50285decb56acd778741f63bfdea76ed123f"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/Placa_RAK1906.f3d",
+      "bytes": 1190135,
+      "sha256": "3070f37cb14d1380a8ace4ab38a8fb5ea57ba4c81d5af29948966a12cbc7c680"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/Placa_RAK4631.f3d",
+      "bytes": 1836830,
+      "sha256": "4765f1db4264977523dc33162cd93a15cca99962676015eaeb8abbb1833bdea9"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/bandeja_RAK1906_V1_2.stl",
+      "bytes": 135484,
+      "sha256": "9c23a0a85fcef20a76b2370911f50da14d0bb9f001fafef9e95cb9d1f4ec885e"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/modelos/retenedor_PCB_M2_V1_2.stl",
+      "bytes": 17084,
+      "sha256": "4e8e715df69831d14f292a10af0a2897f886c1507968767e7f1ec154cfd30ff2"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/verificacion-inicial.json",
+      "bytes": 11577,
+      "sha256": "2d5eb4248b4d827f37752613cf2568b81408ed8bc9cce014eb2d8d6445596efe"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/verificacion.json",
+      "bytes": 1074,
+      "sha256": "51cce5f7555cee0950b3acc7973d268e08951db7ff46a85399d95d2ab0855587"
+    },
+    {
+      "file": "diseño-3d/fusion/componentes-nodo/vista_general_final.png",
+      "bytes": 338249,
+      "sha256": "b4b0c2f1b8321fdb23617b5b263e9cf4a0c09d920cbc4129bb7ba0be7d4024f5"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/33_Torre_V7_Margen75.f3d",
+      "bytes": 36117823,
+      "sha256": "160d8b52903464a9b569cbc89950f0708c2711627b321d71d3fb7fcf0ca520c5"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/34_Gill_V7_Completo_Margen75.f3d",
+      "bytes": 36391032,
+      "sha256": "c037726501f1fb2da08ddddb08933315e00e243fbc1654b7f87695bcdfbe1401"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/35_Detalle_V7_Tapa_y_Antena.f3d",
+      "bytes": 316099,
+      "sha256": "59142973c18c6661ea7c6d3c0487305c3b13d78af14514b9243fe38850a923dd"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/36_Gill_V7_Interior_Aletas_Ocultas.f3d",
+      "bytes": 36072932,
+      "sha256": "0175f34950cde9bac2ecd191860cba89cf9f199ba9bb599f814efdd13580f6dd"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/README.md",
+      "bytes": 7192,
+      "sha256": "e7c2055489ad2e1212eb77cc94aeaea4eeca89d987a2e8f166e53dec47714335"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_BMS.f3d",
+      "bytes": 53260,
+      "sha256": "5ddd6db78000962e96b4685ffb86e7045f158405c5ccede5392ef3c339d129d1"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_BMS.step",
+      "bytes": 50201,
+      "sha256": "6658793dcc94acd72bb251f633f1ef64c468865c6193298fc7d7e784fbafa7c8"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_Controlador.f3d",
+      "bytes": 52105,
+      "sha256": "b87e3c61ee413e1304ef53010b29edf1f2395c88032c0ecd6a2bda8aa85a6346"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_Controlador.step",
+      "bytes": 54939,
+      "sha256": "e335ad9549c77cceeff09a91c859e5fbf9fbd6d198aed7dd7936c2a2bca92036"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_DCDC.f3d",
+      "bytes": 57385,
+      "sha256": "2ac300ffc84413ffcf04445d77f27e2fbc34b553b7613c1ef68a3197a1669025"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_DCDC.step",
+      "bytes": 60572,
+      "sha256": "6d2a7bda7c5b44f542a8564569ed6fe732a97480c814bb31329ada6052b3ff6c"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_RAK.f3d",
+      "bytes": 50416,
+      "sha256": "be52ed6202b16f3fa1adee1147e5897a5eea53837a8362d41cd7005778ba455c"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Bandeja_RAK.step",
+      "bytes": 49399,
+      "sha256": "d7b9ca47d427735c5ec321cf535a07b549e1b70c846f39e4582422b34ff7592b"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Placa_Vertical_154.f3d",
+      "bytes": 136540,
+      "sha256": "7791bda166a903ba5e0042ed7945cac44d83718735d2cdda32ef6ae5902e0d10"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V3_Placa_Vertical_154.step",
+      "bytes": 141100,
+      "sha256": "6dbc963314ca907cc5643cefff215e6c1963b64ab5c345a34562b4fb099463e3"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V4_Base_200_Sin_Varillas.f3d",
+      "bytes": 147525,
+      "sha256": "ee6ea9cf0264b0aa4e1e7f214095b3ee3a7f6af8c7c129dcf667aa6b65f9e83d"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V4_Base_200_Sin_Varillas.step",
+      "bytes": 168110,
+      "sha256": "54f39f06fbcedcfa7a646563bb5a5aa95ff50deb599f3f5c1dee6b500c12e570"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V4_Probeta_Guia_Corta.f3d",
+      "bytes": 47347,
+      "sha256": "c46ee9215bc59e70f2219c7be661293653b41e9860fa49e3bdab1b1e37f920ec"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V4_Probeta_Guia_Corta.step",
+      "bytes": 18232,
+      "sha256": "7d77eb3b1b43fb5ac82796c8c00b7e375cc1e6fdb2f7eb39c4b5413f458323d0"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V4_Probeta_Insertos_y_Ventana_T.f3d",
+      "bytes": 45484,
+      "sha256": "454d34ab50a4e9b44185b00e79a6c64536c8a4dc4d639c1e337531489814e2ad"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V4_Probeta_Insertos_y_Ventana_T.step",
+      "bytes": 23854,
+      "sha256": "a007f8cd4264a8dd146114bbb5f79452e93bd8258b9760cf69c7aec1997dea7a"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V5_Probeta_Paso_Antena_16_0_16_2_16_4.f3d",
+      "bytes": 44877,
+      "sha256": "afc42499879190f4c7e6d6e879dacf075beb5be97441cd37fb5733606ebf34f1"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V5_Probeta_Paso_Antena_16_0_16_2_16_4.step",
+      "bytes": 13546,
+      "sha256": "0f60e561f7a5637985284a580f804b878ba9c68289d58388b94c59a02260c492"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_236_45gr_Paso23_5.f3d",
+      "bytes": 82814,
+      "sha256": "3bc3690e5a2f13f76186d31d6b04ac43a8c5363995aa80f4b9da27345d236ef1"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_236_45gr_Paso23_5.step",
+      "bytes": 97688,
+      "sha256": "979755531b25afa512cc91a5700422fe5dd508260fe733dcc772a300805695d0"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_Superior_236_45gr.f3d",
+      "bytes": 83022,
+      "sha256": "627206b1a8d9bd22d5feff95f1acc921e93d1818104c54fd2a2fe68097ad9f68"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Aleta_Superior_236_45gr.step",
+      "bytes": 97689,
+      "sha256": "da235af06472113e4fa6bad3a1150bbe2ce2360b8ad4c8fcf10e4bc6e97bea58"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Disco_Antena_60_Paso16_2.f3d",
+      "bytes": 45068,
+      "sha256": "ce6f9c7b6054830902af628b9b3250cb1525a7455b701bcdcb9be9ebe76bbc21"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Disco_Antena_60_Paso16_2.step",
+      "bytes": 12146,
+      "sha256": "ead2db2d680a9713c625e6e9685f9f37acfaee4c34973f27c7d227a8a814f839"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Guia_T_235_5_Tope_y_Inserto_Axial.f3d",
+      "bytes": 102442,
+      "sha256": "83f2f702b6888331df99be95bb899c50a8a98a46bcf305fe95fc54223040ef31"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Guia_T_235_5_Tope_y_Inserto_Axial.step",
+      "bytes": 34341,
+      "sha256": "17d6e88dd894bf7bd7fad31add58789acf3b82ee56f0e809c763b428b6defd03"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Tapa_256_Pendiente8gr.f3d",
+      "bytes": 84269,
+      "sha256": "2979f26bfa71f65e59df63c855528ee537d58150ca50c5cd51cfbdfbc16f9155"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/V7_Tapa_256_Pendiente8gr.step",
+      "bytes": 76160,
+      "sha256": "7fbcd6e578553ce93e14f8e1e0077a20b8edcbd56b660a2f50f96639690d25c3"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/archivos-locales.json",
+      "bytes": 3235,
+      "sha256": "0af6b2f1b74465a90e65bd13e712a6822b6b0e4aae089bc495fba2bb345b3b7b"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/stl-verificados.json",
+      "bytes": 2874,
+      "sha256": "2013504f84d93f7ff58147f5d81b0c41cacaede9844858d08fa7e972451c709e"
+    },
+    {
+      "file": "diseño-3d/fusion/gill-v7-75mm/verificacion.json",
+      "bytes": 6496,
+      "sha256": "7e298838d656a6b3c3959f3b04ca70f5113256e42a9fb1c9ebb8930c9193cef3"
+    },
+    {
+      "file": "diseño-3d/gill-v7/CerroSeguro_Gill_V7.scad",
+      "bytes": 6139,
+      "sha256": "19e53abc08b006fd420f3322c3af1e4a1e517abff80b864c5e1b7188f108b063"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/Gill_V7_STL_Margen75.zip",
+      "bytes": 155830,
+      "sha256": "f68fab4a33eb41abff385eceb58a0908f2b9f1df4a765ab8d8f5d8cf1960a201"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/README.md",
+      "bytes": 447,
+      "sha256": "36b0be082867bb5604ca8838dceeb6a8d5fa58fb3f62cd93ce5a01f8c3d0b10c"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V3_Bandeja_BMS.stl",
+      "bytes": 41684,
+      "sha256": "bd7848552a58c59ffd341c2d95d1b1be698c91f1af8f68d38870ffdd0f9a285f"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V3_Bandeja_Controlador.stl",
+      "bytes": 14484,
+      "sha256": "f42226aca3cc7b2d977174ce46435320b195b8e9743b35721f9c600d8c8b848f"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V3_Bandeja_DCDC.stl",
+      "bytes": 38884,
+      "sha256": "ad8de3c32dff251879102d0f26d1c20c380d8263cf4ecff97477fb01ab0b06ab"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V3_Bandeja_RAK.stl",
+      "bytes": 13684,
+      "sha256": "d6f14824f9e1d3333ac91f8f03f4c460000b47fd22b524fde668c0f50ba09578"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V3_Placa_Vertical_154.stl",
+      "bytes": 77284,
+      "sha256": "07c6a8f5c256f3f6b7b91b092279b8a59087689e6b9a92f90ae5ab5a8e0dd791"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V4_Base_200_Sin_Varillas.stl",
+      "bytes": 92884,
+      "sha256": "4e6e318d9592853c1e94050cc5358c50d356ce65390226d9427b2b262c6bd0e4"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V4_Probeta_Guia_Corta.stl",
+      "bytes": 26384,
+      "sha256": "a3a2804c1017118644f6fa986d97f75ec2a9f17bf6d3592244b2fa74fa3d2506"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V4_Probeta_Insertos_y_Ventana_T.stl",
+      "bytes": 24084,
+      "sha256": "2eee0cba9c85d88406a9d8e9c4cc453b75ed3c43f89acee8ecc9a4e04eaa1cf6"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V5_Probeta_Paso_Antena_16_0_16_2_16_4.stl",
+      "bytes": 34684,
+      "sha256": "8c9594ed0ccf2d96fda021b45164e1c8f95fa1891f8560e73cabd8e59456f172"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V7_Aleta_236_45gr_Paso23_5.stl",
+      "bytes": 76784,
+      "sha256": "39c95df052396696a3efda8e424362cb9243263bffb97967faa6a6ddd65d997f"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V7_Aleta_Superior_236_45gr.stl",
+      "bytes": 77384,
+      "sha256": "2cd76f3790d8f1d6d94403b1b4d2cd1cd2a6367824ee33a1fb6523ea6355f5b4"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V7_Disco_Antena_60_Paso16_2.stl",
+      "bytes": 54284,
+      "sha256": "378b51598d2a4a85ef08e9ef2e46c2458e859ec4289f4d4e28574550ceebeec9"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V7_Guia_T_235_5_Tope_y_Inserto_Axial.stl",
+      "bytes": 29084,
+      "sha256": "804fd6ec054692cef11b87f85fbc6ee88c07ebab48182ca169d644860f21a31c"
+    },
+    {
+      "file": "diseño-3d/stl/gill-v7-75mm/V7_Tapa_256_Pendiente8gr.stl",
+      "bytes": 140284,
+      "sha256": "7b6ce57edcd400f39ea7fd2c76f792c8e6139c32abb278153877c49fe68dd43f"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/gill_v7_abierto.png",
+      "bytes": 391243,
+      "sha256": "c7d8bf8c18659725035afbe7f906536214280a02eeb9f858a128c48947ffb722"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/gill_v7_completo.png",
+      "bytes": 481088,
+      "sha256": "9436157d610df68f157b701416db9e0a88514ea13ef92cc619a3e3ae92853d53"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/gill_v7_interior_guardado.png",
+      "bytes": 383737,
+      "sha256": "2e578e00873b72e88eba52d90fe563e776a1f214bc38eb84407d9e02cf48d415"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/tapa_v7_montada.png",
+      "bytes": 104966,
+      "sha256": "95578772b274d72ad9262e490c0645edcd7cb81f448a79b767dd608f076af1e7"
+    },
+    {
+      "file": "diseño-3d/renders/gill-v7-75mm/torre_v7.png",
+      "bytes": 402646,
+      "sha256": "673d3a675586d716f819fc1be43bc79adc3fb208b87059e969cbf5a311806ad5"
+    }
+  ],
+  "cantidad": 97,
+  "bytes_total": 253028690
+}
