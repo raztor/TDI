@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#173d32" />
+    <title>Cerro Seguro · Monitoreo</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir al contenido</a>
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Cerro Seguro, inicio">
+        <svg viewBox="0 0 52 40" aria-hidden="true">
+          <path d="M3 34 20 8l9 15 7-10 13 21M15 16l5 7 5-7M30 23l6 5 4-7" />
+        </svg>
+        <span>CERRO SEGURO<small>Conectar. Monitorear. Cuidar.</small></span>
+      </a>
+      <p class="nav-label">ESTACIÓN DE MONITOREO</p>
+      <nav aria-label="Navegación principal">
+        <button
+          class="nav-item active"
+          data-view="overview"
+          aria-current="page"
+        >
+          <span class="nav-symbol">▦</span>Vista general
+        </button>
+        <button class="nav-item" data-view="history">
+          <span class="nav-symbol">↗</span>Histórico
+        </button>
+        <button class="nav-item" data-view="alerts">
+          <span class="nav-symbol">⚑</span>Alertas SOS<span
+            id="nav-alert-count"
+            class="nav-count"
+            >—</span
+          >
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="network-mark">
+          <span class="live-dot"></span>RED MESHTASTIC
+        </div>
+        <p>Conectividad donde<br />el camino continúa.</p>
+        <div class="network-detail">
+          915 MHz · LongFast<br />Estación local por USB
+        </div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumb">
+          Cerro Seguro <span>/</span>
+          <strong id="breadcrumb-current">Vista general</strong>
+        </div>
+        <div id="usb-status" class="status-pill neutral">
+          <span class="live-dot"></span>Consultando estación
+        </div>
+      </header>
+      <main id="main">
+        <div class="page-heading">
+          <div>
+            <div class="eyebrow">DEL ENTORNO A LA DECISIÓN</div>
+            <h1 id="page-title">Un vistazo al entorno.</h1>
+            <p id="page-subtitle">
+              Condiciones del nodo y alertas, en un solo lugar.
+            </p>
+          </div>
+          <a
+            id="export-link"
+            class="button secondary"
+            href="/api/export.csv"
+            aria-label="Exportar lecturas CSV"
+            >↓ <span>Exportar lecturas</span></a
+          >
+        </div>
+        <div id="api-error" class="notice error" role="alert" hidden></div>
+        <div class="control-bar">
+          <label class="node-control"
+            ><span class="label-dot"></span><span>Nodo</span
+            ><select id="node-select" aria-label="Nodo de monitoreo">
+              <option value="">Buscando nodos…</option>
+            </select></label
+          >
+          <div
+            class="range-control"
+            role="group"
+            aria-label="Período del histórico"
+          >
+            <button data-hours="1">1 h</button
+            ><button data-hours="6">6 h</button
+            ><button class="selected" data-hours="24" aria-pressed="true">
+              24 h</button
+            ><button data-hours="168">7 días</button>
+          </div>
+          <div class="refresh-label">
+            <span id="refresh-dot" class="live-dot"></span
+            ><span id="last-refresh">Conectando…</span>
+          </div>
+        </div>
+        <section id="overview-view">
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <div class="metric-label">
+                Temperatura<span class="metric-icon">°</span>
+              </div>
+              <div class="metric-value">
+                <span id="temperature">—</span><span class="unit">°C</span>
+              </div>
+              <div id="temperature-context" class="metric-context">
+                Esperando primera lectura
+              </div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-label">
+                Humedad relativa<span class="metric-icon">◌</span>
+              </div>
+              <div class="metric-value">
+                <span id="humidity">—</span><span class="unit">%</span>
+              </div>
+              <div class="metric-context">Medición ambiental del BME680</div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-label">
+                Último dato<span class="metric-icon">◷</span>
+              </div>
+              <div class="metric-value smaller" id="data-age">—</div>
+              <div id="freshness-context" class="metric-context">
+                Consultando recepción
+              </div>
+            </article>
+            <article class="metric-card sos-card">
+              <div class="metric-label">
+                SOS por revisar<span class="metric-icon">⚑</span>
+              </div>
+              <div class="metric-value">
+                <span id="open-alerts">—</span
+                ><span id="alert-unit" class="unit">alertas</span>
+              </div>
+              <button id="review-alerts" class="metric-link">
+                Abrir registro de alertas ↗
+              </button>
+            </article>
+          </div>
+          <div id="decision-banner" class="decision-banner">
+            <span class="decision-icon">↗</span>
+            <div>
+              <strong id="decision-title">Conectando con el entorno</strong>
+              <p id="decision-body">
+                Los indicadores se calculan con las lecturas guardadas.
+              </p>
+            </div>
+            <span class="decision-tag">INFORMACIÓN PARA ACTUAR</span>
+          </div>
+        </section>
+        <section
+          id="chart-section"
+          class="panel chart-panel"
+          aria-labelledby="chart-title"
+        >
+          <div class="panel-heading">
+            <div>
+              <h2 id="chart-title">Temperatura en el tiempo</h2>
+              <p id="chart-subtitle">Lecturas reales del nodo seleccionado</p>
+            </div>
+            <div
+              class="metric-switch"
+              role="group"
+              aria-label="Variable de la gráfica"
+            >
+              <button
+                data-metric="temperature"
+                class="selected"
+                aria-pressed="true"
+              >
+                Temperatura</button
+              ><button data-metric="humidity">Humedad</button>
+            </div>
+          </div>
+          <div class="chart-wrap">
+            <svg
+              id="chart"
+              viewBox="0 0 1100 265"
+              role="img"
+              aria-label="Histórico ambiental"
+            ></svg>
+            <div id="chart-empty" class="empty-chart" hidden>
+              <span>↗</span><strong>Sin lecturas en este período</strong>
+              <p>Prueba otro rango o comprueba la conexión del nodo.</p>
+            </div>
+            <div id="chart-tooltip" class="chart-tooltip" hidden></div>
+          </div>
+          <div class="chart-footer">
+            <span
+              ><i class="legend-line"></i
+              ><span id="chart-legend">Temperatura · °C</span></span
+            ><span id="chart-point-count">— muestras · Hora de Chile</span>
+          </div>
+          <div class="statistics-strip">
+            <div>
+              <span>Media de temperatura</span><strong id="stat-mean">—</strong>
+            </div>
+            <div><span>Mínima</span><strong id="stat-min">—</strong></div>
+            <div><span>Máxima</span><strong id="stat-max">—</strong></div>
+            <div>
+              <span>Variación en el período</span
+              ><strong id="stat-delta">—</strong>
+            </div>
+            <div>
+              <span>Intervalo observado <small>(mediana)</small></span
+              ><strong id="stat-interval">—</strong>
+            </div>
+          </div>
+        </section>
+        <section
+          id="history-filters"
+          class="panel date-filters"
+          hidden
+          aria-label="Rango personalizado"
+        >
+          <div>
+            <h2>Explorar un período</h2>
+            <p>Fechas en la hora local de este equipo.</p>
+          </div>
+          <form id="date-form">
+            <label
+              >Desde<input
+                type="datetime-local"
+                id="date-from"
+                required /></label
+            ><label
+              >Hasta<input
+                type="datetime-local"
+                id="date-until"
+                required /></label
+            ><button class="button primary" type="submit">Aplicar rango</button
+            ><button class="button secondary" type="button" id="date-clear">
+              Volver a 24 h
+            </button>
+          </form>
+        </section>
+        <section
+          id="readings-section"
+          class="panel table-panel"
+          aria-labelledby="readings-title"
+        >
+          <div class="panel-heading">
+            <div>
+              <h2 id="readings-title">Últimas lecturas</h2>
+              <p id="readings-subtitle">Recepción y condiciones ambientales</p>
+            </div>
+            <button class="text-button" id="show-history">
+              Ver histórico completo ↗
+            </button>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Recibido · Chile</th>
+                  <th>Temperatura</th>
+                  <th>Humedad</th>
+                  <th>Señal RSSI</th>
+                  <th>SNR</th>
+                </tr>
+              </thead>
+              <tbody id="readings-body"></tbody>
+            </table>
+          </div>
+          <div id="readings-empty" class="empty-state" hidden>
+            No hay lecturas disponibles para este rango.
+          </div>
+          <div id="pagination" class="pagination" hidden>
+            <span id="page-description"></span>
+            <div>
+              <button id="previous-page" class="button secondary">
+                ← Anterior</button
+              ><button id="next-page" class="button secondary">
+                Siguiente →
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="alerts-section"
+          class="panel table-panel"
+          hidden
+          aria-labelledby="alerts-title"
+        >
+          <div class="panel-heading">
+            <div>
+              <h2 id="alerts-title">Registro de alertas SOS</h2>
+              <p>
+                Historial completo del nodo. La revisión del operador se guarda
+                por separado.
+              </p>
+            </div>
+            <span class="tag">REGISTRO PERSISTENTE</span>
+          </div>
+          <div class="alert-explanation">
+            El ACK confirma el registro en la estación. «ACK encolado» indica
+            que se entregó al radio para envío; no demuestra recepción en el RAK
+            ni atención de una emergencia.
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Primera recepción · Chile</th>
+                  <th>Evento</th>
+                  <th>Confirmación</th>
+                  <th>Revisión del operador</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="alerts-body"></tbody>
+            </table>
+          </div>
+          <div id="alerts-empty" class="empty-state" hidden>
+            No hay alertas SOS registradas para este nodo.
+          </div>
+        </section>
+        <footer class="page-footer">
+          <span
+            ><span class="footer-logo">⌁</span>Cerro Seguro
+            <span class="footer-divider">/</span> Pequeños nodos, grandes
+            horizontes.</span
+          ><span id="system-detail"
+            >Actualización de pantalla cada 5 s · Datos reales</span
+          >
+        </footer>
+      </main>
+    </div>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </body>
+</html>

@@ -14,7 +14,7 @@ config:
 module_config:
   telemetry:
     environment_measurement_enabled: true
-    environment_update_interval: 900
+    environment_update_interval: 1800
     environment_display_fahrenheit: false
   detection_sensor:
     enabled: false

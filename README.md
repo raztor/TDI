@@ -1,22 +1,22 @@
 # Cerro Seguro · TEI201
 
-Cerro Seguro es un proyecto de seguridad y comunicaciones en montaña, con un prototipo de repetidor y telemetría ambiental. Este repositorio reúne el software, hardware, diseño 3D y validación para el Avance 3 de TEI201, Universidad Adolfo Ibáñez.
+Cerro Seguro es un proyecto de seguridad y comunicaciones en montaña, con un prototipo de nodo fijo SOS y telemetría ambiental sobre Meshtastic. Este repositorio reúne el software, hardware, diseño 3D y validación para el Avance 3 de TEI201, Universidad Adolfo Ibáñez.
 
 **Estado al 15 de noviembre de 2026:** el Avance 2 documenta un enlace LoRa funcional, fotografías del montaje, capturas de terminal, mediciones de antenas y fallas de integración. La reproducción de los ensayos y la validación del sistema completo siguen pendientes. Ver [estado y pendientes de los avances 1 y 2](docs/avances/revision-avances-1-2.md).
 
-La implementación inicial para el Avance 3 añade [firmware SOS sobre Meshtastic](firmware/meshtastic/README.md) y una [estación USB con SQLite](station/README.md). El botón externo, la validación con dispositivos y el dashboard web siguen pendientes. El RAK y la LILYGO participan como clientes de la red MeshChile de 915 MHz.
+El Avance 3 dispone de [firmware SOS sobre Meshtastic](firmware/meshtastic/README.md), [estación USB con SQLite](station/README.md) y [dashboard local](dashboard/README.md). El banco RAK4631 + RAK1906 y Heltec V3.2 recibe telemetría cada 120 s y se comprobó el pulsador físico con retorno REGISTERED. Ver [verificación del Avance 3](docs/verificacion-avance3.md) y [resultados de banco](testing/banco-rak-heltec.md); la validación en montaña y la entrega completa siguen abiertas.
 
 ## Descripción del proyecto
 
 | Campo | Definición |
 |---|---|
 | Nombre del proyecto | Cerro Seguro |
-| Descripción | Prototipo de repetidor y telemetría ambiental para un proyecto de seguridad y comunicaciones en montaña. Alcance operativo por validar. |
+| Descripción | Nodo fijo SOS y telemetría ambiental sobre Meshtastic para seguridad y comunicaciones en montaña. Alcance operativo por validar. |
 | Usuario y contexto de uso | Excursionistas y operadores de puntos fijos en cerros de la Región Metropolitana; caracterización preliminar en E1. |
 | Problema identificado en Avance 1 | Comunicar alertas y disponer de monitoreo local donde la conectividad es irregular; integrar radios, sensores y energía en una plataforma mantenible. |
-| Variable o fenómeno medido | Temperatura, humedad y presión mostradas en capturas de A2; series originales y validación pendientes. |
-| Información que genera el sistema | Mensajes de alerta, estado de recepción y telemetría; alcance reportado y límites en la revisión de antecedentes. |
-| Decisión que permite tomar | Recibir e interpretar una alerta y consultar condiciones locales; receptor operativo y protocolo de respuesta por definir. |
+| Variable o fenómeno medido | Temperatura y humedad recibidas en vivo del RAK1906/BME680; calibración física pendiente. |
+| Información que genera el sistema | Histórico ambiental, estadísticas, antigüedad del dato y registro SOS con revisión del operador. |
+| Decisión que permite tomar | Revisar un SOS y consultar condiciones locales; coordinación operativa y utilidad en terreno por validar. |
 
 El problema, sus antecedentes y los criterios de validación se registran en [problema y alcance](docs/problema-y-alcance.md).
 
@@ -39,11 +39,11 @@ El sistema debe completar el recorrido **captura real → almacenamiento persist
 
 | Etapa | Implementación del proyecto | Evidencia |
 |---|---|---|
-| Captura | A2 muestra TX/RX de temperatura, humedad y presión; fuente y configuración por recuperar | [Firmware](firmware/README.md) |
-| Persistencia | Pendiente: servicio o archivo estructurado e histórico | [Arquitectura](docs/arquitectura.md) |
-| Visualización | Pendiente: dashboard en vivo e histórico | [Dashboard](dashboard/README.md) |
-| Información | Pendiente: indicadores, estadísticas o alertas | [Indicadores](docs/indicadores.md) |
-| Decisión | Pendiente: acción del usuario sustentada por los datos | [Validación](testing/validacion.md) |
+| Captura | RAK1906/BME680, radio Meshtastic y solicitudes de banco cada 120 s | [Firmware](firmware/README.md) |
+| Persistencia | SQLite con lecturas, alertas únicas y cola de ACK | [Arquitectura](docs/arquitectura.md) |
+| Visualización | Dashboard local con gráficas, filtros, histórico y CSV | [Dashboard](dashboard/README.md) |
+| Información | Estadísticas ambientales, frescura y SOS pendientes de revisión | [Indicadores](docs/indicadores.md) |
+| Decisión | Revisar alertas y evaluar la vigencia y tendencia del dato; validación de uso pendiente | [Validación](testing/validacion.md) |
 
 ## Estructura del repositorio
 
@@ -52,6 +52,7 @@ El sistema debe completar el recorrido **captura real → almacenamiento persist
 ├── README.md
 ├── FUENTES.md
 ├── firmware/           # Código del dispositivo y dependencias
+├── station/            # Recepción USB, SQLite, sondeo y ACK
 ├── dashboard/          # Visualización y configuración reproducible
 ├── hardware/           # BOM, conexiones, esquemático y fotos
 ├── diseño-3d/          # Ensamble Fusion 360, planos y renders
@@ -104,7 +105,7 @@ Para la implementación actual, seguir los [comandos de compilación y configura
 
 Seguir [dashboard/README.md](dashboard/README.md). Debe indicar la URL accesible durante la evaluación o el comando de ejecución local, su configuración y la forma de recuperar el histórico.
 
-**Acceso al dashboard:** pendiente. **Inicio local:** pendiente.
+**Acceso local:** [http://127.0.0.1:8765](http://127.0.0.1:8765). Iniciar primero la estación y después `python dashboard/server.py --database station-data/cerroseguro.sqlite3`; [instalación y operación completas](dashboard/README.md).
 
 ### 5. Verificar el ciclo completo
 
@@ -117,7 +118,7 @@ Ejecutar [el protocolo de pruebas](testing/protocolo-pruebas.md). Comprobar una 
 3. Interpretar los indicadores con sus unidades, ventanas temporales y umbrales documentados.
 4. Registrar las pruebas y revisar las limitaciones antes de tomar decisiones.
 
-Los resultados, fallas y conclusiones se documentan en [testing/](testing/README.md). Hay antecedentes de A2: enlace cualitativo, [mediciones de antenas](testing/antenas-avance2.md) y [fallas de integración](testing/registro-fallas.md). Los logs de mensajes y las series ambientales están pendientes de versionar. Los protocolos T01–T08 del Avance 3 están pendientes de ejecución.
+Los resultados, fallas y conclusiones se documentan en [testing/](testing/README.md). Hay antecedentes de A2: enlace cualitativo, [mediciones de antenas](testing/antenas-avance2.md) y [fallas de integración](testing/registro-fallas.md). El [ensayo RAK/Heltec](testing/banco-rak-heltec.md) incorpora logs de SOS, series ambientales y capturas del dashboard. Los protocolos T01–T08 requieren completar sus campañas, especialmente energía, alcance, calibración y reparación.
 
 ## Diseño 3D
 

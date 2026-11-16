@@ -22,7 +22,9 @@ El módulo SOS se compila junto con Meshtastic para RAK4631. La lógica del bot�
 | Tiempo | Hora de recepción UTC separada de hora de captura; ausencia de reloj del sensor como NULL | Aprobado |
 | Configuración | Perfiles YAML válidos con el protobuf de Meshtastic Python 2.7.11; ANZ, slot 20, transmisión y CLIENT_MUTE | Aprobado |
 
-La suite Python contiene 11 pruebas. El ejecutable C++ se compila con `-Wall -Wextra -Werror`. Los comandos se mantienen en [firmware](../firmware/meshtastic/README.md) y [estación](../station/README.md).
+La suite Python de estación contiene 14 pruebas, incluidas solicitudes ambientales cada 120 segundos, sondeo desactivado, estado USB persistente y validación de mensajes de solicitud sin métricas inventadas. El ejecutable C++ se compila con `-Wall -Wextra -Werror`. Los comandos se mantienen en [firmware](../firmware/meshtastic/README.md) y [estación](../station/README.md). El dashboard añade ocho pruebas de datos, revisión, API y exportación; su [guía](../dashboard/README.md) contiene el comando.
+
+El [ensayo de banco RAK/Heltec](banco-rak-heltec.md) registra por separado la carga del firmware con destino real, la telemetría ambiental y el ACK recibidos mediante radio. El pulsador físico y el retorno REGISTERED se comprobaron en banco. La aceptación de terreno y los ensayos físicos de reintentos siguen pendientes.
 
 ## Compilación de firmware
 
@@ -34,12 +36,12 @@ La compilación de comprobación utiliza NodeID de estación sin asignar, por lo
 
 ## Aceptación pendiente
 
-- Instalación del pulsador entre AIN1 de J11 pin 1 y GND de la RAK19007; GPIO 31 como entrada digital.
-- Identificación de la revisión exacta de la LILYGO y su NodeID.
-- Carga y verificación de los perfiles de MeshChile en ambas placas.
-- Detección del BME680 y comparación de lecturas y unidades.
-- SOS y ACK de persistencia mediante radio, USB y SQLite con dispositivos reales.
+- Montaje final del pulsador y su fijación en el encapsulado; el circuito S/AIN1 y G/GND ya se probó en banco.
+- Validación del montaje final; el banco usa Heltec V3.2 `!849c7328`.
+- Registro de la configuración de la campaña de terreno; los perfiles MeshChile ya se comprobaron en ambas placas de banco.
+- Comparación del BME680 con una referencia y calibración; detección y lecturas por USB/RF comprobadas.
+- Campaña ampliada de SOS y ACK con pérdidas y reinicios; el recorrido físico de banco ya se comprobó.
 - Pruebas de recorrido por la malla, pérdidas, latencia, consumo y autonomía.
-- Interfaz web del dashboard e histórico consultable desde ella.
+- Demo del dashboard en el contexto de la evaluación; interfaz e histórico ya verificados localmente.
 
 Los casos de aceptación física se describen en [prueba SOS/Meshtastic](sos-meshtastic.md). Los protocolos T01–T08 permanecen pendientes de ejecución completa.

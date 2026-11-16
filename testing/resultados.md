@@ -1,6 +1,14 @@
 # Resultados de pruebas
 
-**Estado:** resultados de A2 documentados; protocolos T01–T08 pendientes de ejecución.
+**Estado:** resultados de A2 y [ensayo de banco del Avance 3](banco-rak-heltec.md) documentados. Las campañas completas T01–T08 siguen abiertas.
+
+## Resultados de banco del Avance 3
+
+- Captura ambiental recibida por radio y persistida: [serie CSV](datos/banco-2026-11-15.csv), con UTC, temperatura, humedad y métricas de radio.
+- Sondeo de 120 s: los dos primeros tiempos de captura difieren en 120 s; las recepciones difieren en 119,835 s.
+- Tres alertas del pulsador guardadas. Dos secuencias completas WAITING → TX → REGISTERED observadas: 2,955 s y 2,583 s, media 2,769 s. No se equiparan a latencia de radio instrumental ni a una campaña de pérdidas.
+- Histórico y alertas conservados al reiniciar el servicio USB con la misma base. Dashboard con gráficas, filtros, CSV y revisión/reapertura verificados con datos reales.
+- Fallas de contacto público y cadencia corregidas; [registro](registro-fallas.md). No se midieron precisión contra referencia, autonomía, cobertura ni tasa de éxito por punto.
 
 ## Resultados documentados del Avance 2
 

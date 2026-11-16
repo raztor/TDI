@@ -144,5 +144,15 @@ class StationTests(unittest.TestCase):
         self.assertIsNotNone(row["received_at"])
 
 
+    def test_station_heartbeat_persists_without_changing_measurements(self):
+        self.store.station_status("connected", STATION, "TEST", 120)
+        with sqlite3.connect(self.path) as db:
+            row = db.execute("SELECT state,station_node,poll_seconds FROM station_status").fetchone()
+            self.assertEqual(row, ("connected", STATION, 120))
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM measurements").fetchone()[0], 0)
+        self.store.station_status("stopped", STATION, "TEST", 120)
+        self.assertEqual(self.store.db.execute("SELECT state FROM station_status").fetchone()[0], "stopped")
+
+
 if __name__ == "__main__":
     unittest.main()

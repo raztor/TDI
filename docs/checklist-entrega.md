@@ -2,17 +2,19 @@
 
 **Evaluación:** 23 de noviembre de 2026. Completar y subir los entregables antes de la presentación.
 
-El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los resultados y pendientes anteriores. Esta lista corresponde a la entrega final. La guía de evaluación está pendiente de versionar y de cotejo con los requisitos.
+El [estado de los avances 1 y 2](avances/revision-avances-1-2.md) resume los resultados y pendientes anteriores. Esta lista corresponde a la entrega final. La [pauta](pautas/avance-03-estudiantes.pdf) está cotejada en la [verificación](verificacion-avance3.md).
 
 ## Software · 30 %
 
 - [ ] Dispositivo capturando datos reales de forma continua y confiable.
 - [ ] Frecuencia de muestreo justificada según el problema.
-- [ ] Almacenamiento persistente e histórico accesible después de reiniciar.
-- [ ] Dashboard accesible, con gráficas y contexto de interpretación.
-- [ ] Estadísticas, alertas o indicadores útiles para decidir.
+- [x] Almacenamiento persistente e histórico accesible después de reiniciar.
+- [x] Dashboard accesible, con gráficas y contexto de interpretación.
+- [x] Estadísticas, alertas o indicadores útiles para decidir.
 - [ ] Código modular y comentado subido al repositorio.
-- [ ] Dependencias, configuración, instalación y carga reproducibles.
+- [x] Dependencias, configuración, instalación y carga reproducibles.
+
+Estas comprobaciones corresponden al banco RAK/Heltec. La captura prolongada, calibración y energía se mantienen abiertas.
 
 ## Hardware · 30 %
 
@@ -41,7 +43,7 @@ La entrega CAD incluye las vistas exterior e interior y una revisión digital de
 - [ ] Protocolo con objetivo, condiciones, pasos, criterios de éxito y evidencias.
 - [ ] Criterios cuantitativos fijados antes de ejecutar las pruebas.
 - [ ] Resultados reales con tablas, gráficas o logs y métricas.
-- [ ] Al menos una falla real, análisis de causa y corrección comprobada.
+- [x] Al menos una falla real, análisis de causa y corrección comprobada.
 - [ ] Validación explícita contra el problema del Avance 1.
 - [ ] Limitaciones y mejoras fundamentadas.
 

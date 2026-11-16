@@ -11,7 +11,7 @@ El [inventario histórico](inventario-historico.md) recupera los equipos utiliza
 | Componente y modelo | Necesidad que cubre | Rango | Precisión o resolución | Alimentación y consumo | Interfaz y compatibilidad | Justificación | Fuente |
 |---|---|---|---|---|---|---|---|
 | RAK19007 | Base de integración y alimentación | Base 30 × 60 mm | No aplica como sensor | USB 5 V / batería Li-ion 3,7 V nominal; consumo del conjunto por medir | 1 ranura Core, 1 IO y 4 de sensor | Integración modular; confirmar montaje y presupuesto de energía | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/) |
-| RAK4631 | Procesamiento y radio | Variante de banda por confirmar | Desempeño del enlace por medir | Módulo 2,0–3,6 V; consumo según modo, pendiente de medir | nRF52840 + SX1262, WisBlock Core | Núcleo usado; justificar alcance y configuración con pruebas | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak4631/datasheet/) |
+| RAK4631 | Procesamiento y radio | Variante de 915 MHz comprobada en banco | Desempeño del enlace por medir | Módulo 2,0–3,6 V; consumo según modo, pendiente de medir | nRF52840 + SX1262, WisBlock Core | Núcleo usado; justificar alcance y configuración con pruebas | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak4631/datasheet/) |
 | RAK1906 / BME680 | Telemetría ambiental | −40 a 85 °C; 0–100 % HR; 300–1100 hPa | Confirmar precisión por variable y condiciones en la ficha | 3,3 V; consumo según modo de medida | I²C, conector WisBlock | Sensor usado; vincular variables con la decisión del proyecto | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak1906/datasheet/) |
 
 ## Alimentación

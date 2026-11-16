@@ -11,3 +11,13 @@
 No se estableció una causa común para la batería y la placa. El análisis de antena compartida descartado por posible pérdida de paquetes pertenece a [decisiones de diseño](../docs/avances/actas-y-decisiones.md), no a fallas experimentales observadas.
 
 Cada corrección se cierra con una repetición de la prueba y su resultado registrado. Las incidencias sin verificación permanecen abiertas.
+
+## Integración del Avance 3 · 15 de noviembre de 2026
+
+| ID | Síntoma y causa comprobada | Corrección | Repetición y resultado |
+|---|---|---|---|
+| A3-F01 | El USB del Heltec estaba ocupado por la pestaña del navegador conectada a la placa | Desconectar esa sesión antes de abrir la estación | La API serie respondió y el servicio recibió datos; un solo propietario del USB |
+| A3-F02 | Mensajes directos rechazados con `PKI_SEND_FAIL_PUBLIC_KEY`: el RAK no conocía la clave pública del Heltec | Asociar los contactos públicos de ambas placas por USB | Mensaje por RF persistido, ACK recibido en el RAK y posteriores SOS físicos REGISTERED; [ensayo](banco-rak-heltec.md) |
+| A3-F03 | El intervalo ambiental configurado a 900 s reaparecía como 1800 s; el firmware aplica su mínimo en el canal público predeterminado | Mantener la publicación automática en 1800 s y solicitar lecturas desde la estación a 120 s para banco | Capturas sucesivas separadas por 120 s; sondeo continuo observado en [eventos](evidencias/estacion-eventos.log) |
+
+Estas correcciones corresponden al banco RAK/Heltec. No cierran las averías históricas de energía ni la validación de terreno de A2.

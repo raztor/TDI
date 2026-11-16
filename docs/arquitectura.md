@@ -2,15 +2,15 @@
 
 ## Arquitectura del Avance 3
 
-El RAK4631 de 915 MHz utiliza Meshtastic con telemetría del RAK1906 y un módulo de botón SOS. La LILYGO de 915 MHz mantiene firmware oficial y se conecta por USB a un computador. El [servicio de estación](../station/README.md) guarda telemetría y alertas en SQLite y devuelve la confirmación del SOS después del commit.
+El RAK4631 de 915 MHz utiliza Meshtastic con telemetría del RAK1906 y un módulo de botón SOS. El Heltec WiFi LoRa 32 V3.2 de 915 MHz mantiene firmware oficial y se conecta por USB a un computador; una LILYGO compatible puede cumplir el mismo papel. El [servicio de estación](../station/README.md) guarda telemetría y alertas en SQLite y devuelve la confirmación del SOS después del commit.
 
-Recorrido: RAK → red Meshtastic → LILYGO → USB → estación → SQLite. La confirmación vuelve desde la estación al RAK por la LILYGO. Los nodos propios usan CLIENT_MUTE; el reenvío intermedio puede realizarlo la infraestructura existente de la malla.
+Recorrido: RAK → red Meshtastic → Heltec → USB → estación → SQLite → API local → dashboard. La confirmación vuelve desde la estación al RAK por el Heltec. Los nodos propios usan CLIENT_MUTE; el reenvío intermedio puede realizarlo la infraestructura existente de la malla.
 
 La red se configura con región ANZ, preset LongFast, slot 20 y canal primario LongFast, según [MeshChile](https://meshchile.cl/node-configuration). El camino de adquisición y confirmación funciona por RF y USB; MQTT no forma parte de la persistencia de la estación.
 
 El [protocolo SOS](../firmware/meshtastic/README.md) correlaciona cada respuesta con el evento y la estación configurada. El ACK nativo de radio no confirma almacenamiento. Los duplicados se registran una vez y reciben otra confirmación. Sin respuesta, el RAK limita sus reintentos y mantiene el estado UNCONFIRMED.
 
-Conexión elegida para el pulsador: AIN1/GPIO 31 en J11 pin 1 y GND de la RAK19007, sin expansión adicional; instalación pendiente. No se utilizan LED ni buzzer de aplicación. El dashboard y la prueba física completa están pendientes; la validación de software se registra en [firmware y estación](../testing/firmware-software.md).
+Conexión elegida para el pulsador: AIN1/GPIO 31 en J11 pin 1 y GND de la RAK19007, sin expansión adicional. Se comprobó un módulo de botón con S conectado a AIN1 y G a GND, dejando V libre; no requiere LED ni buzzer de aplicación. El [ensayo de banco](../testing/banco-rak-heltec.md) registra el estado REGISTERED tras la pulsación. El [dashboard](../dashboard/README.md) consulta la misma SQLite sin ocupar el USB y permite revisar alertas de forma independiente del ACK. La validación de campo sigue pendiente.
 
 ## Implementación reportada y arquitectura prevista
 

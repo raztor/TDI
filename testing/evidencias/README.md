@@ -1,6 +1,14 @@
 # Evidencias
 
-Las capturas NanoVNA documentan la caracterización de las antenas. Las fotos del montaje están en [hardware/fotos](../../hardware/fotos/README.md) y las figuras de banco, energía, antenas y terminal, en el [informe A2](<../../docs/avances/Informe Avance 2 - Cerro Seguro (2).pdf>). Los logs originales y las evidencias de dashboard están pendientes de versionar.
+Las capturas NanoVNA documentan la caracterización de las antenas. Las fotos históricas están en [hardware/fotos](../../hardware/fotos/README.md). El [ensayo del Avance 3](../banco-rak-heltec.md) incorpora datos reales, logs de pulsador y estación, y las capturas del dashboard siguientes.
+
+| Archivo | Evidencia del 15 de noviembre de 2026 |
+|---|---|
+| [Dashboard general](dashboard-vista-general.jpg) | Temperatura, humedad, gráfico histórico, estadísticas y conexión USB con datos reales |
+| [Alertas](dashboard-alertas.jpg) | Eventos físicos persistidos, ACK encolado y revisión humana independiente |
+| [Vista móvil](dashboard-movil.jpg) | Diseño adaptable con gráfica y unidades legibles |
+| [Monitor RAK](rak-sos-banco.log) | WAITING, TX, REGISTERED y recepción del ACK del emisor |
+| [Eventos de estación](estacion-eventos.log) | Extracto de solicitudes ambientales, escritura de SOS y encolado de ACK |
 
 Cada archivo debe poder vincularse con una prueba y una revisión del sistema.
 

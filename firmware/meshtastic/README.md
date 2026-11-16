@@ -12,7 +12,7 @@ Adaptación de Meshtastic para RAK4631 con nRF52840, base RAK19007 y sensor RAK1
 | GND accesible | J10 pin 2 o J12 pin 2 de la propia RAK19007 |
 | LED y buzzer de aplicación | No utilizados |
 
-La conexión utiliza los pads de 2,54 mm de la RAK19007, sin módulo de expansión. Se pueden soldar dos cables o instalar pines de cabecera. AIN1 se usa como entrada digital con pull-up interna; el botón solo lo conecta a GND. No conectar el pulsador a VBAT ni a una alimentación externa. El pulsador está pendiente de instalación.
+La conexión utiliza los pads de 2,54 mm de la RAK19007, sin módulo de expansión. Se pueden soldar dos cables o instalar pines de cabecera. AIN1 se usa como entrada digital con pull-up interna; el botón solo lo conecta a GND. No conectar el pulsador a VBAT ni a una alimentación externa. El módulo de botón ensayado conecta S a AIN1 y G a GND, dejando V libre; el [ensayo](../../testing/banco-rak-heltec.md) registra el funcionamiento físico.
 
 El RAK1906 utiliza I²C y no ocupa AIN1. La medida interna de batería del RAK4631 utiliza AIN0/P0.05, separado de AIN1/P0.31. El módulo Dropzone, que también podría usar AIN1, permanece excluido de la compilación. No utilizar RESET, IO1 ni IO2 como sustitutos del pin seleccionado.
 
@@ -62,7 +62,7 @@ git clone --branch v2.7.26.54e0d8d --depth 1 --recurse-submodules --shallow-subm
 .venv/bin/pio run --project-dir ../meshtastic-cerroseguro -e cerroseguro-rak4631
 ```
 
-Reemplazar `!12345678` por el NodeID real de la LILYGO, obtenido mediante `meshtastic --port PUERTO_LILYGO --info`. Si se omite `--station-node`, se puede comprobar la compilación, pero el SOS permanece deshabilitado. La dirección de la estación queda definida en la compilación; cambiarla requiere volver a preparar, compilar y cargar.
+Reemplazar `!12345678` por el NodeID real de la estación Heltec o LILYGO, obtenido mediante `meshtastic --port PUERTO_ESTACION --info`. Si se omite `--station-node`, se puede comprobar la compilación, pero el SOS permanece deshabilitado. La dirección de la estación queda definida en la compilación; cambiarla requiere volver a preparar, compilar y cargar.
 
 Opciones del script: `--sos-pin 31`, `--channel 0`, `--ack-timeout-ms 60000`, `--max-attempts 3`. Cambiar el pin exige verificar su disponibilidad en el montaje.
 
@@ -79,9 +79,9 @@ Ambas placas deben ser las variantes de 915 MHz. El perfil de MeshChile usa regi
 .venv/bin/meshtastic --port PUERTO_LILYGO --ch-index 0 --ch-set name LongFast --ch-set psk default
 ```
 
-Los perfiles seleccionan `CLIENT_MUTE`, sin retransmisión de mensajes ajenos, y mantienen recepción activa. Los nodos existentes de la red pueden transportar los mensajes dirigidos a la estación. Se configura telemetría ambiental cada 900 segundos; la cadencia de medición y envío debe contrastarse con el consumo y las necesidades del proyecto. La integración de esta versión funciona por RF y USB; MQTT no interviene en el registro ni en el ACK.
+Los perfiles seleccionan `CLIENT_MUTE`, sin retransmisión de mensajes ajenos, y mantienen recepción activa. Los nodos existentes de la red pueden transportar los mensajes dirigidos a la estación. La publicación ambiental automática utiliza 1800 segundos, mínimo aplicado por esta versión en el canal público predeterminado para este rol. Para las pruebas de banco, el servicio de estación solicita lecturas cada 120 segundos con `--telemetry-poll-seconds 120`. La integración funciona por RF y USB; MQTT no interviene en el registro ni en el ACK.
 
-En la LILYGO se instala la distribución oficial correspondiente a su modelo exacto, que debe confirmarse antes de flashear. La etiqueta de banda no identifica por sí sola la revisión de placa.
+La estación de banco utiliza Heltec WiFi LoRa 32 V3.2 con el firmware oficial `heltec-v3`. El perfil receptor también sirve para una LILYGO, instalando la distribución oficial correspondiente a su modelo exacto. La etiqueta de banda no identifica por sí sola la revisión de placa. El NodeID de la placa elegida debe coincidir con el incorporado al compilar el RAK. Antes de probar SOS, intercambiar los contactos públicos entre ambos nodos y sincronizar sus relojes; los mensajes directos requieren la clave pública del destino.
 
 Referencias: [MeshChile](https://meshchile.cl/node-configuration), [telemetría](https://meshtastic.org/docs/configuration/module/telemetry/), [API de módulos](https://meshtastic.org/docs/development/device/module-api/), [bootloader RAK](https://meshtastic.org/docs/hardware/devices/rak-wireless/wisblock/core-module/).
 

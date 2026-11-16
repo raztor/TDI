@@ -2,15 +2,15 @@
 
 Referencia: guía TEI201 «Avance #3: Prototipo IoT Completo», evaluación del 23 de noviembre de 2026. Las páginas siguientes corresponden a la numeración impresa de la guía.
 
-**Estado general:** E1 define el problema y los requisitos preliminares; A2 documenta el enlace cualitativo, las mediciones de antenas y las fallas de integración. Los requisitos del Avance 3 se siguen en la matriz siguiente. Ver [estado de los avances 1 y 2](avances/revision-avances-1-2.md). La guía de evaluación está pendiente de versionar y de cotejo con esta matriz.
+**Estado general:** E1 define el problema y los requisitos preliminares; A2 documenta el enlace cualitativo, las mediciones de antenas y las fallas de integración. Los requisitos del Avance 3 se siguen en la matriz siguiente. Ver [estado de los avances 1 y 2](avances/revision-avances-1-2.md). La [pauta](pautas/avance-03-estudiantes.pdf) se cotejó en la [verificación del Avance 3](verificacion-avance3.md).
 
 | ID | Dimensión | Requisito | Evidencia o ubicación | Estado | Guía |
 |---|---|---|---|---|---|
-| S01 | Software, 30 % | Captura continua y frecuencia justificada | [Firmware](../firmware/README.md), prueba T01 | Pendiente | pp. 2–4 |
-| S02 | Software | Datos persistentes e histórico consultable | [Arquitectura](arquitectura.md), prueba T02 | Pendiente | pp. 2–4 |
-| S03 | Software | Dashboard accesible con gráficas en vivo/histórico | [Dashboard](../dashboard/README.md), prueba T03 | Pendiente | pp. 2–4 |
-| S04 | Software | Indicadores que apoyen decisiones | [Indicadores](indicadores.md), prueba T04 | Pendiente | pp. 3–4 |
-| S05 | Software | Código modular, comentado y reproducible | [Firmware](../firmware/README.md) y [fuentes](../FUENTES.md) | Código pendiente | p. 4 |
+| S01 | Software, 30 % | Captura continua y frecuencia justificada | [Firmware](../firmware/README.md), [banco](../testing/banco-rak-heltec.md) | Verificado en banco a 120 s; campaña prolongada pendiente | pp. 2–4 |
+| S02 | Software | Datos persistentes e histórico consultable | [Arquitectura](arquitectura.md), [dashboard](../dashboard/README.md) | SQLite e histórico verificados tras reiniciar el servicio | pp. 2–4 |
+| S03 | Software | Dashboard accesible con gráficas en vivo/histórico | [Dashboard](../dashboard/README.md), [capturas](../testing/evidencias/README.md) | Operativo con datos reales; prueba visual y API aprobadas | pp. 2–4 |
+| S04 | Software | Indicadores que apoyen decisiones | [Indicadores](indicadores.md), prueba T04 | Estadísticas, frescura y SOS implementados; validación de uso pendiente | pp. 3–4 |
+| S05 | Software | Código modular, comentado y reproducible | [Firmware](../firmware/README.md), [estación](../station/README.md), [dashboard](../dashboard/README.md) | Código modular y pruebas disponibles | p. 4 |
 | H01 | Hardware, 30 % | Selección por rango, precisión, consumo y compatibilidad | [Selección](../hardware/seleccion-componentes.md) | Fichas base incorporadas; justificación pendiente | pp. 4–6 |
 | H02 | Hardware | Esquemático completo | [Esquemáticos](../hardware/esquematicos/README.md) | Archivos pendientes | pp. 5–6 |
 | H03 | Hardware | BOM con cantidad, especificación y costos | [BOM.xlsx](../hardware/BOM.xlsx) | Componentes conocidos; cantidades y precios pendientes | pp. 5–6 |
@@ -22,10 +22,10 @@ Referencia: guía TEI201 «Avance #3: Prototipo IoT Completo», evaluación del 
 | D04 | Diseño 3D | Planos PDF con vistas, cotas, tolerancias y escala | [Planos](../diseño-3d/planos/README.md) | Archivos pendientes | p. 7 |
 | D05 | Diseño 3D | Renders exterior e interior/explosionado | [Renders](../diseño-3d/renders/README.md) | Vistas exterior e interior disponibles; presentación final por revisar | p. 7 |
 | T01 | Testing, 10 % | Objetivo, condiciones, pasos, éxito y evidencia | [Protocolo](../testing/protocolo-pruebas.md) | Base preparada; parámetros por definir | pp. 7–8 |
-| T02 | Testing | Resultados cuantitativos y análisis crítico | [Resultados](../testing/resultados.md) | Lecturas NanoVNA históricas; T01–T08 sin ejecuciones completas | p. 8 |
-| T03 | Testing | Una falla real y su solución | [Fallas](../testing/registro-fallas.md) | Tres incidencias históricas; verificación de corrección pendiente | p. 8 |
-| T04 | Testing | Validación explícita contra Avance 1 | [Validación](../testing/validacion.md) | Pendiente | p. 8 |
-| G01 | GitHub, 5 % | Carpetas y README con proyecto, equipo, instalación y uso | [README](../README.md) | Proyecto y equipo incorporados; instalación y uso reproducibles pendientes | pp. 8–9 |
+| T02 | Testing | Resultados cuantitativos y análisis crítico | [Resultados](../testing/resultados.md) | Datos, SOS y latencias de banco; campañas T01–T08 abiertas | p. 8 |
+| T03 | Testing | Una falla real y su solución | [Fallas](../testing/registro-fallas.md) | PKI y cadencia diagnosticados, corregidos y verificados en banco | p. 8 |
+| T04 | Testing | Validación explícita contra Avance 1 | [Validación](../testing/validacion.md) | Vínculo con E1 documentado; metas de montaña y energía abiertas | p. 8 |
+| G01 | GitHub, 5 % | Carpetas y README con proyecto, equipo, instalación y uso | [README](../README.md), [inicio local](../dashboard/README.md) | Instalación y uso documentados; clonación final por comprobar | pp. 8–9 |
 | G02 | GitHub | Código, esquemáticos, CAD, documentos y evidencias completos | [Checklist](checklist-entrega.md) | Entregables pendientes | pp. 8–9 |
 | G03 | GitHub | Repo cloneable y accesible al evaluador | [Checklist](checklist-entrega.md) | Comprobar revisión final | pp. 8–9, 12 |
 | G04 | Habilitante | FUENTES.md completo según las tres categorías de la guía | [FUENTES.md](../FUENTES.md) | Fuentes de componentes; declaración técnica pendiente | pp. 13–15 |

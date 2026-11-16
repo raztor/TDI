@@ -1,12 +1,12 @@
 # Mapa de conexiones
 
-**Estado:** pendiente de levantar y contrastar con el montaje real. Esta tabla no constituye un pinout válido para conectar el dispositivo.
+**Estado:** conexión del pulsador verificada en banco con RAK19007 y RAK4631. El levantamiento completo de alimentación y del montaje final continúa pendiente.
 
 ## Conexión definida para el botón SOS
 
 Conectar un pulsador normalmente abierto entre AIN1 de J11 pin 1 y GND de la RAK19007. Se puede utilizar GND en J10 pin 2 o J12 pin 2. AIN1 corresponde al pin nRF52840 P0.31 y al número Arduino GPIO 31; se configura como INPUT_PULLUP y la pulsación lleva la entrada a LOW. Los pads permiten soldar directamente dos cables o instalar cabeceras de 2,54 mm, sin expansión adicional.
 
-El RAK1906 ocupa el bus I²C, no AIN1. La medida de batería en el RAK4631 utiliza AIN0/P0.05. Dropzone permanece deshabilitado para que no utilice AIN1. No conectar el pulsador a VBAT, IO1, IO2 ni RESET; tampoco se aplica tensión externa al GPIO. No se instalan LED o buzzer de aplicación. El montaje y la verificación física del botón están pendientes.
+El RAK1906 ocupa el bus I²C, no AIN1. La medida de batería en el RAK4631 utiliza AIN0/P0.05. Dropzone permanece deshabilitado para que no utilice AIN1. No conectar el pulsador a VBAT, IO1, IO2 ni RESET; tampoco se aplica tensión externa al GPIO. No se instalan LED o buzzer de aplicación. El módulo probado conecta S a AIN1 y G a GND, dejando V libre; el [ensayo](../testing/banco-rak-heltec.md) registra la pulsación y el retorno REGISTERED.
 
 Referencias: [J10/J11/J12 de RAK19007](https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/), [pines utilizados por RAK1906](https://docs.rakwireless.com/product-categories/wisblock/rak1906/datasheet/), [variante RAK4631 y pin de batería en Meshtastic](https://github.com/meshtastic/firmware/blob/v2.7.26.54e0d8d/variants/nrf52840/rak4631/variant.h). El resto del circuito de alimentación y sus protecciones sigue pendiente de levantamiento.
 
