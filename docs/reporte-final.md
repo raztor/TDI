@@ -1,57 +1,75 @@
-# Cerro Seguro · Reporte final
+# Cerro Seguro · Reporte del Avance 3
 
-**Curso:** TEI201, Taller de Diseño en Ingeniería. **Entrega:** Avance 3, 23 de noviembre de 2026.
-
-**Estado:** estructura del Avance 3. Antecedentes de E1 y A2 incorporados en [revisión de avances](avances/revision-avances-1-2.md); resultados finales e implementación completa por incorporar.
+**Curso:** TEI201, Taller de Diseño en Ingeniería. **Entrega:** 23 de noviembre de 2026. **Revisión:** 16 de noviembre de 2026.
 
 ## 1. Resumen
 
-Pendiente: síntesis del problema, solución implementada, principales resultados medidos y limitaciones.
+Cerro Seguro integra un nodo fijo de telemetría ambiental y SOS con una estación de monitoreo conectada a computador. RAK4631 procesa el sensor RAK1906/BME680 y el pulsador; Meshtastic transporta mensajes hacia Heltec V3.2; la estación guarda datos y eventos en SQLite y el dashboard permite consultar histórico, tendencias y alertas.
+
+El equipo confirmó una campaña de **20/20 mensajes recibidos en menos de 60 s**, sin pérdidas observadas. También confirmó alimentación correcta, autonomía suficiente, recuperación diurna del consumo nocturno y montaje satisfactorio. La fabricación propia se realizó en PLA, con **460 g aproximados utilizados**. Quedan fotografías finales, datos de contexto para las actas, demostración de reparación, comparación del sensor con referencia y validación de uso.
 
 ## 2. Equipo
 
-Equipo: Benjamín Muñoz, Benjamín Quijada, Exequiel Najle y Javiera Cárdenas. Contribuciones históricas en E1 y [README](../README.md); responsabilidades y aportes específicos del Avance 3 por completar.
+Benjamín Muñoz, Benjamín Quijada, Exequiel Najle y Javiera Cárdenas. Las contribuciones históricas se conservan en E1 y el [README](../README.md). Las responsabilidades de integración, ensayos y presentación del Avance 3 deben completarse con los datos de las actas.
 
 ## 3. Problema y objetivos
 
-El Avance 1 define alertas y monitoreo local en cerros de la Región Metropolitana y una plataforma modular mantenible. Problema, usuarios y metas preliminares están recuperados en [problema y alcance](problema-y-alcance.md); su validación sigue pendiente.
+El proyecto aborda comunicación de incidentes y monitoreo local en cerros de la Región Metropolitana, con una plataforma modular y mantenible. La información permite consultar condiciones del punto medido, reconocer datos antiguos y revisar el registro de un SOS. Un ACK de registro no equivale a atención de rescate. [Problema, usuarios y alcance](problema-y-alcance.md).
+
+Las metas de recepción de al menos 9/10 mensajes y entrega menor a 60 s se cumplen en la campaña de veinte envíos reportada. La suficiencia energética se comprobó funcionalmente; no se ha informado una medición de la reserva porcentual objetivo del 30 %. No se generalizan resultados a rutas o condiciones no registradas.
 
 ## 4. Arquitectura y ciclo de datos
 
-Describir adquisición, transporte, almacenamiento persistente, visualización, indicadores y decisión. Incluir diagrama y configuración real. Ver [arquitectura](arquitectura.md) e [indicadores](indicadores.md).
+Captura BME680/pulsador → RAK4631 → Meshtastic → Heltec USB → servicio de estación → SQLite → dashboard → revisión del operador. La estación solicita telemetría cada 120 s; la publicación automática del firmware mantiene su intervalo separado de 1800 s. El navegador actualiza la pantalla cada cinco segundos sin ocupar el puerto USB. [Arquitectura](arquitectura.md) e [indicadores](indicadores.md).
 
 ## 5. Software
 
-Explicar módulos, muestreo, manejo de errores, dependencias, despliegue y dashboard. Enlazar código y evidencia del histórico. Estado de implementación y compilación: pendiente.
+El [firmware SOS](../firmware/meshtastic/README.md) utiliza AIN1/P0.31 con pull-up interno, rebote de 40 ms y pulsación mantenida de dos segundos. Envía la alerta y reconoce el ACK dirigido de la estación. No requiere RAK13002 ni LED/buzzer externos.
 
-## 6. Hardware
+La [estación](../station/README.md) separa recepción, protocolo, almacenamiento y sondeo. El [dashboard](../dashboard/README.md) presenta temperatura/humedad, histórico, estadísticas, antigüedad, estado USB, CSV y revisión/reapertura persistente de alertas. Se aprobaron 22 pruebas automatizadas de estación/dashboard, sintaxis JavaScript y comprobación visual de escritorio y móvil.
 
-Presentar componentes, especificaciones, justificación, BOM y costos; incluir esquema y fotos del montaje desde al menos tres ángulos. Explicar alimentación y reparación. Ver [hardware](../hardware/README.md).
+## 6. Hardware y costo
 
-## 7. Diseño 3D
+RAK19007 + RAK4631 de 915 MHz + RAK1906, pulsador S/G con V libre, panel de 12 V/25 W, controlador GC para Li-ion 3S, BMS externo, batería 3S, DC-DC USB de 5 V y estación Heltec V3.2 por USB. El equipo cotejó terminales con el [esquema](../hardware/esquematicos/README.md) y confirmó la salida y el funcionamiento energético.
 
-Describir gemelo completo, dimensiones, parametrización, tolerancias y acceso a componentes. Incluir renders, planos y referencia al archivo Fusion 360. Ver [diseño 3D](../diseño-3d/README.md).
+La [BOM](../hardware/BOM.xlsx) consolida 31 partidas con referencias de precio. Totales separados: **USD 204,78** y **CLP 106.297**, sin conversión, flete ni tributos de importación. La impresión aporta únicamente **CLP 5.980** de PLA utilizado. [Criterios y fuentes de costo](../hardware/cotizaciones.md).
 
-## 8. Protocolo y resultados
+La energía generada durante el día repone el consumo de la noche y deja excedente. No se interpreta como una carga superior al 100 % de la batería. Las fotos finales desde tres ángulos e interior y la demostración de reemplazo se incorporarán al cierre.
 
-Documentar condiciones, criterios y procedimientos ejecutados. A2 aporta enlace cualitativo, lecturas NanoVNA y fallas históricas; ver [testing](../testing/README.md). Resultados completos de T01–T08 y validación del Avance 3: pendientes.
+## 7. Diseño 3D y fabricación
+
+[Gill V7](../diseño-3d/fusion/gill-v7-75mm/README.md): base Ø200, aletas Ø236, tapa Ø256 y margen nominal sobre el interior de 75 mm. Incluye ensamble completo e interior, once tipos de pieza, STEP/STL y [doce hojas de planos A3](../diseño-3d/planos/README.md).
+
+El equipo imprimió en PLA y confirmó encaje satisfactorio con la impresora recién calibrada. El consumo aproximado fue 160 g del interior y unos 300 g entre aletas y tapa. Se aceptan las tolerancias funcionales del montaje; no se atribuyen errores dimensionales numéricos sin medirlos. Los volúmenes comerciales aproximados permanecen identificados como referencias.
+
+## 8. Pruebas y resultados
+
+| Ensayo | Resultado | Alcance |
+|---|---|---|
+| Comunicación reportada | 20 enviados/20 recibidos, 100 % recepción, 0 % pérdidas; todos bajo 60 s | Fecha, lugar, distancias y tiempos individuales por incorporar al acta |
+| Banco documentado | Telemetría, persistencia, dashboard y SOS/ACK; diferencias WAITING–REGISTERED 2,955 s y 2,583 s | Son registros separados de la campaña de veinte mensajes |
+| Energía | Consumo y autonomía suficientes; generación diurna repone descarga nocturna | Sin valores mA/Wh, duración exacta ni reserva porcentual informados |
+| Fabricación | Encaje satisfactorio, montaje correcto y 460 g aproximados de PLA | Fotografías y fecha de fabricación por incorporar |
+
+[Cierre funcional](../testing/cierre-funcional-avance3.md), [resultados](../testing/resultados.md) y [protocolo](../testing/protocolo-pruebas.md). La falla de mensajes directos por contactos públicos se corrigió y verificó; el [registro](../testing/registro-fallas.md) conserva esa evidencia y separa los incidentes históricos de A2.
 
 ## 9. Validación del problema
 
-Relacionar los datos con la necesidad del Avance 1 y explicar qué decisión permiten tomar. Distinguir hechos medidos de hipótesis. Ver [validación](../testing/validacion.md).
+La recepción y el tiempo reportados cumplen las metas iniciales en el escenario probado. El histórico, la antigüedad y la revisión de SOS convierten la captura en información consultable. La cobertura general en montaña, la precisión meteorológica y la utilidad con usuarios necesitan registros específicos. [Validación frente a E1](../testing/validacion.md).
 
 ## 10. Limitaciones y mejoras
 
-Pendiente: límites de pruebas, cobertura, consumo, ambiente, datos e interpretación; mejoras priorizadas y evidencia que las fundamenta.
+Completar las condiciones y fechas de las pruebas para delimitar sus conclusiones. Incorporar fotografías, comparación del sensor con un instrumento de referencia y demostración de reparación. Conservar latencias individuales y lecturas energéticas si existen para calcular métricas adicionales. La calibración de la impresora y el buen encaje no prueban por sí solos resistencia a agua, radiación solar ni comportamiento térmico del sensor.
 
 ## 11. Conclusiones
 
-Pendiente: cumplimiento de objetivos sustentado en resultados y próximos pasos.
+El prototipo completa captura, radio, persistencia y visualización, con SOS y confirmación de registro. El equipo aceptó la comunicación 20/20 bajo 60 s, la suficiencia energética y el montaje. La documentación técnica incorpora circuito, costos y planos; la entrega debe cerrarse con evidencias visuales, actas contextualizadas, presentación y revisión del repositorio.
 
 ## 12. Referencias y anexos
 
 - [Fuentes del proyecto](../FUENTES.md).
-- [Trazabilidad de requisitos](requisitos.md).
+- [Requisitos y evidencias](requisitos.md).
 - [Checklist de entrega](checklist-entrega.md).
+- [Actas y decisiones](avances/actas-y-decisiones.md).
 
-Conservar este archivo editable. Tras completar y revisar el reporte, exportar una versión final en PDF y comprobar que tablas, figuras y enlaces resulten legibles.
+El reporte se conserva editable. La exportación final para presentación incorporará las fotografías y actas pendientes.

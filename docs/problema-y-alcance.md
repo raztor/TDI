@@ -2,7 +2,7 @@
 
 ## Contexto
 
-**Cerro Seguro** es un proyecto de seguridad y comunicaciones en montaña, con un prototipo de repetidor y telemetría ambiental.
+**Cerro Seguro** es un proyecto de seguridad y comunicaciones en montaña, con un prototipo de nodo fijo SOS y telemetría ambiental. La implementación actual envía y recibe mensajes compatibles con Meshtastic; no desarrolla funciones propias de repetidor.
 
 El [Avance 1 con actas](avances/E1_Grupo_CerroSeguro_Con_Actas.docx) define una plataforma modular LoRa para alertas y telemetría en cerros de la Región Metropolitana. El [Avance 2](<avances/Informe Avance 2 - Cerro Seguro (2).pdf>) reporta pruebas con RAK19007, RAK4631 y RAK1906/BME680, y documenta un montaje de prueba con dos LILYGO para bandas distintas.
 
@@ -32,10 +32,10 @@ La tabla 2 de E1 establece las metas preliminares del proyecto. Sus condiciones 
 
 | Objetivo | Métrica | Criterio | Justificación | Prueba |
 |---|---|---|---|---|
-| Entrega de mensajes | Mensajes únicos recibidos/enviados y tiempo de entrega | Al menos 9 de 10 por punto; objetivo menor a 60 s | Meta inicial de E1; no garantiza confiabilidad de emergencia | Registro por punto, mediana, máximo y pérdidas; medición pendiente |
-| Retransmisión y trazabilidad | Duplicados, reintentos, saltos y registros | Registrar el 100 % de mensajes recibidos y controlar reenvíos | E1, función central del nodo | Ensayos de pérdida, reenvío y reinicio; pendientes |
+| Entrega de mensajes | Mensajes únicos recibidos/enviados y tiempo de entrega | Al menos 9 de 10 por punto; objetivo menor a 60 s | Meta inicial de E1; no garantiza confiabilidad de emergencia | Ensayo reportado 20/20, 0 pérdidas y todos <60 s; lugar/puntos y tiempos individuales por registrar |
+| Retransmisión y trazabilidad | Duplicados, reintentos, saltos y registros | Registrar el 100 % de mensajes recibidos y controlar reenvíos | E1, objetivo original; alcance actual de mensajería y ACK | Ensayos de pérdida, reenvío y reinicio; pendientes |
 | Modularidad | Interfaces y configuración | Sensor y botón por puertos documentados, sin modificar placa base | E1, objetivo de PCB | Revisión y conexión; diseño postergado |
-| Autonomía | Consumo y energía útil | Completar el ensayo con reserva objetivo del 30 % | E1; duración y método de reserva por definir | Consumo por estado, frío y ausencia de sol; medición pendiente |
+| Autonomía | Consumo y energía útil | Completar el ensayo con reserva objetivo del 30 % | E1; duración y método de reserva por definir | Suficiencia energética y recuperación diurna confirmadas; reserva del 30 % y valores mA/Wh no informados |
 | Telemetría | Unidades, tiempo y errores | Reportar unidad, hora válida o su ausencia y error de lectura | E1 | Comparación con referencia y desconexión; pendientes |
 | Alerta comprensible | Estados y activaciones accidentales | Distinguir recibido, pendiente y fallido; objetivo inicial cero activaciones falsas | E1 | Guion de uso; capturas SOS/ACK en A2 no completan la validación |
 | Compatibilidad y operación | Configuración, lugar y receptor | Parámetros compatibles, sitio autorizado y responsable de recepción | E1 | Ensayo con nodos, revisión técnica y permisos; pendientes de respaldo |

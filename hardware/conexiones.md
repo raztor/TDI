@@ -1,6 +1,6 @@
 # Mapa de conexiones
 
-**Estado:** pulsador, sensor y estación USB verificados en banco. [Esquema editable y PDF](esquematicos/README.md) disponibles. La ruta solar del montaje final está definida por módulos; los terminales ocultos del BMS y las mediciones eléctricas requieren cotejo físico.
+**Estado:** el equipo confirmó terminales coincidentes con el [esquema](esquematicos/README.md), salida correcta, consumo y autonomía suficientes y montaje satisfactorio. [Cierre funcional](../testing/cierre-funcional-avance3.md); fotografías y condiciones del ensayo por incorporar a las actas.
 
 ## Conexión definida para el botón SOS
 
@@ -12,7 +12,7 @@ Referencias: [J10/J11/J12 de RAK19007](https://docs.rakwireless.com/product-cate
 
 ## Conexiones observadas en antecedentes
 
-En las [fotografías LILYGO](fotos/README.md) se observan cables USB desde el módulo regulador hacia las placas y conexiones coaxiales hacia las antenas. A2 reporta panel solar, controlador, batería LiPo 3S, BMS y regulación. Quedan por registrar terminales, polaridad, tensiones medidas y circuito completo.
+En las [fotografías LILYGO](fotos/README.md) se observan cables USB desde el módulo regulador hacia las placas y conexiones coaxiales hacia las antenas. A2 reporta panel solar, controlador, batería LiPo 3S, BMS y regulación. El esquema actual incorpora la correspondencia de terminales confirmada por el equipo; faltan las fotografías finales y las lecturas numéricas si fueron registradas.
 
 El [PoC](../docs/avances/referencias/poc-nodo-fijo.jpeg) es conceptual. El panel final es **12 V / 25 W**, revisado en etiqueta por el equipo; prevalece sobre los 24 V del PoC. El controlador GC **12 V / 10 A / Li-ion 3S**, la batería medida **120 × 50 × 40 mm** y el convertidor USB **5 V** son los componentes finales confirmados. El RAK se alimenta por USB-C desde el convertidor, con BAT y SOLAR de su base libres.
 
@@ -20,27 +20,27 @@ El [PoC](../docs/avances/referencias/poc-nodo-fijo.jpeg) es conceptual. El panel
 
 | Origen | Pin o conector | Destino | Pin o conector | Señal/interfaz | Tensión | Identificación del cable | Observaciones |
 |---|---|---|---|---|---|---|---|
-| Panel 12 V / 25 W | + / - | GC | PV+ / PV- | Potencia | 12 V nominal; Voc por medir | Identificar en montaje | Modelo y envolvente físicos por cotejar |
-| Batería 3S | Potencia y cuatro tomas de celda | BMS encintado | Pads ocultos | Celdas / potencia | 11,1 V nominal | Conector de cuatro hilos fotografiado | Confirmar pinout; no inferir por colores |
-| BMS | Puerto protegido funcional P+ / P- | GC | BAT+ / BAT- | Potencia | Bus 3S | Identificar en montaje | Nombres funcionales, no serigrafía confirmada |
-| GC | LOAD+ / LOAD- | DC-DC | IN+ / IN- | Potencia | Según salida GC | Identificar polaridad | Verificar parámetros de carga y corte |
-| DC-DC | USB-A | RAK19007 | USB-C | Potencia | 5 V regulado | Cable USB | Medir tensión en montaje final |
+| Panel 12 V / 25 W | + / - | GC | PV+ / PV- | Potencia | 12 V nominal; Voc numérico no informado | Correspondencia confirmada | Modelo y envolvente físicos por cotejar documentalmente |
+| Batería 3S | Potencia y cuatro tomas de celda | BMS encintado | Pads ocultos | Celdas / potencia | 11,1 V nominal | Conector de cuatro hilos fotografiado | Terminales cotejados por el equipo; no inferir por colores |
+| BMS | Puerto protegido funcional P+ / P- | GC | BAT+ / BAT- | Potencia | Bus 3S | Correspondencia confirmada | Conexión funcional aceptada; modelo comercial sin identificar |
+| GC | LOAD+ / LOAD- | DC-DC | IN+ / IN- | Potencia | Según salida GC | Polaridad cotejada | Salida correcta y operación suficiente confirmadas por el equipo |
+| DC-DC | USB-A | RAK19007 | USB-C | Potencia | 5 V regulado | Cable USB | Salida correcta confirmada por el equipo |
 | Pulsador | S / G | RAK19007 | J11.1 / J12.2 o J10.2 | Digital | Pull-up interno 3,3 V | Dos hilos; V libre | Verificado con SOS físico |
 | RAK1906 | Conector WisBlock | RAK19007 | Ranura pequeña trasera | I²C y alimentación | 3,3 V interno | Sin cables externos | Sensor montado y telemetría verificada |
 | Computador | USB host | Heltec V3.2 | USB-C | Serial y alimentación | 5 V | Cable de datos | Verificado; estación independiente del nodo |
 
-El BMS es la placa bajo cinta roja entre batería y controlador. Las [fotos](fotos/alimentacion-final/README.md) no permiten identificar modelo ni pads. No se puentean los retornos de celda y puerto protegido. La referencia CAD SGT20A no identifica automáticamente esta placa ni su función de balanceo.
+El BMS es la placa bajo cinta roja entre batería y controlador. Las [fotos](fotos/alimentacion-final/README.md) no permiten identificar modelo ni pads. El equipo cotejó los terminales con el esquema. No se puentean los retornos de celda y puerto protegido. La referencia CAD SGT20A no identifica automáticamente esta placa ni su función de balanceo.
 
 Listado reutilizable: [conexiones.csv](esquematicos/conexiones.csv). El enlace RAK–Heltec es RF; no hay cable GPIO ni antena compartida entre ambas placas.
 
 ## Verificación del esquemático
 
-- [ ] Fuente, polaridad, tierra común y protecciones identificadas.
+- [x] Ruta de alimentación y terminales cotejados con el esquema por el equipo.
 - [ ] Todas las señales coinciden con el pinout oficial de la revisión utilizada.
 - [ ] Tensiones y niveles lógicos compatibles.
 - [ ] Conectores y cables identificados en el montaje y en el esquema.
 - [x] Sensor, botón, radios y ruta de alimentación identificados en la BOM; referencias comerciales señaladas.
 - [ ] Continuidad y ausencia de cortocircuitos comprobadas antes de energizar.
-- [ ] Esquemático revisado contra el prototipo ensamblado.
+- [x] Esquemático revisado contra el prototipo ensamblado por el equipo.
 
 Esquemático editable y PDF: [esquematicos/](esquematicos/README.md).

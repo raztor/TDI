@@ -6,7 +6,7 @@
 - Escenario de banco comprobado: pulsador y BME680 del RAK4631, estación Heltec V3.2 por USB, SQLite y dashboard local. La ruta de terreno sigue pendiente.
 - Pregunta: qué configuración modular de radio, energía, antena y sensores permite transportar mensajes y telemetría de forma útil y mantenible. Ver también [miniTarea](../docs/avances/miniTarea.docx).
 - Decisión: identificar origen y estado de entrega de la alerta y consultar condiciones locales. La recepción no equivale a activar un rescate.
-- Criterios preliminares de E1: al menos 9/10 mensajes por punto, entrega objetivo menor a 60 s y reserva energética objetivo del 30 %, entre otros; [detalle y límites](../docs/problema-y-alcance.md). No hay resultados suficientes para comprobarlos.
+- Criterios preliminares de E1: al menos 9/10 mensajes por punto, entrega objetivo menor a 60 s y reserva energética objetivo del 30 %, entre otros; [detalle y límites](../docs/problema-y-alcance.md). El ensayo posterior reportado cumple entrega y tiempo en sus condiciones; la reserva del 30 % no está cuantificada.
 
 ## Relación entre medición e información
 
@@ -19,8 +19,8 @@
 
 El Avance 3 comprobó en banco el transporte de telemetría real, su histórico y visualización, y la confirmación de SOS hasta REGISTERED en el RAK. El operador dispone de antigüedad del dato, tendencia ambiental y un registro SOS revisable. El [ensayo](banco-rak-heltec.md) documenta dos diferencias observadas de confirmación de 2,955 s y 2,583 s; los [indicadores](../docs/indicadores.md) explican las decisiones y sus límites.
 
-Esto vincula la implementación con comunicación de incidentes y monitoreo local de E1. No acredita aún la meta 9/10 por punto, entrega en montaña menor de 60 s, reserva energética del 30 % ni utilidad demostrada con usuarios. Tampoco valida precisión del sensor mediante comparación con una referencia.
+Esto vincula la implementación con comunicación de incidentes y monitoreo local de E1. El equipo reportó posteriormente 20/20 mensajes recibidos bajo 60 s y suficiencia energética con recuperación diurna. Esto cumple entrega/tiempo en las condiciones ensayadas; no se generaliza a puntos no registrados, ni cuantifica reserva del 30 % o utilidad con usuarios. [Cierre funcional](cierre-funcional-avance3.md). Tampoco valida precisión del sensor mediante comparación con una referencia.
 
-El enlace cualitativo de A2 y las mediciones de antena respaldan el desarrollo técnico. La validación de las metas iniciales requiere campañas de mensajes y energía, junto con entrevistas y observaciones de uso. Sus registros están pendientes de documentación.
+El enlace cualitativo de A2 y las mediciones de antena respaldan el desarrollo técnico. La comunicación y energía tienen aceptación funcional reportada; sus condiciones se completan en las actas. Las entrevistas y observaciones de uso siguen pendientes de documentación.
 
 Los resultados se limitan a las condiciones de los ensayos documentados. La cobertura en montaña, la autonomía y la fiabilidad operativa requieren validación específica. El prototipo no constituye un servicio de rescate.

@@ -2,9 +2,9 @@
 
 Cerro Seguro es un proyecto de seguridad y comunicaciones en montaña, con un prototipo de nodo fijo SOS y telemetría ambiental sobre Meshtastic. Este repositorio reúne el software, hardware, diseño 3D y validación para el Avance 3 de TEI201, Universidad Adolfo Ibáñez.
 
-**Estado al 15 de noviembre de 2026:** el Avance 2 documenta un enlace LoRa funcional, fotografías del montaje, capturas de terminal, mediciones de antenas y fallas de integración. La reproducción de los ensayos y la validación del sistema completo siguen pendientes. Ver [estado y pendientes de los avances 1 y 2](docs/avances/revision-avances-1-2.md).
+**Estado al 16 de noviembre de 2026:** nodo RAK con sensor y SOS, estación Heltec USB, persistencia y dashboard operativos. El equipo confirmó 20/20 mensajes recibidos en menos de 60 s, salida de alimentación correcta, autonomía suficiente y encaje satisfactorio del montaje. Fabricación propia en PLA: 460 g aproximados. [Cierre funcional y alcance de las pruebas](testing/cierre-funcional-avance3.md).
 
-El Avance 3 dispone de [firmware SOS sobre Meshtastic](firmware/meshtastic/README.md), [estación USB con SQLite](station/README.md) y [dashboard local](dashboard/README.md). El banco RAK4631 + RAK1906 y Heltec V3.2 recibe telemetría cada 120 s y se comprobó el pulsador físico con retorno REGISTERED. Ver [verificación del Avance 3](docs/verificacion-avance3.md) y [resultados de banco](testing/banco-rak-heltec.md); la validación en montaña y la entrega completa siguen abiertas.
+El Avance 3 dispone de [firmware SOS sobre Meshtastic](firmware/meshtastic/README.md), [estación USB con SQLite](station/README.md), [dashboard local](dashboard/README.md), [esquema eléctrico](hardware/esquematicos/README.md), [BOM con referencias de costo](hardware/cotizaciones.md) y [planos Gill V7](diseño-3d/planos/README.md). El sondeo ambiental es de 120 s y el pulsador físico retorna REGISTERED. Faltan fotografías finales, datos de fecha/lugar/responsables para las actas y la presentación. La cobertura general en montaña, precisión ambiental y validación con usuarios conservan sus límites en la [verificación](docs/verificacion-avance3.md).
 
 ## Descripción del proyecto
 

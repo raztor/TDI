@@ -1,34 +1,42 @@
 # Lista de materiales y cotizaciones
 
-Revisión del 16-11-2026. [BOM.xlsx](BOM.xlsx) contiene treinta partidas: nodo RAK, energía, estación Heltec, cables, herrajes y los once tipos de pieza del Gill V7. La hoja «Selección técnica» conserva los mismos identificadores y distingue especificaciones nominales de mediciones pendientes. Cada partida cotizada indica su fecha de fuente, 15 o 16 de noviembre.
+Revisión del **16-11-2026**. [BOM.xlsx](BOM.xlsx) contiene **31 partidas con importe**, especificación, moneda y fuente. La hoja «Selección técnica» mantiene los mismos identificadores. Los datos editables de referencia están en [bom-materiales.json](bom-materiales.json).
 
-La fuente tabular de los datos es [bom-materiales.json](bom-materiales.json). Cantidades impresas: veinte piezas; herrajes del CAD: seis M3×6, tres M3×10 y nueve insertos M3 L4 Ø4,2. No se añaden LILYGO históricos, RAK13002, LED, buzzer, varillas largas ni PCB propio. La antena del Heltec está incluida en la referencia de su kit, sin duplicar su precio. El computador y la impresora son equipamiento de trabajo reutilizado, fuera del costo de materiales del prototipo.
+## Presupuesto de referencia
 
-## Precios de referencia publicados
+| Moneda | Total |
+|---|---:|
+| USD | 204,78 |
+| CLP | 106.297 |
 
-| Partida | Unitario | Moneda | Alcance |
-|---|---:|---|---|
-| RAK19007 | 9,99 | USD | [Modelo exacto](https://store.rakwireless.com/products/rak19007-wisblock-base-board-2nd-gen?variant=41578719674566) |
-| RAK4631 Arduino AU915 | 17,99 | USD | [Modelo exacto](https://store.rakwireless.com/products/rak4631-lpwan-node?variant=37505443922118) |
-| RAK1906 | 15,20 | USD | [Modelo exacto](https://store.rakwireless.com/products/rak1906-bme680-environment-sensor?variant=35614169661598) |
-| Heltec WiFi LoRa32 V3 | 17,90 | USD | [Familia V3, desde, sin carcasa](https://heltec.org/project/wifi-lora-32-v3/); unidad usada V3.2 |
-| Panel 12 V / 25 W | 43,80 | USD | [ACOPOWER de referencia](https://www.acopower.com/products/hy-12p-25w?variant=16354693316674), marca real por cotejar |
-| Antena Laird TRAB9023P | 66,95 | USD | [Referencia comercial/mecánica](https://theantennafarm.com/products/laird-te-connectivity-trab9023p-902-928-mhz-phantom-antenna-2-75-in-n-female-termination?variant=52591058485612); variante física por cotejar |
-| BMS 3S20A | 2.500 | CLP | [Referencia Afel](https://afel.cl/products/cargador-bms-18650-3s-20a?variant=45125172428952); no identifica la placa encintada |
-| DC-DC XY-3606 | 5.500 | CLP | [Referencia RBX](https://rbxelectronics.cl/producto/modulo-reductor-de-voltaje-dc-dc/); cotejar modelo y dimensiones |
-| Controlador PWM 3S 10 A | 18,00 | USD | [Catálogo Huine](https://www.huinetech.com/products/0v-start-pwm-solar-panel-charging-controller-10a-fit-3s-lithium-battery), referencia de reposición |
-| Batería LiPo 3S 5.200 mAh | 64.990 | CLP | [LipoPlay, 35C y XT60](https://lipoplay.cl/products/bateria-lipo-5200mah-11-1v-3s-35c); referencia comparable, impuesto incluido y envío aparte |
+Las monedas se mantienen separadas; no se aplica un tipo de cambio supuesto. Son referencias de reposición publicadas, no precios pagados. No incluyen flete ni tributos de importación. Los precios locales se conservan como publicados. Las referencias equivalentes no sustituyen los componentes que ya están instalados.
 
-Subtotales de referencia: **USD 189,83** y **CLP 72.990**. Diez de treinta partidas tienen precio. Se mantienen separados; no se aplica una tasa de cambio supuesta. No son el total completo ni precios pagados. Los precios extranjeros excluyen flete y tributos de importación; los locales se conservan como publicados. Las fuentes y variantes están registradas también en cada fila del libro. Las referencias equivalentes no autorizan una sustitución sin verificar tensión, pinout y ajuste.
+## Referencias completadas
 
-## Cierre económico pendiente
+| Partida | Cantidad | Precio de referencia | Fuente y criterio |
+|---|---:|---:|---|
+| Pulsador | 1 | CLP 4.149 | [KY-004 Electroart](https://www.electroart.cl/2064/boton-pulsador-ky-004/); referencia económica, conserva S/G y V libre del módulo probado |
+| Latiguillo U.FL a N macho | 1 | USD 14,95 | [JEFA UFLNM250](https://www.jefatech.com/products/uflnm250), 250 mm de referencia |
+| USB-A a USB-C con datos | 2 | CLP 3.990 por unidad | [UGREEN US288-W, 1 m](https://notebookstore.cl/us288-w1m-cable-usb-a-usb-c-blanco-1m); precio sin descuento por transferencia |
+| M3×6 | 6 | CLP 25 por unidad | [Global Electrónica, 693006](https://globalelectronica.cl/69-accesorios-para-montaje); referencia publicada sin disponibilidad |
+| M3×10 | 3 | CLP 45 por unidad | [Global Electrónica, 693010](https://globalelectronica.cl/69-accesorios-para-montaje); referencia de métrica y longitud |
+| Insertos M3 L4 | 9 | CLP 50 por unidad | [Cimech, pack 20 a CLP 1.000](https://www.cimech3d.cl/producto/insertos-metalicos-m3-pack-20-4mm/); prorrateo 1.000/20; catálogo agotado |
+| Cableado y terminaciones | 1 lote | CLP 7.269 | 1 m paralelo 18AWG a [CLP 4.200](https://www.litiopack.cl/categoria-producto/componentes-pack-li-ion/cable-siliconado/), tubo 4 mm/10 m a [CLP 2.569](https://altronics.cl/electronics-products/prototipos?limit=100) y dos borneras a [CLP 250](https://afel.cl/collections/conectores) |
+| Sellado y fijación | 1 lote | CLP 7.194 | [Silicona neutra 280 ml a CLP 6.990](https://www.easy.cl/silicona-neutra-sella-todo-280-ml-transparente-1310639/p) y [bolsa de 100 amarras a CLP 204](https://requeteofertas.cl/product/bolsa-100-amarras-plasticas-color-negro-tamano-25x100/) |
+| PLA utilizado | 0,460 kg | CLP 13.000/kg | [PLA AFEL 1 kg](https://afel.cl/products/filamento-pla-natural-afel-1-75mm-1kg); costo utilizado CLP 5.980 |
 
-Veinte partidas no tienen importe verificable: pulsador, latiguillo, dos cables USB, tornillería, insertos, cableado, sellado y las once piezas impresas. No se asignan ceros a esos costos.
+Los lotes de cableado y sellado presupuestan los envases o presentaciones indicados. Son una referencia comercial de reposición, no un metraje ni un consumo medido. Cabezas de tornillo, diámetros de inserto, calibres y longitudes de las ofertas no cambian automáticamente el montaje que el equipo ya comprobó.
 
-Para cerrar el presupuesto se requieren longitudes y terminaciones de cable; tipo de cabeza de tornillo y medidas exactas de inserto; consumo de sellado; y masa/tiempo de laminado de las veinte piezas. El volumen macizo STEP no sustituye el consumo laminado.
+## Impresión propia
 
-La [Multistar de referencia](https://hobbyking.com/multistar-high-capacity-3s-5200mah-multi-rotor-lipo-pack.html) figura discontinuada; su liquidación histórica no se presenta como una cotización vigente. Las cotizaciones se deben actualizar antes de comprar o presentar un total definitivo.
+El equipo informó **460 g aproximados de PLA utilizados: 160 g del interior y unos 300 g entre aletas y tapa**. El costo es **0,460 × 13.000 = CLP 5.980**. Se registra una sola vez en **BOM-031**. Los once tipos de pieza del inventario CAD conservan sus cantidades, con costo incremental de impresión cero porque su material está incluido en esa partida. No son piezas sin costo ni materiales omitidos.
 
-La batería cotizada es LiPo 3S, 11,1 V nominal, 5.200 mAh, 35C y XT60; la ficha declara **136 × 43 × 26 mm**. Solo se usa como referencia económica: la unidad del montaje mantiene la envolvente medida **120 × 50 × 40 mm**. No se cambia el soporte ni se presupone compatibilidad mecánica de un reemplazo.
+Solo se contabiliza el filamento utilizado; no se suma servicio de impresión, mano de obra ni energía. La marca/color de la oferta es una referencia económica y no identifica el carrete usado.
 
-La captura de compra del controlador en Huine Tech Store, del **24-12-2024**, muestra unitario **$16.214** y total de pedido **$18.024**. Se conservan como antecedente, sin desglosar la diferencia ni sumarlos al precio actual. [Publicación original aportada](https://es.aliexpress.com/item/1005007632831160.html). La referencia actual del catálogo Huine para 3S es la usada en el subtotal.
+## Componentes principales
+
+Se mantienen RAK19007 USD 9,99, RAK4631 USD 17,99, RAK1906 USD 15,20, Heltec V3 USD 17,90, panel de referencia USD 43,80, Laird de referencia USD 66,95, BMS de referencia CLP 2.500 y DC-DC de referencia CLP 5.500. Las fuentes, variantes y fechas del 15–16 de noviembre están en cada fila de la BOM.
+
+Batería comparable [LiPo 3S 5.200 mAh, 35C XT60](https://lipoplay.cl/products/bateria-lipo-5200mah-11-1v-3s-35c): **CLP 64.990**, impuesto incluido, envío aparte. Sus 136 × 43 × 26 mm no sustituyen la envolvente medida de la batería del proyecto, **120 × 50 × 40 mm**.
+
+Controlador [Huine PWM 10 A para 3S](https://www.huinetech.com/products/0v-start-pwm-solar-panel-charging-controller-10a-fit-3s-lithium-battery): **USD 18** de catálogo. La [publicación original](https://es.aliexpress.com/item/1005007632831160.html) y la captura de compra del 24-12-2024 se conservan como antecedente: unitario $16.214, total de pedido $18.024. Esos importes históricos no se suman al costo actual.

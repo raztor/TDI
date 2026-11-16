@@ -1,12 +1,12 @@
 ID,Origen,Puerto_origen,Destino,Puerto_destino,Interfaz,Tension,Estado
-W01,PV1,Positivo,U4,PV+,Potencia,12 V nominal,Confirmar Voc y polaridad
-W02,PV1,Negativo,U4,PV-,Potencia,Retorno PV,Cotejar cable
-W03,U6,P+ funcional,U4,BAT+,Potencia,3S,Pad real oculto por cotejar
+W01,PV1,Positivo,U4,PV+,Potencia,12 V nominal,Polaridad cotejada por el equipo; Voc numérico no informado
+W02,PV1,Negativo,U4,PV-,Potencia,Retorno PV,Correspondencia con montaje confirmada por el equipo
+W03,U6,P+ funcional,U4,BAT+,Potencia,3S,Terminal funcional cotejado; modelo comercial no identificado
 W04,U6,P- funcional,U4,BAT-,Potencia,Retorno protegido,No puentear B- y P-
-W05,BT1,Potencia y 4 tomas de celda,U6,Terminales por identificar,Celdas,3S,Modelo y pads ocultos por cotejar
-W06,U4,LOAD+,U5,IN+,Potencia,Bus de carga GC,Verificar salida y configuración
-W07,U4,LOAD-,U5,IN-,Potencia,Retorno LOAD,Cotejar montaje final
-W08,U5,USB-A VBUS,U1,USB-C VBUS,Potencia,5 V regulado,Medir salida final; banco USB verificado
+W05,BT1,Potencia y 4 tomas de celda,U6,Nodos funcionales de celda,Celdas,3S,Correspondencia confirmada; nombres funcionales sin asignar pinout de fabricante
+W06,U4,LOAD+,U5,IN+,Potencia,Bus de carga GC,Salida y montaje correctos según el equipo; ajustes numéricos no informados
+W07,U4,LOAD-,U5,IN-,Potencia,Retorno LOAD,Montaje confirmado por el equipo
+W08,U5,USB-A VBUS,U1,USB-C VBUS,Potencia,5 V regulado,Salida correcta confirmada por el equipo; tensión numérica no informada
 W09,U5,USB-A GND,U1,USB-C GND,Potencia,Retorno USB,Cable USB
 W10,SW1,S,U1,J11 pin1 AIN1,Digital,3.3 V pull-up interno,Verificado
 W11,SW1,G,U1,J12 pin2 o J10 pin2,Digital,GND,Verificado

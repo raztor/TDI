@@ -11,20 +11,20 @@ Referencia: guía TEI201 «Avance #3: Prototipo IoT Completo», evaluación del 
 | S03 | Software | Dashboard accesible con gráficas en vivo/histórico | [Dashboard](../dashboard/README.md), [capturas](../testing/evidencias/README.md) | Operativo con datos reales; prueba visual y API aprobadas | pp. 2–4 |
 | S04 | Software | Indicadores que apoyen decisiones | [Indicadores](indicadores.md), prueba T04 | Estadísticas, frescura y SOS implementados; validación de uso pendiente | pp. 3–4 |
 | S05 | Software | Código modular, comentado y reproducible | [Firmware](../firmware/README.md), [estación](../station/README.md), [dashboard](../dashboard/README.md) | Código modular y pruebas disponibles | p. 4 |
-| H01 | Hardware, 30 % | Selección por rango, precisión, consumo y compatibilidad | [Selección](../hardware/seleccion-componentes.md) | Fichas base incorporadas; justificación pendiente | pp. 4–6 |
-| H02 | Hardware | Esquemático completo | [Esquemáticos](../hardware/esquematicos/README.md) | Archivos pendientes | pp. 5–6 |
-| H03 | Hardware | BOM con cantidad, especificación y costos | [BOM.xlsx](../hardware/BOM.xlsx) | Componentes conocidos; cantidades y precios pendientes | pp. 5–6 |
-| H04 | Hardware | Montaje seguro y fotos desde tres ángulos | [Fotografías](../hardware/fotos/README.md) | Dos vistas interiores históricas; vistas y verificación final pendientes | pp. 5–6 |
+| H01 | Hardware, 30 % | Selección por rango, precisión, consumo y compatibilidad | [Selección](../hardware/seleccion-componentes.md) | Selección modular documentada; energía aceptada funcionalmente; precisión real contra referencia y cifras de consumo no informadas | pp. 4–6 |
+| H02 | Hardware | Esquemático completo | [Esquemáticos](../hardware/esquematicos/README.md) | Dos hojas A3 y SVG; terminales y salida cotejados por el equipo | pp. 5–6 |
+| H03 | Hardware | BOM con cantidad, especificación y costos | [BOM.xlsx](../hardware/BOM.xlsx) | 31 partidas con importe y fuentes; 460 g de PLA contabilizados una vez | pp. 5–6 |
+| H04 | Hardware | Montaje seguro y fotos desde tres ángulos | [Fotografías](../hardware/fotos/README.md) | Montaje aceptado; fotos finales desde tres ángulos e interior pendientes | pp. 5–6 |
 | H05 | Hardware | Acceso y reparación sin destruir el ensamble | [Reparación](../hardware/reparacion.md), prueba T07 | Por verificar | pp. 5–6 |
 | D01 | Diseño 3D, 20 % | Gemelo completo con volúmenes reales | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Parcial: Gill V7 e inventario representativo disponibles; modelos aproximados identificados | pp. 6–7 |
 | D02 | Diseño 3D | Archivo paramétrico .f3d/.f3z que abre correctamente | [Fusion](../diseño-3d/fusion/README.md) | F3D completo e interior reabiertos; parametrización nativa pendiente | p. 6 |
-| D03 | Diseño 3D | Encapsulado funcional, accesos y tolerancias | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Por verificar | pp. 6–7 |
-| D04 | Diseño 3D | Planos PDF con vistas, cotas, tolerancias y escala | [Planos](../diseño-3d/planos/README.md) | Archivos pendientes | p. 7 |
+| D03 | Diseño 3D | Encapsulado funcional, accesos y tolerancias | [Revisión del diseño](../diseño-3d/revision-diseno.md) | Encaje satisfactorio reportado, impresora calibrada; fotos pendientes | pp. 6–7 |
+| D04 | Diseño 3D | Planos PDF con vistas, cotas, tolerancias y escala | [Planos](../diseño-3d/planos/README.md) | Doce hojas A3 y SVG, cotas y escalas; revisión documental B | p. 7 |
 | D05 | Diseño 3D | Renders exterior e interior/explosionado | [Renders](../diseño-3d/renders/README.md) | Vistas exterior e interior disponibles; presentación final por revisar | p. 7 |
 | T01 | Testing, 10 % | Objetivo, condiciones, pasos, éxito y evidencia | [Protocolo](../testing/protocolo-pruebas.md) | Base preparada; parámetros por definir | pp. 7–8 |
-| T02 | Testing | Resultados cuantitativos y análisis crítico | [Resultados](../testing/resultados.md) | Datos, SOS y latencias de banco; campañas T01–T08 abiertas | p. 8 |
+| T02 | Testing | Resultados cuantitativos y análisis crítico | [Resultados](../testing/resultados.md) | Banco y ensayo reportado 20/20 bajo 60 s; condiciones y fechas para las actas | p. 8 |
 | T03 | Testing | Una falla real y su solución | [Fallas](../testing/registro-fallas.md) | PKI y cadencia diagnosticados, corregidos y verificados en banco | p. 8 |
-| T04 | Testing | Validación explícita contra Avance 1 | [Validación](../testing/validacion.md) | Vínculo con E1 documentado; metas de montaña y energía abiertas | p. 8 |
+| T04 | Testing | Validación explícita contra Avance 1 | [Validación](../testing/validacion.md) | Entrega y tiempo cumplidos en ensayo reportado; energía suficiente; reserva del 30 % y generalización territorial no cuantificadas | p. 8 |
 | G01 | GitHub, 5 % | Carpetas y README con proyecto, equipo, instalación y uso | [README](../README.md), [inicio local](../dashboard/README.md) | Instalación y uso documentados; clonación final por comprobar | pp. 8–9 |
 | G02 | GitHub | Código, esquemáticos, CAD, documentos y evidencias completos | [Checklist](checklist-entrega.md) | Entregables pendientes | pp. 8–9 |
 | G03 | GitHub | Repo cloneable y accesible al evaluador | [Checklist](checklist-entrega.md) | Comprobar revisión final | pp. 8–9, 12 |

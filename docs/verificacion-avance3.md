@@ -1,57 +1,57 @@
 # Verificación del Avance 3
 
-**Fecha de revisión:** 16 de noviembre de 2026. Referencia: [pauta TEI201, Avance #3](pautas/avance-03-estudiantes.pdf). Las páginas citadas corresponden a su numeración impresa.
+**Revisión:** 16 de noviembre de 2026. Referencia: [pauta TEI201](pautas/avance-03-estudiantes.pdf), numeración impresa.
 
-## Resultado de la revisión
+## Resultado actual
 
-El prototipo de banco implementa el ciclo captura → radio → persistencia → dashboard → información para decidir. Se verificaron RAK4631 y RAK1906/BME680, estación Heltec V3.2 por USB, histórico SQLite, sondeo de 120 s y SOS físico con retorno al estado REGISTERED. El dashboard usa esos datos reales y no genera mediciones de demostración.
+El sistema implementa captura ambiental y SOS en RAK4631, transporte Meshtastic, estación Heltec V3.2 por USB, SQLite y dashboard. El equipo confirmó **20/20 mensajes recibidos en menos de 60 s**, sin pérdidas, alimentación correcta, autonomía suficiente y montaje satisfactorio. La fabricación propia utiliza **460 g aproximados de PLA: 160 g del interior y unos 300 g entre aletas y tapa**.
 
-Esto permite demostrar la dimensión de software en banco; no cierra toda la entrega. La pauta también exige hardware, gemelo completo, planos, testing vinculado al problema, repositorio completo y presentación. El cumplimiento de las metas de E1 en montaña y energía continúa abierto.
+El [cierre funcional](../testing/cierre-funcional-avance3.md) registra el origen y alcance de esos resultados. Las fechas, lugar, participantes y condiciones de los ensayos se completan en las actas; las fotografías finales siguen pendientes.
 
 ## Software · 30 %, pp. 2–4
 
-| Criterio | Resultado verificable | Estado y límite |
+| Criterio | Resultado | Cierre documental restante |
 |---|---|---|
-| Captura continua y frecuencia justificada | Solicitudes cada 120 s, sensor reconocido y lecturas recibidas por RF; [indicadores](indicadores.md) | Verificado en banco; falta campaña prolongada, calibración y autonomía |
-| Persistencia e histórico | SQLite conserva lecturas y SOS al reiniciar el servicio; filtros de rango y exportación CSV | Verificado localmente; sin política de retención automática |
-| Dashboard operativo | [Aplicación local](../dashboard/README.md), gráficas de temperatura/humedad, histórico y estados de conexión | Verificado con datos reales en escritorio y vista de 485 px |
-| Información útil | Estadísticas, antigüedad, estado USB y SOS pendientes de revisión; vínculo con decisiones de E1 | Implementado; falta validación de uso con excursionistas/operadores |
-| Calidad del código | Módulos separados para captura, protocolo, almacenamiento, sondeo, consultas y presentación; pruebas automatizadas | Pruebas y sintaxis verificadas; instalación documentada |
+| Captura y frecuencia | Sensor reconocido y sondeo solicitado cada 120 s; publicación automática separada de 1800 s | Precisar duración y condiciones de la campaña |
+| Persistencia | SQLite conserva histórico y SOS tras reiniciar | Mantener exportaciones y revisión entregada identificables |
+| Dashboard | Gráficas, histórico, filtros, CSV, estadísticas, antigüedad, estado USB y revisión de SOS | Incorporar capturas finales para la presentación |
+| Calidad | Código modular, instalación documentada y 22 pruebas de estación/dashboard aprobadas | Comprobar instalación desde clonación limpia de la revisión final |
 
-La pantalla se actualiza cada cinco segundos y la adquisición solicitada es de 120 s. El mínimo de publicación automática de Meshtastic en este canal es de 1800 s; ambos mecanismos se documentan por separado. «ACK encolado» y «Revisada» son estados distintos de REGISTERED en el RAK y de la atención de una emergencia.
+ACK encolado, REGISTERED en el RAK y revisión del operador son estados distintos. Ninguno acredita por sí solo la atención de una emergencia.
 
 ## Hardware · 30 %, pp. 4–6
 
-| Entregable | Evidencia existente | Pendiente |
+| Entregable | Estado actual | Pendiente |
 |---|---|---|
-| Selección de componentes | Fichas y justificación base; compatibilidad RAK/Heltec 915 MHz comprobada en banco | Precisión por variable, consumo medido y argumento energético del montaje final |
-| Esquemático y BOM | [Esquema de dos hojas, SVG y CSV](../hardware/esquematicos/README.md); [BOM de 30 partidas](../hardware/BOM.xlsx), cantidades, moneda y [cotizaciones](../hardware/cotizaciones.md) | Pinout oculto del BMS y mediciones del conjunto solar por cotejar; 20 partidas sin precio, costo completo abierto |
-| Montaje y fotografías | Fotografías históricas y montaje funcional de banco | Fotos finales desde al menos tres ángulos, etiquetado y fijaciones del montaje evaluado |
-| Reparación | Diseño modular y antecedentes de apertura | Apertura, reemplazo, cierre y recuperación funcional demostrados sin destruir el ensamble |
+| Esquema | Dos hojas A3 y SVG; terminales y salida cotejados por el equipo | Incorporar fotografías finales y datos de ensayo a las actas |
+| Energía | Generación diurna repone consumo nocturno con excedente; consumo y autonomía aceptados | Registrar duración, condiciones y lecturas existentes; no se cuantificó reserva del 30 % |
+| BOM | 31 partidas con importes y fuentes; material impreso contado una sola vez | Precios son referencias de reposición, no gastos pagados ni costo importado completo |
+| Montaje | Encaje y montaje correctos según el equipo | Fotos de al menos tres ángulos e interior; demostración de reparación |
+
+Panel real: 12 V / 25 W. BMS entre batería y controlador GC para Li-ion 3S, DC-DC USB de 5 V hacia RAK19007. Se conserva la distinción entre modelos físicos y referencias comerciales de precio o CAD.
 
 ## Diseño 3D · 20 %, pp. 6–7
 
-El repositorio incorpora Gill V7, F3D de ensamble e interior, inventario de componentes y vistas. La pauta permite volúmenes referenciales, siempre que sus dimensiones y posiciones representen el hardware real. La existencia del CAD no acredita ajuste físico.
+Gill V7 dispone de ensamble F3D, STEP, STL y [doce hojas de planos](../diseño-3d/planos/README.md). El equipo confirmó tolerancias suficientes y encaje satisfactorio después de calibrar la impresora. Se actualiza el material fabricado a PLA; el CAD mantiene su geometría.
 
-Los [planos Gill V7](../diseño-3d/planos/README.md) incorporan doce hojas A3: conjunto y once tipos de pieza, con vistas ortogonales, isométricas de apoyo, cotas funcionales, escala y objetivos provisionales de tolerancia. La correspondencia registra SHA-256, cantidades y envolventes de los STEP. No se cambió la geometría CAD al generar los planos.
-
-Pendientes: contraste del montaje final RAK/Heltec y botón con el gemelo, parametrización nativa, comprobación de tolerancias impresas y verificación física de accesos/interferencias. Los objetivos de tolerancia documentados no equivalen a medidas obtenidas en la impresión.
+Quedan la revisión final de renders, la documentación de la parametrización nativa y el cotejo documental de volúmenes comerciales aproximados. No se declaran ensayos de agua, resistencia o comportamiento térmico que no fueron informados.
 
 ## Testing · 10 %, pp. 7–8
 
-- [Ensayo de banco](../testing/banco-rak-heltec.md): temperatura por radio, persistencia, dos ciclos de 120 s y SOS físico observado con ACK. Los logs contienen WAITING, TX y REGISTERED.
-- [Resultados](../testing/resultados.md): el evento físico terminado en `00000002` tardó 2,955 s entre las observaciones WAITING y REGISTERED del monitor USB; no es una medición instrumental del tiempo en aire.
-- [Fallas](../testing/registro-fallas.md): se resolvió el rechazo de mensajes directos por falta de clave pública del destino y se verificó el retorno del ACK después de asociar contactos.
-- Dashboard: pruebas de estadísticas, tiempo sin sincronizar, datos antiguos, persistencia, filtros, CSV, revisión/reapertura y API. La revisión visual cubrió gráficas y rangos vacíos con datos reales.
+- Comunicación: 20 enviados y 20 recibidos, 100 % de recepción y 0 % de pérdidas observadas; todos bajo 60 s. Cumple los objetivos de recepción y tiempo en las condiciones ensayadas.
+- Energía: suficiencia funcional y recuperación diurna confirmadas. No se informaron mA, Wh, horas exactas ni reserva porcentual.
+- Ajuste: montaje y encaje aceptados; impresión propia en PLA y 460 g aproximados reportados.
+- Banco documentado: sensor, persistencia y SOS/ACK; dos diferencias WAITING–REGISTERED de 2,955 s y 2,583 s. No se asignan a la campaña de veinte mensajes.
+- Falla real: rechazo por contacto público y cadencia diagnosticados, corregidos y comprobados; [registro](../testing/registro-fallas.md).
 
-Faltan campañas por punto para la meta 9/10, distribución de latencias y pérdidas, consumo/reserva energética, calibración contra referencia, pruebas de reparación y validación de uso. Tres SOS de banco no prueban fiabilidad en montaña. El [vínculo con E1](../testing/validacion.md) describe qué se comprobó y qué sigue abierto.
+Faltan las condiciones y fechas de la campaña, latencias individuales si existen, comparación del sensor con referencia, ensayo de reemplazo y validación con usuarios. El resultado 20/20 no se atribuye a múltiples puntos o a toda una ruta sin ese registro.
 
-## GitHub y presentación · 5 % cada uno, pp. 8–13
+## Repositorio y presentación · 5 % cada uno
 
-La estructura de carpetas, fuentes de firmware, estación, dashboard y guías de uso están disponibles. Se incorporan la pauta y evidencias del ensayo. Antes de entregar se deben verificar la publicación de la revisión final, clonación limpia, acceso del evaluador y apertura de todos los entregables.
+Código, esquema, BOM, CAD, planos, reporte editable y documentación de uso están disponibles. Quedan la revisión final integrada, instalación desde clonación limpia, acceso del evaluador y comprobación de los entregables finales.
 
-La presentación requiere participación de todos, 8–10 minutos y 3 minutos de preguntas. La demo debe mostrar captura y dashboard en vivo, interpretar un resultado, abrir el encapsulado y mostrar el gemelo. Permanecen pendientes las diapositivas finales, la apertura física y los tres ensayos completos del día anterior. Las capturas no sustituyen esa demo.
+La presentación del 23 de noviembre requiere diapositivas, participación de todos, demo real, apertura del encapsulado, gemelo abierto y explicación de resultados. Duración: 8–10 minutos y 3 de preguntas. Completar tres ensayos el 22 de noviembre y registrar responsables.
 
-## Criterio de cierre
+## Cierre
 
-El dashboard cubre la visualización y la consulta del histórico que faltaban. Para cerrar el Avance 3 deben completarse los pendientes de hardware, diseño, campaña de validación y presentación descritos arriba, y comprobarse la revisión final publicada. No se asigna una nota estimada ni se equipara una prueba de banco a validación en terreno.
+La implementación y la aceptación funcional de montaje, comunicación y energía están registradas. El cierre de entrega requiere fotografías, actas y condiciones de ensayo, presentación y revisión final del repositorio. El [checklist](checklist-entrega.md) distingue esos pendientes de las funciones ya comprobadas.

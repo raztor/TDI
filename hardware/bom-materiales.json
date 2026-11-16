@@ -1,6 +1,6 @@
 {
   "fecha": "2026-11-16",
-  "alcance": "Un nodo solar RAK en Gill V7 y una estación Heltec V3.2 USB. Referencias de reposición publicadas, no precios pagados. USD y CLP se suman por separado. Flete, aduana y tributos de importación no incluidos. Precios locales según publicación.",
+  "alcance": "Presupuesto de referencia de un nodo RAK en Gill V7 y estación Heltec USB. Precios publicados por moneda sin conversión, flete ni tributos de importación. Incluye lotes de reposición declarados e impresión propia:aproximadamente 460 g de PLA reportados. Modelos comparables de precio no sustituyen el hardware real.",
   "materiales": [
     {
       "id": "BOM-001",
@@ -68,13 +68,14 @@
       "cantidad": 1,
       "unidad": "unidad",
       "modelo": "Módulo de contacto normalmente abierto; V libre",
-      "precio": null,
+      "precio": 4149,
       "moneda": "CLP",
-      "cotizacion": "Falta identificar módulo",
-      "fuente": "",
+      "cotizacion": "Referencia KY-004",
+      "fuente": "https://www.electroart.cl/2064/boton-pulsador-ky-004/",
       "grupo": "Nodo",
-      "nota": "S a AIN1, G a GND. Pulsación física y ACK probados; no sustituir por botón alimentado.",
-      "ficha": "conexiones.md"
+      "nota": "Referencia económica de módulo pulsador. El montaje mantiene S-AIN1, G-GND y V libre ya probados; no se cambia por el circuito de la referencia.",
+      "ficha": "conexiones.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-006",
@@ -102,7 +103,7 @@
       "cotizacion": "Referencia Huine PWM10A para3S",
       "fuente": "https://www.huinetech.com/products/0v-start-pwm-solar-panel-charging-controller-10a-fit-3s-lithium-battery",
       "grupo": "Energía",
-      "nota": "Referencia actual Huine 0V Start 10A3S: USD18. Captura de compra Huine Tech Store del24-12-2024: unitario CLP16.214, total pedido CLP18.024; no se desglosa diferencia ni se suma ese antecedente al subtotal. Enlace original AliExpress1005007632831160. Verificar disponibilidad y ajustes de la unidad real.",
+      "nota": "Referencia actual Huine 0V Start 10A3S: USD18. Captura de compra Huine Tech Store del24-12-2024: unitario CLP16.214, total pedido CLP18.024; no se desglosa diferencia ni se suma ese antecedente al subtotal. Enlace original AliExpress1005007632831160. Montaje y suficiencia energética aceptados por el equipo; los valores de ajuste no fueron informados. Disponibilidad sujeta al proveedor.",
       "ficha": "https://www.huinetech.com/products/0v-start-pwm-solar-panel-charging-controller-10a-fit-3s-lithium-battery",
       "fecha_precio": "2026-11-16"
     },
@@ -117,7 +118,7 @@
       "cotizacion": "Referencia LiPo3S5200mAh35C XT60",
       "fuente": "https://lipoplay.cl/products/bateria-lipo-5200mah-11-1v-3s-35c",
       "grupo": "Energía",
-      "nota": "Referencia de costo LipoPlay: LiPo3S11,1V5200mAh35C XT60,136x43x26mm; impuesto incluido, envío aparte. No sustituye la unidad física ni su envolvente medida120x50x40mm. Multistar original discontinuada.",
+      "nota": "Referencia de costo LipoPlay: LiPo3S11,1V5200mAh35C XT60,136x43x26mm; impuesto incluido, envío aparte. No sustituye la unidad física ni su envolvente medida120x50x40mm. Multistar original discontinuada. Autonomía suficiente y reposición diurna de lo descargado en la noche confirmadas por el equipo.",
       "ficha": "https://hobbyking.com/multistar-high-capacity-3s-5200mah-multi-rotor-lipo-pack.html",
       "fecha_precio": "2026-11-16"
     },
@@ -132,7 +133,7 @@
       "cotizacion": "Referencia; modelo real desconocido",
       "fuente": "https://afel.cl/products/cargador-bms-18650-3s-20a?variant=45125172428952",
       "grupo": "Energía",
-      "nota": "Instalado entre batería y controlador según el equipo; 4 hilos de celdas. No atribuir los pads, umbrales o 20A de la referencia al módulo real.",
+      "nota": "BMS existente entre batería y controlador; correspondencia de terminales con el esquema confirmada por el equipo. Modelo y umbrales internos no identificados; la referencia3S20A es económica.",
       "ficha": "fotos/alimentacion-final/README.md",
       "fecha_precio": "2026-11-15"
     },
@@ -147,7 +148,7 @@
       "cotizacion": "Referencia visual equivalente",
       "fuente": "https://rbxelectronics.cl/producto/modulo-reductor-de-voltaje-dc-dc/",
       "grupo": "Energía",
-      "nota": "Modelo físico exacto por cotejar; dimensiones CAD de referencia 63x27x10 mm; la oferta declara 68x26 mm. Medir salida y ajuste antes de sustitución.",
+      "nota": "Convertidor instalado y salida correcta confirmados por el equipo. XY-3606 se utiliza como referencia económica; no sustituye la unidad real.",
       "ficha": "https://rbxelectronics.cl/producto/modulo-reductor-de-voltaje-dc-dc/",
       "fecha_precio": "2026-11-15"
     },
@@ -172,13 +173,14 @@
       "cantidad": 1,
       "unidad": "conjunto",
       "modelo": "IPEX del RAK a N macho de antena; adaptadores según unidad",
-      "precio": null,
-      "moneda": "CLP",
-      "cotizacion": "Falta medir longitud/conectores",
-      "fuente": "",
+      "precio": 14.95,
+      "moneda": "USD",
+      "cotizacion": "Referencia UFLNM250 / 250 mm",
+      "fuente": "https://www.jefatech.com/products/uflnm250",
       "grupo": "Nodo",
-      "nota": "No cotizar un cable SMA como sustituto directo de N. Mantener alivio de tensión.",
-      "ficha": "esquematicos/README.md"
+      "nota": "Latiguillo U.FL a N macho de 250 mm. Cotización comparable; no se modifica el cable instalado ni se declara medida su longitud.",
+      "ficha": "esquematicos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-013",
@@ -186,13 +188,14 @@
       "cantidad": 1,
       "unidad": "unidad",
       "modelo": "USB-A desde DC-DC a USB-C RAK; 5 V",
-      "precio": null,
+      "precio": 3990,
       "moneda": "CLP",
-      "cotizacion": "Falta longitud y cotización",
-      "fuente": "",
+      "cotizacion": "Referencia UGREEN US288-W 1 m",
+      "fuente": "https://notebookstore.cl/us288-w1m-cable-usb-a-usb-c-blanco-1m",
       "grupo": "Energía",
-      "nota": "En banco se utiliza cable de datos al PC; en despliegue se conecta al DC-DC.",
-      "ficha": "conexiones.md"
+      "nota": "Referencia USB-A a USB-C con datos, 1 m; precio para otros medios de pago CLP3990. El descuento por transferencia de3854 no se utiliza. Longitud de referencia, no levantamiento del cable instalado.",
+      "ficha": "conexiones.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-014",
@@ -200,13 +203,14 @@
       "cantidad": 1,
       "unidad": "unidad",
       "modelo": "USB-C a computador; cable de datos",
-      "precio": null,
+      "precio": 3990,
       "moneda": "CLP",
-      "cotizacion": "Falta longitud y cotización",
-      "fuente": "",
+      "cotizacion": "Referencia UGREEN US288-W 1 m",
+      "fuente": "https://notebookstore.cl/us288-w1m-cable-usb-a-usb-c-blanco-1m",
       "grupo": "Estación",
-      "nota": "Necesario para puerto serial; sin conexión GPIO con RAK.",
-      "ficha": "../station/README.md"
+      "nota": "Referencia USB-A a USB-C con datos, 1 m; precio para otros medios de pago CLP3990. El descuento por transferencia de3854 no se utiliza. Longitud de referencia, no levantamiento del cable instalado.",
+      "ficha": "../station/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-015",
@@ -214,13 +218,14 @@
       "cantidad": 6,
       "unidad": "unidad",
       "modelo": "3 fijan disco; 3 fijaciones inferiores guías",
-      "precio": null,
+      "precio": 25,
       "moneda": "CLP",
-      "cotizacion": "Por cotizar",
-      "fuente": "",
+      "cotizacion": "Referencia M3x6, código693006",
+      "fuente": "https://globalelectronica.cl/69-accesorios-para-montaje",
       "grupo": "Mecánica",
-      "nota": "Cantidad de Gill V7. Cabeza y longitud efectiva: comprobar con el ensamble.",
-      "ficha": "../diseño-3d/fusion/gill-v7-75mm/README.md"
+      "nota": "Precio publicado por unidad. Referencia económica de métrica y longitud; el herraje instalado y su encaje están aceptados por el equipo. Publicación sin disponibilidad.",
+      "ficha": "../diseño-3d/fusion/gill-v7-75mm/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-016",
@@ -228,13 +233,14 @@
       "cantidad": 3,
       "unidad": "unidad",
       "modelo": "Fijación tapa a guías",
-      "precio": null,
+      "precio": 45,
       "moneda": "CLP",
-      "cotizacion": "Por cotizar",
-      "fuente": "",
+      "cotizacion": "Referencia M3x10, código693010",
+      "fuente": "https://globalelectronica.cl/69-accesorios-para-montaje",
       "grupo": "Mecánica",
-      "nota": "No añadir varillas largas ni separadores sueltos.",
-      "ficha": "../diseño-3d/fusion/gill-v7-75mm/README.md"
+      "nota": "Precio publicado por unidad. Referencia económica; la cabeza de la oferta no se impone al herraje instalado.",
+      "ficha": "../diseño-3d/fusion/gill-v7-75mm/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-017",
@@ -242,13 +248,14 @@
       "cantidad": 9,
       "unidad": "unidad",
       "modelo": "M3 L4 Øexterior4,2; pilotos Ø3,9",
-      "precio": null,
+      "precio": 50,
       "moneda": "CLP",
-      "cotizacion": "Por cotizar medida exacta",
-      "fuente": "",
+      "cotizacion": "Referencia pack20 M3 L4: CLP1000",
+      "fuente": "https://www.cimech3d.cl/producto/insertos-metalicos-m3-pack-20-4mm/",
       "grupo": "Mecánica",
-      "nota": "6 en guías y 3 en tapa. Probar inserción con probeta antes del montaje.",
-      "ficha": "../diseño-3d/fusion/gill-v7-75mm/README.md"
+      "nota": "Unitario proporcional:1000/20=50CLP;9 unidades=450CLP. Catálogo agotado. Referencia económica de M3 L4; el Ø4,2 del montaje no se deduce de esta oferta.",
+      "ficha": "../diseño-3d/fusion/gill-v7-75mm/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-018",
@@ -256,13 +263,34 @@
       "cantidad": 1,
       "unidad": "lote",
       "modelo": "Cable solar, batería/controlador/DC-DC, dos hilos SOS, terminales y aislamiento",
-      "precio": null,
+      "precio": 7269,
       "moneda": "CLP",
-      "cotizacion": "Falta metraje/secciones",
-      "fuente": "",
+      "cotizacion": "Lote económico de referencia",
+      "fuente": "https://www.litiopack.cl/categoria-producto/componentes-pack-li-ion/cable-siliconado/\nhttps://altronics.cl/electronics-products/prototipos?limit=100\nhttps://afel.cl/collections/conectores",
       "grupo": "Energía",
-      "nota": "Lote por dimensionar; no atribuir calibre ni protección no identificados.",
-      "ficha": "conexiones.md"
+      "nota": "Presupuesto de lote: cable paralelo18AWG rojo/negro1m CLP4200 + tubo4mm10m CLP2569 +2 bornerasKF301-2P a250=500; total7269. Reserva comercial para cableado, terminación y aislamiento; no metraje medido ni sustitución del montaje.",
+      "ficha": "conexiones.md",
+      "fecha_precio": "2026-11-16",
+      "desglose_costo": [
+        {
+          "concepto": "Cable paralelo18AWG rojo/negro1m",
+          "cantidad": 1,
+          "precio": 4200,
+          "fuente": "https://www.litiopack.cl/categoria-producto/componentes-pack-li-ion/cable-siliconado/"
+        },
+        {
+          "concepto": "Tubo termoretráctil4mm10m",
+          "cantidad": 1,
+          "precio": 2569,
+          "fuente": "https://altronics.cl/electronics-products/prototipos?limit=100"
+        },
+        {
+          "concepto": "Bornera KF301-2P",
+          "cantidad": 2,
+          "precio": 250,
+          "fuente": "https://afel.cl/collections/conectores"
+        }
+      ]
     },
     {
       "id": "BOM-019",
@@ -270,13 +298,28 @@
       "cantidad": 1,
       "unidad": "lote",
       "modelo": "Bridas, sello compatible ASA, alivio coaxial y unión disco-tapa",
-      "precio": null,
+      "precio": 7194,
       "moneda": "CLP",
-      "cotizacion": "Falta consumo por montaje",
-      "fuente": "",
+      "cotizacion": "Lote económico de referencia",
+      "fuente": "https://www.easy.cl/silicona-neutra-sella-todo-280-ml-transparente-1310639/p\nhttps://requeteofertas.cl/product/bolsa-100-amarras-plasticas-color-negro-tamano-25x100/",
       "grupo": "Mecánica",
-      "nota": "No incluye piezas comerciales históricas ni accesorios opcionales.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Reserva de reposición: cartucho neutro Ceys280ml CLP6990 + bolsa100 amarras2,5x100mm CLP204=7194. Se presupuesta envase/bolsa; no se inventa el consumo del montaje. Precio de bridas sujeto a condiciones mayoristas del proveedor.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16",
+      "desglose_costo": [
+        {
+          "concepto": "Cartucho silicona neutra280ml",
+          "cantidad": 1,
+          "precio": 6990,
+          "fuente": "https://www.easy.cl/silicona-neutra-sella-todo-280-ml-transparente-1310639/p"
+        },
+        {
+          "concepto": "Bolsa100 amarras",
+          "cantidad": 1,
+          "precio": 204,
+          "fuente": "https://requeteofertas.cl/product/bolsa-100-amarras-plasticas-color-negro-tamano-25x100/"
+        }
+      ]
     },
     {
       "id": "BOM-020",
@@ -284,13 +327,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V4_Base_200_Sin_Varillas",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-021",
@@ -298,13 +342,14 @@
       "cantidad": 3,
       "unidad": "pieza",
       "modelo": "V7_Guia_T_235_5_Tope_y_Inserto_Axial",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-022",
@@ -312,13 +357,14 @@
       "cantidad": 8,
       "unidad": "pieza",
       "modelo": "V7_Aleta_236_45gr_Paso23_5",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-023",
@@ -326,13 +372,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V7_Aleta_Superior_236_45gr",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-024",
@@ -340,13 +387,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V7_Tapa_256_Pendiente8gr",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-025",
@@ -354,13 +402,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V7_Disco_Antena_60_Paso16_2",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-026",
@@ -368,13 +417,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V3_Placa_Vertical_154",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-027",
@@ -382,13 +432,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V3_Bandeja_Controlador",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-028",
@@ -396,13 +447,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V3_Bandeja_DCDC",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-029",
@@ -410,13 +462,14 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V3_Bandeja_RAK",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
     },
     {
       "id": "BOM-030",
@@ -424,13 +477,29 @@
       "cantidad": 1,
       "unidad": "pieza",
       "modelo": "V3_Bandeja_BMS",
-      "precio": null,
+      "precio": 0,
       "moneda": "CLP",
-      "cotizacion": "Falta costo de impresión",
-      "fuente": "",
+      "cotizacion": "Material incluido en BOM-031",
+      "fuente": "bom-materiales.json#BOM-031",
       "grupo": "Impresión",
-      "nota": "ASA objetivo; asignar costo desde masa y tiempo del laminado. No equivale al volumen macizo del STEP.",
-      "ficha": "../diseño-3d/planos/README.md"
+      "nota": "Fabricación propia en PLA; costo global del filamento en BOM-031. No se vuelve a cobrar por pieza ni se asignan masas individuales no medidas. Ajuste y tolerancias funcionales aceptados por el equipo.",
+      "ficha": "../diseño-3d/planos/README.md",
+      "fecha_precio": "2026-11-16"
+    },
+    {
+      "id": "BOM-031",
+      "componente": "PLA utilizado en fabricación propia",
+      "cantidad": 0.46,
+      "unidad": "kg",
+      "modelo": "PLA 1,75 mm. Interior 160 g + aletas y tapa unos 300 g = aproximadamente 460 g",
+      "precio": 13000,
+      "moneda": "CLP",
+      "cotizacion": "Referencia de filamento por kg",
+      "fuente": "https://afel.cl/products/filamento-pla-natural-afel-1-75mm-1kg",
+      "fecha_precio": "2026-11-16",
+      "grupo": "Material de impresión",
+      "nota": "Masa aproximada reportada por el equipo: 160 g del interior y unos 300 g entre aletas y tapa. 0,460 kg × 13.000 CLP/kg = 5.980 CLP de referencia. Solo filamento utilizado; sin servicio de impresión, mano de obra ni energía. Las 20 piezas del inventario CAD no duplican este costo.",
+      "ficha": "https://afel.cl/products/filamento-pla-natural-afel-1-75mm-1kg"
     }
   ]
 }

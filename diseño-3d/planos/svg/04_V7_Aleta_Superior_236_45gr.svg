@@ -5,7 +5,7 @@
 <text x="405" y="20" font-family="Arial, sans-serif" font-size="4" font-weight="700" text-anchor="end" fill="#183449">CS-M-04</text>
 <polyline points="8.0000,35.0000 412.0000,35.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
 <polyline points="8.0000,268.0000 412.0000,268.0000" fill="none" stroke="#183449" stroke-width="0.2"/>
-<text x="14" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="start" fill="#183449">Rev. A | 15-11-2026 | Unidades: mm | Formato A3</text>
+<text x="14" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="start" fill="#183449">Rev. B | 16-11-2026 | Unidades: mm | Formato A3</text>
 <text x="14" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="start" fill="#667782">Imprimir al 100 %. No medir sobre una copia ajustada al papel.</text>
 <text x="405" y="276" font-family="Arial, sans-serif" font-size="3" font-weight="400" text-anchor="end" fill="#183449">Escala 1:2 | Hoja 5/12</text>
 <text x="405" y="284" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" text-anchor="end" fill="#667782">Gill V7 / documentación de prototipo</text>
@@ -732,8 +732,9 @@
 <text x="302" y="218" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">Cotas de envolvente derivadas de STEP.</text>
 <text x="302" y="222.5" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">Otras cotas nominales: fuente V7.</text>
 <text x="302" y="227.0" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">Objetivos: ver hoja CS-M-00.</text>
-<text x="302" y="231.5" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">Las curvas se aproximan a 0,035 mm</text>
-<text x="302" y="236.0" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">para la representacion en papel.</text>
-<text x="302" y="240.5" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">STEP conserva la geometria exacta.</text>
+<text x="302" y="231.5" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">Encaje funcional aceptado por equipo.</text>
+<text x="302" y="236.0" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">Las curvas se aproximan a 0,035 mm</text>
+<text x="302" y="240.5" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">para la representacion en papel.</text>
+<text x="302" y="245.0" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" text-anchor="start" fill="#667782">STEP conserva la geometria exacta.</text>
 <text x="15" y="260" font-family="Arial, sans-serif" font-size="2.35" font-weight="400" text-anchor="start" fill="#667782">Fuente: fusion/gill-v7-75mm/V7_Aleta_Superior_236_45gr.step</text>
 </svg>

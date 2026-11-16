@@ -36,7 +36,7 @@ class Sheet:
         self.text(405, 20, code, 4, NAVY, True, 'end')
         self.line(8, 35, 412, 35)
         self.line(8, 268, 412, 268)
-        self.text(14, 276, 'Rev. A | 15-11-2026 | Unidades: mm | Formato A3', 3)
+        self.text(14, 276, 'Rev. B | 16-11-2026 | Unidades: mm | Formato A3', 3)
         self.text(14, 284, 'Imprimir al 100 %. No medir sobre una copia ajustada al papel.', 2.7, GRAY)
         self.text(405, 276, f'Escala {scale} | Hoja {number}/{count}', 3, NAVY, False, 'end')
         self.text(405, 284, 'Gill V7 / documentación de prototipo', 2.7, GRAY, False, 'end')
@@ -356,12 +356,12 @@ def make_mechanical():
       'Tornilleria: 6 M3x6 + 3 M3x10.', 'Insertos: 9 M3 L4, exterior4,2.',
       'Antena: tuerca propia y junta.', 'Paso central16,2; referencia 5/8".',
       'Cable coaxial: volumen representativo;', 'margen CAD sobre interior: 18,5.',
-      'Bateria medida: 120 x 50 x 40.', 'Impresion: validar encajes y fijaciones.',
+      'Bateria medida: 120 x 50 x 40.', 'Encaje funcional aceptado por el equipo.',
       'La vista no certifica estanqueidad,', 'resistencia ni temperatura de uso.',
     ])
     s.text(15,227,'INVENTARIO IMPRESO',3.2,NAVY,True)
     s.text(15,234,'1 base | 3 guias | 8 aletas estandar | 1 terminal | 1 tapa | 1 disco | 1 placa | 4 bandejas = 20 piezas',2.8)
-    s.text(15,241,'Material objetivo exterior: ASA. Parametros de impresion y ajuste: registrar en el ensayo de fabricacion.',2.8)
+    s.text(15,241,'Fabricacion propia en PLA: aprox. 460 g. Interior 160 g + aletas y tapa unos 300 g. Impresora calibrada; ajuste satisfactorio reportado.',2.8)
     s.text(15,248,'Objetivos provisionales de control: lineales +/-0,3 hasta150; +/-0,5 sobre150; taladros +/-0,2; angulos +/-1 grado.',2.65)
     s.text(15,255,'No son tolerancias medidas. Probar insertos y paso de antena; no compensar el STEP sin registrar una nueva revision.',2.65)
     s.finish()
@@ -380,6 +380,7 @@ def make_mechanical():
           'Cotas de envolvente derivadas de STEP.',
           'Otras cotas nominales: fuente V7.',
           'Objetivos: ver hoja CS-M-00.',
+          'Encaje funcional aceptado por equipo.',
           'Las curvas se aproximan a 0,035 mm',
           'para la representacion en papel.',
           'STEP conserva la geometria exacta.',
@@ -387,7 +388,7 @@ def make_mechanical():
         s.text(15,260,'Fuente: fusion/gill-v7-75mm/'+name+'.step',2.35,GRAY)
         s.finish()
     pdf.save()
-    (OUT/'correspondencia-step.json').write_text(json.dumps({'revision':'A','unidades':'mm','metodo':'Proyeccion HLR de STEP; vistas de tercer diedro; deflexion grafica 0,035 mm','piezas':manifest},indent=2,ensure_ascii=False)+'\n')
+    (OUT/'correspondencia-step.json').write_text(json.dumps({'revision':'B documental; geometria V7 conservada','unidades':'mm','metodo':'Proyeccion HLR de STEP; vistas de tercer diedro; deflexion grafica 0,035 mm','piezas':manifest},indent=2,ensure_ascii=False)+'\n')
 
 
 def make_electrical():
@@ -410,7 +411,7 @@ def make_electrical():
     box(128,52,114,46,'U4','Controlador PWM GC',['Etiqueta: 12 V / 10 A / Li-ion 3S','60 x 60 x 15 mm','Bornes por pictograma: PV / BAT / LOAD','Polaridades impresas en el frontal'])
     box(285,52,112,35,'U5','DC-DC USB',['Entrada desde salida LOAD','Salida USB regulada: 5 V','Referencia visual/costo: XY-3606'])
     box(285,126,112,35,'U1','RAK19007 + RAK4631',['Entrada de energia por USB-C 5 V','BAT y SOLAR de la base: sin conexion','I/O y radio: hoja CS-E-02'])
-    box(128,128,114,40,'U6','BMS 3S bajo cinta roja',['Entre bateria y controlador (confirmado)','P+ / P-: puerto protegido funcional','C0..C3: cuatro tomas de celdas','Modelo y pads ocultos sin identificar'])
+    box(128,128,114,40,'U6','BMS 3S bajo cinta roja',['Entre bateria y controlador (confirmado)','P+ / P-: puerto protegido funcional','Terminales cotejados con esquema por equipo','Modelo comercial no identificado'])
     box(15,128,75,40,'BT1','Bateria LiPo 3S',['11,1 V nominal / 12,6 V a plena carga','Envolvente medida: 120 x 50 x 40','Modelo visual: Multistar 5200 mAh','Conector de balanceo: 4 hilos'])
 
     # Cada par termina en un puerto identificado; no se puentea B- con P- del BMS.
@@ -423,16 +424,16 @@ def make_electrical():
     wire([(90,157),(128,157)],GRAY,True,label='Potencia bateria')
     wire([(320,87),(320,126)],RED,label='VBUS +5 V')
     wire([(369,87),(369,126)],NAVY,label='GND USB')
-    s.text(15,112,'ROJO: positivo | AZUL OSCURO: retorno | GRIS DISCONTINUO: terminales internos por cotejar',2.6,GRAY)
+    s.text(15,112,'ROJO: positivo | AZUL OSCURO: retorno | GRIS DISCONTINUO: conexiones internas de celdas y potencia',2.6,GRAY)
     s.notes('CONEXIONES Y LIMITES DEL LEVANTAMIENTO',[
       'PV+/- del panel a PV+/- del GC; LOAD+/- del GC a IN+/- del DC-DC. USB-A del DC-DC al USB-C de RAK19007.',
       'BAT+/- del controlador al puerto protegido de potencia del BMS. No identificar los pads por colores o por esta posicion grafica.',
       'C0..C3 designan nodos de celda: 0 / 1 / 2 / 3 celdas acumuladas. No son numeros de pin ni una secuencia de conexion.',
-      'Comprobar el pinout y los puertos de carga/descarga del BMS real antes de rehacer conexiones. La cinta oculta esa informacion.',
+      'El equipo confirmo la correspondencia de terminales y esquema. Los nombres funcionales no sustituyen la serigrafia del BMS.',
       'El BMS protege el pack; no sustituye al controlador de carga. No se acredita balanceo activo ni umbrales de corte del modelo real.',
-      'La alimentacion de banco USB, el sensor y SOS/ACK estan probados. El conjunto solar final requiere verificar carga y salida de 5 V.',
+      'Salida correcta y autonomia suficiente confirmadas por el equipo. La generacion diurna repone el consumo nocturno con excedente.',
       'No aplicar la bateria 3S a BAT de RAK19007 (1S), ni el panel de 12 V a SOLAR de RAK19007 (5 V). Ambos quedan libres.',
-      'Configuracion de carga 3S, Voc del panel, polaridad, protecciones, seccion de cable y consumo/autonomia: verificar en montaje final.',
+      'Aceptacion funcional reportada el 16-11-2026. No se informaron mA, Wh, horas exactas ni reserva porcentual; no se asignan valores.',
     ],x=15,y=190,size=2.7,pitch=6)
     s.text(15,259,'Fuente: fotos IMG_2188/2189 y IMG_2197/2198; datos de montaje confirmados; ficha RAK19007. Esquema de interconexion de modulos.',2.45,GRAY)
     s.finish()

@@ -16,7 +16,7 @@ Los indicadores relacionan el nodo fijo con dos necesidades del Avance 1: consul
 
 El BME680 observa variables que cambian en una escala de minutos en el ensayo interior. Solicitar una lectura cada 120 s permite observar tendencias sin emitir una lectura de radio por cada consulta del navegador. El dashboard consulta cada 5 s para reflejar con rapidez la recepción de un SOS. La generación del SOS es independiente del sondeo ambiental.
 
-La cadencia de 120 s es una elección de banco; su costo energético y el tráfico de una campaña prolongada requieren medición. No prueba la reserva energética objetivo de E1. El firmware oficial conserva su mínimo de publicación automática de 1800 s en el canal público utilizado.
+La cadencia de 120 s es una elección de banco; el equipo confirmó suficiencia de autonomía y recuperación diurna del consumo nocturno. No se cuantificó la reserva porcentual objetivo de E1. El firmware oficial conserva su mínimo de publicación automática de 1800 s en el canal público utilizado.
 
 ## Variables no interpretadas como indicadores
 

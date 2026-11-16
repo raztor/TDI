@@ -1,6 +1,6 @@
 # Planos Gill V7
 
-[Gill_V7_Planos.pdf](Gill_V7_Planos.pdf): doce hojas A3, revisión A del 15-11-2026, con vistas ortogonales, isométricas de apoyo, cotas generales y funcionales, cantidades, escalas y objetivos de tolerancia.
+[Gill_V7_Planos.pdf](Gill_V7_Planos.pdf): doce hojas A3, revisión documental B del 16-11-2026, con vistas ortogonales, isométricas de apoyo, cotas generales y funcionales, cantidades, escalas y objetivos de tolerancia. La geometría STEP V7 se conserva.
 
 | Hoja | Pieza | Cantidad | Escala principal |
 |---|---|---:|---|
@@ -25,6 +25,8 @@ Las líneas visibles y ocultas se obtienen de los [STEP V7](../fusion/gill-v7-75
 
 [correspondencia-step.json](correspondencia-step.json) identifica archivos, SHA-256, cantidades, envolventes y volúmenes. Las cotas funcionales se contrastan con la [fuente V7](../gill-v7/CerroSeguro_Gill_V7.scad) y la [verificación digital](../fusion/gill-v7-75mm/verificacion.json). La geometría CAD no se modifica al producir los planos.
 
-Objetivos provisionales: ±0,3 mm en longitudes hasta 150 mm; ±0,5 mm sobre 150 mm; ±0,2 mm en taladros y ±1° en ángulos. **Son criterios propuestos de control de impresión, no tolerancias medidas.** Probar insertos y paso de antena antes del conjunto. La validación física, térmica y frente a agua permanece pendiente.
+Objetivos nominales: ±0,3mm en longitudes hasta150mm; ±0,5mm sobre150mm; ±0,2mm en taladros y ±1° en ángulos. El equipo confirmó encaje satisfactorio y tolerancias funcionalmente suficientes con la impresora recientemente calibrada. No se informaron desviaciones dimensionales medidas, por lo que esos valores siguen siendo objetivos de diseño.
+
+Material fabricado: **PLA**, aproximadamente **460 g**: 160 g del interior y unos 300 g entre aletas y tapa. Costo de material único en BOM-031. Las fotografías finales, las condiciones de impresión para el acta y los ensayos de agua y comportamiento térmico quedan por incorporar.
 
 Generación: [herramienta y versiones](../../tools/planos/README.md). Imprimir al 100 %; no medir una copia ajustada al papel.

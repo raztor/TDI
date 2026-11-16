@@ -35,6 +35,10 @@ Las lecturas fueron SWR 1,301 a 436,100 MHz para el dipolo y SWR 1,475 a 915,000
 
 ## Iteraciones de alimentación y hardware
 
-Durante la integración se sustituyó el Morningstar SunSaver-20 por el controlador blanco/azul tras observar desconexiones prematuras con la batería LiPo 3S. La comprobación de los ajustes de carga y desconexión del controlador sustituto sigue pendiente.
+Durante la integración se sustituyó el Morningstar SunSaver-20 por el controlador blanco/azul tras observar desconexiones prematuras con la batería LiPo 3S. El equipo aceptó posteriormente el montaje actual, con terminales coincidentes con el esquema, salida correcta y energía suficiente. Los valores de ajustes y umbrales no fueron informados; no se atribuyen al equipo los de una ficha de referencia.
 
 También se retiró una batería LiPo hinchada y se registró una placa LILYGO averiada. No se determinó la causa de esos daños ni una causa común entre ambos. Ver [registro de fallas](../../testing/registro-fallas.md).
+
+## Integración del Avance 3
+
+El [cierre de actas de integración](cierre-actas-integracion.md) reúne los acuerdos y resultados confirmados y los datos de fecha, participantes y responsables que faltan para formalizar cada instancia. La aceptación funcional de alimentación, comunicación y encaje se documenta en el [cierre funcional](../../testing/cierre-funcional-avance3.md).

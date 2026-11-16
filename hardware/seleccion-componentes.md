@@ -10,16 +10,16 @@ El [inventario histórico](inventario-historico.md) recupera los equipos utiliza
 
 | Componente y modelo | Necesidad que cubre | Rango | Precisión o resolución | Alimentación y consumo | Interfaz y compatibilidad | Justificación | Fuente |
 |---|---|---|---|---|---|---|---|
-| RAK19007 | Base de integración y alimentación | Base 30 × 60 mm | No aplica como sensor | USB 5 V / batería Li-ion 3,7 V nominal; consumo del conjunto por medir | 1 ranura Core, 1 IO y 4 de sensor | Integración modular; confirmar montaje y presupuesto de energía | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/) |
-| RAK4631 | Procesamiento y radio | Variante de 915 MHz comprobada en banco | Desempeño del enlace por medir | Módulo 2,0–3,6 V; consumo según modo, pendiente de medir | nRF52840 + SX1262, WisBlock Core | Núcleo usado; justificar alcance y configuración con pruebas | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak4631/datasheet/) |
+| RAK19007 | Base de integración y alimentación | Base 30 × 60 mm | No aplica como sensor | USB 5 V / batería Li-ion 3,7 V nominal; suficiencia del conjunto confirmada; sin corriente numérica informada | 1 ranura Core, 1 IO y 4 de sensor | Integración modular; montaje y suficiencia energética aceptados | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak19007/datasheet/) |
+| RAK4631 | Procesamiento y radio | Variante de 915 MHz comprobada en banco | 20/20 recibidos, sin pérdidas y entrega menor de 60 s en el ensayo reportado | Módulo 2,0–3,6 V; consumo según modo; sin valores individuales informados | nRF52840 + SX1262, WisBlock Core | Núcleo usado para sensor y SOS con ACK; configuración y prueba documentadas | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak4631/datasheet/) |
 | RAK1906 / BME680 | Telemetría ambiental | −40 a 85 °C; 0–100 % HR; 300–1100 hPa | Confirmar precisión por variable y condiciones en la ficha | 3,3 V; consumo según modo de medida | I²C, conector WisBlock | Sensor usado; vincular variables con la decisión del proyecto | [Ficha oficial](https://docs.rakwireless.com/product-categories/wisblock/rak1906/datasheet/) |
 
 ## Alimentación
 
 - Fuente definida: panel **12 V / 25 W**, confirmado en etiqueta por el equipo. La marca y dimensiones físicas del panel están por cotejar con la envolvente CAD de referencia.
-- Consumo en reposo y captura: pendiente de especificación y medición.
-- Consumo máximo y margen de la fuente: pendiente.
-- Batería LiPo **3S**, envolvente medida **120 × 50 × 40 mm**; BMS encintado entre batería y controlador GC **12 V / 10 A / Li-ion 3S**; DC-DC USB **5 V** hacia RAK19007. Pinout del BMS, parámetros de carga y autonomía por verificar.
+- Consumo y autonomía: suficiencia funcional confirmada por el equipo; no se informaron valores de corriente por estado ni energía en Wh.
+- Balance diario: la generación diurna repone el consumo nocturno con excedente. La reserva porcentual no está cuantificada.
+- Batería LiPo **3S**, envolvente medida **120 × 50 × 40 mm**; BMS encintado entre batería y controlador GC **12 V / 10 A / Li-ion 3S**; DC-DC USB **5 V** hacia RAK19007. Terminales, salida y suficiencia de autonomía aceptados por el equipo; fecha, condiciones y lecturas disponibles para el acta.
 - Condiciones de operación y límites ambientales: pendiente.
 
 ## Criterios de compatibilidad
@@ -32,8 +32,8 @@ El [esquema de módulos](esquematicos/README.md) y el [mapa de conexiones](conex
 
 ## Otros elementos del nodo de prueba
 
-A2 identifica dos LILYGO LoRa32 para 433 y 915 MHz, dipolo artesanal, antena Laird, controlador solar, LiPo 3S, BMS y DC-DC. El conjunto RAK se reporta como utilizado por separado del montaje LILYGO fotografiado. Faltan revisiones, conexiones y cantidades consolidadas; no agrupar todo como un único circuito ni duplicar radios en la BOM.
+A2 identifica dos LILYGO LoRa32 para 433 y 915 MHz, dipolo artesanal, antena Laird, controlador solar, LiPo 3S, BMS y DC-DC. El conjunto RAK se reporta como utilizado por separado del montaje LILYGO fotografiado. Las unidades históricas se distinguen del montaje actual RAK/Heltec consolidado en la BOM; no se duplican radios ni se agrupan como un único circuito.
 
-El controlador inicial SunSaver-20 se sustituyó tras desconexiones prematuras. El informe no cierra la validación de ajustes del controlador final. Las dos antenas tienen [lecturas NanoVNA documentadas](../testing/antenas-avance2.md); no prueban alcance ni ganancia.
+El controlador inicial SunSaver-20 se sustituyó tras desconexiones prematuras. A2 no cerraba la validación del controlador final; el equipo confirmó posteriormente la salida y suficiencia del montaje actual. Los ajustes numéricos no fueron informados. Las dos antenas tienen [lecturas NanoVNA documentadas](../testing/antenas-avance2.md); no prueban alcance ni ganancia.
 
 No asumir que una misma variante RAK4631 sirve para ambas bandas. Verificar compatibilidad de antena, configuración regional y límites de entrada de cada placa antes de conectar alimentación solar.

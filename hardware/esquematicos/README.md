@@ -1,6 +1,6 @@
 # Esquema eléctrico del prototipo
 
-Revisión A, 15-11-2026. Interconexión de módulos: alimentación, polaridades, puertos, sensor, pulsador y estación USB.
+Revisión documental B, 16-11-2026. Interconexión de módulos: alimentación, polaridades, puertos, sensor, pulsador y estación USB.
 
 | Archivo | Contenido |
 |---|---|
@@ -17,9 +17,9 @@ Panel **12 V / 25 W**, controlador GC **12 V / 10 A / Li-ion 3S**, batería medi
 
 La tensión y potencia del panel están confirmadas por el equipo. La envolvente de 510 × 360 × 20 mm y la cotización ACOPOWER son referencias; fabricante y dimensiones del panel físico requieren cotejo. «12 V nominal» no equivale a su tensión de circuito abierto.
 
-El BMS existe bajo la cinta roja, entre controlador y batería. Las [fotografías](../fotos/alimentacion-final/README.md) muestran el encapsulado y el conector de cuatro hilos; no permiten leer modelo ni serigrafía. `P+`, `P-` y `C0..C3` son nombres funcionales, **no un pinout para soldar**. Cotejar los pads y puertos de carga/descarga antes de rehacer ese cableado. No se deduce balanceo activo por la existencia del conector.
+El BMS existe bajo la cinta roja, entre controlador y batería. Las [fotografías](../fotos/alimentacion-final/README.md) muestran el encapsulado y el conector de cuatro hilos; no permiten leer modelo ni serigrafía. `P+`, `P-` y `C0..C3` son nombres funcionales, **no un pinout para soldar**. El equipo confirmó que los terminales coinciden con el esquema. El modelo comercial permanece sin identificar. No se deduce balanceo activo por la existencia del conector.
 
-La ruta del montaje final está documentada; faltan mediciones de carga solar, corte del BMS, consumo, salida y autonomía. La alimentación USB de banco, el sensor y SOS/ACK tienen [evidencia funcional](../../testing/banco-rak-heltec.md).
+El equipo aceptó el montaje final, la salida, el consumo y la autonomía: la generación diurna repone el consumo nocturno con excedente. No se informaron cifras de corriente, energía ni reserva porcentual. [Registro de aceptación](../../testing/cierre-funcional-avance3.md). La alimentación USB de banco, el sensor y SOS/ACK tienen [evidencia funcional](../../testing/banco-rak-heltec.md).
 
 ## Señales
 
