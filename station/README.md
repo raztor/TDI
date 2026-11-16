@@ -4,6 +4,14 @@ La estación utiliza un Heltec WiFi LoRa 32 V3.2 de 915 MHz con firmware Meshtas
 
 ## Instalación y ejecución
 
+En macOS, [iniciar.sh](../iniciar.sh) permite ejecutar recepción y dashboard juntos, con detección automática del puerto:
+
+```bash
+./iniciar.sh
+```
+
+Utiliza el nodo RAK `!1630f9c9` y sondeo de 120 s. El histórico se mantiene en `station-data/cerroseguro.sqlite3`; Ctrl+C detiene ambos procesos. Ver [opciones y detección USB](../dashboard/README.md#un-solo-comando-en-macos). La ejecución manual del receptor se conserva a continuación.
+
 Requisitos: Python 3.10 o posterior, placa receptora de 915 MHz con firmware oficial compatible, cable USB de datos y NodeID del RAK. El puerto serie debe quedar disponible para este servicio; cerrar otras aplicaciones que lo estén utilizando.
 
 Desde la raíz del repositorio:

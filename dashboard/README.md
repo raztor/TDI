@@ -6,6 +6,40 @@ Aplicación local para interpretar las lecturas reales del RAK4631 y revisar ale
 
 Requisitos: Python 3.10 o posterior, firmware/configuración de [RAK y receptor](../firmware/meshtastic/README.md) y las dependencias de la estación. Python 3.11 es la versión verificada. El Heltec V3.2 utiliza firmware oficial `heltec-v3`; el RAK utiliza el firmware modificado con el NodeID real de la estación. Ambos deben conocer el contacto público del otro para los mensajes directos.
 
+### Un solo comando en macOS
+
+Conectar el Heltec con un cable USB de datos, alimentar el RAK y cerrar los monitores serie o clientes que ocupen el USB. Desde la raíz del proyecto:
+
+```bash
+./iniciar.sh
+```
+
+En el primer inicio se crea `.venv` y se instalan las dependencias si faltan; esa instalación requiere internet. El script detecta el puerto compatible, inicia la recepción y espera que SQLite esté preparada antes de iniciar el dashboard. Abre [http://127.0.0.1:8765](http://127.0.0.1:8765) en el navegador. El estado USB del dashboard y el mensaje «Estación conectada» confirman la conexión; disponer de la página no confirma recepción de radio.
+
+Valores predeterminados: RAK `!1630f9c9`, canal 0, sondeo de 120 s, puerto web 8765 y `station-data/cerroseguro.sqlite3`. La ruta relativa de la base se interpreta desde la raíz del proyecto, aunque se invoque el script desde otra carpeta. Se conserva el histórico.
+
+La detección usa la descripción USB Heltec o el adaptador CP210x que incorpora V3/V3.2, sin seleccionar el USB nativo del RAK. Identifica un puerto compatible, no el NodeID de la radio. Si hay varios candidatos, se muestran las opciones y se solicita una selección explícita. No se prueban conexiones en todos los puertos. Referencias: [Heltec V3](https://heltec.org/project/wifi-lora-32-v3/) y [enumeración USB de pySerial](https://pyserial.readthedocs.io/en/latest/tools.html#serial.tools.list_ports.comports).
+
+```bash
+# Mostrar los puertos sin abrirlos ni iniciar servicios.
+./iniciar.sh --list-ports
+
+# Elegir el puerto si hay varios adaptadores conectados.
+./iniciar.sh --port /dev/cu.usbserial-0001
+
+# Otra configuración de ejecución, manteniendo el mismo firmware.
+./iniciar.sh --no-browser --dashboard-port 8766
+
+# Consultar todas las opciones.
+./iniciar.sh --help
+```
+
+`--rak-node '!1630f9c9'` permite indicar otro emisor autorizado y se puede repetir; no reconfigura el destino SOS del firmware. También se admiten `--database` y `--poll-seconds`. El intervalo es compartido por el sondeo y la detección de datos antiguos en el dashboard.
+
+**Ctrl+C** detiene los dos servicios y libera sus recursos. Si uno termina de forma inesperada o falla el arranque del segundo, el script cierra el otro y muestra el error. Un puerto web ocupado se detecta antes de iniciar la estación. La reconexión USB sigue a cargo del servicio de estación; si el sistema asigna otro nombre al puerto después de reconectar el cable, reiniciar el comando para detectarlo de nuevo.
+
+### Ejecución manual en dos terminales
+
 Desde la raíz del repositorio:
 
 ```bash
@@ -78,6 +112,7 @@ Las consultas usan conexiones independientes, límites de visualización y pará
 ```bash
 .venv/bin/python -m unittest discover -s station/tests -v
 .venv/bin/python -m unittest discover -s dashboard/tests -v
+.venv/bin/python -m unittest discover -s tools/tests -v
 ```
 
 La API se prueba con bases temporales. El [ensayo de banco](../testing/banco-rak-heltec.md) y la [verificación del Avance 3](../docs/verificacion-avance3.md) separan los resultados físicos de las pruebas de software. Las capturas de [vista general](../testing/evidencias/dashboard-vista-general.jpg), [alertas](../testing/evidencias/dashboard-alertas.jpg) y [móvil](../testing/evidencias/dashboard-movil.jpg) usan datos reales.

@@ -103,9 +103,15 @@ Para la implementación actual, seguir los [comandos de compilación y configura
 
 ### 4. Conectar almacenamiento y dashboard
 
-Seguir [dashboard/README.md](dashboard/README.md). Debe indicar la URL accesible durante la evaluación o el comando de ejecución local, su configuración y la forma de recuperar el histórico.
+En el Mac, conectar el Heltec por USB y ejecutar desde la raíz del proyecto:
 
-**Acceso local:** [http://127.0.0.1:8765](http://127.0.0.1:8765). Iniciar primero la estación y después `python dashboard/server.py --database station-data/cerroseguro.sqlite3`; [instalación y operación completas](dashboard/README.md).
+```bash
+./iniciar.sh
+```
+
+El comando prepara las dependencias si faltan, detecta el puerto compatible con Heltec/CP210x, inicia la recepción y el dashboard y abre el navegador. Usa el RAK `!1630f9c9`, sondeo de 120 s y el histórico `station-data/cerroseguro.sqlite3`. Ctrl+C detiene ambos servicios. Si hay varios puertos compatibles, indicar `./iniciar.sh --port /dev/cu.usbserial-0001` con el puerto real.
+
+**Acceso local:** [http://127.0.0.1:8765](http://127.0.0.1:8765). [Opciones del inicio conjunto y ejecución manual](dashboard/README.md).
 
 ### 5. Verificar el ciclo completo
 
