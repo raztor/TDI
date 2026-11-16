@@ -120,11 +120,6 @@
     "fuente": "IMG_2193.JPG e IMG_2194.JPG del equipo"
   },
   {
-    "componente": "Gill V1.2 con RAK1906",
-    "tipo": "Diseno propio derivado del Gill V1.1. Sensor oficial de 10 mm; guias libres de 10.6 mm y retenedores M2. Ajuste fisico pendiente. Dos ubicaciones alternativas del mismo sensor en el inventario.",
-    "fuente": "Archivos propios Gill V1 y STEP RAK1906 oficial"
-  },
-  {
     "componente": "Bateria medida por el equipo",
     "tipo": "Envolvente de montaje confirmada por el equipo: 12 x 5 x 4 cm. Sustituye las cotas comerciales anteriores de 142 x 49 x 22 mm. No se infiere capacidad ni un modelo distinto a partir de esta medida.",
     "dimensiones_mm": [

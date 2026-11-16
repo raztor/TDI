@@ -2,7 +2,6 @@
   "proyecto": "Cerro Seguro - TDI",
   "carpeta_autodesk": "Componentes del nodo",
   "documentos_abiertos": [
-    "CerroSeguro_Gill_V1_1_Ensamble",
     "02_RAK19007_RAK4631_RAK1906",
     "01_Heltec_V3_7",
     "03_Controlador_PWM_GC",
@@ -15,16 +14,12 @@
     "10_Panel_solar",
     "11_SOS_LED_y_buzzer",
     "12_LILYGO_LoRa32_433",
-    "13_Gill_V1.1_completo",
     "Placa_RAK19007",
     "Placa_RAK4631",
     "Placa_RAK1906",
-    "14_Todos_los_STL_originales",
-    "15_Gill_V1_2_con_RAK1906",
-    "16_Bandeja_y_sensor_RAK1906",
-    "17_CerroSeguro_Inventario_Completo"
+    "16_Bandeja_y_sensor_RAK1906"
   ],
-  "cantidad_documentos": 21,
+  "cantidad_documentos": 16,
   "grupos_visibles": [
     {
       "name": "Heltec_V3_7",
@@ -205,20 +200,6 @@
         310.498,
         235.4652000000014,
         15.2
-      ],
-      "visible": true
-    },
-    {
-      "name": "Gill V1.2 con RAK1906 - ubicacion alternativa del sensor",
-      "min_mm": [
-        599.9999999999999,
-        0.0,
-        0.0
-      ],
-      "max_mm": [
-        742.4044015702605,
-        143.05000089406968,
-        234.03999976158138
       ],
       "visible": true
     }
@@ -484,20 +465,8 @@
       "version": 1
     },
     {
-      "name": "13_Gill_V1.1_completo",
-      "id": "urn:adsk.wipprod:dm.lineage:vxbciI40QM-5Jjl7xps37A",
-      "complete": true,
-      "version": 1
-    },
-    {
       "name": "Placa_RAK19007",
       "id": "urn:adsk.wipprod:dm.lineage:rAds9XPSSKyVoAudqlfWvQ",
-      "complete": true,
-      "version": 1
-    },
-    {
-      "name": "14_Todos_los_STL_originales",
-      "id": "urn:adsk.wipprod:dm.lineage:4XpWeZG0TtaMY8-DCCqbcQ",
       "complete": true,
       "version": 1
     },
@@ -506,29 +475,9 @@
       "id": "urn:adsk.wipprod:dm.lineage:tYGiHeaJQjKEkxEK0l6QtA",
       "complete": true,
       "version": 1
-    },
-    {
-      "name": "15_Gill_V1_2_con_RAK1906",
-      "id": "urn:adsk.wipprod:dm.lineage:-0j4orSyRKKMXq_bOTmzaA",
-      "complete": true,
-      "version": 1
-    },
-    {
-      "name": "Borrador_Inventario_Completo",
-      "id": "urn:adsk.wipprod:dm.lineage:3W9Z5a_JQlioANL_ZXCTag",
-      "complete": true,
-      "version": 1
-    },
-    {
-      "name": "17_CerroSeguro_Inventario_Completo",
-      "id": "urn:adsk.wipprod:dm.lineage:rvcX9WofQ7WYmeL_lVHe-A",
-      "complete": true,
-      "version": 1
     }
   ],
   "guardados_pendientes": [],
-  "archivos_locales_verificados": 20,
-  "stl_originales_visibles": 13,
   "limites": [
     "Las fijaciones nuevas requieren una impresion de prueba",
     "Modelos de referencia y variantes no confirmadas identificados en fuentes-modelos.json",

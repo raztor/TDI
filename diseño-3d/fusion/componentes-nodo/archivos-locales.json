@@ -104,33 +104,9 @@
     "archive_ok": true
   },
   {
-    "file": "modelos/13_Gill_V1.1_completo.f3d",
-    "bytes": 7799690,
-    "sha256": "7a78084c7f06ba956bb81cbc0573d0a89fd9fff4343a743e5632f4cd5c18bc85",
-    "archive_ok": true
-  },
-  {
-    "file": "modelos/14_Todos_los_STL_originales.f3d",
-    "bytes": 4701889,
-    "sha256": "d280ed62257493b1933fb42d82c2c5049687297fded959a3097574629ecb2057",
-    "archive_ok": true
-  },
-  {
-    "file": "modelos/15_Gill_V1_2_con_RAK1906.f3d",
-    "bytes": 8622500,
-    "sha256": "ee7126e237d5902ef5c3d9722a9d7d733e20cbd2bffd541570cf94da5e745f77",
-    "archive_ok": true
-  },
-  {
     "file": "modelos/16_Bandeja_y_sensor_RAK1906.f3d",
     "bytes": 1392886,
     "sha256": "69a4e00f6a03699cd4caf0f877a2d10bdfd7b692d25da7c8be0c8d0cc7b3ef16",
-    "archive_ok": true
-  },
-  {
-    "file": "modelos/17_CerroSeguro_Inventario_Completo.f3d",
-    "bytes": 51832143,
-    "sha256": "2ea5837bd05936d06185a20e607a6c701e48b2d387961e04986d1b6684344910",
     "archive_ok": true
   },
   {

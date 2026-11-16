@@ -20,5 +20,3 @@ Valores en milímetros, provisionales según el propio código: diámetro exteri
 El LEEME advierte que la bandeja no tiene anclajes específicos para la PCB ni conexión mecánica a la base. Faltan medir el sensor y su conector, definir cableado, fijaciones y separación de la caja, comprobar ventilación y drenaje y realizar piezas de prueba. ASA blanco es una recomendación de material, no evidencia de impresión.
 
 Este conjunto es un escudo ambiental conceptual, no el gemelo completo del nodo. No incluye una representación integrada de placas, batería y electrónica, planos acotados, renders finales ni un ensamble `.f3d`/`.f3z`. No se acredita ajuste, resistencia exterior ni funcionamiento del sensor dentro del escudo.
-
-Los [STL Ruuvi](../stl/gill/README.md) ya existentes son referencias de terceros distintas de esta V1. Sus condiciones y atribuciones se conservan en su carpeta.
